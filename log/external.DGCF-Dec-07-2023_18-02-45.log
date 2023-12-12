@@ -1,0 +1,12 @@
+2023-12-07 18:02:45.754304: I Loading parameters
+2023-12-07 18:02:45.755305: I Parameter lr set to 0.0007530315047454896
+2023-12-07 18:02:45.755305: I Parameter factors set to 64
+2023-12-07 18:02:45.755305: I Parameter l_w_bpr set to 0.009012642853028007
+2023-12-07 18:02:45.755305: I Parameter l_w_ind set to 0.0008369458994883327
+2023-12-07 18:02:45.756310: I Parameter ind_batch_size set to 64
+2023-12-07 18:02:45.756310: I Parameter n_layers set to 1
+2023-12-07 18:02:45.756310: I Parameter intents set to 4
+2023-12-07 18:02:45.756310: I Parameter routing_iterations set to 2
+2023-12-07 18:03:04.196942: I Epoch 4/4 loss 155.05635
+2023-12-07 18:03:04.197942: I Writing recommendations at: C:\Users\zanzo\Desktop\KGTORe-main\results\facebook_book\recs
+2023-12-07 18:03:04.337617: I ******************************************

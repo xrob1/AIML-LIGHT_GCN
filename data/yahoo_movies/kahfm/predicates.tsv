@@ -1,0 +1,8 @@
+uri	predicate_id
+http://dbpedia.org/ontology/wikiPageWikiLink	0
+http://dbpedia.org/property/wikiPageUsesTemplate	1
+http://www.w3.org/1999/02/22-rdf-syntax-ns#type	2
+http://purl.org/dc/terms/subject	3
+http://purl.org/linguistics/gold/hypernym	4
+http://dbpedia.org/property/wordnet_type	5
+http://dbpedia.org/ontology/distributor	6

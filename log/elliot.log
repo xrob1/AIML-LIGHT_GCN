@@ -1,0 +1,1540 @@
+2023-12-07 16:11:16.574651: I Start experiment
+2023-12-07 16:17:33.814848: I Start experiment
+2023-12-07 16:17:33.861431: I C:\Users\zanzo\Desktop\KGTORe-main\data\facebook_book\train.tsv - Loaded
+2023-12-07 16:17:33.873951: I Test Fold 0 - Validation Fold 0
+2023-12-07 16:17:34.084852: I Statistics	Users:	1369	Items:	786	Transactions:	9187	Sparsity:	0.9914621656936491
+2023-12-07 16:20:37.265873: I Start experiment
+2023-12-07 16:20:37.311977: I C:\Users\zanzo\Desktop\KGTORe-main\data\facebook_book\train.tsv - Loaded
+2023-12-07 16:20:37.318485: I Test Fold 0 - Validation Fold 0
+2023-12-07 16:20:37.486715: I Statistics	Users:	1369	Items:	786	Transactions:	9187	Sparsity:	0.9914621656936491
+2023-12-07 16:22:20.625856: I Start experiment
+2023-12-07 16:22:20.658417: I C:\Users\zanzo\Desktop\KGTORe-main\data\facebook_book\train.tsv - Loaded
+2023-12-07 16:22:20.664414: I Test Fold 0 - Validation Fold 0
+2023-12-07 16:22:20.834614: I Statistics	Users:	1369	Items:	786	Transactions:	9187	Sparsity:	0.9914621656936491
+2023-12-07 16:22:22.665802: I Training begun for MostPop
+
+2023-12-07 16:22:22.666307: I Hyperparameters:
+2023-12-07 16:22:22.666307: I meta set to namespace(save_recs=True, verbose=True)
+2023-12-07 16:22:22.675821: I Exploration: Test Fold exploration number 1
+2023-12-07 16:22:22.691351: I Exploration: Train-Validation Fold exploration number 1
+2023-12-07 16:22:22.753938: I 
+2023-12-07 16:22:22.761449: I Validation Evaluation results
+2023-12-07 16:22:22.762451: I Cut-off: 50
+2023-12-07 16:22:22.762451: I Eval Time: 0.02753591537475586
+2023-12-07 16:22:22.762451: I Results
+2023-12-07 16:22:22.762451: I nDCGRendle2020	0.11022
+2023-12-07 16:22:22.762451: I 
+2023-12-07 16:22:22.763451: I Test Evaluation results
+2023-12-07 16:22:22.765449: I Cut-off: 50
+2023-12-07 16:22:22.766956: I Eval Time: 0.041559457778930664
+2023-12-07 16:22:22.769959: I Results
+2023-12-07 16:22:22.771959: I nDCGRendle2020	0.13531
+2023-12-07 16:22:22.868606: I Training ended for MostPop
+2023-12-07 16:22:22.868606: I Loss:	-0.11021798120907618
+2023-12-07 16:22:22.869608: I Best Model params:	{'meta': namespace(save_recs=True, verbose=True), 'name': 'MostPop'}
+2023-12-07 16:22:22.869608: I Best Model results:	{50: {'nDCGRendle2020': 0.13530986896706032}}
+2023-12-07 16:22:22.870608: I Training begun for Random
+
+2023-12-07 16:22:22.870608: I Hyperparameters:
+2023-12-07 16:22:22.878118: I meta set to namespace(save_recs=True, verbose=True)
+2023-12-07 16:22:22.887634: I Exploration: Test Fold exploration number 1
+2023-12-07 16:22:22.888636: I Exploration: Train-Validation Fold exploration number 1
+2023-12-07 16:22:23.385945: I 
+2023-12-07 16:22:23.392959: I Validation Evaluation results
+2023-12-07 16:22:23.392959: I Cut-off: 50
+2023-12-07 16:22:23.392959: I Eval Time: 0.028041839599609375
+2023-12-07 16:22:23.392959: I Results
+2023-12-07 16:22:23.393957: I nDCGRendle2020	0.01538
+2023-12-07 16:22:23.396469: I 
+2023-12-07 16:22:23.398475: I Test Evaluation results
+2023-12-07 16:22:23.401475: I Cut-off: 50
+2023-12-07 16:22:23.404475: I Eval Time: 0.033548831939697266
+2023-12-07 16:22:23.406985: I Results
+2023-12-07 16:22:23.408991: I nDCGRendle2020	0.02197
+2023-12-07 16:22:23.504146: I Training ended for Random
+2023-12-07 16:22:23.505652: I Loss:	-0.015380320899923956
+2023-12-07 16:22:23.505652: I Best Model params:	{'meta': namespace(save_recs=True, verbose=True), 'name': 'Random_seed=42'}
+2023-12-07 16:22:23.505652: I Best Model results:	{50: {'nDCGRendle2020': 0.021970425786434135}}
+2023-12-07 16:28:21.559057: I Start experiment
+2023-12-07 16:28:21.591606: I C:\Users\zanzo\Desktop\KGTORe-main\data\facebook_book\train.tsv - Loaded
+2023-12-07 16:28:21.599120: I Test Fold 0 - Validation Fold 0
+2023-12-07 16:28:21.763307: I Statistics	Users:	1369	Items:	786	Transactions:	9187	Sparsity:	0.9914621656936491
+2023-12-07 16:28:23.215132: I Training begun for MostPop
+
+2023-12-07 16:28:23.216138: I Hyperparameters:
+2023-12-07 16:28:23.250184: I meta set to namespace(save_recs=True, verbose=True)
+2023-12-07 16:28:23.268209: I Exploration: Test Fold exploration number 1
+2023-12-07 16:28:23.296746: I Exploration: Train-Validation Fold exploration number 1
+2023-12-07 16:28:23.302745: I 
+2023-12-07 16:28:23.302745: I Validation Evaluation results
+2023-12-07 16:28:23.302745: I Cut-off: 50
+2023-12-07 16:28:23.305256: I Eval Time: 0.027538776397705078
+2023-12-07 16:28:23.307261: I Results
+2023-12-07 16:28:23.310264: I nDCGRendle2020	0.11022
+2023-12-07 16:28:23.312261: I 
+2023-12-07 16:28:23.314764: I Test Evaluation results
+2023-12-07 16:28:23.316772: I Cut-off: 50
+2023-12-07 16:28:23.318772: I Eval Time: 0.03353619575500488
+2023-12-07 16:28:23.320775: I Results
+2023-12-07 16:28:23.322772: I nDCGRendle2020	0.13531
+2023-12-07 16:28:23.405881: I Training ended for MostPop
+2023-12-07 16:28:23.406886: I Loss:	-0.11021798120907618
+2023-12-07 16:28:23.406886: I Best Model params:	{'meta': namespace(save_recs=True, verbose=True), 'name': 'MostPop'}
+2023-12-07 16:28:23.406886: I Best Model results:	{50: {'nDCGRendle2020': 0.13530986896706032}}
+2023-12-07 16:28:23.407887: I Training begun for Random
+
+2023-12-07 16:28:23.409884: I Hyperparameters:
+2023-12-07 16:28:23.410885: I meta set to namespace(save_recs=True, verbose=True)
+2023-12-07 16:28:23.416397: I Exploration: Test Fold exploration number 1
+2023-12-07 16:28:23.417402: I Exploration: Train-Validation Fold exploration number 1
+2023-12-07 16:28:23.847892: I 
+2023-12-07 16:28:23.848894: I Validation Evaluation results
+2023-12-07 16:28:23.848894: I Cut-off: 50
+2023-12-07 16:28:23.849894: I Eval Time: 0.024529695510864258
+2023-12-07 16:28:23.850893: I Results
+2023-12-07 16:28:23.852895: I nDCGRendle2020	0.01538
+2023-12-07 16:28:23.855406: I 
+2023-12-07 16:28:23.857412: I Test Evaluation results
+2023-12-07 16:28:23.859413: I Cut-off: 50
+2023-12-07 16:28:23.862411: I Eval Time: 0.03004145622253418
+2023-12-07 16:28:23.864412: I Results
+2023-12-07 16:28:23.866923: I nDCGRendle2020	0.02197
+2023-12-07 16:28:23.954518: I Training ended for Random
+2023-12-07 16:28:23.954518: I Loss:	-0.015380320899923956
+2023-12-07 16:28:23.955022: I Best Model params:	{'meta': namespace(save_recs=True, verbose=True), 'name': 'Random_seed=42'}
+2023-12-07 16:28:23.955022: I Best Model results:	{50: {'nDCGRendle2020': 0.021970425786434135}}
+2023-12-07 16:33:57.437550: I Start experiment
+2023-12-07 16:33:57.471100: I C:\Users\zanzo\Desktop\KGTORe-main\data\facebook_book\train.tsv - Loaded
+2023-12-07 16:33:57.478613: I Test Fold 0 - Validation Fold 0
+2023-12-07 16:33:57.650349: I Statistics	Users:	1369	Items:	786	Transactions:	9187	Sparsity:	0.9914621656936491
+2023-12-07 16:33:59.244805: I Training begun for MostPop
+
+2023-12-07 16:33:59.246811: I Hyperparameters:
+2023-12-07 16:33:59.274343: I meta set to namespace(save_recs=True, verbose=True)
+2023-12-07 16:33:59.289864: I Exploration: Test Fold exploration number 1
+2023-12-07 16:33:59.299381: I Exploration: Train-Validation Fold exploration number 1
+2023-12-07 16:33:59.321410: I 
+2023-12-07 16:33:59.335433: I Validation Evaluation results
+2023-12-07 16:33:59.335433: I Cut-off: 50
+2023-12-07 16:33:59.335433: I Eval Time: 0.027546405792236328
+2023-12-07 16:33:59.335433: I Results
+2023-12-07 16:33:59.337947: I nDCGRendle2020	0.11022
+2023-12-07 16:33:59.339944: I 
+2023-12-07 16:33:59.341945: I Test Evaluation results
+2023-12-07 16:33:59.344455: I Cut-off: 50
+2023-12-07 16:33:59.347460: I Eval Time: 0.034055233001708984
+2023-12-07 16:33:59.349460: I Results
+2023-12-07 16:33:59.351460: I nDCGRendle2020	0.13531
+2023-12-07 16:33:59.441579: I Training ended for MostPop
+2023-12-07 16:33:59.441579: I Loss:	-0.11021798120907618
+2023-12-07 16:33:59.441579: I Best Model params:	{'meta': namespace(save_recs=True, verbose=True), 'name': 'MostPop'}
+2023-12-07 16:33:59.443084: I Best Model results:	{50: {'nDCGRendle2020': 0.13530986896706032}}
+2023-12-07 16:33:59.443084: I Training begun for Random
+
+2023-12-07 16:33:59.446094: I Hyperparameters:
+2023-12-07 16:33:59.449092: I meta set to namespace(save_recs=True, verbose=True)
+2023-12-07 16:33:59.451094: I Exploration: Test Fold exploration number 1
+2023-12-07 16:33:59.452093: I Exploration: Train-Validation Fold exploration number 1
+2023-12-07 16:33:59.874167: I 
+2023-12-07 16:33:59.885685: I Validation Evaluation results
+2023-12-07 16:33:59.885685: I Cut-off: 50
+2023-12-07 16:33:59.885685: I Eval Time: 0.026537656784057617
+2023-12-07 16:33:59.885685: I Results
+2023-12-07 16:33:59.887685: I nDCGRendle2020	0.01538
+2023-12-07 16:33:59.889685: I 
+2023-12-07 16:33:59.891685: I Test Evaluation results
+2023-12-07 16:33:59.895197: I Cut-off: 50
+2023-12-07 16:33:59.897202: I Eval Time: 0.031536102294921875
+2023-12-07 16:33:59.900202: I Results
+2023-12-07 16:33:59.902202: I nDCGRendle2020	0.02197
+2023-12-07 16:33:59.992331: I Training ended for Random
+2023-12-07 16:33:59.992331: I Loss:	-0.015380320899923956
+2023-12-07 16:33:59.992331: I Best Model params:	{'meta': namespace(save_recs=True, verbose=True), 'name': 'Random_seed=42'}
+2023-12-07 16:33:59.992331: I Best Model results:	{50: {'nDCGRendle2020': 0.021970425786434135}}
+2023-12-07 18:01:02.265066: I Start experiment
+2023-12-07 18:01:02.319639: I C:\Users\zanzo\Desktop\KGTORe-main\data\facebook_book\train.tsv - Loaded
+2023-12-07 18:01:02.327158: I Test Fold 0 - Validation Fold 0
+2023-12-07 18:01:02.514904: I Statistics	Users:	1369	Items:	786	Transactions:	9187	Sparsity:	0.9914621656936491
+2023-12-07 18:01:52.185356: I Start experiment
+2023-12-07 18:01:52.221905: I C:\Users\zanzo\Desktop\KGTORe-main\data\facebook_book\train.tsv - Loaded
+2023-12-07 18:01:52.228417: I Test Fold 0 - Validation Fold 0
+2023-12-07 18:01:52.406628: I Statistics	Users:	1369	Items:	786	Transactions:	9187	Sparsity:	0.9914621656936491
+2023-12-07 18:01:54.294678: I Training begun for MostPop
+
+2023-12-07 18:01:54.295682: I Hyperparameters:
+2023-12-07 18:01:54.330240: I meta set to namespace(save_recs=True, verbose=True)
+2023-12-07 18:01:54.357797: I Exploration: Test Fold exploration number 1
+2023-12-07 18:01:54.373329: I Exploration: Train-Validation Fold exploration number 1
+2023-12-07 18:01:54.399381: I 
+2023-12-07 18:01:54.403382: I Validation Evaluation results
+2023-12-07 18:01:54.403888: I Cut-off: 50
+2023-12-07 18:01:54.403888: I Eval Time: 0.0355679988861084
+2023-12-07 18:01:54.409907: I Results
+2023-12-07 18:01:54.411902: I nDCGRendle2020	0.11022
+2023-12-07 18:01:54.414414: I 
+2023-12-07 18:01:54.416419: I Test Evaluation results
+2023-12-07 18:01:54.426936: I Cut-off: 50
+2023-12-07 18:01:54.426936: I Eval Time: 0.04058575630187988
+2023-12-07 18:01:54.427936: I Results
+2023-12-07 18:01:54.427936: I nDCGRendle2020	0.13531
+2023-12-07 18:01:54.545645: I Training ended for MostPop
+2023-12-07 18:01:54.545645: I Loss:	-0.11021798120907618
+2023-12-07 18:01:54.545645: I Best Model params:	{'meta': namespace(save_recs=True, verbose=True), 'name': 'MostPop'}
+2023-12-07 18:01:54.546645: I Best Model results:	{50: {'nDCGRendle2020': 0.13530986896706032}}
+2023-12-07 18:01:54.546645: I Training begun for Random
+
+2023-12-07 18:01:54.546645: I Hyperparameters:
+2023-12-07 18:01:54.548645: I meta set to namespace(save_recs=True, verbose=True)
+2023-12-07 18:01:54.549646: I Exploration: Test Fold exploration number 1
+2023-12-07 18:01:54.549646: I Exploration: Train-Validation Fold exploration number 1
+2023-12-07 18:01:55.020323: I 
+2023-12-07 18:01:55.030834: I Validation Evaluation results
+2023-12-07 18:01:55.030834: I Cut-off: 50
+2023-12-07 18:01:55.030834: I Eval Time: 0.02753472328186035
+2023-12-07 18:01:55.030834: I Results
+2023-12-07 18:01:55.030834: I nDCGRendle2020	0.01538
+2023-12-07 18:01:55.031836: I 
+2023-12-07 18:01:55.033343: I Test Evaluation results
+2023-12-07 18:01:55.033343: I Cut-off: 50
+2023-12-07 18:01:55.035350: I Eval Time: 0.03152966499328613
+2023-12-07 18:01:55.038355: I Results
+2023-12-07 18:01:55.040353: I nDCGRendle2020	0.02197
+2023-12-07 18:01:55.143510: I Training ended for Random
+2023-12-07 18:01:55.143510: I Loss:	-0.015380320899923956
+2023-12-07 18:01:55.144516: I Best Model params:	{'meta': namespace(save_recs=True, verbose=True), 'name': 'Random_seed=42'}
+2023-12-07 18:01:55.144516: I Best Model results:	{50: {'nDCGRendle2020': 0.021970425786434135}}
+2023-12-07 18:02:12.901131: I Start experiment
+2023-12-07 18:02:12.935187: I C:\Users\zanzo\Desktop\KGTORe-main\data\facebook_book\train.tsv - Loaded
+2023-12-07 18:02:12.942192: I Test Fold 0 - Validation Fold 0
+2023-12-07 18:02:13.128930: I Statistics	Users:	1369	Items:	786	Transactions:	9187	Sparsity:	0.9914621656936491
+2023-12-07 18:02:14.913285: I Training begun for MostPop
+
+2023-12-07 18:02:14.914290: I Hyperparameters:
+2023-12-07 18:02:14.944839: I meta set to namespace(save_recs=True, verbose=True)
+2023-12-07 18:02:14.958364: I Exploration: Test Fold exploration number 1
+2023-12-07 18:02:14.971882: I Exploration: Train-Validation Fold exploration number 1
+2023-12-07 18:02:14.989436: I 
+2023-12-07 18:02:15.004464: I Validation Evaluation results
+2023-12-07 18:02:15.020986: I Cut-off: 50
+2023-12-07 18:02:15.020986: I Eval Time: 0.030565977096557617
+2023-12-07 18:02:15.021987: I Results
+2023-12-07 18:02:15.023491: I nDCGRendle2020	0.11022
+2023-12-07 18:02:15.027505: I 
+2023-12-07 18:02:15.028505: I Test Evaluation results
+2023-12-07 18:02:15.029504: I Cut-off: 50
+2023-12-07 18:02:15.029504: I Eval Time: 0.04357624053955078
+2023-12-07 18:02:15.031504: I Results
+2023-12-07 18:02:15.034014: I nDCGRendle2020	0.13531
+2023-12-07 18:02:15.187322: I Training ended for MostPop
+2023-12-07 18:02:15.187322: I Loss:	-0.11021798120907618
+2023-12-07 18:02:15.189836: I Best Model params:	{'meta': namespace(save_recs=True, verbose=True), 'name': 'MostPop'}
+2023-12-07 18:02:15.190834: I Best Model results:	{50: {'nDCGRendle2020': 0.13530986896706032}}
+2023-12-07 18:02:15.190834: I Training begun for Random
+
+2023-12-07 18:02:15.190834: I Hyperparameters:
+2023-12-07 18:02:15.191836: I meta set to namespace(save_recs=True, verbose=True)
+2023-12-07 18:02:15.191836: I Exploration: Test Fold exploration number 1
+2023-12-07 18:02:15.194349: I Exploration: Train-Validation Fold exploration number 1
+2023-12-07 18:02:15.696618: I 
+2023-12-07 18:02:15.699617: I Validation Evaluation results
+2023-12-07 18:02:15.699617: I Cut-off: 50
+2023-12-07 18:02:15.699617: I Eval Time: 0.026532888412475586
+2023-12-07 18:02:15.699617: I Results
+2023-12-07 18:02:15.701615: I nDCGRendle2020	0.01538
+2023-12-07 18:02:15.701615: I 
+2023-12-07 18:02:15.705128: I Test Evaluation results
+2023-12-07 18:02:15.709128: I Cut-off: 50
+2023-12-07 18:02:15.711129: I Eval Time: 0.0330355167388916
+2023-12-07 18:02:15.713631: I Results
+2023-12-07 18:02:15.715636: I nDCGRendle2020	0.02197
+2023-12-07 18:02:15.807764: I Training ended for Random
+2023-12-07 18:02:15.807764: I Loss:	-0.015380320899923956
+2023-12-07 18:02:15.807764: I Best Model params:	{'meta': namespace(save_recs=True, verbose=True), 'name': 'Random_seed=42'}
+2023-12-07 18:02:15.807764: I Best Model results:	{50: {'nDCGRendle2020': 0.021970425786434135}}
+2023-12-07 18:02:19.221469: I Training begun for BPRMF
+
+2023-12-07 18:02:19.221469: I Hyperparameters:
+2023-12-07 18:02:19.221469: I meta set to namespace(save_recs=True, validation_rate=29, verbose=True)
+2023-12-07 18:02:19.221469: I lr set to 0.0017664102849921446
+2023-12-07 18:02:19.221469: I batch_size set to 64
+2023-12-07 18:02:19.223977: I epochs set to 29
+2023-12-07 18:02:19.223977: I factors set to 64
+2023-12-07 18:02:19.223977: I l_w set to 0.05721092247228661
+2023-12-07 18:02:19.223977: I seed set to 123
+2023-12-07 18:02:19.223977: I Exploration: Test Fold exploration number 1
+2023-12-07 18:02:19.223977: I Exploration: Train-Validation Fold exploration number 1
+2023-12-07 18:02:41.520707: I 
+2023-12-07 18:02:41.535235: I Validation Evaluation results
+2023-12-07 18:02:41.536237: I Cut-off: 50
+2023-12-07 18:02:41.536237: I Eval Time: 0.027524709701538086
+2023-12-07 18:02:41.536237: I Results
+2023-12-07 18:02:41.536237: I nDCGRendle2020	0.12617
+2023-12-07 18:02:41.536237: I 
+2023-12-07 18:02:41.537238: I Test Evaluation results
+2023-12-07 18:02:41.538238: I Cut-off: 50
+2023-12-07 18:02:41.540238: I Eval Time: 0.03755068778991699
+2023-12-07 18:02:41.542239: I Results
+2023-12-07 18:02:41.543744: I nDCGRendle2020	0.15682
+2023-12-07 18:02:41.673938: I Training ended for BPRMF
+2023-12-07 18:02:41.673938: I Loss:	-0.12617022900848485
+2023-12-07 18:02:41.673938: I Best Model params:	{'meta': namespace(save_recs=True, validation_rate=29, verbose=True), 'lr': 0.0017664102849921446, 'batch_size': 64, 'epochs': 29, 'factors': 64, 'l_w': 0.05721092247228661, 'seed': 123, 'name': 'BPRMF_seed=123_e=29_bs=64_factors=64_lr=0$0017664102849921446_l_w=0$05721092247228661', 'best_iteration': 29}
+2023-12-07 18:02:41.673938: I Best Model results:	{50: {'nDCGRendle2020': 0.15682321615094058}}
+2023-12-07 18:02:41.676946: I Training begun for LightGCN
+
+2023-12-07 18:02:41.676946: I Hyperparameters:
+2023-12-07 18:02:41.677949: I meta set to namespace(save_recs=True, validation_rate=2, verbose=True)
+2023-12-07 18:02:41.677949: I lr set to 0.0028462729478462134
+2023-12-07 18:02:41.677949: I epochs set to 2
+2023-12-07 18:02:41.677949: I factors set to 64
+2023-12-07 18:02:41.677949: I batch_size set to 64
+2023-12-07 18:02:41.681944: I l_w set to 0.06184015598288455
+2023-12-07 18:02:41.681944: I n_layers set to 3
+2023-12-07 18:02:41.681944: I seed set to 123
+2023-12-07 18:02:41.681944: I Exploration: Test Fold exploration number 1
+2023-12-07 18:02:41.681944: I Exploration: Train-Validation Fold exploration number 1
+2023-12-07 18:02:45.607627: I 
+2023-12-07 18:02:45.615143: I Validation Evaluation results
+2023-12-07 18:02:45.615143: I Cut-off: 50
+2023-12-07 18:02:45.615143: I Eval Time: 0.0285341739654541
+2023-12-07 18:02:45.616144: I Results
+2023-12-07 18:02:45.617143: I nDCGRendle2020	0.12736
+2023-12-07 18:02:45.619143: I 
+2023-12-07 18:02:45.621143: I Test Evaluation results
+2023-12-07 18:02:45.622143: I Cut-off: 50
+2023-12-07 18:02:45.624652: I Eval Time: 0.03404045104980469
+2023-12-07 18:02:45.625659: I Results
+2023-12-07 18:02:45.628658: I nDCGRendle2020	0.15893
+2023-12-07 18:02:45.751793: I Training ended for LightGCN
+2023-12-07 18:02:45.751793: I Loss:	-0.1273574454098311
+2023-12-07 18:02:45.751793: I Best Model params:	{'meta': namespace(save_recs=True, validation_rate=2, verbose=True), 'lr': 0.0028462729478462134, 'epochs': 2, 'factors': 64, 'batch_size': 64, 'l_w': 0.06184015598288455, 'n_layers': 3, 'seed': 123, 'name': 'LightGCN_seed=123_e=2_bs=64_lr=0$0028462729478462134_factors=64_l_w=0$06184015598288455_n_layers=3', 'best_iteration': 2}
+2023-12-07 18:02:45.754304: I Best Model results:	{50: {'nDCGRendle2020': 0.1589264789468551}}
+2023-12-07 18:02:45.754304: I Training begun for DGCF
+
+2023-12-07 18:02:45.755305: I Hyperparameters:
+2023-12-07 18:02:45.755305: I meta set to namespace(save_recs=True, validation_rate=4, verbose=True)
+2023-12-07 18:02:45.755305: I lr set to 0.0007530315047454896
+2023-12-07 18:02:45.755305: I epochs set to 4
+2023-12-07 18:02:45.755305: I factors set to 64
+2023-12-07 18:02:45.756310: I batch_size set to 64
+2023-12-07 18:02:45.756310: I l_w_bpr set to 0.009012642853028007
+2023-12-07 18:02:45.756310: I l_w_ind set to 0.0008369458994883327
+2023-12-07 18:02:45.756310: I ind_batch_size set to 64
+2023-12-07 18:02:45.757310: I n_layers set to 1
+2023-12-07 18:02:45.757310: I routing_iterations set to 2
+2023-12-07 18:02:45.757310: I intents set to 4
+2023-12-07 18:02:45.764815: I seed set to 123
+2023-12-07 18:02:45.764815: I Exploration: Test Fold exploration number 1
+2023-12-07 18:02:45.764815: I Exploration: Train-Validation Fold exploration number 1
+2023-12-07 18:03:04.191426: I 
+2023-12-07 18:03:04.196942: I Validation Evaluation results
+2023-12-07 18:03:04.197942: I Cut-off: 50
+2023-12-07 18:03:04.197942: I Eval Time: 0.029039859771728516
+2023-12-07 18:03:04.197942: I Results
+2023-12-07 18:03:04.198943: I nDCGRendle2020	0.12724
+2023-12-07 18:03:04.199943: I 
+2023-12-07 18:03:04.201942: I Test Evaluation results
+2023-12-07 18:03:04.203445: I Cut-off: 50
+2023-12-07 18:03:04.205459: I Eval Time: 0.03504467010498047
+2023-12-07 18:03:04.207455: I Results
+2023-12-07 18:03:04.209456: I nDCGRendle2020	0.16282
+2023-12-07 18:03:04.344125: I Training ended for DGCF
+2023-12-07 18:03:04.345127: I Loss:	-0.12723702595204647
+2023-12-07 18:03:04.346132: I Best Model params:	{'meta': namespace(save_recs=True, validation_rate=4, verbose=True), 'lr': 0.0007530315047454896, 'epochs': 4, 'factors': 64, 'batch_size': 64, 'l_w_bpr': 0.009012642853028007, 'l_w_ind': 0.0008369458994883327, 'ind_batch_size': 64, 'n_layers': 1, 'routing_iterations': 2, 'intents': 4, 'seed': 123, 'name': 'DGCF_seed=123_e=4_bs=64_lr=0$0007530315047454896_factors=64_l_w_bpr=0$009012642853028007_l_w_ind=0$0008369458994883327_ind_batch_size=64_n_layers=1_intents=4_routing_iterations=2', 'best_iteration': 4}
+2023-12-07 18:03:04.346132: I Best Model results:	{50: {'nDCGRendle2020': 0.1628205318945115}}
+2023-12-07 18:03:04.346132: I Training begun for ItemKNN
+
+2023-12-07 18:03:04.346132: I Hyperparameters:
+2023-12-07 18:03:04.347131: I meta set to namespace(save_recs=True, save_weights=False, validation_metric='nDCGRendle2020@10', verbose=True)
+2023-12-07 18:03:04.347131: I neighbors set to 400
+2023-12-07 18:03:04.347131: I similarity set to dot
+2023-12-07 18:03:04.347131: I seed set to 123
+2023-12-07 18:03:04.347131: I Exploration: Test Fold exploration number 1
+2023-12-07 18:03:04.347131: I Exploration: Train-Validation Fold exploration number 1
+2023-12-07 18:05:37.870806: I Start experiment
+2023-12-07 18:05:37.908876: I C:\Users\zanzo\Desktop\KGTORe-main\data\facebook_book\train.tsv - Loaded
+2023-12-07 18:05:37.916894: I Test Fold 0 - Validation Fold 0
+2023-12-07 18:05:38.118190: I Statistics	Users:	1369	Items:	786	Transactions:	9187	Sparsity:	0.9914621656936491
+2023-12-07 18:05:43.349032: I Training begun for LightGCN
+
+2023-12-07 18:05:43.349032: I Hyperparameters:
+2023-12-07 18:05:43.350034: I meta set to namespace(save_recs=True, validation_rate=2, verbose=True)
+2023-12-07 18:05:43.350034: I lr set to 0.0028462729478462134
+2023-12-07 18:05:43.350034: I epochs set to 2
+2023-12-07 18:05:43.350034: I factors set to 64
+2023-12-07 18:05:43.350034: I batch_size set to 64
+2023-12-07 18:05:43.350034: I l_w set to 0.06184015598288455
+2023-12-07 18:05:43.353539: I n_layers set to 3
+2023-12-07 18:05:43.353539: I seed set to 123
+2023-12-07 18:05:43.354542: I Exploration: Test Fold exploration number 1
+2023-12-07 18:05:43.354542: I Exploration: Train-Validation Fold exploration number 1
+2023-12-07 18:05:47.305479: I 
+2023-12-07 18:05:47.307481: I Validation Evaluation results
+2023-12-07 18:05:47.307481: I Cut-off: 50
+2023-12-07 18:05:47.307481: I Eval Time: 0.030539989471435547
+2023-12-07 18:05:47.307481: I Results
+2023-12-07 18:05:47.308480: I nDCGRendle2020	0.12736
+2023-12-07 18:05:47.309480: I 
+2023-12-07 18:05:47.311480: I Test Evaluation results
+2023-12-07 18:05:47.312984: I Cut-off: 50
+2023-12-07 18:05:47.314990: I Eval Time: 0.036037445068359375
+2023-12-07 18:05:47.316991: I Results
+2023-12-07 18:05:47.317991: I nDCGRendle2020	0.15893
+2023-12-07 18:05:47.453162: I Training ended for LightGCN
+2023-12-07 18:05:47.453162: I Loss:	-0.1273574454098311
+2023-12-07 18:05:47.453162: I Best Model params:	{'meta': namespace(save_recs=True, validation_rate=2, verbose=True), 'lr': 0.0028462729478462134, 'epochs': 2, 'factors': 64, 'batch_size': 64, 'l_w': 0.06184015598288455, 'n_layers': 3, 'seed': 123, 'name': 'LightGCN_seed=123_e=2_bs=64_lr=0$0028462729478462134_factors=64_l_w=0$06184015598288455_n_layers=3', 'best_iteration': 2}
+2023-12-07 18:05:47.454167: I Best Model results:	{50: {'nDCGRendle2020': 0.1589264789468551}}
+2023-12-07 18:05:47.456173: I End experiment
+2023-12-07 18:15:40.896619: I Start experiment
+2023-12-07 18:15:40.938675: I C:\Users\zanzo\Desktop\KGTORe-main\data\facebook_book\train.tsv - Loaded
+2023-12-07 18:15:40.946186: I Test Fold 0 - Validation Fold 0
+2023-12-07 18:15:41.111362: I Statistics	Users:	1369	Items:	786	Transactions:	9187	Sparsity:	0.9914621656936491
+2023-12-07 18:15:45.550928: I Training begun for LightGCN
+
+2023-12-07 18:15:45.551929: I Hyperparameters:
+2023-12-07 18:15:45.551929: I meta set to namespace(save_recs=True, validation_rate=2, verbose=True)
+2023-12-07 18:15:45.551929: I lr set to 0.0028462729478462134
+2023-12-07 18:15:45.551929: I epochs set to 2
+2023-12-07 18:15:45.552930: I factors set to 64
+2023-12-07 18:15:45.552930: I batch_size set to 64
+2023-12-07 18:15:45.556435: I l_w set to 0.06184015598288455
+2023-12-07 18:15:45.556435: I n_layers set to 3
+2023-12-07 18:15:45.556435: I seed set to 123
+2023-12-07 18:15:45.556435: I Exploration: Test Fold exploration number 1
+2023-12-07 18:15:45.556435: I Exploration: Train-Validation Fold exploration number 1
+2023-12-07 18:15:48.465364: I 
+2023-12-07 18:15:48.475377: I Validation Evaluation results
+2023-12-07 18:15:48.476381: I Cut-off: 50
+2023-12-07 18:15:48.476381: I Eval Time: 0.02652883529663086
+2023-12-07 18:15:48.476381: I Results
+2023-12-07 18:15:48.477384: I nDCGRendle2020	0.12736
+2023-12-07 18:15:48.478385: I 
+2023-12-07 18:15:48.481384: I Test Evaluation results
+2023-12-07 18:15:48.482385: I Cut-off: 50
+2023-12-07 18:15:48.483384: I Eval Time: 0.03403043746948242
+2023-12-07 18:15:48.485889: I Results
+2023-12-07 18:15:48.486893: I nDCGRendle2020	0.15893
+2023-12-07 18:15:48.603513: I Training ended for LightGCN
+2023-12-07 18:15:48.603513: I Loss:	-0.1273574454098311
+2023-12-07 18:15:48.603513: I Best Model params:	{'meta': namespace(save_recs=True, validation_rate=2, verbose=True), 'lr': 0.0028462729478462134, 'epochs': 2, 'factors': 64, 'batch_size': 64, 'l_w': 0.06184015598288455, 'n_layers': 3, 'seed': 123, 'name': 'LightGCN_seed=123_e=2_bs=64_lr=0$0028462729478462134_factors=64_l_w=0$06184015598288455_n_layers=3', 'best_iteration': 2}
+2023-12-07 18:15:48.605017: I Best Model results:	{50: {'nDCGRendle2020': 0.1589264789468551}}
+2023-12-07 18:15:48.606025: I End experiment
+2023-12-07 18:22:42.915876: I Start experiment
+2023-12-07 18:22:42.945880: I C:\Users\zanzo\Desktop\KGTORe-main\data\facebook_book\train.tsv - Loaded
+2023-12-07 18:22:42.952883: I Test Fold 0 - Validation Fold 0
+2023-12-07 18:22:43.137899: I Statistics	Users:	1369	Items:	786	Transactions:	9187	Sparsity:	0.9914621656936491
+2023-12-07 18:26:42.382741: I Start experiment
+2023-12-07 18:26:42.413743: I C:\Users\zanzo\Desktop\KGTORe-main\data\facebook_book\train.tsv - Loaded
+2023-12-07 18:26:42.419740: I Test Fold 0 - Validation Fold 0
+2023-12-07 18:26:42.609760: I Statistics	Users:	1369	Items:	786	Transactions:	9187	Sparsity:	0.9914621656936491
+2023-12-07 18:26:47.086758: I Training begun for LightGCN
+
+2023-12-07 18:26:47.086758: I Hyperparameters:
+2023-12-07 18:26:47.086758: I meta set to namespace(save_recs=True, validation_rate=2, verbose=True)
+2023-12-07 18:26:47.086758: I lr set to 0.0028462729478462134
+2023-12-07 18:26:47.087759: I epochs set to 2
+2023-12-07 18:26:47.087759: I factors set to 64
+2023-12-07 18:26:47.087759: I batch_size set to 64
+2023-12-07 18:26:47.087759: I l_w set to 0.06184015598288455
+2023-12-07 18:26:47.087759: I n_layers set to 3
+2023-12-07 18:26:47.091757: I seed set to 123
+2023-12-07 18:26:47.091757: I Exploration: Test Fold exploration number 1
+2023-12-07 18:26:47.091757: I Exploration: Train-Validation Fold exploration number 1
+2023-12-07 18:26:50.406864: I 
+2023-12-07 18:26:50.406864: I Validation Evaluation results
+2023-12-07 18:26:50.407865: I Cut-off: 50
+2023-12-07 18:26:50.407865: I Eval Time: 0.0265045166015625
+2023-12-07 18:26:50.409866: I Results
+2023-12-07 18:26:50.411864: I nDCGRendle2020	0.12736
+2023-12-07 18:26:50.413865: I 
+2023-12-07 18:26:50.414865: I Test Evaluation results
+2023-12-07 18:26:50.416864: I Cut-off: 50
+2023-12-07 18:26:50.418866: I Eval Time: 0.03399968147277832
+2023-12-07 18:26:50.419865: I Results
+2023-12-07 18:26:50.421864: I nDCGRendle2020	0.15893
+2023-12-07 18:26:50.536374: I Training ended for LightGCN
+2023-12-07 18:26:50.536374: I Loss:	-0.1273574454098311
+2023-12-07 18:26:50.536374: I Best Model params:	{'meta': namespace(save_recs=True, validation_rate=2, verbose=True), 'lr': 0.0028462729478462134, 'epochs': 2, 'factors': 64, 'batch_size': 64, 'l_w': 0.06184015598288455, 'n_layers': 3, 'seed': 123, 'name': 'LightGCN_seed=123_e=2_bs=64_lr=0$0028462729478462134_factors=64_l_w=0$06184015598288455_n_layers=3', 'best_iteration': 2}
+2023-12-07 18:26:50.537373: I Best Model results:	{50: {'nDCGRendle2020': 0.1589264789468551}}
+2023-12-07 18:26:50.539379: I End experiment
+2023-12-07 18:29:32.213997: I Start experiment
+2023-12-07 18:29:32.243033: I C:\Users\zanzo\Desktop\KGTORe-main\data\facebook_book\train.tsv - Loaded
+2023-12-07 18:29:32.249548: I Test Fold 0 - Validation Fold 0
+2023-12-07 18:29:32.429247: I Statistics	Users:	1369	Items:	786	Transactions:	9187	Sparsity:	0.9914621656936491
+2023-12-07 18:29:36.976829: I Training begun for LightGCN
+
+2023-12-07 18:29:36.976829: I Hyperparameters:
+2023-12-07 18:29:36.976829: I meta set to namespace(save_recs=True, validation_rate=2, verbose=True)
+2023-12-07 18:29:36.976829: I lr set to 0.0028462729478462134
+2023-12-07 18:29:36.976829: I epochs set to 2
+2023-12-07 18:29:36.976829: I factors set to 64
+2023-12-07 18:29:36.976829: I batch_size set to 64
+2023-12-07 18:29:36.976829: I l_w set to 0.06184015598288455
+2023-12-07 18:29:36.976829: I n_layers set to 3
+2023-12-07 18:29:36.981339: I seed set to 123
+2023-12-07 18:29:36.981339: I Exploration: Test Fold exploration number 1
+2023-12-07 18:29:36.981339: I Exploration: Train-Validation Fold exploration number 1
+2023-12-07 18:29:40.256720: I 
+2023-12-07 18:29:40.256720: I Validation Evaluation results
+2023-12-07 18:29:40.256720: I Cut-off: 50
+2023-12-07 18:29:40.256720: I Eval Time: 0.025522232055664062
+2023-12-07 18:29:40.256720: I Results
+2023-12-07 18:29:40.256720: I nDCGRendle2020	0.12736
+2023-12-07 18:29:40.259227: I 
+2023-12-07 18:29:40.260230: I Test Evaluation results
+2023-12-07 18:29:40.262231: I Cut-off: 50
+2023-12-07 18:29:40.264231: I Eval Time: 0.0340266227722168
+2023-12-07 18:29:40.265230: I Results
+2023-12-07 18:29:40.267232: I nDCGRendle2020	0.15893
+2023-12-07 18:29:40.413382: I Training ended for LightGCN
+2023-12-07 18:29:40.413382: I Loss:	-0.1273574454098311
+2023-12-07 18:29:40.413382: I Best Model params:	{'meta': namespace(save_recs=True, validation_rate=2, verbose=True), 'lr': 0.0028462729478462134, 'epochs': 2, 'factors': 64, 'batch_size': 64, 'l_w': 0.06184015598288455, 'n_layers': 3, 'seed': 123, 'name': 'LightGCN_seed=123_e=2_bs=64_lr=0$0028462729478462134_factors=64_l_w=0$06184015598288455_n_layers=3', 'best_iteration': 2}
+2023-12-07 18:29:40.414383: I Best Model results:	{50: {'nDCGRendle2020': 0.1589264789468551}}
+2023-12-07 18:29:40.415384: I End experiment
+2023-12-07 18:31:13.012578: I Start experiment
+2023-12-07 18:31:13.046124: I C:\Users\zanzo\Desktop\KGTORe-main\data\facebook_book\train.tsv - Loaded
+2023-12-07 18:31:13.053637: I Test Fold 0 - Validation Fold 0
+2023-12-07 18:31:13.247389: I Statistics	Users:	1369	Items:	786	Transactions:	9187	Sparsity:	0.9914621656936491
+2023-12-07 18:31:17.893801: I Training begun for LightGCN
+
+2023-12-07 18:31:17.893801: I Hyperparameters:
+2023-12-07 18:31:17.893801: I meta set to namespace(save_recs=True, validation_rate=2, verbose=True)
+2023-12-07 18:31:17.893801: I lr set to 0.0028462729478462134
+2023-12-07 18:31:17.894800: I epochs set to 2
+2023-12-07 18:31:17.894800: I factors set to 64
+2023-12-07 18:31:17.894800: I batch_size set to 64
+2023-12-07 18:31:17.894800: I l_w set to 0.06184015598288455
+2023-12-07 18:31:17.897800: I n_layers set to 3
+2023-12-07 18:31:17.897800: I seed set to 123
+2023-12-07 18:31:17.897800: I Exploration: Test Fold exploration number 1
+2023-12-07 18:31:17.899304: I Exploration: Train-Validation Fold exploration number 1
+2023-12-07 18:31:21.284322: I 
+2023-12-07 18:31:21.294832: I Validation Evaluation results
+2023-12-07 18:31:21.294832: I Cut-off: 50
+2023-12-07 18:31:21.294832: I Eval Time: 0.0265195369720459
+2023-12-07 18:31:21.295834: I Results
+2023-12-07 18:31:21.295834: I nDCGRendle2020	0.12736
+2023-12-07 18:31:21.295834: I 
+2023-12-07 18:31:21.296834: I Test Evaluation results
+2023-12-07 18:31:21.298833: I Cut-off: 50
+2023-12-07 18:31:21.300344: I Eval Time: 0.0345306396484375
+2023-12-07 18:31:21.302348: I Results
+2023-12-07 18:31:21.304347: I nDCGRendle2020	0.15893
+2023-12-07 18:32:20.696598: I Start experiment
+2023-12-07 18:32:20.726656: I C:\Users\zanzo\Desktop\KGTORe-main\data\facebook_book\train.tsv - Loaded
+2023-12-07 18:32:20.733167: I Test Fold 0 - Validation Fold 0
+2023-12-07 18:32:20.918898: I Statistics	Users:	1369	Items:	786	Transactions:	9187	Sparsity:	0.9914621656936491
+2023-12-07 18:32:25.484790: I Training begun for LightGCN
+
+2023-12-07 18:32:25.484790: I Hyperparameters:
+2023-12-07 18:32:25.484790: I meta set to namespace(save_recs=True, validation_rate=2, verbose=True)
+2023-12-07 18:32:25.484790: I lr set to 0.0028462729478462134
+2023-12-07 18:32:25.484790: I epochs set to 2
+2023-12-07 18:32:25.484790: I factors set to 64
+2023-12-07 18:32:25.485791: I batch_size set to 64
+2023-12-07 18:32:25.485791: I l_w set to 0.06184015598288455
+2023-12-07 18:32:25.485791: I n_layers set to 3
+2023-12-07 18:32:25.488790: I seed set to 123
+2023-12-07 18:32:25.489294: I Exploration: Test Fold exploration number 1
+2023-12-07 18:32:25.489294: I Exploration: Train-Validation Fold exploration number 1
+2023-12-07 18:32:28.806399: I 
+2023-12-07 18:32:28.807400: I Validation Evaluation results
+2023-12-07 18:32:28.807400: I Cut-off: 50
+2023-12-07 18:32:28.807400: I Eval Time: 0.026523590087890625
+2023-12-07 18:32:28.807400: I Results
+2023-12-07 18:32:28.807400: I nDCGRendle2020	0.12736
+2023-12-07 18:32:28.808905: I 
+2023-12-07 18:32:28.809910: I Test Evaluation results
+2023-12-07 18:32:28.810913: I Cut-off: 50
+2023-12-07 18:32:28.812915: I Eval Time: 0.034526824951171875
+2023-12-07 18:32:28.814914: I Results
+2023-12-07 18:32:28.815914: I nDCGRendle2020	0.15893
+2023-12-07 18:33:18.481339: I Start experiment
+2023-12-07 18:33:18.509869: I C:\Users\zanzo\Desktop\KGTORe-main\data\facebook_book\train.tsv - Loaded
+2023-12-07 18:33:18.516877: I Test Fold 0 - Validation Fold 0
+2023-12-07 18:33:18.697068: I Statistics	Users:	1369	Items:	786	Transactions:	9187	Sparsity:	0.9914621656936491
+2023-12-07 18:33:23.189034: I Training begun for LightGCN
+
+2023-12-07 18:33:23.189034: I Hyperparameters:
+2023-12-07 18:33:23.189034: I meta set to namespace(save_recs=True, validation_rate=2, verbose=True)
+2023-12-07 18:33:23.189034: I lr set to 0.0028462729478462134
+2023-12-07 18:33:23.189034: I epochs set to 2
+2023-12-07 18:33:23.190037: I factors set to 64
+2023-12-07 18:33:23.190037: I batch_size set to 64
+2023-12-07 18:33:23.190037: I l_w set to 0.06184015598288455
+2023-12-07 18:33:23.193040: I n_layers set to 3
+2023-12-07 18:33:23.193040: I seed set to 123
+2023-12-07 18:33:23.194042: I Exploration: Test Fold exploration number 1
+2023-12-07 18:33:23.194042: I Exploration: Train-Validation Fold exploration number 1
+2023-12-07 18:33:26.505568: I 
+2023-12-07 18:33:26.515078: I Validation Evaluation results
+2023-12-07 18:33:26.516080: I Cut-off: 50
+2023-12-07 18:33:26.516080: I Eval Time: 0.025527000427246094
+2023-12-07 18:33:26.516080: I Results
+2023-12-07 18:33:26.517081: I nDCGRendle2020	0.12736
+2023-12-07 18:33:26.518586: I 
+2023-12-07 18:33:26.520591: I Test Evaluation results
+2023-12-07 18:33:26.522595: I Cut-off: 50
+2023-12-07 18:33:26.524594: I Eval Time: 0.03252387046813965
+2023-12-07 18:33:26.525594: I Results
+2023-12-07 18:33:26.527594: I nDCGRendle2020	0.15893
+2023-12-07 18:33:43.894118: I Start experiment
+2023-12-07 18:33:43.924657: I C:\Users\zanzo\Desktop\KGTORe-main\data\facebook_book\train.tsv - Loaded
+2023-12-07 18:33:43.931165: I Test Fold 0 - Validation Fold 0
+2023-12-07 18:33:44.110343: I Statistics	Users:	1369	Items:	786	Transactions:	9187	Sparsity:	0.9914621656936491
+2023-12-07 18:33:48.748736: I Training begun for LightGCN
+
+2023-12-07 18:33:48.748736: I Hyperparameters:
+2023-12-07 18:33:48.748736: I meta set to namespace(save_recs=True, validation_rate=2, verbose=True)
+2023-12-07 18:33:48.748736: I lr set to 0.0028462729478462134
+2023-12-07 18:33:48.748736: I epochs set to 2
+2023-12-07 18:33:48.749740: I factors set to 64
+2023-12-07 18:33:48.749740: I batch_size set to 64
+2023-12-07 18:33:48.749740: I l_w set to 0.06184015598288455
+2023-12-07 18:33:48.749740: I n_layers set to 3
+2023-12-07 18:33:48.749740: I seed set to 123
+2023-12-07 18:33:48.749740: I Exploration: Test Fold exploration number 1
+2023-12-07 18:33:48.753743: I Exploration: Train-Validation Fold exploration number 1
+2023-12-07 18:33:51.995861: I 
+2023-12-07 18:33:52.001370: I Validation Evaluation results
+2023-12-07 18:33:52.002370: I Cut-off: 50
+2023-12-07 18:33:52.002370: I Eval Time: 0.02601909637451172
+2023-12-07 18:33:52.002370: I Results
+2023-12-07 18:33:52.003371: I nDCGRendle2020	0.12736
+2023-12-07 18:33:52.005369: I 
+2023-12-07 18:33:52.007370: I Test Evaluation results
+2023-12-07 18:33:52.008875: I Cut-off: 50
+2023-12-07 18:33:52.010885: I Eval Time: 0.035036563873291016
+2023-12-07 18:33:52.011886: I Results
+2023-12-07 18:33:52.013885: I nDCGRendle2020	0.15893
+2023-12-07 18:34:15.290499: I Start experiment
+2023-12-07 18:34:15.320035: I C:\Users\zanzo\Desktop\KGTORe-main\data\facebook_book\train.tsv - Loaded
+2023-12-07 18:34:15.327038: I Test Fold 0 - Validation Fold 0
+2023-12-07 18:34:15.506219: I Statistics	Users:	1369	Items:	786	Transactions:	9187	Sparsity:	0.9914621656936491
+2023-12-07 18:34:20.196319: I Training begun for LightGCN
+
+2023-12-07 18:34:20.196319: I Hyperparameters:
+2023-12-07 18:34:20.196319: I meta set to namespace(save_recs=True, validation_rate=2, verbose=True)
+2023-12-07 18:34:20.197320: I lr set to 0.0028462729478462134
+2023-12-07 18:34:20.197320: I epochs set to 2
+2023-12-07 18:34:20.197320: I factors set to 64
+2023-12-07 18:34:20.197320: I batch_size set to 64
+2023-12-07 18:34:20.197320: I l_w set to 0.06184015598288455
+2023-12-07 18:34:20.197320: I n_layers set to 3
+2023-12-07 18:34:20.200319: I seed set to 123
+2023-12-07 18:34:20.200319: I Exploration: Test Fold exploration number 1
+2023-12-07 18:34:20.200319: I Exploration: Train-Validation Fold exploration number 1
+2023-12-07 18:34:23.580132: I 
+2023-12-07 18:34:23.585645: I Validation Evaluation results
+2023-12-07 18:34:23.585645: I Cut-off: 50
+2023-12-07 18:34:23.585645: I Eval Time: 0.026013612747192383
+2023-12-07 18:34:23.585645: I Results
+2023-12-07 18:34:23.586646: I nDCGRendle2020	0.12736
+2023-12-07 18:34:23.588650: I 
+2023-12-07 18:34:23.590648: I Test Evaluation results
+2023-12-07 18:34:23.593161: I Cut-off: 50
+2023-12-07 18:34:23.595158: I Eval Time: 0.034035444259643555
+2023-12-07 18:34:23.596660: I Results
+2023-12-07 18:34:23.598663: I nDCGRendle2020	0.15893
+2023-12-07 18:36:05.237644: I Start experiment
+2023-12-07 18:36:05.270187: I C:\Users\zanzo\Desktop\KGTORe-main\data\facebook_book\train.tsv - Loaded
+2023-12-07 18:36:05.276701: I Test Fold 0 - Validation Fold 0
+2023-12-07 18:36:05.467461: I Statistics	Users:	1369	Items:	786	Transactions:	9187	Sparsity:	0.9914621656936491
+2023-12-07 18:36:10.171875: I Training begun for LightGCN
+
+2023-12-07 18:36:10.171875: I Hyperparameters:
+2023-12-07 18:36:10.172378: I meta set to namespace(save_recs=True, validation_rate=2, verbose=True)
+2023-12-07 18:36:10.172378: I lr set to 0.0028462729478462134
+2023-12-07 18:36:10.172378: I epochs set to 2
+2023-12-07 18:36:10.172378: I factors set to 64
+2023-12-07 18:36:10.172378: I batch_size set to 64
+2023-12-07 18:36:10.172378: I l_w set to 0.06184015598288455
+2023-12-07 18:36:10.176385: I n_layers set to 3
+2023-12-07 18:36:10.176385: I seed set to 123
+2023-12-07 18:36:10.176385: I Exploration: Test Fold exploration number 1
+2023-12-07 18:36:10.176385: I Exploration: Train-Validation Fold exploration number 1
+2023-12-07 18:36:13.494559: I 
+2023-12-07 18:36:13.502062: I Validation Evaluation results
+2023-12-07 18:36:13.502062: I Cut-off: 50
+2023-12-07 18:36:13.502062: I Eval Time: 0.026521921157836914
+2023-12-07 18:36:13.502062: I Results
+2023-12-07 18:36:13.503068: I nDCGRendle2020	0.12736
+2023-12-07 18:36:13.505071: I 
+2023-12-07 18:36:13.507071: I Test Evaluation results
+2023-12-07 18:36:13.508071: I Cut-off: 50
+2023-12-07 18:36:13.510072: I Eval Time: 0.035524606704711914
+2023-12-07 18:36:13.511575: I Results
+2023-12-07 18:36:13.513580: I nDCGRendle2020	0.15893
+2023-12-07 18:37:36.401189: I Start experiment
+2023-12-07 18:37:36.431230: I C:\Users\zanzo\Desktop\KGTORe-main\data\facebook_book\train.tsv - Loaded
+2023-12-07 18:37:36.437239: I Test Fold 0 - Validation Fold 0
+2023-12-07 18:37:36.618446: I Statistics	Users:	1369	Items:	786	Transactions:	9187	Sparsity:	0.9914621656936491
+2023-12-07 18:37:41.749828: I Training begun for LightGCN
+
+2023-12-07 18:37:41.749828: I Hyperparameters:
+2023-12-07 18:37:41.749828: I meta set to namespace(save_recs=True, validation_rate=2, verbose=True)
+2023-12-07 18:37:41.749828: I lr set to 0.0028462729478462134
+2023-12-07 18:37:41.750828: I epochs set to 2
+2023-12-07 18:37:41.750828: I factors set to 64
+2023-12-07 18:37:41.750828: I batch_size set to 64
+2023-12-07 18:37:41.750828: I l_w set to 0.06184015598288455
+2023-12-07 18:37:41.754828: I n_layers set to 3
+2023-12-07 18:37:41.754828: I seed set to 123
+2023-12-07 18:37:41.754828: I Exploration: Test Fold exploration number 1
+2023-12-07 18:37:41.754828: I Exploration: Train-Validation Fold exploration number 1
+2023-12-07 18:37:46.038930: I 
+2023-12-07 18:37:46.047949: I Validation Evaluation results
+2023-12-07 18:37:46.048947: I Cut-off: 50
+2023-12-07 18:37:46.048947: I Eval Time: 0.02703261375427246
+2023-12-07 18:37:46.048947: I Results
+2023-12-07 18:37:46.049452: I nDCGRendle2020	0.12736
+2023-12-07 18:37:46.050458: I 
+2023-12-07 18:37:46.052462: I Test Evaluation results
+2023-12-07 18:37:46.054463: I Cut-off: 50
+2023-12-07 18:37:46.056461: I Eval Time: 0.03655743598937988
+2023-12-07 18:37:46.057460: I Results
+2023-12-07 18:37:46.059965: I nDCGRendle2020	0.15893
+2023-12-07 18:37:46.206145: I Training ended for LightGCN
+2023-12-07 18:37:46.206145: I Loss:	-0.1273574454098311
+2023-12-07 18:37:46.206145: I Best Model params:	{'meta': namespace(save_recs=True, validation_rate=2, verbose=True), 'lr': 0.0028462729478462134, 'epochs': 2, 'factors': 64, 'batch_size': 64, 'l_w': 0.06184015598288455, 'n_layers': 3, 'seed': 123, 'name': 'LightGCN_seed=123_e=2_bs=64_lr=0$0028462729478462134_factors=64_l_w=0$06184015598288455_n_layers=3', 'best_iteration': 2}
+2023-12-07 18:37:46.207147: I Best Model results:	{50: {'nDCGRendle2020': 0.1589264789468551}}
+2023-12-07 18:37:46.209146: I End experiment
+2023-12-07 18:43:00.397961: I Start experiment
+2023-12-07 18:43:00.428498: I C:\Users\zanzo\Desktop\KGTORe-main\data\facebook_book\train.tsv - Loaded
+2023-12-07 18:43:00.434005: I Test Fold 0 - Validation Fold 0
+2023-12-07 18:43:00.619212: I Statistics	Users:	1369	Items:	786	Transactions:	9187	Sparsity:	0.9914621656936491
+2023-12-07 18:43:05.049274: I Training begun for LightGCN
+
+2023-12-07 18:43:05.049274: I Hyperparameters:
+2023-12-07 18:43:05.049274: I meta set to namespace(save_recs=True, validation_rate=2, verbose=True)
+2023-12-07 18:43:05.049274: I lr set to 0.0028462729478462134
+2023-12-07 18:43:05.050276: I epochs set to 2
+2023-12-07 18:43:05.050276: I factors set to 64
+2023-12-07 18:43:05.050276: I batch_size set to 64
+2023-12-07 18:43:05.050276: I l_w set to 0.06184015598288455
+2023-12-07 18:43:05.054275: I n_layers set to 3
+2023-12-07 18:43:05.054275: I seed set to 123
+2023-12-07 18:43:05.054275: I Exploration: Test Fold exploration number 1
+2023-12-07 18:43:05.054275: I Exploration: Train-Validation Fold exploration number 1
+2023-12-07 18:43:08.344266: I 
+2023-12-07 18:43:08.356290: I Validation Evaluation results
+2023-12-07 18:43:08.357294: I Cut-off: 50
+2023-12-07 18:43:08.357294: I Eval Time: 0.02602410316467285
+2023-12-07 18:43:08.357294: I Results
+2023-12-07 18:43:08.357294: I nDCGRendle2020	0.12736
+2023-12-07 18:43:08.358295: I 
+2023-12-07 18:43:08.360294: I Test Evaluation results
+2023-12-07 18:43:08.362293: I Cut-off: 50
+2023-12-07 18:43:08.364293: I Eval Time: 0.033540964126586914
+2023-12-07 18:43:08.365796: I Results
+2023-12-07 18:43:08.366800: I nDCGRendle2020	0.15893
+2023-12-07 18:43:08.512429: I Training ended for LightGCN
+2023-12-07 18:43:08.513429: I Loss:	-0.1273574454098311
+2023-12-07 18:43:08.515430: I Best Model params:	{'meta': namespace(save_recs=True, validation_rate=2, verbose=True), 'lr': 0.0028462729478462134, 'epochs': 2, 'factors': 64, 'batch_size': 64, 'l_w': 0.06184015598288455, 'n_layers': 3, 'seed': 123, 'name': 'LightGCN_seed=123_e=2_bs=64_lr=0$0028462729478462134_factors=64_l_w=0$06184015598288455_n_layers=3', 'best_iteration': 2}
+2023-12-07 18:43:08.516944: I Best Model results:	{50: {'nDCGRendle2020': 0.1589264789468551}}
+2023-12-07 18:43:08.517953: I End experiment
+2023-12-07 19:23:01.717124: I Start experiment
+2023-12-07 19:23:01.745859: I C:\Users\zanzo\Desktop\KGTORe-main\data\facebook_book\train.tsv - Loaded
+2023-12-07 19:23:01.756820: I Test Fold 0 - Validation Fold 0
+2023-12-07 19:23:01.925902: I Statistics	Users:	1369	Items:	786	Transactions:	9187	Sparsity:	0.9914621656936491
+2023-12-07 19:23:42.344797: I Start experiment
+2023-12-07 19:23:42.377351: I C:\Users\zanzo\Desktop\KGTORe-main\data\facebook_book\train.tsv - Loaded
+2023-12-07 19:23:42.384358: I Test Fold 0 - Validation Fold 0
+2023-12-07 19:23:42.552598: I Statistics	Users:	1369	Items:	786	Transactions:	9187	Sparsity:	0.9914621656936491
+2023-12-07 19:24:18.203590: I Start experiment
+2023-12-07 19:24:18.237135: I C:\Users\zanzo\Desktop\KGTORe-main\data\facebook_book\train.tsv - Loaded
+2023-12-07 19:24:18.243649: I Test Fold 0 - Validation Fold 0
+2023-12-07 19:24:18.414431: I Statistics	Users:	1369	Items:	786	Transactions:	9187	Sparsity:	0.9914621656936491
+2023-12-07 19:24:23.297144: I Training begun for LightGCN
+
+2023-12-07 19:24:23.297144: I Hyperparameters:
+2023-12-07 19:24:23.297144: I meta set to namespace(save_recs=True, validation_rate=2, verbose=True)
+2023-12-07 19:24:23.298146: I lr set to 0.0028462729478462134
+2023-12-07 19:24:23.298146: I epochs set to 2
+2023-12-07 19:24:23.298146: I factors set to 64
+2023-12-07 19:24:23.298146: I batch_size set to 64
+2023-12-07 19:24:23.299146: I l_w set to 0.06184015598288455
+2023-12-07 19:24:23.302662: I n_layers set to 3
+2023-12-07 19:24:23.302662: I seed set to 123
+2023-12-07 19:24:23.302662: I Exploration: Test Fold exploration number 1
+2023-12-07 19:24:23.302662: I Exploration: Train-Validation Fold exploration number 1
+2023-12-07 19:24:26.762149: I 
+2023-12-07 19:24:26.763151: I Validation Evaluation results
+2023-12-07 19:24:26.763151: I Cut-off: 50
+2023-12-07 19:24:26.764152: I Eval Time: 0.027021408081054688
+2023-12-07 19:24:26.764152: I Results
+2023-12-07 19:24:26.765152: I nDCGRendle2020	0.12736
+2023-12-07 19:24:26.767286: I 
+2023-12-07 19:24:26.768285: I Test Evaluation results
+2023-12-07 19:24:26.770792: I Cut-off: 50
+2023-12-07 19:24:26.772797: I Eval Time: 0.03450512886047363
+2023-12-07 19:24:26.773798: I Results
+2023-12-07 19:24:26.776301: I nDCGRendle2020	0.15893
+2023-12-07 19:24:26.923867: I Training ended for LightGCN
+2023-12-07 19:24:26.923867: I Loss:	-0.1273574454098311
+2023-12-07 19:24:26.924865: I Best Model params:	{'meta': namespace(save_recs=True, validation_rate=2, verbose=True), 'lr': 0.0028462729478462134, 'epochs': 2, 'factors': 64, 'batch_size': 64, 'l_w': 0.06184015598288455, 'n_layers': 3, 'seed': 123, 'name': 'LightGCN_seed=123_e=2_bs=64_lr=0$0028462729478462134_factors=64_l_w=0$06184015598288455_n_layers=3', 'best_iteration': 2}
+2023-12-07 19:24:26.924865: I Best Model results:	{50: {'nDCGRendle2020': 0.1589264789468551}}
+2023-12-07 19:24:26.926864: I End experiment
+2023-12-07 19:41:28.862093: I Start experiment
+2023-12-07 19:41:28.892635: I C:\Users\zanzo\Desktop\KGTORe-main\data\facebook_book\train.tsv - Loaded
+2023-12-07 19:41:28.899136: I Test Fold 0 - Validation Fold 0
+2023-12-07 19:41:29.068827: I Statistics	Users:	1369	Items:	786	Transactions:	9187	Sparsity:	0.9914621656936491
+2023-12-07 19:42:41.818580: I Start experiment
+2023-12-07 19:42:41.852648: I C:\Users\zanzo\Desktop\KGTORe-main\data\facebook_book\train.tsv - Loaded
+2023-12-07 19:42:41.859153: I Test Fold 0 - Validation Fold 0
+2023-12-07 19:42:42.022849: I Statistics	Users:	1369	Items:	786	Transactions:	9187	Sparsity:	0.9914621656936491
+2023-12-07 19:43:31.557345: I Start experiment
+2023-12-07 19:43:31.591115: I C:\Users\zanzo\Desktop\KGTORe-main\data\facebook_book\train.tsv - Loaded
+2023-12-07 19:43:31.598682: I Test Fold 0 - Validation Fold 0
+2023-12-07 19:43:31.762433: I Statistics	Users:	1369	Items:	786	Transactions:	9187	Sparsity:	0.9914621656936491
+2023-12-07 19:43:36.343093: I Training begun for LightGCN
+
+2023-12-07 19:43:36.343093: I Hyperparameters:
+2023-12-07 19:43:36.343093: I meta set to namespace(save_recs=True, validation_rate=2, verbose=True)
+2023-12-07 19:43:36.343093: I lr set to 0.0028462729478462134
+2023-12-07 19:43:36.343093: I epochs set to 2
+2023-12-07 19:43:36.343093: I factors set to 64
+2023-12-07 19:43:36.343093: I batch_size set to 64
+2023-12-07 19:43:36.343093: I l_w set to 0.06184015598288455
+2023-12-07 19:43:36.348097: I n_layers set to 3
+2023-12-07 19:43:36.348097: I seed set to 123
+2023-12-07 19:43:36.348097: I Exploration: Test Fold exploration number 1
+2023-12-07 19:43:36.349018: I Exploration: Train-Validation Fold exploration number 1
+2023-12-07 19:43:39.837993: I 
+2023-12-07 19:43:39.848173: I Validation Evaluation results
+2023-12-07 19:43:39.848173: I Cut-off: 50
+2023-12-07 19:43:39.848173: I Eval Time: 0.02367234230041504
+2023-12-07 19:43:39.853194: I Results
+2023-12-07 19:43:39.853194: I nDCGRendle2020	0.12736
+2023-12-07 19:43:39.853194: I 
+2023-12-07 19:43:39.857597: I Test Evaluation results
+2023-12-07 19:43:39.859111: I Cut-off: 50
+2023-12-07 19:43:39.861089: I Eval Time: 0.03522968292236328
+2023-12-07 19:43:39.861089: I Results
+2023-12-07 19:43:39.861089: I nDCGRendle2020	0.15893
+2023-12-07 19:43:40.019275: I Training ended for LightGCN
+2023-12-07 19:43:40.019275: I Loss:	-0.1273574454098311
+2023-12-07 19:43:40.019275: I Best Model params:	{'meta': namespace(save_recs=True, validation_rate=2, verbose=True), 'lr': 0.0028462729478462134, 'epochs': 2, 'factors': 64, 'batch_size': 64, 'l_w': 0.06184015598288455, 'n_layers': 3, 'seed': 123, 'name': 'LightGCN_seed=123_e=2_bs=64_lr=0$0028462729478462134_factors=64_l_w=0$06184015598288455_n_layers=3', 'best_iteration': 2}
+2023-12-07 19:43:40.019275: I Best Model results:	{50: {'nDCGRendle2020': 0.1589264789468551}}
+2023-12-07 19:43:40.019275: I End experiment
+2023-12-07 19:51:37.158701: I Start experiment
+2023-12-07 19:51:37.192366: I C:\Users\zanzo\Desktop\KGTORe-main\data\facebook_book\train.tsv - Loaded
+2023-12-07 19:51:37.200378: I Test Fold 0 - Validation Fold 0
+2023-12-07 19:51:37.364200: I Statistics	Users:	1369	Items:	786	Transactions:	9187	Sparsity:	0.9914621656936491
+2023-12-07 19:51:42.645787: I Training begun for LightGCN
+
+2023-12-07 19:51:42.646458: I Hyperparameters:
+2023-12-07 19:51:42.646458: I meta set to namespace(save_recs=True, validation_rate=2, verbose=True)
+2023-12-07 19:51:42.646458: I lr set to 0.0028462729478462134
+2023-12-07 19:51:42.646458: I epochs set to 2
+2023-12-07 19:51:42.646458: I factors set to 64
+2023-12-07 19:51:42.646458: I batch_size set to 64
+2023-12-07 19:51:42.651963: I l_w set to 0.06184015598288455
+2023-12-07 19:51:42.651963: I n_layers set to 3
+2023-12-07 19:51:42.651963: I seed set to 123
+2023-12-07 19:51:42.651963: I Exploration: Test Fold exploration number 1
+2023-12-07 19:51:42.651963: I Exploration: Train-Validation Fold exploration number 1
+2023-12-07 19:51:46.154859: I 
+2023-12-07 19:51:46.164371: I Validation Evaluation results
+2023-12-07 19:51:46.164371: I Cut-off: 50
+2023-12-07 19:51:46.164371: I Eval Time: 0.026027679443359375
+2023-12-07 19:51:46.165372: I Results
+2023-12-07 19:51:46.166372: I nDCGRendle2020	0.12736
+2023-12-07 19:51:46.169373: I 
+2023-12-07 19:51:46.171372: I Test Evaluation results
+2023-12-07 19:51:46.172876: I Cut-off: 50
+2023-12-07 19:51:46.174884: I Eval Time: 0.03304481506347656
+2023-12-07 19:51:46.175883: I Results
+2023-12-07 19:51:46.178391: I nDCGRendle2020	0.15893
+2023-12-07 19:51:46.326624: I Training ended for LightGCN
+2023-12-07 19:51:46.326624: I Loss:	-0.1273574454098311
+2023-12-07 19:51:46.327624: I Best Model params:	{'meta': namespace(save_recs=True, validation_rate=2, verbose=True), 'lr': 0.0028462729478462134, 'epochs': 2, 'factors': 64, 'batch_size': 64, 'l_w': 0.06184015598288455, 'n_layers': 3, 'seed': 123, 'name': 'LightGCN_seed=123_e=2_bs=64_lr=0$0028462729478462134_factors=64_l_w=0$06184015598288455_n_layers=3', 'best_iteration': 2}
+2023-12-07 19:51:46.327624: I Best Model results:	{50: {'nDCGRendle2020': 0.1589264789468551}}
+2023-12-07 19:51:46.329626: I End experiment
+2023-12-07 19:55:56.899925: I Start experiment
+2023-12-07 19:55:56.930973: I C:\Users\zanzo\Desktop\KGTORe-main\data\facebook_book\train.tsv - Loaded
+2023-12-07 19:55:56.936983: I Test Fold 0 - Validation Fold 0
+2023-12-07 19:55:57.105711: I Statistics	Users:	1369	Items:	786	Transactions:	9187	Sparsity:	0.9914621656936491
+2023-12-07 19:56:01.841357: I Training begun for LightGCN
+
+2023-12-07 19:56:01.841864: I Hyperparameters:
+2023-12-07 19:56:01.841864: I meta set to namespace(save_recs=True, validation_rate=2, verbose=True)
+2023-12-07 19:56:01.841864: I lr set to 0.0028462729478462134
+2023-12-07 19:56:01.841864: I epochs set to 2
+2023-12-07 19:56:01.842871: I factors set to 64
+2023-12-07 19:56:01.842871: I batch_size set to 64
+2023-12-07 19:56:01.842871: I l_w set to 0.06184015598288455
+2023-12-07 19:56:01.845874: I n_layers set to 3
+2023-12-07 19:56:01.846878: I seed set to 123
+2023-12-07 19:56:01.846878: I Exploration: Test Fold exploration number 1
+2023-12-07 19:56:01.846878: I Exploration: Train-Validation Fold exploration number 1
+2023-12-07 19:56:05.233130: I 
+2023-12-07 19:56:05.244641: I Validation Evaluation results
+2023-12-07 19:56:05.244641: I Cut-off: 50
+2023-12-07 19:56:05.244641: I Eval Time: 0.026526212692260742
+2023-12-07 19:56:05.245643: I Results
+2023-12-07 19:56:05.246643: I nDCGRendle2020	0.12736
+2023-12-07 19:56:05.247643: I 
+2023-12-07 19:56:05.249645: I Test Evaluation results
+2023-12-07 19:56:05.252157: I Cut-off: 50
+2023-12-07 19:56:05.254163: I Eval Time: 0.03504180908203125
+2023-12-07 19:56:05.256163: I Results
+2023-12-07 19:56:05.257161: I nDCGRendle2020	0.15893
+2023-12-07 19:56:05.405878: I Training ended for LightGCN
+2023-12-07 19:56:05.406876: I Loss:	-0.1273574454098311
+2023-12-07 19:56:05.406876: I Best Model params:	{'meta': namespace(save_recs=True, validation_rate=2, verbose=True), 'lr': 0.0028462729478462134, 'epochs': 2, 'factors': 64, 'batch_size': 64, 'l_w': 0.06184015598288455, 'n_layers': 3, 'seed': 123, 'name': 'LightGCN_seed=123_e=2_bs=64_lr=0$0028462729478462134_factors=64_l_w=0$06184015598288455_n_layers=3', 'best_iteration': 2}
+2023-12-07 19:56:05.407880: I Best Model results:	{50: {'nDCGRendle2020': 0.1589264789468551}}
+2023-12-07 19:56:05.408878: I End experiment
+2023-12-07 20:00:27.094960: I Start experiment
+2023-12-07 20:00:27.129545: I C:\Users\zanzo\Desktop\KGTORe-main\data\facebook_book\train.tsv - Loaded
+2023-12-07 20:00:27.137060: I Test Fold 0 - Validation Fold 0
+2023-12-07 20:00:27.318327: I Statistics	Users:	1369	Items:	786	Transactions:	9187	Sparsity:	0.9914621656936491
+2023-12-07 20:01:42.548694: I Start experiment
+2023-12-07 20:01:42.582235: I C:\Users\zanzo\Desktop\KGTORe-main\data\facebook_book\train.tsv - Loaded
+2023-12-07 20:01:42.590750: I Test Fold 0 - Validation Fold 0
+2023-12-07 20:01:42.774043: I Statistics	Users:	1369	Items:	786	Transactions:	9187	Sparsity:	0.9914621656936491
+2023-12-07 20:47:24.243937: I Start experiment
+2023-12-07 20:47:24.292009: I C:\Users\zanzo\Desktop\KGTORe-main\data\facebook_book\train.tsv - Loaded
+2023-12-07 20:47:24.298523: I Test Fold 0 - Validation Fold 0
+2023-12-07 20:47:24.493795: I Statistics	Users:	1369	Items:	786	Transactions:	9187	Sparsity:	0.9914621656936491
+2023-12-07 20:47:31.740320: I Training begun for LightGCN
+
+2023-12-07 20:47:31.740320: I Hyperparameters:
+2023-12-07 20:47:31.740320: I meta set to namespace(save_recs=True, validation_rate=2, verbose=True)
+2023-12-07 20:47:31.741318: I lr set to 0.0028462729478462134
+2023-12-07 20:47:31.741318: I epochs set to 2
+2023-12-07 20:47:31.741318: I factors set to 64
+2023-12-07 20:47:31.742319: I batch_size set to 64
+2023-12-07 20:47:31.743823: I l_w set to 0.06184015598288455
+2023-12-07 20:47:31.743823: I n_layers set to 3
+2023-12-07 20:47:31.743823: I seed set to 123
+2023-12-07 20:47:31.743823: I Exploration: Test Fold exploration number 1
+2023-12-07 20:47:31.743823: I Exploration: Train-Validation Fold exploration number 1
+2023-12-07 20:47:35.130832: I 
+2023-12-07 20:47:35.139346: I Validation Evaluation results
+2023-12-07 20:47:35.140347: I Cut-off: 50
+2023-12-07 20:47:35.140347: I Eval Time: 0.02803659439086914
+2023-12-07 20:47:35.140347: I Results
+2023-12-07 20:47:35.142347: I nDCGRendle2020	0.12736
+2023-12-07 20:47:35.147863: I 
+2023-12-07 20:47:35.149862: I Test Evaluation results
+2023-12-07 20:47:35.151862: I Cut-off: 50
+2023-12-07 20:47:35.154371: I Eval Time: 0.034548044204711914
+2023-12-07 20:47:35.156377: I Results
+2023-12-07 20:47:35.158377: I nDCGRendle2020	0.15893
+2023-12-07 20:47:35.321635: I Training ended for LightGCN
+2023-12-07 20:47:35.324139: I Loss:	-0.1273574454098311
+2023-12-07 20:47:35.324139: I Best Model params:	{'meta': namespace(save_recs=True, validation_rate=2, verbose=True), 'lr': 0.0028462729478462134, 'epochs': 2, 'factors': 64, 'batch_size': 64, 'l_w': 0.06184015598288455, 'n_layers': 3, 'seed': 123, 'name': 'LightGCN_seed=123_e=2_bs=64_lr=0$0028462729478462134_factors=64_l_w=0$06184015598288455_n_layers=3', 'best_iteration': 2}
+2023-12-07 20:47:35.324139: I Best Model results:	{50: {'nDCGRendle2020': 0.1589264789468551}}
+2023-12-07 20:47:35.353697: I End experiment
+2023-12-07 20:47:48.539731: I Start experiment
+2023-12-07 20:47:48.559762: I C:\Users\zanzo\Desktop\KGTORe-main\data\facebook_book\train.tsv - Loaded
+2023-12-07 20:47:48.565272: I Test Fold 0 - Validation Fold 0
+2023-12-07 20:47:48.760045: I Statistics	Users:	1369	Items:	786	Transactions:	9187	Sparsity:	0.9914621656936491
+2023-12-07 20:47:55.055924: I Training begun for LightGCN
+
+2023-12-07 20:47:55.055924: I Hyperparameters:
+2023-12-07 20:47:55.056923: I meta set to namespace(save_recs=True, validation_rate=2, verbose=True)
+2023-12-07 20:47:55.056923: I lr set to 0.0028462729478462134
+2023-12-07 20:47:55.056923: I epochs set to 2
+2023-12-07 20:47:55.056923: I factors set to 64
+2023-12-07 20:47:55.058924: I batch_size set to 64
+2023-12-07 20:47:55.058924: I l_w set to 0.06184015598288455
+2023-12-07 20:47:55.058924: I n_layers set to 3
+2023-12-07 20:47:55.059921: I seed set to 123
+2023-12-07 20:47:55.059921: I Exploration: Test Fold exploration number 1
+2023-12-07 20:47:55.059921: I Exploration: Train-Validation Fold exploration number 1
+2023-12-07 20:47:58.318227: I 
+2023-12-07 20:47:58.323733: I Validation Evaluation results
+2023-12-07 20:47:58.323733: I Cut-off: 50
+2023-12-07 20:47:58.323733: I Eval Time: 0.026529788970947266
+2023-12-07 20:47:58.323733: I Results
+2023-12-07 20:47:58.326743: I nDCGRendle2020	0.12736
+2023-12-07 20:47:58.327743: I 
+2023-12-07 20:47:58.329744: I Test Evaluation results
+2023-12-07 20:47:58.331743: I Cut-off: 50
+2023-12-07 20:47:58.333743: I Eval Time: 0.03203272819519043
+2023-12-07 20:47:58.336255: I Results
+2023-12-07 20:47:58.338256: I nDCGRendle2020	0.15893
+2023-12-07 20:47:58.500448: I Training ended for LightGCN
+2023-12-07 20:47:58.501448: I Loss:	-0.1273574454098311
+2023-12-07 20:47:58.501448: I Best Model params:	{'meta': namespace(save_recs=True, validation_rate=2, verbose=True), 'lr': 0.0028462729478462134, 'epochs': 2, 'factors': 64, 'batch_size': 64, 'l_w': 0.06184015598288455, 'n_layers': 3, 'seed': 123, 'name': 'LightGCN_seed=123_e=2_bs=64_lr=0$0028462729478462134_factors=64_l_w=0$06184015598288455_n_layers=3', 'best_iteration': 2}
+2023-12-07 20:47:58.502449: I Best Model results:	{50: {'nDCGRendle2020': 0.1589264789468551}}
+2023-12-07 20:47:58.503953: I End experiment
+2023-12-07 20:49:00.128952: I Start experiment
+2023-12-07 20:49:00.147980: I C:\Users\zanzo\Desktop\KGTORe-main\data\facebook_book\train.tsv - Loaded
+2023-12-07 20:49:00.153482: I Test Fold 0 - Validation Fold 0
+2023-12-07 20:49:00.339688: I Statistics	Users:	1369	Items:	786	Transactions:	9187	Sparsity:	0.9914621656936491
+2023-12-07 20:49:06.573223: I Training begun for LightGCN
+
+2023-12-07 20:49:06.573223: I Hyperparameters:
+2023-12-07 20:49:06.573728: I meta set to namespace(save_recs=True, validation_rate=2, verbose=True)
+2023-12-07 20:49:06.573728: I lr set to 0.0028462729478462134
+2023-12-07 20:49:06.573728: I epochs set to 2
+2023-12-07 20:49:06.573728: I factors set to 64
+2023-12-07 20:49:06.574734: I batch_size set to 64
+2023-12-07 20:49:06.575739: I l_w set to 0.06184015598288455
+2023-12-07 20:49:06.575739: I n_layers set to 3
+2023-12-07 20:49:06.576740: I seed set to 123
+2023-12-07 20:49:06.576740: I Exploration: Test Fold exploration number 1
+2023-12-07 20:49:06.576740: I Exploration: Train-Validation Fold exploration number 1
+2023-12-07 20:49:09.902238: I 
+2023-12-07 20:49:09.912254: I Validation Evaluation results
+2023-12-07 20:49:09.913254: I Cut-off: 50
+2023-12-07 20:49:09.913254: I Eval Time: 0.027536869049072266
+2023-12-07 20:49:09.913254: I Results
+2023-12-07 20:49:09.915768: I nDCGRendle2020	0.12736
+2023-12-07 20:49:09.917768: I 
+2023-12-07 20:49:09.919768: I Test Evaluation results
+2023-12-07 20:49:09.921770: I Cut-off: 50
+2023-12-07 20:49:09.924284: I Eval Time: 0.03404664993286133
+2023-12-07 20:49:09.926290: I Results
+2023-12-07 20:49:09.928289: I nDCGRendle2020	0.15893
+2023-12-07 20:49:10.087976: I Training ended for LightGCN
+2023-12-07 20:49:10.087976: I Loss:	-0.1273574454098311
+2023-12-07 20:49:10.088976: I Best Model params:	{'meta': namespace(save_recs=True, validation_rate=2, verbose=True), 'lr': 0.0028462729478462134, 'epochs': 2, 'factors': 64, 'batch_size': 64, 'l_w': 0.06184015598288455, 'n_layers': 3, 'seed': 123, 'name': 'LightGCN_seed=123_e=2_bs=64_lr=0$0028462729478462134_factors=64_l_w=0$06184015598288455_n_layers=3', 'best_iteration': 2}
+2023-12-07 20:49:10.088976: I Best Model results:	{50: {'nDCGRendle2020': 0.1589264789468551}}
+2023-12-07 20:49:10.090977: I End experiment
+2023-12-07 20:57:24.085520: I Start experiment
+2023-12-07 20:57:24.103544: I C:\Users\zanzo\Desktop\KGTORe-main\data\facebook_book\train.tsv - Loaded
+2023-12-07 20:57:24.109549: I Test Fold 0 - Validation Fold 0
+2023-12-07 20:57:24.309816: I Statistics	Users:	1369	Items:	786	Transactions:	9187	Sparsity:	0.9914621656936491
+2023-12-07 20:57:30.413110: I Training begun for LightGCN
+
+2023-12-07 20:57:30.413110: I Hyperparameters:
+2023-12-07 20:57:30.414115: I meta set to namespace(save_recs=True, validation_rate=2, verbose=True)
+2023-12-07 20:57:30.414115: I lr set to 0.0028462729478462134
+2023-12-07 20:57:30.414115: I epochs set to 2
+2023-12-07 20:57:30.415115: I factors set to 64
+2023-12-07 20:57:30.415115: I batch_size set to 64
+2023-12-07 20:57:30.416114: I l_w set to 0.06184015598288455
+2023-12-07 20:57:30.416114: I n_layers set to 3
+2023-12-07 20:57:30.417114: I seed set to 123
+2023-12-07 20:57:30.417114: I Exploration: Test Fold exploration number 1
+2023-12-07 20:57:30.417114: I Exploration: Train-Validation Fold exploration number 1
+2023-12-07 20:57:33.583774: I 
+2023-12-07 20:57:33.595283: I Validation Evaluation results
+2023-12-07 20:57:33.595283: I Cut-off: 50
+2023-12-07 20:57:33.595283: I Eval Time: 0.02702164649963379
+2023-12-07 20:57:33.595283: I Results
+2023-12-07 20:57:33.595283: I nDCGRendle2020	0.12736
+2023-12-07 20:57:33.598284: I 
+2023-12-07 20:57:33.600285: I Test Evaluation results
+2023-12-07 20:57:33.602795: I Cut-off: 50
+2023-12-07 20:57:33.604799: I Eval Time: 0.0330348014831543
+2023-12-07 20:57:33.606798: I Results
+2023-12-07 20:57:33.608799: I nDCGRendle2020	0.15893
+2023-12-07 20:57:33.767495: I Training ended for LightGCN
+2023-12-07 20:57:33.767495: I Loss:	-0.1273574454098311
+2023-12-07 20:57:33.768493: I Best Model params:	{'meta': namespace(save_recs=True, validation_rate=2, verbose=True), 'lr': 0.0028462729478462134, 'epochs': 2, 'factors': 64, 'batch_size': 64, 'l_w': 0.06184015598288455, 'n_layers': 3, 'seed': 123, 'name': 'LightGCN_seed=123_e=2_bs=64_lr=0$0028462729478462134_factors=64_l_w=0$06184015598288455_n_layers=3', 'best_iteration': 2}
+2023-12-07 20:57:33.768493: I Best Model results:	{50: {'nDCGRendle2020': 0.1589264789468551}}
+2023-12-07 20:57:33.770493: I End experiment
+2023-12-07 21:02:48.322415: I Start experiment
+2023-12-07 21:02:48.355953: I C:\Users\zanzo\Desktop\KGTORe-main\data\facebook_book\train.tsv - Loaded
+2023-12-07 21:02:48.368466: I Test Fold 0 - Validation Fold 0
+2023-12-07 21:02:49.109716: I Statistics	Users:	1369	Items:	786	Transactions:	9187	Sparsity:	0.9914621656936491
+2023-12-07 21:02:59.766478: I Training begun for LightGCN
+
+2023-12-07 21:02:59.766478: I Hyperparameters:
+2023-12-07 21:02:59.767479: I meta set to namespace(save_recs=True, validation_rate=2, verbose=True)
+2023-12-07 21:02:59.767479: I lr set to 0.0028462729478462134
+2023-12-07 21:02:59.767479: I epochs set to 2
+2023-12-07 21:02:59.767479: I factors set to 64
+2023-12-07 21:02:59.768479: I batch_size set to 64
+2023-12-07 21:02:59.769478: I l_w set to 0.06184015598288455
+2023-12-07 21:02:59.769478: I n_layers set to 3
+2023-12-07 21:02:59.770983: I seed set to 123
+2023-12-07 21:02:59.770983: I Exploration: Test Fold exploration number 1
+2023-12-07 21:02:59.770983: I Exploration: Train-Validation Fold exploration number 1
+2023-12-07 21:03:03.617343: I 
+2023-12-07 21:03:03.648876: I Validation Evaluation results
+2023-12-07 21:03:03.680412: I Cut-off: 50
+2023-12-07 21:03:03.699440: I Eval Time: 0.1006002426147461
+2023-12-07 21:03:03.699440: I Results
+2023-12-07 21:03:03.700945: I nDCGRendle2020	0.12736
+2023-12-07 21:03:03.700945: I 
+2023-12-07 21:03:03.703955: I Test Evaluation results
+2023-12-07 21:03:03.707955: I Cut-off: 50
+2023-12-07 21:03:03.711457: I Eval Time: 0.10611605644226074
+2023-12-07 21:03:03.714466: I Results
+2023-12-07 21:03:03.718465: I nDCGRendle2020	0.15893
+2023-12-07 21:03:03.963233: I Training ended for LightGCN
+2023-12-07 21:03:03.963233: I Loss:	-0.1273574454098311
+2023-12-07 21:03:03.964238: I Best Model params:	{'meta': namespace(save_recs=True, validation_rate=2, verbose=True), 'lr': 0.0028462729478462134, 'epochs': 2, 'factors': 64, 'batch_size': 64, 'l_w': 0.06184015598288455, 'n_layers': 3, 'seed': 123, 'name': 'LightGCN_seed=123_e=2_bs=64_lr=0$0028462729478462134_factors=64_l_w=0$06184015598288455_n_layers=3', 'best_iteration': 2}
+2023-12-07 21:03:03.964238: I Best Model results:	{50: {'nDCGRendle2020': 0.1589264789468551}}
+2023-12-07 21:03:03.969237: I End experiment
+2023-12-08 11:09:44.527636: I Start experiment
+2023-12-08 11:09:44.560175: I C:\Users\zanzo\Desktop\KGTORe-main\data\facebook_book\train.tsv - Loaded
+2023-12-08 11:09:44.571687: I Test Fold 0 - Validation Fold 0
+2023-12-08 11:09:44.781670: I Statistics	Users:	1369	Items:	786	Transactions:	9187	Sparsity:	0.9914621656936491
+2023-12-08 11:09:53.928447: I Training begun for LightGCN
+
+2023-12-08 11:09:53.929448: I Hyperparameters:
+2023-12-08 11:09:53.929448: I meta set to namespace(save_recs=True, validation_rate=2, verbose=True)
+2023-12-08 11:09:53.929448: I lr set to 0.0028462729478462134
+2023-12-08 11:09:53.929448: I epochs set to 2
+2023-12-08 11:09:53.930448: I factors set to 64
+2023-12-08 11:09:53.930448: I batch_size set to 64
+2023-12-08 11:09:53.933460: I l_w set to 0.06184015598288455
+2023-12-08 11:09:53.933460: I n_layers set to 3
+2023-12-08 11:09:53.933460: I seed set to 123
+2023-12-08 11:09:53.933460: I Exploration: Test Fold exploration number 1
+2023-12-08 11:09:53.933460: I Exploration: Train-Validation Fold exploration number 1
+2023-12-08 11:09:57.473724: I 
+2023-12-08 11:09:57.485238: I Validation Evaluation results
+2023-12-08 11:09:57.485238: I Cut-off: 50
+2023-12-08 11:09:57.486243: I Eval Time: 0.027022123336791992
+2023-12-08 11:09:57.489243: I Results
+2023-12-08 11:09:57.490243: I nDCGRendle2020	0.12736
+2023-12-08 11:09:57.492242: I 
+2023-12-08 11:09:57.493747: I Test Evaluation results
+2023-12-08 11:09:57.495758: I Cut-off: 50
+2023-12-08 11:09:57.497757: I Eval Time: 0.03403759002685547
+2023-12-08 11:09:57.499756: I Results
+2023-12-08 11:09:57.501755: I nDCGRendle2020	0.15893
+2023-12-08 11:09:57.656920: I Training ended for LightGCN
+2023-12-08 11:09:57.656920: I Loss:	-0.1273574454098311
+2023-12-08 11:09:57.657920: I Best Model params:	{'meta': namespace(save_recs=True, validation_rate=2, verbose=True), 'lr': 0.0028462729478462134, 'epochs': 2, 'factors': 64, 'batch_size': 64, 'l_w': 0.06184015598288455, 'n_layers': 3, 'seed': 123, 'name': 'LightGCN_seed=123_e=2_bs=64_lr=0$0028462729478462134_factors=64_l_w=0$06184015598288455_n_layers=3', 'best_iteration': 2}
+2023-12-08 11:09:57.657920: I Best Model results:	{50: {'nDCGRendle2020': 0.1589264789468551}}
+2023-12-08 11:09:57.659920: I End experiment
+2023-12-11 15:16:00.659265: I Start experiment
+2023-12-11 15:16:00.704439: I C:\Users\zanzo\Desktop\KGTORe-main\data\facebook_book\train.tsv - Loaded
+2023-12-11 15:16:00.720959: I Test Fold 0 - Validation Fold 0
+2023-12-11 15:16:01.460992: I Statistics	Users:	1369	Items:	786	Transactions:	9187	Sparsity:	0.9914621656936491
+2023-12-11 15:16:15.386820: I Training begun for LightGCN
+
+2023-12-11 15:16:15.387821: I Hyperparameters:
+2023-12-11 15:16:15.387821: I meta set to namespace(save_recs=True, validation_rate=2, verbose=True)
+2023-12-11 15:16:15.387821: I lr set to 0.0028462729478462134
+2023-12-11 15:16:15.387821: I epochs set to 2
+2023-12-11 15:16:15.388820: I factors set to 64
+2023-12-11 15:16:15.388820: I batch_size set to 64
+2023-12-11 15:16:15.391820: I l_w set to 0.06184015598288455
+2023-12-11 15:16:15.391820: I n_layers set to 3
+2023-12-11 15:16:15.391820: I seed set to 123
+2023-12-11 15:16:15.391820: I Exploration: Test Fold exploration number 1
+2023-12-11 15:16:15.391820: I Exploration: Train-Validation Fold exploration number 1
+2023-12-11 15:16:19.716088: I 
+2023-12-11 15:16:19.746625: I Validation Evaluation results
+2023-12-11 15:16:19.793389: I Cut-off: 50
+2023-12-11 15:16:19.796015: I Eval Time: 0.10281610488891602
+2023-12-11 15:16:19.796015: I Results
+2023-12-11 15:16:19.797014: I nDCGRendle2020	0.12736
+2023-12-11 15:16:19.797014: I 
+2023-12-11 15:16:19.800157: I Test Evaluation results
+2023-12-11 15:16:19.803661: I Cut-off: 50
+2023-12-11 15:16:19.806670: I Eval Time: 0.10152554512023926
+2023-12-11 15:16:19.810669: I Results
+2023-12-11 15:16:19.813171: I nDCGRendle2020	0.15893
+2023-12-11 15:16:20.047504: I Training ended for LightGCN
+2023-12-11 15:16:20.047504: I Loss:	-0.1273574454098311
+2023-12-11 15:16:20.047504: I Best Model params:	{'meta': namespace(save_recs=True, validation_rate=2, verbose=True), 'lr': 0.0028462729478462134, 'epochs': 2, 'factors': 64, 'batch_size': 64, 'l_w': 0.06184015598288455, 'n_layers': 3, 'seed': 123, 'name': 'LightGCN_seed=123_e=2_bs=64_lr=0$0028462729478462134_factors=64_l_w=0$06184015598288455_n_layers=3', 'best_iteration': 2}
+2023-12-11 15:16:20.047504: I Best Model results:	{50: {'nDCGRendle2020': 0.1589264789468551}}
+2023-12-11 15:16:20.054131: I End experiment
+2023-12-11 15:16:52.963194: I Start experiment
+2023-12-11 15:16:52.995898: I C:\Users\zanzo\Desktop\KGTORe-main\data\facebook_book\train.tsv - Loaded
+2023-12-11 15:16:53.006534: I Test Fold 0 - Validation Fold 0
+2023-12-11 15:16:53.774407: I Statistics	Users:	1369	Items:	786	Transactions:	9187	Sparsity:	0.9914621656936491
+2023-12-11 15:17:03.880578: I Training begun for LightGCN
+
+2023-12-11 15:17:03.881583: I Hyperparameters:
+2023-12-11 15:17:03.881583: I meta set to namespace(save_recs=True, validation_rate=2, verbose=True)
+2023-12-11 15:17:03.881583: I lr set to 0.0028462729478462134
+2023-12-11 15:17:03.881583: I epochs set to 2
+2023-12-11 15:17:03.882583: I factors set to 64
+2023-12-11 15:17:03.882583: I batch_size set to 64
+2023-12-11 15:17:03.884588: I l_w set to 0.06184015598288455
+2023-12-11 15:17:03.884588: I n_layers set to 3
+2023-12-11 15:17:03.884588: I seed set to 123
+2023-12-11 15:17:03.885588: I Exploration: Test Fold exploration number 1
+2023-12-11 15:17:03.885588: I Exploration: Train-Validation Fold exploration number 1
+2023-12-11 15:17:07.716087: I 
+2023-12-11 15:17:07.778857: I Validation Evaluation results
+2023-12-11 15:17:07.791872: I Cut-off: 50
+2023-12-11 15:17:07.791872: I Eval Time: 0.09427189826965332
+2023-12-11 15:17:07.792876: I Results
+2023-12-11 15:17:07.792876: I nDCGRendle2020	0.12736
+2023-12-11 15:17:07.796007: I 
+2023-12-11 15:17:07.799010: I Test Evaluation results
+2023-12-11 15:17:07.802521: I Cut-off: 50
+2023-12-11 15:17:07.805526: I Eval Time: 0.10137343406677246
+2023-12-11 15:17:07.808524: I Results
+2023-12-11 15:17:07.812037: I nDCGRendle2020	0.15893
+2023-12-11 15:17:08.047635: I Training ended for LightGCN
+2023-12-11 15:17:08.047635: I Loss:	-0.1273574454098311
+2023-12-11 15:17:08.048840: I Best Model params:	{'meta': namespace(save_recs=True, validation_rate=2, verbose=True), 'lr': 0.0028462729478462134, 'epochs': 2, 'factors': 64, 'batch_size': 64, 'l_w': 0.06184015598288455, 'n_layers': 3, 'seed': 123, 'name': 'LightGCN_seed=123_e=2_bs=64_lr=0$0028462729478462134_factors=64_l_w=0$06184015598288455_n_layers=3', 'best_iteration': 2}
+2023-12-11 15:17:08.049099: I Best Model results:	{50: {'nDCGRendle2020': 0.1589264789468551}}
+2023-12-11 15:17:08.054488: I End experiment
+2023-12-11 15:22:36.461357: I Start experiment
+2023-12-11 15:22:36.494372: I C:\Users\zanzo\Desktop\KGTORe-main\data\facebook_book\train.tsv - Loaded
+2023-12-11 15:22:36.503881: I Test Fold 0 - Validation Fold 0
+2023-12-11 15:22:37.254463: I Statistics	Users:	1369	Items:	786	Transactions:	9187	Sparsity:	0.9914621656936491
+2023-12-11 15:22:47.657396: I Training begun for LightGCN
+
+2023-12-11 15:22:47.657396: I Hyperparameters:
+2023-12-11 15:22:47.657396: I meta set to namespace(save_recs=True, validation_rate=2, verbose=True)
+2023-12-11 15:22:47.657396: I lr set to 0.0028462729478462134
+2023-12-11 15:22:47.658398: I epochs set to 2
+2023-12-11 15:22:47.658398: I factors set to 64
+2023-12-11 15:22:47.658398: I batch_size set to 64
+2023-12-11 15:22:47.660396: I l_w set to 0.06184015598288455
+2023-12-11 15:22:47.660396: I n_layers set to 3
+2023-12-11 15:22:47.661398: I seed set to 123
+2023-12-11 15:22:47.661398: I Exploration: Test Fold exploration number 1
+2023-12-11 15:22:47.661398: I Exploration: Train-Validation Fold exploration number 1
+2023-12-11 15:22:51.553981: I 
+2023-12-11 15:22:51.585167: I Validation Evaluation results
+2023-12-11 15:22:51.595804: I Cut-off: 50
+2023-12-11 15:22:51.596803: I Eval Time: 0.09544086456298828
+2023-12-11 15:22:51.596803: I Results
+2023-12-11 15:22:51.596803: I nDCGRendle2020	0.12736
+2023-12-11 15:22:51.599803: I 
+2023-12-11 15:22:51.604314: I Test Evaluation results
+2023-12-11 15:22:51.607317: I Cut-off: 50
+2023-12-11 15:22:51.610319: I Eval Time: 0.10439705848693848
+2023-12-11 15:22:51.612821: I Results
+2023-12-11 15:22:51.615830: I nDCGRendle2020	0.15893
+2023-12-11 15:22:51.844675: I Training ended for LightGCN
+2023-12-11 15:22:51.845676: I Loss:	-0.1273574454098311
+2023-12-11 15:22:51.845676: I Best Model params:	{'meta': namespace(save_recs=True, validation_rate=2, verbose=True), 'lr': 0.0028462729478462134, 'epochs': 2, 'factors': 64, 'batch_size': 64, 'l_w': 0.06184015598288455, 'n_layers': 3, 'seed': 123, 'name': 'LightGCN_seed=123_e=2_bs=64_lr=0$0028462729478462134_factors=64_l_w=0$06184015598288455_n_layers=3', 'best_iteration': 2}
+2023-12-11 15:22:51.845676: I Best Model results:	{50: {'nDCGRendle2020': 0.1589264789468551}}
+2023-12-11 15:22:51.850676: I End experiment
+2023-12-11 15:32:31.739472: I Start experiment
+2023-12-11 15:32:31.771097: I C:\Users\zanzo\Desktop\KGTORe-main\data\facebook_book\train.tsv - Loaded
+2023-12-11 15:32:31.780606: I Test Fold 0 - Validation Fold 0
+2023-12-11 15:32:32.515053: I Statistics	Users:	1369	Items:	786	Transactions:	9187	Sparsity:	0.9914621656936491
+2023-12-11 15:32:42.782011: I Training begun for LightGCN
+
+2023-12-11 15:32:42.782011: I Hyperparameters:
+2023-12-11 15:32:42.782011: I meta set to namespace(save_recs=True, validation_rate=2, verbose=True)
+2023-12-11 15:32:42.783010: I lr set to 0.0028462729478462134
+2023-12-11 15:32:42.783010: I epochs set to 2
+2023-12-11 15:32:42.783010: I factors set to 64
+2023-12-11 15:32:42.784013: I batch_size set to 64
+2023-12-11 15:32:42.785518: I l_w set to 0.06184015598288455
+2023-12-11 15:32:42.785518: I n_layers set to 3
+2023-12-11 15:32:42.786522: I seed set to 123
+2023-12-11 15:32:42.786522: I Exploration: Test Fold exploration number 1
+2023-12-11 15:32:42.786522: I Exploration: Train-Validation Fold exploration number 1
+2023-12-11 15:32:46.593127: I 
+2023-12-11 15:32:46.608383: I Validation Evaluation results
+2023-12-11 15:32:46.640007: I Cut-off: 50
+2023-12-11 15:32:46.671341: I Eval Time: 0.09406733512878418
+2023-12-11 15:32:46.692361: I Results
+2023-12-11 15:32:46.693361: I nDCGRendle2020	0.12736
+2023-12-11 15:32:46.693361: I 
+2023-12-11 15:32:46.693361: I Test Evaluation results
+2023-12-11 15:32:46.696962: I Cut-off: 50
+2023-12-11 15:32:46.700289: I Eval Time: 0.1127481460571289
+2023-12-11 15:32:46.703337: I Results
+2023-12-11 15:32:46.706851: I nDCGRendle2020	0.15893
+2023-12-11 15:32:46.948684: I Training ended for LightGCN
+2023-12-11 15:32:46.948684: I Loss:	-0.1273574454098311
+2023-12-11 15:32:46.948684: I Best Model params:	{'meta': namespace(save_recs=True, validation_rate=2, verbose=True), 'lr': 0.0028462729478462134, 'epochs': 2, 'factors': 64, 'batch_size': 64, 'l_w': 0.06184015598288455, 'n_layers': 3, 'seed': 123, 'name': 'LightGCN_seed=123_e=2_bs=64_lr=0$0028462729478462134_factors=64_l_w=0$06184015598288455_n_layers=3', 'best_iteration': 2}
+2023-12-11 15:32:46.949686: I Best Model results:	{50: {'nDCGRendle2020': 0.1589264789468551}}
+2023-12-11 15:32:46.953685: I End experiment
+2023-12-11 15:54:11.460129: I Start experiment
+2023-12-11 15:54:11.492833: I C:\Users\zanzo\Desktop\KGTORe-main\data\facebook_book\train.tsv - Loaded
+2023-12-11 15:54:11.502531: I Test Fold 0 - Validation Fold 0
+2023-12-11 15:54:12.237097: I Statistics	Users:	1369	Items:	786	Transactions:	9187	Sparsity:	0.9914621656936491
+2023-12-11 15:54:22.425851: I Training begun for LightGCN
+
+2023-12-11 15:54:22.426856: I Hyperparameters:
+2023-12-11 15:54:22.426856: I meta set to namespace(save_recs=True, validation_rate=2, verbose=True)
+2023-12-11 15:54:22.426856: I lr set to 0.0028462729478462134
+2023-12-11 15:54:22.427859: I epochs set to 2
+2023-12-11 15:54:22.427859: I factors set to 64
+2023-12-11 15:54:22.427859: I batch_size set to 64
+2023-12-11 15:54:22.429859: I l_w set to 0.06184015598288455
+2023-12-11 15:54:22.429859: I n_layers set to 3
+2023-12-11 15:54:22.429859: I seed set to 123
+2023-12-11 15:54:22.430861: I Exploration: Test Fold exploration number 1
+2023-12-11 15:54:22.430861: I Exploration: Train-Validation Fold exploration number 1
+2023-12-11 16:03:46.995436: I Start experiment
+2023-12-11 16:03:47.023115: I C:\Users\zanzo\Desktop\KGTORe-main\data\facebook_book\train.tsv - Loaded
+2023-12-11 16:03:47.037450: I Test Fold 0 - Validation Fold 0
+2023-12-11 16:03:47.775256: I Statistics	Users:	1369	Items:	786	Transactions:	9187	Sparsity:	0.9914621656936491
+2023-12-11 16:03:58.124014: I Training begun for LightGCN
+
+2023-12-11 16:03:58.124014: I Hyperparameters:
+2023-12-11 16:03:58.124014: I meta set to namespace(save_recs=True, validation_rate=2, verbose=True)
+2023-12-11 16:03:58.124014: I lr set to 0.0028462729478462134
+2023-12-11 16:03:58.124014: I epochs set to 2
+2023-12-11 16:03:58.124014: I factors set to 64
+2023-12-11 16:03:58.124014: I batch_size set to 64
+2023-12-11 16:03:58.124014: I l_w set to 0.06184015598288455
+2023-12-11 16:03:58.124014: I n_layers set to 3
+2023-12-11 16:03:58.124014: I seed set to 123
+2023-12-11 16:03:58.124014: I Exploration: Test Fold exploration number 1
+2023-12-11 16:03:58.124014: I Exploration: Train-Validation Fold exploration number 1
+2023-12-11 16:04:01.983462: I 
+2023-12-11 16:04:02.028498: I Validation Evaluation results
+2023-12-11 16:04:02.057044: I Cut-off: 50
+2023-12-11 16:04:02.057044: I Eval Time: 0.09413695335388184
+2023-12-11 16:04:02.057044: I Results
+2023-12-11 16:04:02.057044: I nDCGRendle2020	0.12736
+2023-12-11 16:04:02.057044: I 
+2023-12-11 16:04:02.057044: I Test Evaluation results
+2023-12-11 16:04:02.069547: I Cut-off: 50
+2023-12-11 16:04:02.070549: I Eval Time: 0.10483169555664062
+2023-12-11 16:04:02.070549: I Results
+2023-12-11 16:04:02.070549: I nDCGRendle2020	0.15893
+2023-12-11 16:04:02.308528: I Training ended for LightGCN
+2023-12-11 16:04:02.308528: I Loss:	-0.1273574454098311
+2023-12-11 16:04:02.308528: I Best Model params:	{'meta': namespace(save_recs=True, validation_rate=2, verbose=True), 'lr': 0.0028462729478462134, 'epochs': 2, 'factors': 64, 'batch_size': 64, 'l_w': 0.06184015598288455, 'n_layers': 3, 'seed': 123, 'name': 'LightGCN_seed=123_e=2_bs=64_lr=0$0028462729478462134_factors=64_l_w=0$06184015598288455_n_layers=3', 'best_iteration': 2}
+2023-12-11 16:04:02.308528: I Best Model results:	{50: {'nDCGRendle2020': 0.1589264789468551}}
+2023-12-11 16:04:02.308528: I End experiment
+2023-12-11 16:11:32.711816: I Start experiment
+2023-12-11 16:11:32.738186: I C:\Users\zanzo\Desktop\KGTORe-main\data\facebook_book\train.tsv - Loaded
+2023-12-11 16:11:32.753709: I Test Fold 0 - Validation Fold 0
+2023-12-11 16:11:33.464297: I Statistics	Users:	1369	Items:	786	Transactions:	9187	Sparsity:	0.9914621656936491
+2023-12-11 16:11:43.553493: I Training begun for LightGCN
+
+2023-12-11 16:11:43.553493: I Hyperparameters:
+2023-12-11 16:11:43.553493: I meta set to namespace(save_recs=True, validation_rate=2, verbose=True)
+2023-12-11 16:11:43.553493: I lr set to 0.0028462729478462134
+2023-12-11 16:11:43.553493: I epochs set to 2
+2023-12-11 16:11:43.553493: I factors set to 64
+2023-12-11 16:11:43.553493: I batch_size set to 64
+2023-12-11 16:11:43.553493: I l_w set to 0.06184015598288455
+2023-12-11 16:11:43.553493: I n_layers set to 3
+2023-12-11 16:11:43.553493: I seed set to 123
+2023-12-11 16:11:43.553493: I Exploration: Test Fold exploration number 1
+2023-12-11 16:11:43.553493: I Exploration: Train-Validation Fold exploration number 1
+2023-12-11 16:12:50.019898: I Start experiment
+2023-12-11 16:12:50.059569: I C:\Users\zanzo\Desktop\KGTORe-main\data\facebook_book\train.tsv - Loaded
+2023-12-11 16:12:50.059569: I Test Fold 0 - Validation Fold 0
+2023-12-11 16:12:50.807294: I Statistics	Users:	1369	Items:	786	Transactions:	9187	Sparsity:	0.9914621656936491
+2023-12-11 16:13:01.316869: I Training begun for LightGCN
+
+2023-12-11 16:13:01.317869: I Hyperparameters:
+2023-12-11 16:13:01.317869: I meta set to namespace(save_recs=True, validation_rate=2, verbose=True)
+2023-12-11 16:13:01.317869: I lr set to 0.0028462729478462134
+2023-12-11 16:13:01.318868: I epochs set to 2
+2023-12-11 16:13:01.318868: I factors set to 64
+2023-12-11 16:13:01.319868: I batch_size set to 64
+2023-12-11 16:13:01.320868: I l_w set to 0.06184015598288455
+2023-12-11 16:13:01.321867: I n_layers set to 3
+2023-12-11 16:13:01.321867: I seed set to 123
+2023-12-11 16:13:01.321867: I Exploration: Test Fold exploration number 1
+2023-12-11 16:13:01.322870: I Exploration: Train-Validation Fold exploration number 1
+2023-12-11 16:13:06.191973: I 
+2023-12-11 16:13:06.202485: I Validation Evaluation results
+2023-12-11 16:13:06.212992: I Cut-off: 50
+2023-12-11 16:13:06.224006: I Eval Time: 0.10762882232666016
+2023-12-11 16:13:06.234017: I Results
+2023-12-11 16:13:06.244524: I nDCGRendle2020	0.12736
+2023-12-11 16:13:06.290074: I 
+2023-12-11 16:13:06.291074: I Test Evaluation results
+2023-12-11 16:13:06.291074: I Cut-off: 50
+2023-12-11 16:13:06.294578: I Eval Time: 0.10760951042175293
+2023-12-11 16:13:06.298580: I Results
+2023-12-11 16:13:06.301582: I nDCGRendle2020	0.15893
+2023-12-11 16:13:06.570443: I Training ended for LightGCN
+2023-12-11 16:13:06.571443: I Loss:	-0.1273574454098311
+2023-12-11 16:13:06.572444: I Best Model params:	{'meta': namespace(save_recs=True, validation_rate=2, verbose=True), 'lr': 0.0028462729478462134, 'epochs': 2, 'factors': 64, 'batch_size': 64, 'l_w': 0.06184015598288455, 'n_layers': 3, 'seed': 123, 'name': 'LightGCN_seed=123_e=2_bs=64_lr=0$0028462729478462134_factors=64_l_w=0$06184015598288455_n_layers=3', 'best_iteration': 2}
+2023-12-11 16:13:06.572444: I Best Model results:	{50: {'nDCGRendle2020': 0.1589264789468551}}
+2023-12-11 16:13:06.578969: I End experiment
+2023-12-11 16:22:23.354782: I Start experiment
+2023-12-11 16:22:23.392897: I C:\Users\zanzo\Desktop\KGTORe-main\data\facebook_book\train.tsv - Loaded
+2023-12-11 16:22:23.403419: I Test Fold 0 - Validation Fold 0
+2023-12-11 16:22:24.204775: I Statistics	Users:	1369	Items:	786	Transactions:	9187	Sparsity:	0.9914621656936491
+2023-12-11 16:22:36.210265: I Training begun for LightGCN
+
+2023-12-11 16:22:36.211265: I Hyperparameters:
+2023-12-11 16:22:36.211265: I meta set to namespace(save_recs=True, validation_rate=2, verbose=True)
+2023-12-11 16:22:36.211265: I lr set to 0.0028462729478462134
+2023-12-11 16:22:36.212266: I epochs set to 2
+2023-12-11 16:22:36.212266: I factors set to 64
+2023-12-11 16:22:36.212266: I batch_size set to 64
+2023-12-11 16:22:36.214496: I l_w set to 0.06184015598288455
+2023-12-11 16:22:36.214774: I n_layers set to 3
+2023-12-11 16:22:36.214774: I seed set to 123
+2023-12-11 16:22:36.214774: I Exploration: Test Fold exploration number 1
+2023-12-11 16:22:36.214774: I Exploration: Train-Validation Fold exploration number 1
+2023-12-11 16:22:40.345765: I 
+2023-12-11 16:22:40.376538: I Validation Evaluation results
+2023-12-11 16:22:40.408621: I Cut-off: 50
+2023-12-11 16:22:40.431684: I Eval Time: 0.10674905776977539
+2023-12-11 16:22:40.431684: I Results
+2023-12-11 16:22:40.433707: I nDCGRendle2020	0.12736
+2023-12-11 16:22:40.434442: I 
+2023-12-11 16:22:40.438217: I Test Evaluation results
+2023-12-11 16:22:40.441221: I Cut-off: 50
+2023-12-11 16:22:40.444728: I Eval Time: 0.11657166481018066
+2023-12-11 16:22:40.446733: I Results
+2023-12-11 16:22:40.451244: I nDCGRendle2020	0.15893
+2023-12-11 16:22:40.705089: I Training ended for LightGCN
+2023-12-11 16:22:40.705089: I Loss:	-0.1273574454098311
+2023-12-11 16:22:40.706091: I Best Model params:	{'meta': namespace(save_recs=True, validation_rate=2, verbose=True), 'lr': 0.0028462729478462134, 'epochs': 2, 'factors': 64, 'batch_size': 64, 'l_w': 0.06184015598288455, 'n_layers': 3, 'seed': 123, 'name': 'LightGCN_seed=123_e=2_bs=64_lr=0$0028462729478462134_factors=64_l_w=0$06184015598288455_n_layers=3', 'best_iteration': 2}
+2023-12-11 16:22:40.706091: I Best Model results:	{50: {'nDCGRendle2020': 0.1589264789468551}}
+2023-12-11 16:22:40.710596: I End experiment
+2023-12-11 16:26:51.943093: I Start experiment
+2023-12-11 16:26:51.975683: I C:\Users\zanzo\Desktop\KGTORe-main\data\facebook_book\train.tsv - Loaded
+2023-12-11 16:26:51.985701: I Test Fold 0 - Validation Fold 0
+2023-12-11 16:26:52.733621: I Statistics	Users:	1369	Items:	786	Transactions:	9187	Sparsity:	0.9914621656936491
+2023-12-11 16:27:03.076877: I Training begun for LightGCN
+
+2023-12-11 16:27:03.076877: I Hyperparameters:
+2023-12-11 16:27:03.076877: I meta set to namespace(save_recs=True, validation_rate=2, verbose=True)
+2023-12-11 16:27:03.077881: I lr set to 0.0028462729478462134
+2023-12-11 16:27:03.077881: I epochs set to 2
+2023-12-11 16:27:03.077881: I factors set to 64
+2023-12-11 16:27:03.077881: I batch_size set to 64
+2023-12-11 16:27:03.079885: I l_w set to 0.06184015598288455
+2023-12-11 16:27:03.080885: I n_layers set to 3
+2023-12-11 16:27:03.080885: I seed set to 123
+2023-12-11 16:27:03.080885: I Exploration: Test Fold exploration number 1
+2023-12-11 16:27:03.080885: I Exploration: Train-Validation Fold exploration number 1
+2023-12-11 16:27:07.016831: I 
+2023-12-11 16:27:07.048402: I Validation Evaluation results
+2023-12-11 16:27:07.079976: I Cut-off: 50
+2023-12-11 16:27:07.101020: I Eval Time: 0.09718728065490723
+2023-12-11 16:27:07.101020: I Results
+2023-12-11 16:27:07.101020: I nDCGRendle2020	0.12736
+2023-12-11 16:27:07.102021: I 
+2023-12-11 16:27:07.105037: I Test Evaluation results
+2023-12-11 16:27:07.108540: I Cut-off: 50
+2023-12-11 16:27:07.111544: I Eval Time: 0.10472702980041504
+2023-12-11 16:27:07.115558: I Results
+2023-12-11 16:27:07.118066: I nDCGRendle2020	0.15893
+2023-12-11 16:27:07.358645: I Training ended for LightGCN
+2023-12-11 16:27:07.358645: I Loss:	-0.1273574454098311
+2023-12-11 16:27:07.358645: I Best Model params:	{'meta': namespace(save_recs=True, validation_rate=2, verbose=True), 'lr': 0.0028462729478462134, 'epochs': 2, 'factors': 64, 'batch_size': 64, 'l_w': 0.06184015598288455, 'n_layers': 3, 'seed': 123, 'name': 'LightGCN_seed=123_e=2_bs=64_lr=0$0028462729478462134_factors=64_l_w=0$06184015598288455_n_layers=3', 'best_iteration': 2}
+2023-12-11 16:27:07.359652: I Best Model results:	{50: {'nDCGRendle2020': 0.1589264789468551}}
+2023-12-11 16:27:07.364162: I End experiment
+2023-12-11 16:35:13.700743: I Start experiment
+2023-12-11 16:35:13.734316: I C:\Users\zanzo\Desktop\KGTORe-main\data\facebook_book\train.tsv - Loaded
+2023-12-11 16:35:13.742832: I Test Fold 0 - Validation Fold 0
+2023-12-11 16:35:14.486597: I Statistics	Users:	1369	Items:	786	Transactions:	9187	Sparsity:	0.9914621656936491
+2023-12-11 16:35:24.790246: I Training begun for LightGCN
+
+2023-12-11 16:35:24.791248: I Hyperparameters:
+2023-12-11 16:35:24.791248: I meta set to namespace(save_recs=True, validation_rate=2, verbose=True)
+2023-12-11 16:35:24.791248: I lr set to 0.0028462729478462134
+2023-12-11 16:35:24.792248: I epochs set to 2
+2023-12-11 16:35:24.792248: I factors set to 64
+2023-12-11 16:35:24.792248: I batch_size set to 64
+2023-12-11 16:35:24.794246: I l_w set to 0.06184015598288455
+2023-12-11 16:35:24.794749: I n_layers set to 3
+2023-12-11 16:35:24.794749: I seed set to 123
+2023-12-11 16:35:24.794749: I Exploration: Test Fold exploration number 1
+2023-12-11 16:35:24.794749: I Exploration: Train-Validation Fold exploration number 1
+2023-12-11 16:35:28.644234: I 
+2023-12-11 16:35:28.675335: I Validation Evaluation results
+2023-12-11 16:35:28.706904: I Cut-off: 50
+2023-12-11 16:35:28.724951: I Eval Time: 0.10517168045043945
+2023-12-11 16:35:28.725952: I Results
+2023-12-11 16:35:28.725952: I nDCGRendle2020	0.12736
+2023-12-11 16:35:28.726952: I 
+2023-12-11 16:35:28.726952: I Test Evaluation results
+2023-12-11 16:35:28.731959: I Cut-off: 50
+2023-12-11 16:35:28.735466: I Eval Time: 0.10626935958862305
+2023-12-11 16:35:28.738980: I Results
+2023-12-11 16:35:28.741492: I nDCGRendle2020	0.15893
+2023-12-11 16:35:28.981465: I Training ended for LightGCN
+2023-12-11 16:35:28.981465: I Loss:	-0.1273574454098311
+2023-12-11 16:35:28.982467: I Best Model params:	{'meta': namespace(save_recs=True, validation_rate=2, verbose=True), 'lr': 0.0028462729478462134, 'epochs': 2, 'factors': 64, 'batch_size': 64, 'l_w': 0.06184015598288455, 'n_layers': 3, 'seed': 123, 'name': 'LightGCN_seed=123_e=2_bs=64_lr=0$0028462729478462134_factors=64_l_w=0$06184015598288455_n_layers=3', 'best_iteration': 2}
+2023-12-11 16:35:28.982467: I Best Model results:	{50: {'nDCGRendle2020': 0.1589264789468551}}
+2023-12-11 16:35:28.986976: I End experiment
+2023-12-11 17:06:18.478836: I Start experiment
+2023-12-11 17:06:18.510402: I C:\Users\zanzo\Desktop\KGTORe-main\data\facebook_book\train.tsv - Loaded
+2023-12-11 17:06:18.520923: I Test Fold 0 - Validation Fold 0
+2023-12-11 17:06:19.267838: I Statistics	Users:	1369	Items:	786	Transactions:	9187	Sparsity:	0.9914621656936491
+2023-12-11 17:06:29.557757: I Training begun for LightGCN
+
+2023-12-11 17:06:29.558261: I Hyperparameters:
+2023-12-11 17:06:29.558261: I meta set to namespace(save_recs=True, validation_rate=2, verbose=True)
+2023-12-11 17:06:29.558261: I lr set to 0.0028462729478462134
+2023-12-11 17:06:29.559265: I epochs set to 2
+2023-12-11 17:06:29.559265: I factors set to 64
+2023-12-11 17:06:29.559265: I batch_size set to 64
+2023-12-11 17:06:29.561265: I l_w set to 0.06184015598288455
+2023-12-11 17:06:29.562265: I n_layers set to 3
+2023-12-11 17:06:29.562265: I seed set to 123
+2023-12-11 17:06:29.562265: I Exploration: Test Fold exploration number 1
+2023-12-11 17:06:29.562265: I Exploration: Train-Validation Fold exploration number 1
+2023-12-11 17:06:33.299512: I 
+2023-12-11 17:06:33.330569: I Validation Evaluation results
+2023-12-11 17:06:33.362135: I Cut-off: 50
+2023-12-11 17:06:33.374155: I Eval Time: 0.09867978096008301
+2023-12-11 17:06:33.375160: I Results
+2023-12-11 17:06:33.375160: I nDCGRendle2020	0.12736
+2023-12-11 17:06:33.375160: I 
+2023-12-11 17:06:33.379177: I Test Evaluation results
+2023-12-11 17:06:33.382178: I Cut-off: 50
+2023-12-11 17:06:33.385688: I Eval Time: 0.10268783569335938
+2023-12-11 17:06:33.388700: I Results
+2023-12-11 17:06:33.391699: I nDCGRendle2020	0.15893
+2023-12-11 17:06:33.629654: I Training ended for LightGCN
+2023-12-11 17:06:33.630655: I Loss:	-0.1273574454098311
+2023-12-11 17:06:33.630655: I Best Model params:	{'meta': namespace(save_recs=True, validation_rate=2, verbose=True), 'lr': 0.0028462729478462134, 'epochs': 2, 'factors': 64, 'batch_size': 64, 'l_w': 0.06184015598288455, 'n_layers': 3, 'seed': 123, 'name': 'LightGCN_seed=123_e=2_bs=64_lr=0$0028462729478462134_factors=64_l_w=0$06184015598288455_n_layers=3', 'best_iteration': 2}
+2023-12-11 17:06:33.630655: I Best Model results:	{50: {'nDCGRendle2020': 0.1589264789468551}}
+2023-12-11 17:06:33.635167: I End experiment
+2023-12-11 17:37:01.070831: I Start experiment
+2023-12-11 17:37:01.106895: I C:\Users\zanzo\Desktop\KGTORe-main\data\facebook_book\train.tsv - Loaded
+2023-12-11 17:37:01.117407: I Test Fold 0 - Validation Fold 0
+2023-12-11 17:37:01.869734: I Statistics	Users:	1369	Items:	786	Transactions:	9187	Sparsity:	0.9914621656936491
+2023-12-11 17:37:12.520581: I Training begun for LightGCN
+
+2023-12-11 17:37:12.520581: I Hyperparameters:
+2023-12-11 17:37:12.520581: I meta set to namespace(save_recs=True, validation_rate=2, verbose=True)
+2023-12-11 17:37:12.522085: I lr set to 0.0028462729478462134
+2023-12-11 17:37:12.522085: I epochs set to 2
+2023-12-11 17:37:12.522085: I factors set to 64
+2023-12-11 17:37:12.523089: I batch_size set to 64
+2023-12-11 17:37:12.524090: I l_w set to 0.06184015598288455
+2023-12-11 17:37:12.525093: I n_layers set to 3
+2023-12-11 17:37:12.525093: I seed set to 123
+2023-12-11 17:37:12.525093: I Exploration: Test Fold exploration number 1
+2023-12-11 17:37:12.526095: I Exploration: Train-Validation Fold exploration number 1
+2023-12-11 17:37:16.603916: I 
+2023-12-11 17:37:16.635458: I Validation Evaluation results
+2023-12-11 17:37:16.666515: I Cut-off: 50
+2023-12-11 17:37:16.686549: I Eval Time: 0.10810470581054688
+2023-12-11 17:37:16.686549: I Results
+2023-12-11 17:37:16.686549: I nDCGRendle2020	0.12736
+2023-12-11 17:37:16.687550: I 
+2023-12-11 17:37:16.687550: I Test Evaluation results
+2023-12-11 17:37:16.690549: I Cut-off: 50
+2023-12-11 17:37:16.695068: I Eval Time: 0.11016154289245605
+2023-12-11 17:37:16.699064: I Results
+2023-12-11 17:37:16.702568: I nDCGRendle2020	0.15893
+2023-12-11 17:37:16.958412: I Training ended for LightGCN
+2023-12-11 17:37:16.958412: I Loss:	-0.1273574454098311
+2023-12-11 17:37:16.959415: I Best Model params:	{'meta': namespace(save_recs=True, validation_rate=2, verbose=True), 'lr': 0.0028462729478462134, 'epochs': 2, 'factors': 64, 'batch_size': 64, 'l_w': 0.06184015598288455, 'n_layers': 3, 'seed': 123, 'name': 'LightGCN_seed=123_e=2_bs=64_lr=0$0028462729478462134_factors=64_l_w=0$06184015598288455_n_layers=3', 'best_iteration': 2}
+2023-12-11 17:37:16.959415: I Best Model results:	{50: {'nDCGRendle2020': 0.1589264789468551}}
+2023-12-11 17:37:16.963928: I End experiment
+2023-12-11 17:43:48.830946: I Start experiment
+2023-12-11 17:43:48.866003: I C:\Users\zanzo\Desktop\KGTORe-main\data\facebook_book\train.tsv - Loaded
+2023-12-11 17:43:48.876516: I Test Fold 0 - Validation Fold 0
+2023-12-11 17:43:49.609963: I Statistics	Users:	1369	Items:	786	Transactions:	9187	Sparsity:	0.9914621656936491
+2023-12-11 17:44:00.760706: I Training begun for LightGCN
+
+2023-12-11 17:44:00.761713: I Hyperparameters:
+2023-12-11 17:44:00.761713: I meta set to namespace(save_recs=True, validation_rate=2, verbose=True)
+2023-12-11 17:44:00.763717: I lr set to 0.0028462729478462134
+2023-12-11 17:44:00.763717: I epochs set to 2
+2023-12-11 17:44:00.764718: I factors set to 64
+2023-12-11 17:44:00.764718: I batch_size set to 64
+2023-12-11 17:44:00.764718: I l_w set to 0.06184015598288455
+2023-12-11 17:44:00.764718: I n_layers set to 3
+2023-12-11 17:44:00.765718: I seed set to 123
+2023-12-11 17:44:00.765718: I Exploration: Test Fold exploration number 1
+2023-12-11 17:44:00.765718: I Exploration: Train-Validation Fold exploration number 1
+2023-12-11 17:44:04.522790: I 
+2023-12-11 17:44:04.554340: I Validation Evaluation results
+2023-12-11 17:44:04.585402: I Cut-off: 50
+2023-12-11 17:44:04.603440: I Eval Time: 0.10209536552429199
+2023-12-11 17:44:04.604439: I Results
+2023-12-11 17:44:04.604439: I nDCGRendle2020	0.12736
+2023-12-11 17:44:04.604439: I 
+2023-12-11 17:44:04.608436: I Test Evaluation results
+2023-12-11 17:44:04.610945: I Cut-off: 50
+2023-12-11 17:44:04.614951: I Eval Time: 0.10718035697937012
+2023-12-11 17:44:04.617952: I Results
+2023-12-11 17:44:04.621458: I nDCGRendle2020	0.15893
+2023-12-11 17:44:04.888313: I Training ended for LightGCN
+2023-12-11 17:44:04.888313: I Loss:	-0.1273574454098311
+2023-12-11 17:44:04.888313: I Best Model params:	{'meta': namespace(save_recs=True, validation_rate=2, verbose=True), 'lr': 0.0028462729478462134, 'epochs': 2, 'factors': 64, 'batch_size': 64, 'l_w': 0.06184015598288455, 'n_layers': 3, 'seed': 123, 'name': 'LightGCN_seed=123_e=2_bs=64_lr=0$0028462729478462134_factors=64_l_w=0$06184015598288455_n_layers=3', 'best_iteration': 2}
+2023-12-11 17:44:04.888313: I Best Model results:	{50: {'nDCGRendle2020': 0.1589264789468551}}
+2023-12-11 17:44:04.893829: I End experiment

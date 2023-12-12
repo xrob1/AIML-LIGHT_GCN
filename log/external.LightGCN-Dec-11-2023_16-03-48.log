@@ -1,0 +1,8 @@
+2023-12-11 16:03:58.124014: I Loading parameters
+2023-12-11 16:03:58.124014: I Parameter lr set to 0.0028462729478462134
+2023-12-11 16:03:58.124014: I Parameter factors set to 64
+2023-12-11 16:03:58.124014: I Parameter l_w set to 0.06184015598288455
+2023-12-11 16:03:58.124014: I Parameter n_layers set to 3
+2023-12-11 16:04:02.057044: I Epoch 2/2 loss 891.84044
+2023-12-11 16:04:02.057044: I Writing recommendations at: C:\Users\zanzo\Desktop\KGTORe-main\results\facebook_book\recs
+2023-12-11 16:04:02.279439: I ******************************************
