@@ -1538,3 +1538,517 @@
 2023-12-11 17:44:04.888313: I Best Model params:	{'meta': namespace(save_recs=True, validation_rate=2, verbose=True), 'lr': 0.0028462729478462134, 'epochs': 2, 'factors': 64, 'batch_size': 64, 'l_w': 0.06184015598288455, 'n_layers': 3, 'seed': 123, 'name': 'LightGCN_seed=123_e=2_bs=64_lr=0$0028462729478462134_factors=64_l_w=0$06184015598288455_n_layers=3', 'best_iteration': 2}
 2023-12-11 17:44:04.888313: I Best Model results:	{50: {'nDCGRendle2020': 0.1589264789468551}}
 2023-12-11 17:44:04.893829: I End experiment
+2023-12-12 19:25:03.248488: I Start experiment
+2023-12-12 19:25:03.294603: I C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data\facebook_book\train.tsv - Loaded
+2023-12-12 19:25:03.311138: I Test Fold 0 - Validation Fold 0
+2023-12-12 19:25:04.056462: I Statistics	Users:	1369	Items:	786	Transactions:	9187	Sparsity:	0.9914621656936491
+2023-12-12 19:25:13.202275: I Training begun for LightGCN
+
+2023-12-12 19:25:13.202779: I Hyperparameters:
+2023-12-12 19:25:13.202779: I meta set to namespace(save_recs=True, validation_rate=2, verbose=True)
+2023-12-12 19:25:13.203783: I lr set to 0.0028462729478462134
+2023-12-12 19:25:13.203783: I epochs set to 2
+2023-12-12 19:25:13.203783: I factors set to 64
+2023-12-12 19:25:13.206290: I batch_size set to 64
+2023-12-12 19:25:13.206290: I l_w set to 0.06184015598288455
+2023-12-12 19:25:13.206290: I n_layers set to 3
+2023-12-12 19:25:13.207295: I seed set to 123
+2023-12-12 19:25:13.207295: I Exploration: Test Fold exploration number 1
+2023-12-12 19:25:13.207295: I Exploration: Train-Validation Fold exploration number 1
+2023-12-12 20:25:35.570061: I Start experiment
+2023-12-12 20:25:35.587078: I C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data\facebook_book\train.tsv - Loaded
+2023-12-12 20:25:35.597593: I Test Fold 0 - Validation Fold 0
+2023-12-12 20:25:36.377003: I Statistics	Users:	1369	Items:	786	Transactions:	9187	Sparsity:	0.9914621656936491
+2023-12-12 20:25:39.594283: I Training begun for LightGCN
+
+2023-12-12 20:25:39.595284: I Hyperparameters:
+2023-12-12 20:25:39.595284: I meta set to namespace(save_recs=True, validation_rate=2, verbose=True)
+2023-12-12 20:25:39.595284: I lr set to 0.0028462729478462134
+2023-12-12 20:25:39.595284: I epochs set to 2
+2023-12-12 20:25:39.595284: I factors set to 64
+2023-12-12 20:25:39.597794: I batch_size set to 64
+2023-12-12 20:25:39.598798: I l_w set to 0.06184015598288455
+2023-12-12 20:25:39.598798: I n_layers set to 3
+2023-12-12 20:25:39.598798: I seed set to 123
+2023-12-12 20:25:39.598798: I Exploration: Test Fold exploration number 1
+2023-12-12 20:25:39.599798: I Exploration: Train-Validation Fold exploration number 1
+2023-12-12 20:27:19.317034: I Start experiment
+2023-12-12 20:27:19.332557: I C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data\facebook_book\train.tsv - Loaded
+2023-12-12 20:27:19.344069: I Test Fold 0 - Validation Fold 0
+2023-12-12 20:27:20.108938: I Statistics	Users:	1369	Items:	786	Transactions:	9187	Sparsity:	0.9914621656936491
+2023-12-12 20:27:23.054058: I Training begun for LightGCN
+
+2023-12-12 20:27:23.055058: I Hyperparameters:
+2023-12-12 20:27:23.055058: I meta set to namespace(save_recs=True, validation_rate=2, verbose=True)
+2023-12-12 20:27:23.055058: I lr set to 0.0028462729478462134
+2023-12-12 20:27:23.055058: I epochs set to 2
+2023-12-12 20:27:23.056564: I factors set to 64
+2023-12-12 20:27:23.056564: I batch_size set to 64
+2023-12-12 20:27:23.058569: I l_w set to 0.06184015598288455
+2023-12-12 20:27:23.058569: I n_layers set to 3
+2023-12-12 20:27:23.059574: I seed set to 123
+2023-12-12 20:27:23.059574: I Exploration: Test Fold exploration number 1
+2023-12-12 20:27:23.060575: I Exploration: Train-Validation Fold exploration number 1
+2023-12-12 20:27:27.309207: I 
+2023-12-12 20:27:27.340745: I Validation Evaluation results
+2023-12-12 20:27:27.372286: I Cut-off: 50
+2023-12-12 20:27:27.384798: I Eval Time: 0.10511112213134766
+2023-12-12 20:27:27.384798: I Results
+2023-12-12 20:27:27.385802: I nDCGRendle2020	0.12736
+2023-12-12 20:27:27.389314: I 
+2023-12-12 20:27:27.393312: I Test Evaluation results
+2023-12-12 20:27:27.395312: I Cut-off: 50
+2023-12-12 20:27:27.396819: I Eval Time: 0.10962986946105957
+2023-12-12 20:27:27.400832: I Results
+2023-12-12 20:27:27.404829: I nDCGRendle2020	0.15893
+2023-12-12 20:27:27.665123: I Training ended for LightGCN
+2023-12-12 20:27:27.665123: I Loss:	-0.1273574454098311
+2023-12-12 20:27:27.666628: I Best Model params:	{'meta': namespace(save_recs=True, validation_rate=2, verbose=True), 'lr': 0.0028462729478462134, 'epochs': 2, 'factors': 64, 'batch_size': 64, 'l_w': 0.06184015598288455, 'n_layers': 3, 'seed': 123, 'name': 'LightGCN_seed=123_e=2_bs=64_lr=0$0028462729478462134_factors=64_l_w=0$06184015598288455_n_layers=3', 'best_iteration': 2}
+2023-12-12 20:27:27.666628: I Best Model results:	{50: {'nDCGRendle2020': 0.1589264789468551}}
+2023-12-12 20:27:27.674146: I End experiment
+2023-12-12 20:32:24.522522: I Start experiment
+2023-12-12 20:32:24.559580: I C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data\facebook_book\train.tsv - Loaded
+2023-12-12 20:32:24.572608: I Test Fold 0 - Validation Fold 0
+2023-12-12 20:32:25.334993: I Statistics	Users:	1369	Items:	786	Transactions:	9187	Sparsity:	0.9914621656936491
+2023-12-12 20:32:32.831743: I Training begun for LightGCN
+
+2023-12-12 20:32:32.831743: I Hyperparameters:
+2023-12-12 20:32:32.832743: I meta set to namespace(save_recs=True, validation_rate=2, verbose=True)
+2023-12-12 20:32:32.832743: I lr set to 0.0028462729478462134
+2023-12-12 20:32:32.832743: I epochs set to 2
+2023-12-12 20:32:32.832743: I factors set to 64
+2023-12-12 20:32:32.833743: I batch_size set to 64
+2023-12-12 20:32:32.833743: I l_w set to 0.06184015598288455
+2023-12-12 20:32:32.835743: I n_layers set to 3
+2023-12-12 20:32:32.836246: I seed set to 123
+2023-12-12 20:32:32.836246: I Exploration: Test Fold exploration number 1
+2023-12-12 20:32:32.836246: I Exploration: Train-Validation Fold exploration number 1
+2023-12-12 20:36:15.293879: I Start experiment
+2023-12-12 20:36:15.333945: I C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data\facebook_book\train.tsv - Loaded
+2023-12-12 20:36:15.347483: I Test Fold 0 - Validation Fold 0
+2023-12-12 20:36:16.115377: I Statistics	Users:	1369	Items:	786	Transactions:	9187	Sparsity:	0.9914621656936491
+2023-12-12 20:36:24.096635: I Training begun for LightGCN
+
+2023-12-12 20:36:24.097640: I Hyperparameters:
+2023-12-12 20:36:24.097640: I meta set to namespace(save_recs=True, validation_rate=2, verbose=True)
+2023-12-12 20:36:24.099640: I lr set to 0.0028462729478462134
+2023-12-12 20:36:24.099640: I epochs set to 2
+2023-12-12 20:36:24.100640: I factors set to 64
+2023-12-12 20:36:24.100640: I batch_size set to 64
+2023-12-12 20:36:24.100640: I l_w set to 0.06184015598288455
+2023-12-12 20:36:24.101651: I n_layers set to 3
+2023-12-12 20:36:24.101651: I seed set to 123
+2023-12-12 20:36:24.101651: I Exploration: Test Fold exploration number 1
+2023-12-12 20:36:24.101651: I Exploration: Train-Validation Fold exploration number 1
+2023-12-13 10:53:54.714686: I Start experiment
+2023-12-13 10:53:54.769779: I C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data\facebook_book\train.tsv - Loaded
+2023-12-13 10:53:54.786800: I Test Fold 0 - Validation Fold 0
+2023-12-13 10:53:55.601449: I Statistics	Users:	1369	Items:	786	Transactions:	9187	Sparsity:	0.9914621656936491
+2023-12-13 10:54:05.352864: I Training begun for LightGCN
+
+2023-12-13 10:54:05.352864: I Hyperparameters:
+2023-12-13 10:54:05.352864: I meta set to namespace(save_recs=True, validation_rate=2, verbose=True)
+2023-12-13 10:54:05.353865: I lr set to 0.0028462729478462134
+2023-12-13 10:54:05.353865: I epochs set to 2
+2023-12-13 10:54:05.353865: I factors set to 64
+2023-12-13 10:54:05.354865: I batch_size set to 64
+2023-12-13 10:54:05.357370: I l_w set to 0.06184015598288455
+2023-12-13 10:54:05.358374: I n_layers set to 3
+2023-12-13 10:54:05.358374: I seed set to 123
+2023-12-13 10:54:05.358374: I Exploration: Test Fold exploration number 1
+2023-12-13 10:54:05.358374: I Exploration: Train-Validation Fold exploration number 1
+2023-12-13 10:54:18.307681: I 
+2023-12-13 10:54:18.323199: I Validation Evaluation results
+2023-12-13 10:54:18.355253: I Cut-off: 50
+2023-12-13 10:54:18.368279: I Eval Time: 0.10965609550476074
+2023-12-13 10:54:18.369283: I Results
+2023-12-13 10:54:18.369283: I nDCGRendle2020	0.12736
+2023-12-13 10:54:18.369283: I 
+2023-12-13 10:54:18.373285: I Test Evaluation results
+2023-12-13 10:54:18.377797: I Cut-off: 50
+2023-12-13 10:54:18.380801: I Eval Time: 0.12318205833435059
+2023-12-13 10:54:18.384801: I Results
+2023-12-13 10:54:18.388316: I nDCGRendle2020	0.15893
+2023-12-13 10:54:18.645664: I Training ended for LightGCN
+2023-12-13 10:54:18.645664: I Loss:	-0.1273574454098311
+2023-12-13 10:54:18.646664: I Best Model params:	{'meta': namespace(save_recs=True, validation_rate=2, verbose=True), 'lr': 0.0028462729478462134, 'epochs': 2, 'factors': 64, 'batch_size': 64, 'l_w': 0.06184015598288455, 'n_layers': 3, 'seed': 123, 'name': 'LightGCN_seed=123_e=2_bs=64_lr=0$0028462729478462134_factors=64_l_w=0$06184015598288455_n_layers=3', 'best_iteration': 2}
+2023-12-13 10:54:18.646664: I Best Model results:	{50: {'nDCGRendle2020': 0.1589264789468551}}
+2023-12-13 10:54:18.653179: I End experiment
+2023-12-13 10:54:45.872312: I Start experiment
+2023-12-13 10:54:45.911889: I C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data\facebook_book\train.tsv - Loaded
+2023-12-13 10:54:45.924408: I Test Fold 0 - Validation Fold 0
+2023-12-13 10:54:46.744621: I Statistics	Users:	1369	Items:	786	Transactions:	9187	Sparsity:	0.9914621656936491
+2023-12-13 10:54:54.382793: I Training begun for LightGCN
+
+2023-12-13 10:54:54.383795: I Hyperparameters:
+2023-12-13 10:54:54.383795: I meta set to namespace(save_recs=True, validation_rate=2, verbose=True)
+2023-12-13 10:54:54.383795: I lr set to 0.0028462729478462134
+2023-12-13 10:54:54.384794: I epochs set to 2
+2023-12-13 10:54:54.384794: I factors set to 64
+2023-12-13 10:54:54.384794: I batch_size set to 64
+2023-12-13 10:54:54.386804: I l_w set to 0.06184015598288455
+2023-12-13 10:54:54.386804: I n_layers set to 3
+2023-12-13 10:54:54.387809: I seed set to 123
+2023-12-13 10:54:54.387809: I Exploration: Test Fold exploration number 1
+2023-12-13 10:54:54.387809: I Exploration: Train-Validation Fold exploration number 1
+2023-12-13 10:54:58.600783: I 
+2023-12-13 10:54:58.632318: I Validation Evaluation results
+2023-12-13 10:54:58.663855: I Cut-off: 50
+2023-12-13 10:54:58.687383: I Eval Time: 0.10511469841003418
+2023-12-13 10:54:58.688388: I Results
+2023-12-13 10:54:58.688388: I nDCGRendle2020	0.12736
+2023-12-13 10:54:58.688388: I 
+2023-12-13 10:54:58.691897: I Test Evaluation results
+2023-12-13 10:54:58.695902: I Cut-off: 50
+2023-12-13 10:54:58.699414: I Eval Time: 0.10712623596191406
+2023-12-13 10:54:58.702415: I Results
+2023-12-13 10:54:58.705415: I nDCGRendle2020	0.15893
+2023-12-13 10:54:59.004378: I Training ended for LightGCN
+2023-12-13 10:54:59.004378: I Loss:	-0.1273574454098311
+2023-12-13 10:54:59.004378: I Best Model params:	{'meta': namespace(save_recs=True, validation_rate=2, verbose=True), 'lr': 0.0028462729478462134, 'epochs': 2, 'factors': 64, 'batch_size': 64, 'l_w': 0.06184015598288455, 'n_layers': 3, 'seed': 123, 'name': 'LightGCN_seed=123_e=2_bs=64_lr=0$0028462729478462134_factors=64_l_w=0$06184015598288455_n_layers=3', 'best_iteration': 2}
+2023-12-13 10:54:59.005380: I Best Model results:	{50: {'nDCGRendle2020': 0.1589264789468551}}
+2023-12-13 10:54:59.010899: I End experiment
+2023-12-13 10:57:22.617039: I Start experiment
+2023-12-13 10:57:22.651587: I C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data\facebook_book\train.tsv - Loaded
+2023-12-13 10:57:22.663103: I Test Fold 0 - Validation Fold 0
+2023-12-13 10:57:23.411422: I Statistics	Users:	1369	Items:	786	Transactions:	9187	Sparsity:	0.9914621656936491
+2023-12-13 10:57:30.679012: I Training begun for LightGCN
+
+2023-12-13 10:57:30.679012: I Hyperparameters:
+2023-12-13 10:57:30.679012: I meta set to namespace(save_recs=True, validation_rate=2, verbose=True)
+2023-12-13 10:57:30.680013: I lr set to 0.0028462729478462134
+2023-12-13 10:57:30.680013: I epochs set to 2
+2023-12-13 10:57:30.680013: I factors set to 64
+2023-12-13 10:57:30.681013: I batch_size set to 64
+2023-12-13 10:57:30.682012: I l_w set to 0.06184015598288455
+2023-12-13 10:57:30.683013: I n_layers set to 3
+2023-12-13 10:57:30.683013: I seed set to 123
+2023-12-13 10:57:30.683013: I Exploration: Test Fold exploration number 1
+2023-12-13 10:57:30.684014: I Exploration: Train-Validation Fold exploration number 1
+2023-12-13 10:57:34.620494: I 
+2023-12-13 10:57:34.636004: I Validation Evaluation results
+2023-12-13 10:57:34.667051: I Cut-off: 50
+2023-12-13 10:57:34.699101: I Eval Time: 0.10159683227539062
+2023-12-13 10:57:34.707606: I Results
+2023-12-13 10:57:34.707606: I nDCGRendle2020	0.12736
+2023-12-13 10:57:34.707606: I 
+2023-12-13 10:57:34.707606: I Test Evaluation results
+2023-12-13 10:57:34.711612: I Cut-off: 50
+2023-12-13 10:57:34.714612: I Eval Time: 0.11063814163208008
+2023-12-13 10:57:34.719127: I Results
+2023-12-13 10:57:34.722126: I nDCGRendle2020	0.15893
+2023-12-13 10:57:34.976462: I Training ended for LightGCN
+2023-12-13 10:57:34.976462: I Loss:	-0.1273574454098311
+2023-12-13 10:57:34.977468: I Best Model params:	{'meta': namespace(save_recs=True, validation_rate=2, verbose=True), 'lr': 0.0028462729478462134, 'epochs': 2, 'factors': 64, 'batch_size': 64, 'l_w': 0.06184015598288455, 'n_layers': 3, 'seed': 123, 'name': 'LightGCN_seed=123_e=2_bs=64_lr=0$0028462729478462134_factors=64_l_w=0$06184015598288455_n_layers=3', 'best_iteration': 2}
+2023-12-13 10:57:34.978468: I Best Model results:	{50: {'nDCGRendle2020': 0.1589264789468551}}
+2023-12-13 10:57:34.982979: I End experiment
+2023-12-13 10:58:31.067692: I Start experiment
+2023-12-13 10:58:31.101741: I C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data\facebook_book\train.tsv - Loaded
+2023-12-13 10:58:31.113259: I Test Fold 0 - Validation Fold 0
+2023-12-13 10:58:31.861122: I Statistics	Users:	1369	Items:	786	Transactions:	9187	Sparsity:	0.9914621656936491
+2023-12-13 10:58:39.123555: I Training begun for LightGCN
+
+2023-12-13 10:58:39.124555: I Hyperparameters:
+2023-12-13 10:58:39.124555: I meta set to namespace(save_recs=True, validation_rate=2, verbose=True)
+2023-12-13 10:58:39.124555: I lr set to 0.0028462729478462134
+2023-12-13 10:58:39.124555: I epochs set to 2
+2023-12-13 10:58:39.124555: I factors set to 64
+2023-12-13 10:58:39.126060: I batch_size set to 64
+2023-12-13 10:58:39.128069: I l_w set to 0.06184015598288455
+2023-12-13 10:58:39.128069: I n_layers set to 3
+2023-12-13 10:58:39.128069: I seed set to 123
+2023-12-13 10:58:39.128069: I Exploration: Test Fold exploration number 1
+2023-12-13 10:58:39.129070: I Exploration: Train-Validation Fold exploration number 1
+2023-12-13 10:58:42.997011: I 
+2023-12-13 10:58:43.028550: I Validation Evaluation results
+2023-12-13 10:58:43.076093: I Cut-off: 50
+2023-12-13 10:58:43.081101: I Eval Time: 0.09910178184509277
+2023-12-13 10:58:43.082102: I Results
+2023-12-13 10:58:43.082102: I nDCGRendle2020	0.12736
+2023-12-13 10:58:43.082102: I 
+2023-12-13 10:58:43.086605: I Test Evaluation results
+2023-12-13 10:58:43.089614: I Cut-off: 50
+2023-12-13 10:58:43.092614: I Eval Time: 0.10761523246765137
+2023-12-13 10:58:43.096118: I Results
+2023-12-13 10:58:43.100129: I nDCGRendle2020	0.15893
+2023-12-13 10:58:43.346897: I Training ended for LightGCN
+2023-12-13 10:58:43.346897: I Loss:	-0.1273574454098311
+2023-12-13 10:58:43.346897: I Best Model params:	{'meta': namespace(save_recs=True, validation_rate=2, verbose=True), 'lr': 0.0028462729478462134, 'epochs': 2, 'factors': 64, 'batch_size': 64, 'l_w': 0.06184015598288455, 'n_layers': 3, 'seed': 123, 'name': 'LightGCN_seed=123_e=2_bs=64_lr=0$0028462729478462134_factors=64_l_w=0$06184015598288455_n_layers=3', 'best_iteration': 2}
+2023-12-13 10:58:43.346897: I Best Model results:	{50: {'nDCGRendle2020': 0.1589264789468551}}
+2023-12-13 10:58:43.353903: I End experiment
+2023-12-13 10:59:32.839168: I Start experiment
+2023-12-13 10:59:32.873705: I C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data\facebook_book\train.tsv - Loaded
+2023-12-13 10:59:32.884215: I Test Fold 0 - Validation Fold 0
+2023-12-13 10:59:33.632171: I Statistics	Users:	1369	Items:	786	Transactions:	9187	Sparsity:	0.9914621656936491
+2023-12-13 10:59:40.845976: I Training begun for LightGCN
+
+2023-12-13 10:59:40.845976: I Hyperparameters:
+2023-12-13 10:59:40.846982: I meta set to namespace(save_recs=True, validation_rate=2, verbose=True)
+2023-12-13 10:59:40.846982: I lr set to 0.0028462729478462134
+2023-12-13 10:59:40.846982: I epochs set to 2
+2023-12-13 10:59:40.846982: I factors set to 64
+2023-12-13 10:59:40.847986: I batch_size set to 64
+2023-12-13 10:59:40.849986: I l_w set to 0.06184015598288455
+2023-12-13 10:59:40.849986: I n_layers set to 3
+2023-12-13 10:59:40.849986: I seed set to 123
+2023-12-13 10:59:40.849986: I Exploration: Test Fold exploration number 1
+2023-12-13 10:59:40.850987: I Exploration: Train-Validation Fold exploration number 1
+2023-12-13 10:59:44.664116: I 
+2023-12-13 10:59:44.679647: I Validation Evaluation results
+2023-12-13 10:59:44.711194: I Cut-off: 50
+2023-12-13 10:59:44.742727: I Eval Time: 0.1071164608001709
+2023-12-13 10:59:44.749244: I Results
+2023-12-13 10:59:44.750244: I nDCGRendle2020	0.12736
+2023-12-13 10:59:44.750244: I 
+2023-12-13 10:59:44.750244: I Test Evaluation results
+2023-12-13 10:59:44.754242: I Cut-off: 50
+2023-12-13 10:59:44.756751: I Eval Time: 0.1091468334197998
+2023-12-13 10:59:44.761756: I Results
+2023-12-13 10:59:44.764756: I nDCGRendle2020	0.15893
+2023-12-13 10:59:45.017580: I Training ended for LightGCN
+2023-12-13 10:59:45.019585: I Loss:	-0.1273574454098311
+2023-12-13 10:59:45.033097: I Best Model params:	{'meta': namespace(save_recs=True, validation_rate=2, verbose=True), 'lr': 0.0028462729478462134, 'epochs': 2, 'factors': 64, 'batch_size': 64, 'l_w': 0.06184015598288455, 'n_layers': 3, 'seed': 123, 'name': 'LightGCN_seed=123_e=2_bs=64_lr=0$0028462729478462134_factors=64_l_w=0$06184015598288455_n_layers=3', 'best_iteration': 2}
+2023-12-13 10:59:45.034099: I Best Model results:	{50: {'nDCGRendle2020': 0.1589264789468551}}
+2023-12-13 10:59:45.042618: I End experiment
+2023-12-13 11:03:42.732211: I Start experiment
+2023-12-13 11:03:42.768786: I C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data\facebook_book\train.tsv - Loaded
+2023-12-13 11:03:42.779301: I Test Fold 0 - Validation Fold 0
+2023-12-13 11:03:43.562544: I Statistics	Users:	1369	Items:	786	Transactions:	9187	Sparsity:	0.9914621656936491
+2023-12-13 11:07:49.504379: I Start experiment
+2023-12-13 11:07:49.540930: I C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data\facebook_book\train.tsv - Loaded
+2023-12-13 11:07:49.551445: I Test Fold 0 - Validation Fold 0
+2023-12-13 11:07:50.316866: I Statistics	Users:	1369	Items:	786	Transactions:	9187	Sparsity:	0.9914621656936491
+2023-12-13 11:07:58.297585: I Training begun for LightGCN
+
+2023-12-13 11:07:58.297585: I Hyperparameters:
+2023-12-13 11:07:58.297585: I meta set to namespace(save_recs=True, validation_rate=2, verbose=True)
+2023-12-13 11:07:58.297585: I lr set to 0.0028462729478462134
+2023-12-13 11:07:58.298585: I epochs set to 2
+2023-12-13 11:07:58.298585: I factors set to 64
+2023-12-13 11:07:58.298585: I batch_size set to 64
+2023-12-13 11:07:58.300584: I l_w set to 0.06184015598288455
+2023-12-13 11:07:58.300584: I n_layers set to 3
+2023-12-13 11:07:58.301585: I seed set to 123
+2023-12-13 11:07:58.301585: I Exploration: Test Fold exploration number 1
+2023-12-13 11:07:58.301585: I Exploration: Train-Validation Fold exploration number 1
+2023-12-13 11:08:02.457891: I 
+2023-12-13 11:08:02.489429: I Validation Evaluation results
+2023-12-13 11:08:02.520465: I Cut-off: 50
+2023-12-13 11:08:02.538490: I Eval Time: 0.10964035987854004
+2023-12-13 11:08:02.539491: I Results
+2023-12-13 11:08:02.539491: I nDCGRendle2020	0.12736
+2023-12-13 11:08:02.539491: I 
+2023-12-13 11:08:02.543991: I Test Evaluation results
+2023-12-13 11:08:02.547000: I Cut-off: 50
+2023-12-13 11:08:02.550000: I Eval Time: 0.11665010452270508
+2023-12-13 11:08:02.554507: I Results
+2023-12-13 11:08:02.557518: I nDCGRendle2020	0.15893
+2023-12-13 11:08:02.815843: I Training ended for LightGCN
+2023-12-13 11:08:02.815843: I Loss:	-0.1273574454098311
+2023-12-13 11:08:02.817405: I Best Model params:	{'meta': namespace(save_recs=True, validation_rate=2, verbose=True), 'lr': 0.0028462729478462134, 'epochs': 2, 'factors': 64, 'batch_size': 64, 'l_w': 0.06184015598288455, 'n_layers': 3, 'seed': 123, 'name': 'LightGCN_seed=123_e=2_bs=64_lr=0$0028462729478462134_factors=64_l_w=0$06184015598288455_n_layers=3', 'best_iteration': 2}
+2023-12-13 11:08:02.818353: I Best Model results:	{50: {'nDCGRendle2020': 0.1589264789468551}}
+2023-12-13 11:08:02.823857: I End experiment
+2023-12-13 11:11:09.987325: I Start experiment
+2023-12-13 11:11:10.025381: I C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data\facebook_book\train.tsv - Loaded
+2023-12-13 11:11:10.036899: I Test Fold 0 - Validation Fold 0
+2023-12-13 11:11:10.805320: I Statistics	Users:	1369	Items:	786	Transactions:	9187	Sparsity:	0.9914621656936491
+2023-12-13 11:11:18.309872: I Training begun for LightGCN
+
+2023-12-13 11:11:18.309872: I Hyperparameters:
+2023-12-13 11:11:18.309872: I meta set to namespace(save_recs=True, validation_rate=2, verbose=True)
+2023-12-13 11:11:18.310872: I lr set to 0.0028462729478462134
+2023-12-13 11:11:18.310872: I epochs set to 2
+2023-12-13 11:11:18.310872: I factors set to 64
+2023-12-13 11:11:18.310872: I batch_size set to 64
+2023-12-13 11:11:18.313374: I l_w set to 0.06184015598288455
+2023-12-13 11:11:18.313374: I n_layers set to 3
+2023-12-13 11:11:18.313374: I seed set to 123
+2023-12-13 11:11:18.314379: I Exploration: Test Fold exploration number 1
+2023-12-13 11:11:18.314379: I Exploration: Train-Validation Fold exploration number 1
+2023-12-13 11:19:15.097160: I Start experiment
+2023-12-13 11:19:15.131699: I C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data\facebook_book\train.tsv - Loaded
+2023-12-13 11:19:15.141719: I Test Fold 0 - Validation Fold 0
+2023-12-13 11:19:15.914153: I Statistics	Users:	1369	Items:	786	Transactions:	9187	Sparsity:	0.9914621656936491
+2023-12-13 11:19:23.389801: I Training begun for LightGCN
+
+2023-12-13 11:19:23.389801: I Hyperparameters:
+2023-12-13 11:19:23.389801: I meta set to namespace(save_recs=True, validation_rate=2, verbose=True)
+2023-12-13 11:19:23.389801: I lr set to 0.0028462729478462134
+2023-12-13 11:19:23.389801: I epochs set to 2
+2023-12-13 11:19:23.391306: I factors set to 64
+2023-12-13 11:19:23.391306: I batch_size set to 64
+2023-12-13 11:19:23.393311: I l_w set to 0.06184015598288455
+2023-12-13 11:19:23.393311: I n_layers set to 3
+2023-12-13 11:19:23.393311: I seed set to 123
+2023-12-13 11:19:23.394314: I Exploration: Test Fold exploration number 1
+2023-12-13 11:19:23.394314: I Exploration: Train-Validation Fold exploration number 1
+2023-12-13 11:33:46.450938: I Start experiment
+2023-12-13 11:33:46.485990: I C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data\facebook_book\train.tsv - Loaded
+2023-12-13 11:33:46.496503: I Test Fold 0 - Validation Fold 0
+2023-12-13 11:33:47.262468: I Statistics	Users:	1369	Items:	786	Transactions:	9187	Sparsity:	0.9914621656936491
+2023-12-13 11:33:54.620051: I Training begun for LightGCN
+
+2023-12-13 11:33:54.620051: I Hyperparameters:
+2023-12-13 11:33:54.620051: I meta set to namespace(save_recs=True, validation_rate=2, verbose=True)
+2023-12-13 11:33:54.621056: I lr set to 0.0028462729478462134
+2023-12-13 11:33:54.621056: I epochs set to 2
+2023-12-13 11:33:54.621056: I factors set to 64
+2023-12-13 11:33:54.621056: I batch_size set to 64
+2023-12-13 11:33:54.623056: I l_w set to 0.06184015598288455
+2023-12-13 11:33:54.623056: I n_layers set to 3
+2023-12-13 11:33:54.624056: I seed set to 123
+2023-12-13 11:33:54.624056: I Exploration: Test Fold exploration number 1
+2023-12-13 11:33:54.624056: I Exploration: Train-Validation Fold exploration number 1
+2023-12-13 11:33:58.458402: I 
+2023-12-13 11:33:58.490451: I Validation Evaluation results
+2023-12-13 11:33:58.521986: I Cut-off: 50
+2023-12-13 11:33:58.537503: I Eval Time: 0.10260581970214844
+2023-12-13 11:33:58.537503: I Results
+2023-12-13 11:33:58.537503: I nDCGRendle2020	0.12736
+2023-12-13 11:33:58.538504: I 
+2023-12-13 11:33:58.542023: I Test Evaluation results
+2023-12-13 11:33:58.546022: I Cut-off: 50
+2023-12-13 11:33:58.549529: I Eval Time: 0.10913634300231934
+2023-12-13 11:33:58.552534: I Results
+2023-12-13 11:33:58.555534: I nDCGRendle2020	0.15893
+2023-12-13 11:33:58.806825: I Training ended for LightGCN
+2023-12-13 11:33:58.808331: I Loss:	-0.1273574454098311
+2023-12-13 11:33:58.808331: I Best Model params:	{'meta': namespace(save_recs=True, validation_rate=2, verbose=True), 'lr': 0.0028462729478462134, 'epochs': 2, 'factors': 64, 'batch_size': 64, 'l_w': 0.06184015598288455, 'n_layers': 3, 'seed': 123, 'name': 'LightGCN_seed=123_e=2_bs=64_lr=0$0028462729478462134_factors=64_l_w=0$06184015598288455_n_layers=3', 'best_iteration': 2}
+2023-12-13 11:33:58.811344: I Best Model results:	{50: {'nDCGRendle2020': 0.1589264789468551}}
+2023-12-13 11:33:58.815343: I End experiment
+2023-12-13 12:26:35.748419: I Start experiment
+2023-12-13 12:26:35.783466: I C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data\facebook_book\train.tsv - Loaded
+2023-12-13 12:26:35.793980: I Test Fold 0 - Validation Fold 0
+2023-12-13 12:26:36.542789: I Statistics	Users:	1369	Items:	786	Transactions:	9187	Sparsity:	0.9914621656936491
+2023-12-13 12:26:44.048013: I Training begun for LightGCN
+
+2023-12-13 12:26:44.048013: I Hyperparameters:
+2023-12-13 12:26:44.049013: I meta set to namespace(save_recs=True, validation_rate=2, verbose=True)
+2023-12-13 12:26:44.049013: I lr set to 0.0028462729478462134
+2023-12-13 12:26:44.049013: I epochs set to 2
+2023-12-13 12:26:44.050018: I factors set to 64
+2023-12-13 12:26:44.050018: I batch_size set to 64
+2023-12-13 12:26:44.052017: I l_w set to 0.06184015598288455
+2023-12-13 12:26:44.052017: I n_layers set to 3
+2023-12-13 12:26:44.052017: I seed set to 123
+2023-12-13 12:26:44.053018: I Exploration: Test Fold exploration number 1
+2023-12-13 12:26:44.053018: I Exploration: Train-Validation Fold exploration number 1
+2023-12-13 12:29:24.064168: I 
+2023-12-13 12:29:24.095703: I Validation Evaluation results
+2023-12-13 12:29:24.113728: I Cut-off: 50
+2023-12-13 12:29:24.114728: I Eval Time: 0.0996096134185791
+2023-12-13 12:29:24.114728: I Results
+2023-12-13 12:29:24.114728: I nDCGRendle2020	0.12736
+2023-12-13 12:29:24.118237: I 
+2023-12-13 12:29:24.122241: I Test Evaluation results
+2023-12-13 12:29:24.125241: I Cut-off: 50
+2023-12-13 12:29:24.128750: I Eval Time: 0.10814285278320312
+2023-12-13 12:29:24.132754: I Results
+2023-12-13 12:29:24.135755: I nDCGRendle2020	0.15893
+2023-12-13 12:29:24.383050: I Training ended for LightGCN
+2023-12-13 12:29:24.384050: I Loss:	-0.1273574454098311
+2023-12-13 12:29:24.384050: I Best Model params:	{'meta': namespace(save_recs=True, validation_rate=2, verbose=True), 'lr': 0.0028462729478462134, 'epochs': 2, 'factors': 64, 'batch_size': 64, 'l_w': 0.06184015598288455, 'n_layers': 3, 'seed': 123, 'name': 'LightGCN_seed=123_e=2_bs=64_lr=0$0028462729478462134_factors=64_l_w=0$06184015598288455_n_layers=3', 'best_iteration': 2}
+2023-12-13 12:29:24.384050: I Best Model results:	{50: {'nDCGRendle2020': 0.1589264789468551}}
+2023-12-13 12:29:24.389565: I End experiment
+2023-12-13 12:29:33.016766: I Start experiment
+2023-12-13 12:29:33.052313: I C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data\facebook_book\train.tsv - Loaded
+2023-12-13 12:29:33.061825: I Test Fold 0 - Validation Fold 0
+2023-12-13 12:29:33.842741: I Statistics	Users:	1369	Items:	786	Transactions:	9187	Sparsity:	0.9914621656936491
+2023-12-13 12:29:41.225646: I Training begun for LightGCN
+
+2023-12-13 12:29:41.225646: I Hyperparameters:
+2023-12-13 12:29:41.226646: I meta set to namespace(save_recs=True, validation_rate=2, verbose=True)
+2023-12-13 12:29:41.228157: I lr set to 0.0028462729478462134
+2023-12-13 12:29:41.229161: I epochs set to 2
+2023-12-13 12:29:41.229161: I factors set to 64
+2023-12-13 12:29:41.229161: I batch_size set to 64
+2023-12-13 12:29:41.229161: I l_w set to 0.06184015598288455
+2023-12-13 12:29:41.230164: I n_layers set to 3
+2023-12-13 12:29:41.230164: I seed set to 123
+2023-12-13 12:29:41.230164: I Exploration: Test Fold exploration number 1
+2023-12-13 12:29:41.230164: I Exploration: Train-Validation Fold exploration number 1
+2023-12-13 15:32:21.291891: I Start experiment
+2023-12-13 15:32:21.370029: I C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data\facebook_book\train.tsv - Loaded
+2023-12-13 15:32:21.383541: I Test Fold 0 - Validation Fold 0
+2023-12-13 15:32:22.130820: I Statistics	Users:	1369	Items:	786	Transactions:	9187	Sparsity:	0.9914621656936491
+2023-12-13 15:32:29.769790: I Training begun for LightGCN
+
+2023-12-13 15:32:29.769790: I Hyperparameters:
+2023-12-13 15:32:29.769790: I meta set to namespace(save_recs=True, validation_rate=2, verbose=True)
+2023-12-13 15:32:29.770789: I lr set to 0.0028462729478462134
+2023-12-13 15:32:29.770789: I epochs set to 2
+2023-12-13 15:32:29.770789: I factors set to 64
+2023-12-13 15:32:29.772790: I batch_size set to 64
+2023-12-13 15:32:29.773790: I l_w set to 0.06184015598288455
+2023-12-13 15:32:29.773790: I n_layers set to 3
+2023-12-13 15:32:29.773790: I seed set to 123
+2023-12-13 15:32:29.773790: I Exploration: Test Fold exploration number 1
+2023-12-13 15:32:29.773790: I Exploration: Train-Validation Fold exploration number 1
+2023-12-13 15:37:03.897641: I Start experiment
+2023-12-13 15:37:03.956252: I C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data\facebook_book\train.tsv - Loaded
+2023-12-13 15:37:03.973774: I Test Fold 0 - Validation Fold 0
+2023-12-13 15:37:04.858204: I Statistics	Users:	1369	Items:	786	Transactions:	9187	Sparsity:	0.9914621656936491
+2023-12-13 15:37:12.834855: I Training begun for LightGCN
+
+2023-12-13 15:37:12.834855: I Hyperparameters:
+2023-12-13 15:37:12.834855: I meta set to namespace(save_recs=True, validation_rate=2, verbose=True)
+2023-12-13 15:37:12.834855: I lr set to 0.0028462729478462134
+2023-12-13 15:37:12.835859: I epochs set to 2
+2023-12-13 15:37:12.835859: I factors set to 64
+2023-12-13 15:37:12.835859: I batch_size set to 64
+2023-12-13 15:37:12.837864: I l_w set to 0.06184015598288455
+2023-12-13 15:37:12.837864: I n_layers set to 3
+2023-12-13 15:37:12.838864: I seed set to 123
+2023-12-13 15:37:12.838864: I Exploration: Test Fold exploration number 1
+2023-12-13 15:37:12.838864: I Exploration: Train-Validation Fold exploration number 1
+2023-12-13 15:39:23.325195: I 
+2023-12-13 15:39:23.357242: I Validation Evaluation results
+2023-12-13 15:39:23.381777: I Cut-off: 50
+2023-12-13 15:39:23.381777: I Eval Time: 0.11813855171203613
+2023-12-13 15:39:23.382784: I Results
+2023-12-13 15:39:23.385790: I nDCGRendle2020	0.12736
+2023-12-13 15:39:23.389789: I 
+2023-12-13 15:39:23.393298: I Test Evaluation results
+2023-12-13 15:39:23.396303: I Cut-off: 50
+2023-12-13 15:39:23.400302: I Eval Time: 0.1101377010345459
+2023-12-13 15:39:23.403815: I Results
+2023-12-13 15:39:23.406816: I nDCGRendle2020	0.15893
+2023-12-13 15:39:23.657157: I Training ended for LightGCN
+2023-12-13 15:39:23.658157: I Loss:	-0.1273574454098311
+2023-12-13 15:39:23.658157: I Best Model params:	{'meta': namespace(save_recs=True, validation_rate=2, verbose=True), 'lr': 0.0028462729478462134, 'epochs': 2, 'factors': 64, 'batch_size': 64, 'l_w': 0.06184015598288455, 'n_layers': 3, 'seed': 123, 'name': 'LightGCN_seed=123_e=2_bs=64_lr=0$0028462729478462134_factors=64_l_w=0$06184015598288455_n_layers=3', 'best_iteration': 2}
+2023-12-13 15:39:23.658157: I Best Model results:	{50: {'nDCGRendle2020': 0.1589264789468551}}
+2023-12-13 15:39:23.664674: I End experiment
+2023-12-14 16:17:18.572377: I Start experiment
+2023-12-14 16:17:18.617378: I C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data\facebook_book\train.tsv - Loaded
+2023-12-14 16:17:18.633378: I Test Fold 0 - Validation Fold 0
+2023-12-14 16:17:19.387462: I Statistics	Users:	1369	Items:	786	Transactions:	9187	Sparsity:	0.9914621656936491
+2023-12-14 16:17:28.466052: I Training begun for LightGCN
+
+2023-12-14 16:17:28.467053: I Hyperparameters:
+2023-12-14 16:17:28.467053: I meta set to namespace(save_recs=True, validation_rate=2, verbose=True)
+2023-12-14 16:17:28.468053: I lr set to 0.0028462729478462134
+2023-12-14 16:17:28.468053: I epochs set to 2
+2023-12-14 16:17:28.468053: I factors set to 64
+2023-12-14 16:17:28.471052: I batch_size set to 64
+2023-12-14 16:17:28.471052: I l_w set to 0.06184015598288455
+2023-12-14 16:17:28.471052: I n_layers set to 3
+2023-12-14 16:17:28.471052: I seed set to 123
+2023-12-14 16:17:28.471052: I Exploration: Test Fold exploration number 1
+2023-12-14 16:17:28.472054: I Exploration: Train-Validation Fold exploration number 1
+2023-12-14 16:18:23.484183: I 
+2023-12-14 16:18:23.484183: I Validation Evaluation results
+2023-12-14 16:18:23.484183: I Cut-off: 10
+2023-12-14 16:18:23.484183: I Eval Time: 0.035001277923583984
+2023-12-14 16:18:23.488181: I Results
+2023-12-14 16:18:23.492186: I nDCGRendle2020	0.08051
+2023-12-14 16:18:23.495181: I 
+2023-12-14 16:18:23.499181: I Test Evaluation results
+2023-12-14 16:18:23.503181: I Cut-off: 10
+2023-12-14 16:18:23.506182: I Eval Time: 0.03950858116149902
+2023-12-14 16:18:23.510182: I Results
+2023-12-14 16:18:23.513181: I nDCGRendle2020	0.09689
+2023-12-14 16:18:23.565696: I Training ended for LightGCN
+2023-12-14 16:18:23.566697: I Loss:	-0.08051053814848416
+2023-12-14 16:18:23.566697: I Best Model params:	{'meta': namespace(save_recs=True, validation_rate=2, verbose=True), 'lr': 0.0028462729478462134, 'epochs': 2, 'factors': 64, 'batch_size': 64, 'l_w': 0.06184015598288455, 'n_layers': 3, 'seed': 123, 'name': 'LightGCN_seed=123_e=2_bs=64_lr=0$0028462729478462134_factors=64_l_w=0$06184015598288455_n_layers=3', 'best_iteration': 2}
+2023-12-14 16:18:23.567696: I Best Model results:	{10: {'nDCGRendle2020': 0.09688732002576719}}
+2023-12-14 16:18:23.572695: I End experiment

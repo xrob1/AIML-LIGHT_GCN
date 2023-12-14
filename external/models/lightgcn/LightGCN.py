@@ -137,14 +137,40 @@ class LightGCN(RecMixin, BaseRecommenderModel):
             predictions_top_k_val.update(recs_val)
             predictions_top_k_test.update(recs_test)
         
+        
+        
+        
         #------------------DZ-------------------
+                
         data = []
         data.append([predictions_top_k_val, predictions_top_k_test,gu, gi,offsets,preds])
         file = open('models_raw_data/'+str(self.__class__.__name__)+'_recommendations', 'wb')
         pickle.dump(data, file)
         file.close()
-        #------------------DZ-------------------
+        """
+        from sklearn.manifold import TSNE
+        tnse_predictions_top_k_test = {}
+        tnse_predictions_top_k_val = {}
+        items=gi.cpu().detach().numpy()
+        users=gu.cpu().detach().numpy()
         
+        concatenation= np.concatenate((users,items))
+        tsne = TSNE(n_components=2, random_state=42)
+       
+        i_u_concat = tsne.fit_transform(concatenation)
+        u_tsne =    torch.Tensor(i_u_concat[:self._num_users,:])
+        i_tsne =   torch.Tensor( i_u_concat[self._num_users:,:])
+        
+        for index, offset in enumerate(range(0, self._num_users, self._batch_size)):
+            offset_stop = min(offset + self._batch_size, self._num_users)
+            predictions = self._model.predict(u_tsne[offset: offset_stop], i_tsne)
+            recs_val, recs_test = self.process_protocol(k, predictions, offset, offset_stop)
+            tnse_predictions_top_k_val.update(recs_val)
+            tnse_predictions_top_k_test.update(recs_test)
+        
+        #------------------DZ-------------------
+        print("OK?")
+        """
         return predictions_top_k_val, predictions_top_k_test
 
     def get_single_recommendation(self, mask, k, predictions, offset, offset_stop):

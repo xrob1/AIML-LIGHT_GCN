@@ -1,69 +1,55 @@
-from elliot.run import run_experiment
-import pickle
-import matplotlib.pyplot as plt
-
-def load_data(name='LightGCN_data'):
-    file = open(str('models_raw_data/'+name) , 'rb')
-    data = pickle.load(file)
-    file.close()
-    return data[0]
-
-def load_recommandations(name='LightGCN_recommendations'):
-    file = open(str('models_raw_data/'+name) , 'rb')
-    rec = pickle.load(file)
-    file.close()
-    return rec[0][0],rec[0][1],rec[0][2],rec[0][3],rec[0][4],rec[0][5]
-
-#Da migliorare (too slow?)
-def get_i_public_train_dict(data):
-    public_i_train_dict={}
-    for key in data.i_train_dict:
-        public_i_train_dict[data.private_users[key]]=[]
-        for item in list(data.i_train_dict[key].keys()):
-            public_i_train_dict[data.private_users[key]].append(data.private_items[item])
-
-    return  public_i_train_dict
-
-def train():
-    run_experiment('config_files/facebook_best_cf_lgcn.yml') #LGCN 
-
-#train()
-data = load_data()
-
-test_dict = data.test_dict
-vald_dict = data.val_dict
-recm_val,recm_test,gu,gi,offsets,preds = load_recommandations()
-
-#-----------------------------------------------------------------------
-#-----------------------------------------------------------------------
-#-----------------------------------------------------------------------
-
+import compute_processing_data as cp
 import plotly.express as px
-from sklearn.decomposition import PCA
 from sklearn.manifold import TSNE
 import plotly.graph_objects as go
+import numpy as np
+import torch
+
+#Avvia training e salva componenti per l'analisi
+cp.load_data()
+
+#Caricamento componenti utili
+public_items=cp.get_public_items()          #Lista traduzione publici a privati
+val_rec = cp.get_val_recommandation()       #RACOMANDAZIONI VALIDATION
+items = cp.get_item_embedding().cpu().detach().numpy()  #Embedding Oggetti
+users = cp.get_user_embedding().cpu().detach().numpy()  #Embedding Utenti
+
+#Estrazione indici oggetti per ogni utente
+i_val_rec=[]                                #Per ogni utente indici oggetti raccomandati
+for key in val_rec: 
+    i_val_rec.append([e[0] for e in val_rec[key]])
 
 
-
-
-
-#ITEMS
-items=gi.cpu().detach().numpy()
+#TNSE Della Concatenazione fra oggetti e utenti
+concatenation = np.concatenate((items,users)) #Concatenazione 
 tsne = TSNE(n_components=2, random_state=42)
-X_tsne = tsne.fit_transform(items)
-fig1 = px.scatter(x=X_tsne[:, 0], y=X_tsne[:, 1],  color_discrete_sequence=['blue'])
-fig1.show()
-#USER
-users=gu.cpu().detach().numpy()
-tsne = TSNE(n_components=2, random_state=42)
-X_tsne = tsne.fit_transform(users)
-fig2 = px.scatter(x=X_tsne[:, 0], y=X_tsne[:, 1],  color_discrete_sequence=['blue'])
 
+i_u_concat = tsne.fit_transform(concatenation)
+i_tsne =    i_u_concat[:len(items),:]
+u_tsne =    i_u_concat[len(items):,:]
+
+#visualizzazione
+fig_obj  = px.scatter(x=i_tsne[:, 0], y=i_tsne[:, 1],  color_discrete_sequence=['blue'])
+fig_usr  = px.scatter(x=u_tsne[0:1, 0], y=u_tsne[0:1, 1],  color_discrete_sequence=['red'])#1 user
 #fig3 = go.Figure(data=fig1.data + fig2.data)
-fig2.show()
+#fig3.show()
 
+max([public_items[e] for e in [key for key in public_items.keys()]])    # indice privato massimo
+max(public_items.keys())                                                # indice pubblico massimo  
+max([e[0] for key in val_rec for e in val_rec[key]])                    # indice item massimo in raccomandazione
+len(items)                                                              # numero oggetti
+len(i_tsne)                                                             # numero oggetti Itnse
 
+len(users)
+len(u_tsne)
+len(val_rec)
 
+test_batch=[]
+for e in i_val_rec[0]:   
+    test_batch.append(i_tsne[public_items[e]])
+test_batch=np.array(test_batch)
 
-
-
+fig_test  = px.scatter(x=test_batch[:, 0], y=test_batch[:, 1],  color_discrete_sequence=['black'])
+fig_usr  = px.scatter(x=u_tsne[:, 0], y=u_tsne[:, 1],  color_discrete_sequence=['red'])#1 user
+fig_test_usr = go.Figure(data= fig_usr.data +fig_test.data )
+fig_test_usr.show()
