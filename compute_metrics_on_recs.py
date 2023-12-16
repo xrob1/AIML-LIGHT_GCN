@@ -8,7 +8,7 @@ CONFIG_DIR = './config_files'
 assert os.path.exists(RECS_FOLDER)
 assert os.path.exists(CONFIG_DIR)
 
-datasets = ['facebook_book', 'yahoo_movies', 'movielens']
+datasets = ['facebook_book']#, 'yahoo_movies', 'movielens']
 
 for dataset in datasets:
     print(f'Computing recs for {dataset}')

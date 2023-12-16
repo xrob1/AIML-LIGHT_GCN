@@ -17,7 +17,8 @@ experiment:
       meta:
         verbose: True
         save_recs: True
-        validation_rate: 2
+        validation_rate: 2    
+        tsne_sizes : [2,4,8,16,32,64]  
       lr: 0.0028462729478462134
       epochs: 2
       factors: 64
@@ -25,4 +26,5 @@ experiment:
       l_w: 0.06184015598288455
       n_layers: 3
       seed: 123
+      
     

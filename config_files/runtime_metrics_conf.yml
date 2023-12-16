@@ -1,11 +1,11 @@
-METRICS_TEMPLATE = """experiment:
+experiment:
   backend: pytorch
   data_config:
     strategy: fixed
     train_path: ../data_dz/validation/facebook_base_@64.tsv
     validation_path: ../data_dz/test/facebook_tsne_@2.tsv
     test_path: ../data_dz/test/facebook_tsne_@2.tsv
-  dataset: {dataset}
+  dataset: facebook_book
   top_k: 10
   evaluation:
     cutoffs: [10]
@@ -14,5 +14,4 @@ METRICS_TEMPLATE = """experiment:
   gpu: 0
   models:
     RecommendationFolder:  
-        folder: {recs}
-"""
+        folder: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\recs\facebook_book
