@@ -14,4 +14,4 @@ experiment:
   gpu: 0
   models:
     RecommendationFolder:  
-        folder: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data_dz\results\asd
+        folder: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\recs\facebook_book
