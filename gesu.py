@@ -4,6 +4,13 @@ from sklearn.manifold import TSNE
 import plotly.graph_objects as go
 import numpy as np
 import torch
+from elliot.recommender.generic.Proxy import ProxyRecommender
+
+
+
+from elliot.run import run_experiment
+run_experiment(f"config_files/runtime_metrics_conf.yml")
+
 
 #Avvia training e salva componenti per l'analisi
 #cp.load_data()
@@ -12,7 +19,7 @@ import torch
 recs = cp.get_recs_dict()
 
 #Salvataggio Raccomandazioni per validation_set per ogni modalità di predizione
-
+"""
 DATASET = "facebook/"
 MODE = "validation"
 for method in recs:
@@ -24,7 +31,10 @@ for method in recs:
 		file.close()   
 
 
-	
+
+
+print("OK?!?")
+
 
 
 
@@ -73,3 +83,4 @@ fig_test  = px.scatter(x=test_batch[:, 0], y=test_batch[:, 1],  color_discrete_s
 fig_usr  = px.scatter(x=u_tsne[:, 0], y=u_tsne[:, 1],  color_discrete_sequence=['red'])#1 user
 fig_test_usr = go.Figure(data= fig_usr.data +fig_test.data )
 fig_test_usr.show()
+"""

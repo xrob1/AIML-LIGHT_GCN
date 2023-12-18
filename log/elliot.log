@@ -2541,3 +2541,61 @@
 2023-12-16 11:44:46.253530: I folder set to C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\recs\facebook_book
 2023-12-16 11:44:46.261035: I meta set to namespace()
 2023-12-16 11:44:46.261035: I path set to C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\recs\facebook_book\BPRMF.tsv
+2023-12-18 11:24:58.091349: I Start experiment
+2023-12-18 11:24:58.169030: I C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data_dz\validation\facebook_base_@64.tsv - Loaded
+2023-12-18 11:24:58.184043: I Test Fold 0 - Validation Fold 0
+2023-12-18 11:24:59.226819: I Statistics	Users:	1369	Items:	313	Transactions:	13690	Sparsity:	0.9680511182108626
+2023-12-18 11:25:00.253306: I End experiment
+2023-12-18 11:28:13.957181: I Start experiment
+2023-12-18 11:28:13.997639: I C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data_dz\validation\facebook_base_@64.tsv - Loaded
+2023-12-18 11:28:14.007707: I Test Fold 0 - Validation Fold 0
+2023-12-18 11:28:14.268939: I Statistics	Users:	1369	Items:	313	Transactions:	13690	Sparsity:	0.9680511182108626
+2023-12-18 11:28:14.527665: I End experiment
+2023-12-18 11:30:26.290173: I Start experiment
+2023-12-18 11:30:26.332173: I C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data_dz\validation\facebook_base_@64.tsv - Loaded
+2023-12-18 11:30:26.345324: I Test Fold 0 - Validation Fold 0
+2023-12-18 11:30:26.603988: I Statistics	Users:	1369	Items:	313	Transactions:	13690	Sparsity:	0.9680511182108626
+2023-12-18 11:30:26.862994: I End experiment
+2023-12-18 11:32:40.678366: I Start experiment
+2023-12-18 11:32:40.714146: I C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data_dz\validation\facebook_base_@64.tsv - Loaded
+2023-12-18 11:32:40.725711: I Test Fold 0 - Validation Fold 0
+2023-12-18 11:32:40.978357: I Statistics	Users:	1369	Items:	313	Transactions:	13690	Sparsity:	0.9680511182108626
+2023-12-18 11:32:41.240157: I End experiment
+2023-12-18 11:32:41.254674: I Start experiment
+2023-12-18 11:32:41.260910: I C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data_dz\validation\facebook_base_@64.tsv - Loaded
+2023-12-18 11:32:41.274478: I Test Fold 0 - Validation Fold 0
+2023-12-18 11:32:41.534553: I Statistics	Users:	1369	Items:	313	Transactions:	13690	Sparsity:	0.9680511182108626
+2023-12-18 11:32:41.788479: I End experiment
+2023-12-18 11:34:25.038884: I Start experiment
+2023-12-18 11:34:25.078375: I C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data_dz\validation\facebook_base_@64.tsv - Loaded
+2023-12-18 11:34:25.088743: I Test Fold 0 - Validation Fold 0
+2023-12-18 11:34:25.350380: I Statistics	Users:	1369	Items:	313	Transactions:	13690	Sparsity:	0.9680511182108626
+2023-12-18 11:34:25.608364: I End experiment
+2023-12-18 11:34:25.621875: I Start experiment
+2023-12-18 11:34:25.633595: I C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data_dz\validation\facebook_base_@64.tsv - Loaded
+2023-12-18 11:34:25.644411: I Test Fold 0 - Validation Fold 0
+2023-12-18 11:34:25.897806: I Statistics	Users:	1369	Items:	313	Transactions:	13690	Sparsity:	0.9680511182108626
+2023-12-18 11:34:26.153478: I End experiment
+2023-12-18 11:40:40.395887: I Start experiment
+2023-12-18 11:40:40.407032: I C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data_dz\validation\facebook_base_@64.tsv - Loaded
+2023-12-18 11:40:40.418206: I Test Fold 0 - Validation Fold 0
+2023-12-18 11:40:40.672110: I Statistics	Users:	1369	Items:	313	Transactions:	13690	Sparsity:	0.9680511182108626
+2023-12-18 11:40:40.925562: I End experiment
+2023-12-18 11:41:44.435514: I Start experiment
+2023-12-18 11:41:44.450355: I C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data_dz\validation\facebook_base_@64.tsv - Loaded
+2023-12-18 11:41:44.456913: I Test Fold 0 - Validation Fold 0
+2023-12-18 11:41:44.715404: I Statistics	Users:	1369	Items:	313	Transactions:	13690	Sparsity:	0.9680511182108626
+2023-12-18 11:42:28.003600: I Start experiment
+2023-12-18 11:42:28.016049: I C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data_dz\validation\facebook_base_@64.tsv - Loaded
+2023-12-18 11:42:28.025340: I Test Fold 0 - Validation Fold 0
+2023-12-18 11:42:28.280430: I Statistics	Users:	1369	Items:	313	Transactions:	13690	Sparsity:	0.9680511182108626
+2023-12-18 11:42:28.530312: I End experiment
+2023-12-18 11:42:43.360041: I Start experiment
+2023-12-18 11:42:43.369168: I C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data_dz\validation\facebook_base_@64.tsv - Loaded
+2023-12-18 11:42:43.381612: I Test Fold 0 - Validation Fold 0
+2023-12-18 11:42:43.635095: I Statistics	Users:	1369	Items:	313	Transactions:	13690	Sparsity:	0.9680511182108626
+2023-12-18 11:42:43.890438: I End experiment
+2023-12-18 11:43:03.290138: I Start experiment
+2023-12-18 11:43:03.305027: I C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data_dz\validation\facebook_base_@64.tsv - Loaded
+2023-12-18 11:43:03.314039: I Test Fold 0 - Validation Fold 0
+2023-12-18 11:43:03.567599: I Statistics	Users:	1369	Items:	313	Transactions:	13690	Sparsity:	0.9680511182108626

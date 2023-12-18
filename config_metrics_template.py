@@ -3,8 +3,8 @@ METRICS_TEMPLATE = """experiment:
   data_config:
     strategy: fixed
     train_path: ../data_dz/validation/facebook_base_@64.tsv
-    validation_path: ../data_dz/test/facebook_tsne_@2.tsv
-    test_path: ../data_dz/test/facebook_tsne_@2.tsv
+    validation_path: ../data_dz/validation/facebook_tsne_@4.tsv
+    test_path: ../data_dz/test/facebook_tsne_@4.tsv
   dataset: {dataset}
   top_k: 10
   evaluation:
