@@ -6,5 +6,5 @@ parser.add_argument('--config', type=str, default='movielens_best_kgtore')
 args = parser.parse_args()
 
 #run_experiment(f"config_files/{args.config}.yml")
-run_experiment(f"config_files/facebook_lgcn_best_cf.yml")
+run_experiment(f"config_files/facebook_best_cf_lgcn.yml")
 

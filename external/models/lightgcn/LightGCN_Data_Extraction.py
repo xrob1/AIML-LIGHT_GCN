@@ -119,7 +119,7 @@ class LightGCN(RecMixin, BaseRecommenderModel):
 
             self.evaluate(it, loss / (it + 1))
         
-
+        """
         #IMPROVE ON THE DESIGN, Salva solo roba che devi usare       
         #Save data 
         file = open('models_raw_data/'+str(self.__class__.__name__)+'_data', 'wb')
@@ -130,7 +130,8 @@ class LightGCN(RecMixin, BaseRecommenderModel):
         self.get_recommendations_TSNE(self.evaluator.get_needed_recommendations())
         file = open('models_raw_data/'+str(self.__class__.__name__)+'_recs', 'wb')
         pickle.dump(self.recs, file)
-        file.close()    
+        file.close()   
+        """ 
 
 
     def get_recommendations(self, k: int = 100):

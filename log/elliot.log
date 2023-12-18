@@ -2609,3 +2609,1125 @@
 2023-12-18 11:52:46.606903: I Test Fold 0 - Validation Fold 0
 2023-12-18 11:52:46.862245: I Statistics	Users:	1369	Items:	313	Transactions:	13690	Sparsity:	0.9680511182108626
 2023-12-18 11:52:47.112021: I End experiment
+2023-12-18 12:05:57.906260: I Start experiment
+2023-12-18 12:05:57.917945: I C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data\facebook_book\train.tsv - Loaded
+2023-12-18 12:05:57.927100: I Test Fold 0 - Validation Fold 0
+2023-12-18 12:05:58.116490: I Statistics	Users:	1369	Items:	786	Transactions:	9187	Sparsity:	0.9914621656936491
+2023-12-18 12:05:58.381361: I Training begun for ProxyRecommender
+
+2023-12-18 12:05:58.381361: I Hyperparameters:
+2023-12-18 12:05:58.381361: I folder set to C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data_dz\recs
+2023-12-18 12:05:58.381361: I meta set to namespace()
+2023-12-18 12:05:58.381361: I path set to C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data_dz\recs\facebook_base_@64.tsv
+2023-12-18 12:05:58.381361: I Exploration: Test Fold exploration number 1
+2023-12-18 12:05:58.381361: I Exploration: Train-Validation Fold exploration number 1
+2023-12-18 12:10:30.629328: I Start experiment
+2023-12-18 12:10:30.665766: I C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data\facebook_book\train.tsv - Loaded
+2023-12-18 12:10:30.669181: I Test Fold 0 - Validation Fold 0
+2023-12-18 12:10:30.864255: I Statistics	Users:	1369	Items:	786	Transactions:	9187	Sparsity:	0.9914621656936491
+2023-12-18 12:10:37.259051: I Training begun for LightGCN
+
+2023-12-18 12:10:37.259051: I Hyperparameters:
+2023-12-18 12:10:37.259051: I meta set to namespace(save_recs=True, tsne_sizes=[2, 4, 8, 16, 32, 64], validation_rate=2, verbose=True)
+2023-12-18 12:10:37.259051: I lr set to 0.0028462729478462134
+2023-12-18 12:10:37.264066: I epochs set to 2
+2023-12-18 12:10:37.264066: I factors set to 64
+2023-12-18 12:10:37.264066: I batch_size set to 64
+2023-12-18 12:10:37.265071: I l_w set to 0.06184015598288455
+2023-12-18 12:10:37.265071: I n_layers set to 3
+2023-12-18 12:10:37.265071: I seed set to 123
+2023-12-18 12:10:37.265071: I Exploration: Test Fold exploration number 1
+2023-12-18 12:10:37.265071: I Exploration: Train-Validation Fold exploration number 1
+2023-12-18 12:10:40.833477: I 
+2023-12-18 12:10:40.833477: I Validation Evaluation results
+2023-12-18 12:10:40.833477: I Cut-off: 10
+2023-12-18 12:10:40.833477: I Eval Time: 0.013033151626586914
+2023-12-18 12:10:40.833477: I Results
+2023-12-18 12:10:40.839614: I nDCGRendle2020	0.08051
+2023-12-18 12:10:40.841793: I 
+2023-12-18 12:10:40.842310: I Test Evaluation results
+2023-12-18 12:10:40.842310: I Cut-off: 10
+2023-12-18 12:10:40.847315: I Eval Time: 0.016030311584472656
+2023-12-18 12:10:40.849332: I Results
+2023-12-18 12:10:40.849332: I nDCGRendle2020	0.09689
+2023-12-18 12:10:40.864126: I Training ended for LightGCN
+2023-12-18 12:10:40.864126: I Loss:	-0.08051053814848416
+2023-12-18 12:10:40.864126: I Best Model params:	{'meta': namespace(save_recs=True, tsne_sizes=[2, 4, 8, 16, 32, 64], validation_rate=2, verbose=True), 'lr': 0.0028462729478462134, 'epochs': 2, 'factors': 64, 'batch_size': 64, 'l_w': 0.06184015598288455, 'n_layers': 3, 'seed': 123, 'name': 'LightGCN_seed=123_e=2_bs=64_lr=0$0028462729478462134_factors=64_l_w=0$06184015598288455_n_layers=3', 'best_iteration': 2}
+2023-12-18 12:10:40.867447: I Best Model results:	{10: {'nDCGRendle2020': 0.09688732002576719}}
+2023-12-18 12:10:40.868993: I End experiment
+2023-12-18 12:21:25.801802: I Start experiment
+2023-12-18 12:22:21.701564: I Start experiment
+2023-12-18 12:22:21.725616: I C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data\facebook_book\train.tsv - Loaded
+2023-12-18 12:22:21.741634: I Test Fold 0 - Validation Fold 0
+2023-12-18 12:22:22.476671: I Statistics	Users:	1369	Items:	786	Transactions:	9187	Sparsity:	0.9914621656936491
+2023-12-18 12:22:23.487200: I Training begun for ProxyRecommender
+
+2023-12-18 12:22:23.488201: I Hyperparameters:
+2023-12-18 12:22:23.488201: I folder set to C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data_dz\facebook
+2023-12-18 12:22:23.488201: I meta set to namespace()
+2023-12-18 12:22:23.489202: I path set to C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data_dz\facebook\base_@64.tsv
+2023-12-18 12:22:23.489202: I Exploration: Test Fold exploration number 1
+2023-12-18 12:22:23.489202: I Exploration: Train-Validation Fold exploration number 1
+2023-12-18 12:24:59.898898: I Start experiment
+2023-12-18 12:24:59.918089: I C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data\facebook_book\train.tsv - Loaded
+2023-12-18 12:24:59.937710: I Test Fold 0 - Validation Fold 0
+2023-12-18 12:25:00.689322: I Statistics	Users:	1369	Items:	786	Transactions:	9187	Sparsity:	0.9914621656936491
+2023-12-18 12:25:01.717765: I Training begun for ProxyRecommender
+
+2023-12-18 12:25:01.717765: I Hyperparameters:
+2023-12-18 12:25:01.718779: I folder set to C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data_dz\facebook
+2023-12-18 12:25:01.718779: I meta set to namespace()
+2023-12-18 12:25:01.718779: I path set to C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data_dz\facebook\base_@64.tsv
+2023-12-18 12:25:25.274842: I Exploration: Test Fold exploration number 1
+2023-12-18 12:25:36.217459: I Exploration: Train-Validation Fold exploration number 1
+2023-12-18 12:31:24.587649: I Start experiment
+2023-12-18 12:31:24.662676: I C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data\facebook_book\train.tsv - Loaded
+2023-12-18 12:31:24.672687: I Test Fold 0 - Validation Fold 0
+2023-12-18 12:31:25.438791: I Statistics	Users:	1369	Items:	786	Transactions:	9187	Sparsity:	0.9914621656936491
+2023-12-18 12:31:36.222726: I Training begun for LightGCN
+
+2023-12-18 12:31:36.222726: I Hyperparameters:
+2023-12-18 12:31:36.222726: I meta set to namespace(save_recs=True, tsne_sizes=[2, 4, 8, 16, 32, 64], validation_rate=2, verbose=True)
+2023-12-18 12:31:36.222726: I lr set to 0.0028462729478462134
+2023-12-18 12:31:36.222726: I epochs set to 2
+2023-12-18 12:31:36.222726: I factors set to 64
+2023-12-18 12:31:36.222726: I batch_size set to 64
+2023-12-18 12:31:36.227741: I l_w set to 0.06184015598288455
+2023-12-18 12:31:36.227741: I n_layers set to 3
+2023-12-18 12:31:36.227741: I seed set to 123
+2023-12-18 12:31:36.227741: I Exploration: Test Fold exploration number 1
+2023-12-18 12:31:36.227741: I Exploration: Train-Validation Fold exploration number 1
+2023-12-18 12:31:39.965772: I 
+2023-12-18 12:31:39.982951: I Validation Evaluation results
+2023-12-18 12:31:39.982951: I Cut-off: 10
+2023-12-18 12:31:39.987968: I Eval Time: 0.03548240661621094
+2023-12-18 12:31:39.987968: I Results
+2023-12-18 12:31:39.990908: I nDCGRendle2020	0.08051
+2023-12-18 12:31:39.994416: I 
+2023-12-18 12:31:39.994416: I Test Evaluation results
+2023-12-18 12:31:39.994416: I Cut-off: 10
+2023-12-18 12:31:40.004731: I Eval Time: 0.03624606132507324
+2023-12-18 12:31:40.005697: I Results
+2023-12-18 12:31:40.005697: I nDCGRendle2020	0.09689
+2023-12-18 12:31:40.037778: I Training ended for LightGCN
+2023-12-18 12:31:40.042230: I Loss:	-0.08051053814848416
+2023-12-18 12:31:40.042736: I Best Model params:	{'meta': namespace(save_recs=True, tsne_sizes=[2, 4, 8, 16, 32, 64], validation_rate=2, verbose=True), 'lr': 0.0028462729478462134, 'epochs': 2, 'factors': 64, 'batch_size': 64, 'l_w': 0.06184015598288455, 'n_layers': 3, 'seed': 123, 'name': 'LightGCN_seed=123_e=2_bs=64_lr=0$0028462729478462134_factors=64_l_w=0$06184015598288455_n_layers=3', 'best_iteration': 2}
+2023-12-18 12:31:40.042736: I Best Model results:	{10: {'nDCGRendle2020': 0.09688732002576719}}
+2023-12-18 12:31:40.045749: I End experiment
+2023-12-18 12:32:26.972819: I Start experiment
+2023-12-18 12:32:26.993738: I C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data\facebook_book\train.tsv - Loaded
+2023-12-18 12:32:27.012427: I Test Fold 0 - Validation Fold 0
+2023-12-18 12:32:27.762458: I Statistics	Users:	1369	Items:	786	Transactions:	9187	Sparsity:	0.9914621656936491
+2023-12-18 12:32:28.762796: I Training begun for ProxyRecommender
+
+2023-12-18 12:32:28.762796: I Hyperparameters:
+2023-12-18 12:32:28.762796: I folder set to C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data_dz\facebook
+2023-12-18 12:32:28.762796: I meta set to namespace()
+2023-12-18 12:32:28.767813: I path set to C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data_dz\facebook\base_@64.tsv
+2023-12-18 12:32:28.767813: I Exploration: Test Fold exploration number 1
+2023-12-18 12:32:28.767813: I Exploration: Train-Validation Fold exploration number 1
+2023-12-18 12:33:41.220856: I Start experiment
+2023-12-18 12:33:41.241895: I C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data\facebook_book\train.tsv - Loaded
+2023-12-18 12:33:41.256947: I Test Fold 0 - Validation Fold 0
+2023-12-18 12:33:42.021997: I Statistics	Users:	1369	Items:	786	Transactions:	9187	Sparsity:	0.9914621656936491
+2023-12-18 12:33:43.056670: I Training begun for ProxyRecommender
+
+2023-12-18 12:33:43.056670: I Hyperparameters:
+2023-12-18 12:33:43.056670: I folder set to C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data_dz\facebook
+2023-12-18 12:33:43.056670: I meta set to namespace()
+2023-12-18 12:33:43.056670: I path set to C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data_dz\facebook\base_@64.tsv
+2023-12-18 12:33:43.056670: I Exploration: Test Fold exploration number 1
+2023-12-18 12:33:43.056670: I Exploration: Train-Validation Fold exploration number 1
+2023-12-18 12:34:00.137594: I 
+2023-12-18 12:34:00.139594: I Validation Evaluation results
+2023-12-18 12:34:00.139594: I Cut-off: 10
+2023-12-18 12:34:00.141591: I Eval Time: 0.008567571640014648
+2023-12-18 12:34:00.143102: I Results
+2023-12-18 12:34:00.143102: I nDCGRendle2020	nan
+2023-12-18 12:34:00.143102: I HR	nan
+2023-12-18 12:34:00.144107: I Precision	nan
+2023-12-18 12:34:00.144107: I Recall	nan
+2023-12-18 12:34:00.144107: I 
+2023-12-18 12:34:00.145107: I Test Evaluation results
+2023-12-18 12:34:00.145107: I Cut-off: 10
+2023-12-18 12:34:00.145107: I Eval Time: 0.00451207160949707
+2023-12-18 12:34:00.146106: I Results
+2023-12-18 12:34:00.146106: I nDCGRendle2020	nan
+2023-12-18 12:34:00.147108: I HR	nan
+2023-12-18 12:34:00.147108: I Precision	nan
+2023-12-18 12:34:00.147108: I Recall	nan
+2023-12-18 12:34:00.147108: I Training ended for ProxyRecommender
+2023-12-18 12:34:00.148108: I Loss:	nan
+2023-12-18 12:34:00.148108: I Best Model params:	{'folder': 'C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\facebook', 'meta': namespace(), 'path': 'C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\facebook\\base_@64.tsv', 'name': 'base_@64'}
+2023-12-18 12:34:00.148108: I Best Model results:	{10: {'nDCGRendle2020': nan, 'HR': nan, 'Precision': nan, 'Recall': nan}}
+2023-12-18 12:34:00.148108: I Training begun for ProxyRecommender
+
+2023-12-18 12:34:00.148108: I Hyperparameters:
+2023-12-18 12:34:00.149108: I folder set to C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data_dz\facebook
+2023-12-18 12:34:00.149108: I meta set to namespace()
+2023-12-18 12:34:00.149108: I path set to C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data_dz\facebook\tsne_@16.tsv
+2023-12-18 12:34:00.149108: I Exploration: Test Fold exploration number 1
+2023-12-18 12:34:00.150108: I Exploration: Train-Validation Fold exploration number 1
+2023-12-18 12:34:04.367525: I 
+2023-12-18 12:34:04.367525: I Validation Evaluation results
+2023-12-18 12:34:04.368528: I Cut-off: 10
+2023-12-18 12:34:04.368528: I Eval Time: 0.004570960998535156
+2023-12-18 12:34:04.371159: I Results
+2023-12-18 12:34:04.371159: I nDCGRendle2020	nan
+2023-12-18 12:34:04.371666: I HR	nan
+2023-12-18 12:34:04.371666: I Precision	nan
+2023-12-18 12:34:04.371666: I Recall	nan
+2023-12-18 12:34:04.371666: I 
+2023-12-18 12:34:04.371666: I Test Evaluation results
+2023-12-18 12:34:04.371666: I Cut-off: 10
+2023-12-18 12:34:04.374524: I Eval Time: 0.004004001617431641
+2023-12-18 12:34:04.374524: I Results
+2023-12-18 12:34:04.374524: I nDCGRendle2020	nan
+2023-12-18 12:34:04.374524: I HR	nan
+2023-12-18 12:34:04.375530: I Precision	nan
+2023-12-18 12:34:04.375530: I Recall	nan
+2023-12-18 12:34:04.375530: I Training ended for ProxyRecommender
+2023-12-18 12:34:04.376531: I Loss:	nan
+2023-12-18 12:34:04.376531: I Best Model params:	{'folder': 'C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\facebook', 'meta': namespace(), 'path': 'C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\facebook\\tsne_@16.tsv', 'name': 'tsne_@16'}
+2023-12-18 12:34:04.376531: I Best Model results:	{10: {'nDCGRendle2020': nan, 'HR': nan, 'Precision': nan, 'Recall': nan}}
+2023-12-18 12:34:04.377530: I Training begun for ProxyRecommender
+
+2023-12-18 12:34:04.378109: I Hyperparameters:
+2023-12-18 12:34:04.378109: I folder set to C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data_dz\facebook
+2023-12-18 12:34:04.378109: I meta set to namespace()
+2023-12-18 12:34:04.378109: I path set to C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data_dz\facebook\tsne_@2.tsv
+2023-12-18 12:34:04.378109: I Exploration: Test Fold exploration number 1
+2023-12-18 12:34:04.378109: I Exploration: Train-Validation Fold exploration number 1
+2023-12-18 12:34:08.606527: I 
+2023-12-18 12:34:08.606527: I Validation Evaluation results
+2023-12-18 12:34:08.611403: I Cut-off: 10
+2023-12-18 12:34:08.611403: I Eval Time: 0.006515026092529297
+2023-12-18 12:34:08.611909: I Results
+2023-12-18 12:34:08.611909: I nDCGRendle2020	nan
+2023-12-18 12:34:08.614553: I HR	nan
+2023-12-18 12:34:08.615872: I Precision	nan
+2023-12-18 12:34:08.616876: I Recall	nan
+2023-12-18 12:34:08.616876: I 
+2023-12-18 12:34:08.616876: I Test Evaluation results
+2023-12-18 12:34:08.617877: I Cut-off: 10
+2023-12-18 12:34:08.617877: I Eval Time: 0.0035054683685302734
+2023-12-18 12:34:08.617877: I Results
+2023-12-18 12:34:08.617877: I nDCGRendle2020	nan
+2023-12-18 12:34:08.618877: I HR	nan
+2023-12-18 12:34:08.618877: I Precision	nan
+2023-12-18 12:34:08.618877: I Recall	nan
+2023-12-18 12:34:08.619704: I Training ended for ProxyRecommender
+2023-12-18 12:34:08.619704: I Loss:	nan
+2023-12-18 12:34:08.619704: I Best Model params:	{'folder': 'C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\facebook', 'meta': namespace(), 'path': 'C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\facebook\\tsne_@2.tsv', 'name': 'tsne_@2'}
+2023-12-18 12:34:08.619704: I Best Model results:	{10: {'nDCGRendle2020': nan, 'HR': nan, 'Precision': nan, 'Recall': nan}}
+2023-12-18 12:34:08.619704: I Training begun for ProxyRecommender
+
+2023-12-18 12:34:08.619704: I Hyperparameters:
+2023-12-18 12:34:08.621709: I folder set to C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data_dz\facebook
+2023-12-18 12:34:08.621709: I meta set to namespace()
+2023-12-18 12:34:08.621709: I path set to C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data_dz\facebook\tsne_@32.tsv
+2023-12-18 12:34:08.621709: I Exploration: Test Fold exploration number 1
+2023-12-18 12:34:08.621709: I Exploration: Train-Validation Fold exploration number 1
+2023-12-18 12:34:12.821517: I 
+2023-12-18 12:34:12.821517: I Validation Evaluation results
+2023-12-18 12:34:12.825707: I Cut-off: 10
+2023-12-18 12:34:12.825707: I Eval Time: 0.00650477409362793
+2023-12-18 12:34:12.825707: I Results
+2023-12-18 12:34:12.825707: I nDCGRendle2020	nan
+2023-12-18 12:34:12.826712: I HR	nan
+2023-12-18 12:34:12.826712: I Precision	nan
+2023-12-18 12:34:12.828687: I Recall	nan
+2023-12-18 12:34:12.828687: I 
+2023-12-18 12:34:12.831526: I Test Evaluation results
+2023-12-18 12:34:12.831526: I Cut-off: 10
+2023-12-18 12:34:12.832533: I Eval Time: 0.00201416015625
+2023-12-18 12:34:12.832533: I Results
+2023-12-18 12:34:12.832533: I nDCGRendle2020	nan
+2023-12-18 12:34:12.833532: I HR	nan
+2023-12-18 12:34:12.833532: I Precision	nan
+2023-12-18 12:34:12.833532: I Recall	nan
+2023-12-18 12:34:12.834640: I Training ended for ProxyRecommender
+2023-12-18 12:34:12.834640: I Loss:	nan
+2023-12-18 12:34:12.834640: I Best Model params:	{'folder': 'C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\facebook', 'meta': namespace(), 'path': 'C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\facebook\\tsne_@32.tsv', 'name': 'tsne_@32'}
+2023-12-18 12:34:12.834640: I Best Model results:	{10: {'nDCGRendle2020': nan, 'HR': nan, 'Precision': nan, 'Recall': nan}}
+2023-12-18 12:34:12.834640: I Training begun for ProxyRecommender
+
+2023-12-18 12:34:12.834640: I Hyperparameters:
+2023-12-18 12:34:12.834640: I folder set to C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data_dz\facebook
+2023-12-18 12:34:12.834640: I meta set to namespace()
+2023-12-18 12:34:12.834640: I path set to C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data_dz\facebook\tsne_@4.tsv
+2023-12-18 12:34:12.834640: I Exploration: Test Fold exploration number 1
+2023-12-18 12:34:12.834640: I Exploration: Train-Validation Fold exploration number 1
+2023-12-18 12:34:17.115920: I 
+2023-12-18 12:34:17.115920: I Validation Evaluation results
+2023-12-18 12:34:17.115920: I Cut-off: 10
+2023-12-18 12:34:17.115920: I Eval Time: 0.005007505416870117
+2023-12-18 12:34:17.115920: I Results
+2023-12-18 12:34:17.115920: I nDCGRendle2020	nan
+2023-12-18 12:34:17.115920: I HR	nan
+2023-12-18 12:34:17.115920: I Precision	nan
+2023-12-18 12:34:17.115920: I Recall	nan
+2023-12-18 12:34:17.115920: I 
+2023-12-18 12:34:17.121927: I Test Evaluation results
+2023-12-18 12:34:17.121927: I Cut-off: 10
+2023-12-18 12:34:17.121927: I Eval Time: 0.00420832633972168
+2023-12-18 12:34:17.121927: I Results
+2023-12-18 12:34:17.121927: I nDCGRendle2020	nan
+2023-12-18 12:34:17.125638: I HR	nan
+2023-12-18 12:34:17.125638: I Precision	nan
+2023-12-18 12:34:17.126143: I Recall	nan
+2023-12-18 12:34:17.126143: I Training ended for ProxyRecommender
+2023-12-18 12:34:17.126143: I Loss:	nan
+2023-12-18 12:34:17.127150: I Best Model params:	{'folder': 'C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\facebook', 'meta': namespace(), 'path': 'C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\facebook\\tsne_@4.tsv', 'name': 'tsne_@4'}
+2023-12-18 12:34:17.127150: I Best Model results:	{10: {'nDCGRendle2020': nan, 'HR': nan, 'Precision': nan, 'Recall': nan}}
+2023-12-18 12:34:17.127150: I Training begun for ProxyRecommender
+
+2023-12-18 12:34:17.128149: I Hyperparameters:
+2023-12-18 12:34:17.128149: I folder set to C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data_dz\facebook
+2023-12-18 12:34:17.128149: I meta set to namespace()
+2023-12-18 12:34:17.129273: I path set to C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data_dz\facebook\tsne_@64.tsv
+2023-12-18 12:34:17.129273: I Exploration: Test Fold exploration number 1
+2023-12-18 12:34:17.129273: I Exploration: Train-Validation Fold exploration number 1
+2023-12-18 12:34:21.286558: I 
+2023-12-18 12:34:21.286558: I Validation Evaluation results
+2023-12-18 12:34:21.291382: I Cut-off: 10
+2023-12-18 12:34:21.291382: I Eval Time: 0.002003908157348633
+2023-12-18 12:34:21.291887: I Results
+2023-12-18 12:34:21.291887: I nDCGRendle2020	nan
+2023-12-18 12:34:21.291887: I HR	nan
+2023-12-18 12:34:21.292894: I Precision	nan
+2023-12-18 12:34:21.292894: I Recall	nan
+2023-12-18 12:34:21.292894: I 
+2023-12-18 12:34:21.292894: I Test Evaluation results
+2023-12-18 12:34:21.293894: I Cut-off: 10
+2023-12-18 12:34:21.294497: I Eval Time: 0.005013704299926758
+2023-12-18 12:34:21.294497: I Results
+2023-12-18 12:34:21.294497: I nDCGRendle2020	nan
+2023-12-18 12:34:21.294497: I HR	nan
+2023-12-18 12:34:21.294497: I Precision	nan
+2023-12-18 12:34:21.294497: I Recall	nan
+2023-12-18 12:34:21.294497: I Training ended for ProxyRecommender
+2023-12-18 12:34:21.294497: I Loss:	nan
+2023-12-18 12:34:21.294497: I Best Model params:	{'folder': 'C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\facebook', 'meta': namespace(), 'path': 'C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\facebook\\tsne_@64.tsv', 'name': 'tsne_@64'}
+2023-12-18 12:34:21.294497: I Best Model results:	{10: {'nDCGRendle2020': nan, 'HR': nan, 'Precision': nan, 'Recall': nan}}
+2023-12-18 12:34:21.300462: I Training begun for ProxyRecommender
+
+2023-12-18 12:34:21.300462: I Hyperparameters:
+2023-12-18 12:34:21.300462: I folder set to C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data_dz\facebook
+2023-12-18 12:34:21.300462: I meta set to namespace()
+2023-12-18 12:34:21.301468: I path set to C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data_dz\facebook\tsne_@8.tsv
+2023-12-18 12:34:21.301468: I Exploration: Test Fold exploration number 1
+2023-12-18 12:34:21.301468: I Exploration: Train-Validation Fold exploration number 1
+2023-12-18 12:34:25.469615: I 
+2023-12-18 12:34:25.470615: I Validation Evaluation results
+2023-12-18 12:34:25.470615: I Cut-off: 10
+2023-12-18 12:34:25.470615: I Eval Time: 0.0045108795166015625
+2023-12-18 12:34:25.470615: I Results
+2023-12-18 12:34:25.471616: I nDCGRendle2020	nan
+2023-12-18 12:34:25.471616: I HR	nan
+2023-12-18 12:34:25.472121: I Precision	nan
+2023-12-18 12:34:25.472121: I Recall	nan
+2023-12-18 12:34:25.472121: I 
+2023-12-18 12:34:25.472121: I Test Evaluation results
+2023-12-18 12:34:25.472121: I Cut-off: 10
+2023-12-18 12:34:25.473125: I Eval Time: 0.003000020980834961
+2023-12-18 12:34:25.473125: I Results
+2023-12-18 12:34:25.477387: I nDCGRendle2020	nan
+2023-12-18 12:34:25.478243: I HR	nan
+2023-12-18 12:34:25.478243: I Precision	nan
+2023-12-18 12:34:25.478243: I Recall	nan
+2023-12-18 12:34:25.478243: I Training ended for ProxyRecommender
+2023-12-18 12:34:25.478243: I Loss:	nan
+2023-12-18 12:34:25.478243: I Best Model params:	{'folder': 'C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\facebook', 'meta': namespace(), 'path': 'C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\facebook\\tsne_@8.tsv', 'name': 'tsne_@8'}
+2023-12-18 12:34:25.478243: I Best Model results:	{10: {'nDCGRendle2020': nan, 'HR': nan, 'Precision': nan, 'Recall': nan}}
+2023-12-18 12:34:25.534642: I End experiment
+2023-12-18 12:36:10.316216: I Start experiment
+2023-12-18 12:37:19.716744: I Start experiment
+2023-12-18 12:37:19.724918: I C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data\facebook_book\train.tsv - Loaded
+2023-12-18 12:37:19.726395: I Test Fold 0 - Validation Fold 0
+2023-12-18 12:37:19.921404: I Statistics	Users:	1369	Items:	786	Transactions:	9187	Sparsity:	0.9914621656936491
+2023-12-18 12:37:20.017196: I Training begun for ProxyRecommender
+
+2023-12-18 12:37:20.017196: I Hyperparameters:
+2023-12-18 12:37:20.017196: I folder set to C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data_dz\facebook
+2023-12-18 12:37:20.018201: I meta set to namespace()
+2023-12-18 12:37:20.018316: I path set to C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data_dz\facebook\base_@64.tsv
+2023-12-18 12:37:20.018418: I Exploration: Test Fold exploration number 1
+2023-12-18 12:37:20.018418: I Exploration: Train-Validation Fold exploration number 1
+2023-12-18 12:37:21.940225: I 
+2023-12-18 12:37:21.941225: I Validation Evaluation results
+2023-12-18 12:37:21.941225: I Cut-off: 10
+2023-12-18 12:37:21.943224: I Eval Time: 0.0045130252838134766
+2023-12-18 12:37:21.943224: I Results
+2023-12-18 12:37:21.943224: I nDCGRendle2020	nan
+2023-12-18 12:37:21.944226: I HR	nan
+2023-12-18 12:37:21.944226: I Precision	nan
+2023-12-18 12:37:21.945227: I Recall	nan
+2023-12-18 12:37:21.945227: I 
+2023-12-18 12:37:21.945227: I Test Evaluation results
+2023-12-18 12:37:21.945227: I Cut-off: 10
+2023-12-18 12:37:21.945227: I Eval Time: 0.0010001659393310547
+2023-12-18 12:37:21.945227: I Results
+2023-12-18 12:37:21.945227: I nDCGRendle2020	nan
+2023-12-18 12:37:21.946732: I HR	nan
+2023-12-18 12:37:21.947737: I Precision	nan
+2023-12-18 12:37:21.948738: I Recall	nan
+2023-12-18 12:37:21.950742: I Training ended for ProxyRecommender
+2023-12-18 12:37:21.951742: I Loss:	nan
+2023-12-18 12:37:21.952430: I Best Model params:	{'folder': 'C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\facebook', 'meta': namespace(), 'path': 'C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\facebook\\base_@64.tsv', 'name': 'base_@64'}
+2023-12-18 12:37:21.953436: I Best Model results:	{10: {'nDCGRendle2020': nan, 'HR': nan, 'Precision': nan, 'Recall': nan}}
+2023-12-18 12:37:21.954434: I End experiment
+2023-12-18 12:37:51.841358: I Start experiment
+2023-12-18 12:37:51.846452: I C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data\facebook_book\train.tsv - Loaded
+2023-12-18 12:37:51.851477: I Test Fold 0 - Validation Fold 0
+2023-12-18 12:37:52.046591: I Statistics	Users:	1369	Items:	786	Transactions:	9187	Sparsity:	0.9914621656936491
+2023-12-18 12:37:52.142280: I Training begun for ProxyRecommender
+
+2023-12-18 12:37:52.143280: I Hyperparameters:
+2023-12-18 12:37:52.143280: I folder set to C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data_dz\facebook
+2023-12-18 12:37:52.143280: I meta set to namespace()
+2023-12-18 12:37:52.143280: I path set to C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data_dz\facebook\base_@64.tsv
+2023-12-18 12:37:52.144281: I Exploration: Test Fold exploration number 1
+2023-12-18 12:37:52.144281: I Exploration: Train-Validation Fold exploration number 1
+2023-12-18 12:38:55.956351: I Start experiment
+2023-12-18 12:38:55.966146: I C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data\facebook_book\train.tsv - Loaded
+2023-12-18 12:38:55.971165: I Test Fold 0 - Validation Fold 0
+2023-12-18 12:38:56.168174: I Statistics	Users:	1369	Items:	786	Transactions:	9187	Sparsity:	0.9914621656936491
+2023-12-18 12:38:56.264296: I Training begun for ProxyRecommender
+
+2023-12-18 12:38:56.264296: I Hyperparameters:
+2023-12-18 12:38:56.265296: I folder set to C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data_dz\facebook
+2023-12-18 12:38:56.265296: I meta set to namespace()
+2023-12-18 12:38:56.265296: I path set to C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data_dz\facebook\val.tsv
+2023-12-18 12:38:56.266297: I Exploration: Test Fold exploration number 1
+2023-12-18 12:38:56.266297: I Exploration: Train-Validation Fold exploration number 1
+2023-12-18 12:39:39.210863: I Start experiment
+2023-12-18 12:39:39.216237: I C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data\facebook_book\train.tsv - Loaded
+2023-12-18 12:39:39.221243: I Test Fold 0 - Validation Fold 0
+2023-12-18 12:39:39.416209: I Statistics	Users:	1369	Items:	786	Transactions:	9187	Sparsity:	0.9914621656936491
+2023-12-18 12:39:39.512391: I Training begun for ProxyRecommender
+
+2023-12-18 12:39:39.512391: I Hyperparameters:
+2023-12-18 12:39:39.512391: I folder set to C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data_dz\facebook
+2023-12-18 12:39:39.513391: I meta set to namespace()
+2023-12-18 12:39:39.513391: I path set to C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data_dz\facebook\val.tsv
+2023-12-18 12:39:39.513391: I Exploration: Test Fold exploration number 1
+2023-12-18 12:39:39.513391: I Exploration: Train-Validation Fold exploration number 1
+2023-12-18 12:39:41.265985: I 
+2023-12-18 12:39:41.265985: I Validation Evaluation results
+2023-12-18 12:39:41.265985: I Cut-off: 10
+2023-12-18 12:39:41.269375: I Eval Time: 0.00804281234741211
+2023-12-18 12:39:41.269375: I Results
+2023-12-18 12:39:41.270380: I nDCGRendle2020	nan
+2023-12-18 12:39:41.270380: I HR	nan
+2023-12-18 12:39:41.270380: I Precision	nan
+2023-12-18 12:39:41.270380: I Recall	nan
+2023-12-18 12:39:41.271381: I 
+2023-12-18 12:39:41.271381: I Test Evaluation results
+2023-12-18 12:39:41.271381: I Cut-off: 10
+2023-12-18 12:39:41.272380: I Eval Time: 0.0
+2023-12-18 12:39:41.272380: I Results
+2023-12-18 12:39:41.272380: I nDCGRendle2020	nan
+2023-12-18 12:39:41.272380: I HR	nan
+2023-12-18 12:39:41.274806: I Precision	nan
+2023-12-18 12:39:41.276312: I Recall	nan
+2023-12-18 12:39:41.276312: I Training ended for ProxyRecommender
+2023-12-18 12:39:41.276312: I Loss:	nan
+2023-12-18 12:39:41.276312: I Best Model params:	{'folder': 'C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\facebook', 'meta': namespace(), 'path': 'C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\facebook\\val.tsv', 'name': 'val'}
+2023-12-18 12:39:41.276312: I Best Model results:	{10: {'nDCGRendle2020': nan, 'HR': nan, 'Precision': nan, 'Recall': nan}}
+2023-12-18 12:39:41.281332: I End experiment
+2023-12-18 12:41:04.317527: I Start experiment
+2023-12-18 12:41:04.332689: I C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data\facebook_book\train.tsv - Loaded
+2023-12-18 12:41:04.342356: I Test Fold 0 - Validation Fold 0
+2023-12-18 12:41:05.092562: I Statistics	Users:	1369	Items:	786	Transactions:	9187	Sparsity:	0.9914621656936491
+2023-12-18 12:41:05.427537: I Training begun for ProxyRecommender
+
+2023-12-18 12:41:05.427537: I Hyperparameters:
+2023-12-18 12:41:05.427537: I folder set to C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data_dz\facebook
+2023-12-18 12:41:05.427537: I meta set to namespace()
+2023-12-18 12:41:05.427537: I path set to C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data_dz\facebook\val.tsv
+2023-12-18 12:41:05.427537: I Exploration: Test Fold exploration number 1
+2023-12-18 12:41:05.427537: I Exploration: Train-Validation Fold exploration number 1
+2023-12-18 12:41:44.421628: I Start experiment
+2023-12-18 12:41:44.439294: I C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data\facebook_book\train.tsv - Loaded
+2023-12-18 12:41:44.449674: I Test Fold 0 - Validation Fold 0
+2023-12-18 12:41:45.217706: I Statistics	Users:	1369	Items:	786	Transactions:	9187	Sparsity:	0.9914621656936491
+2023-12-18 12:41:45.551132: I Training begun for ProxyRecommender
+
+2023-12-18 12:41:45.551132: I Hyperparameters:
+2023-12-18 12:41:45.551132: I folder set to C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data_dz\facebook
+2023-12-18 12:41:45.551132: I meta set to namespace()
+2023-12-18 12:41:45.551132: I path set to C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data_dz\facebook\val.tsv
+2023-12-18 12:41:45.551132: I Exploration: Test Fold exploration number 1
+2023-12-18 12:41:45.551132: I Exploration: Train-Validation Fold exploration number 1
+2023-12-18 12:41:55.787457: I 
+2023-12-18 12:41:55.814278: I Validation Evaluation results
+2023-12-18 12:41:55.856295: I Cut-off: 10
+2023-12-18 12:41:55.865644: I Eval Time: 0.05935955047607422
+2023-12-18 12:41:55.866645: I Results
+2023-12-18 12:41:55.869213: I nDCGRendle2020	0.99708
+2023-12-18 12:41:55.869213: I HR	0.99708
+2023-12-18 12:41:55.869213: I Precision	0.11088
+2023-12-18 12:41:55.869213: I Recall	0.99708
+2023-12-18 12:41:55.869213: I 
+2023-12-18 12:41:55.869213: I Test Evaluation results
+2023-12-18 12:41:55.869213: I Cut-off: 10
+2023-12-18 12:41:55.869213: I Eval Time: 0.04608654975891113
+2023-12-18 12:41:55.869213: I Results
+2023-12-18 12:41:55.869213: I nDCGRendle2020	0.0
+2023-12-18 12:41:55.869213: I HR	0.0
+2023-12-18 12:41:55.878029: I Precision	0.0
+2023-12-18 12:41:55.879036: I Recall	0.0
+2023-12-18 12:41:55.881043: I Training ended for ProxyRecommender
+2023-12-18 12:41:55.883768: I Loss:	-0.9970781592403214
+2023-12-18 12:41:55.883768: I Best Model params:	{'folder': 'C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\facebook', 'meta': namespace(), 'path': 'C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\facebook\\val.tsv', 'name': 'val'}
+2023-12-18 12:41:55.887274: I Best Model results:	{10: {'nDCGRendle2020': 0.0, 'HR': 0.0, 'Precision': 0.0, 'Recall': 0.0}}
+2023-12-18 12:41:55.887274: I End experiment
+2023-12-18 12:42:55.295149: I Start experiment
+2023-12-18 12:42:55.313915: I C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data\facebook_book\train.tsv - Loaded
+2023-12-18 12:42:55.326561: I Test Fold 0 - Validation Fold 0
+2023-12-18 12:42:56.097402: I Statistics	Users:	1369	Items:	786	Transactions:	9187	Sparsity:	0.9914621656936491
+2023-12-18 12:42:56.460326: I Training begun for ProxyRecommender
+
+2023-12-18 12:42:56.460326: I Hyperparameters:
+2023-12-18 12:42:56.461324: I folder set to C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data_dz\facebook
+2023-12-18 12:42:56.461324: I meta set to namespace()
+2023-12-18 12:42:56.462325: I path set to C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data_dz\facebook\base_@64.tsv
+2023-12-18 12:42:56.462325: I Exploration: Test Fold exploration number 1
+2023-12-18 12:42:56.462325: I Exploration: Train-Validation Fold exploration number 1
+2023-12-18 12:43:10.176523: I 
+2023-12-18 12:43:10.200958: I Validation Evaluation results
+2023-12-18 12:43:10.239079: I Cut-off: 10
+2023-12-18 12:43:10.265701: I Eval Time: 0.1654372215270996
+2023-12-18 12:43:10.307841: I Results
+2023-12-18 12:43:10.334395: I nDCGRendle2020	0.08051
+2023-12-18 12:43:10.361249: I HR	0.15559
+2023-12-18 12:43:10.399114: I Precision	0.01585
+2023-12-18 12:43:10.425781: I Recall	0.14646
+2023-12-18 12:43:10.518043: I 
+2023-12-18 12:43:10.548713: I Test Evaluation results
+2023-12-18 12:43:10.586468: I Cut-off: 10
+2023-12-18 12:43:10.602202: I Eval Time: 0.24483203887939453
+2023-12-18 12:43:10.628441: I Results
+2023-12-18 12:43:10.654970: I nDCGRendle2020	0.09689
+2023-12-18 12:43:10.697565: I HR	0.31702
+2023-12-18 12:43:10.721685: I Precision	0.0355
+2023-12-18 12:43:10.737569: I Recall	0.14345
+2023-12-18 12:43:10.737569: I Training ended for ProxyRecommender
+2023-12-18 12:43:10.737569: I Loss:	-0.08051053814848416
+2023-12-18 12:43:10.742575: I Best Model params:	{'folder': 'C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\facebook', 'meta': namespace(), 'path': 'C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\facebook\\base_@64.tsv', 'name': 'base_@64'}
+2023-12-18 12:43:10.742575: I Best Model results:	{10: {'nDCGRendle2020': 0.09688732002576719, 'HR': 0.3170197224251278, 'Precision': 0.03550036523009496, 'Recall': 0.14345020696372046}}
+2023-12-18 12:43:10.742575: I Training begun for ProxyRecommender
+
+2023-12-18 12:43:10.742575: I Hyperparameters:
+2023-12-18 12:43:10.742575: I folder set to C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data_dz\facebook
+2023-12-18 12:43:10.742575: I meta set to namespace()
+2023-12-18 12:43:10.742575: I path set to C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data_dz\facebook\tsne_@16.tsv
+2023-12-18 12:43:10.742575: I Exploration: Test Fold exploration number 1
+2023-12-18 12:43:10.745050: I Exploration: Train-Validation Fold exploration number 1
+2023-12-18 12:44:00.061512: I 
+2023-12-18 12:44:00.083811: I Validation Evaluation results
+2023-12-18 12:44:00.115164: I Cut-off: 10
+2023-12-18 12:44:00.139448: I Eval Time: 0.16812705993652344
+2023-12-18 12:44:00.179184: I Results
+2023-12-18 12:44:00.202897: I nDCGRendle2020	0.01921
+2023-12-18 12:44:00.232561: I HR	0.04091
+2023-12-18 12:44:00.259998: I Precision	0.00409
+2023-12-18 12:44:00.286901: I Recall	0.03871
+2023-12-18 12:44:00.444255: I 
+2023-12-18 12:44:00.475671: I Test Evaluation results
+2023-12-18 12:44:00.488446: I Cut-off: 10
+2023-12-18 12:44:00.512677: I Eval Time: 0.25361061096191406
+2023-12-18 12:44:00.540044: I Results
+2023-12-18 12:44:00.566347: I nDCGRendle2020	0.01687
+2023-12-18 12:44:00.593195: I HR	0.06793
+2023-12-18 12:44:00.633419: I Precision	0.00723
+2023-12-18 12:44:00.659205: I Recall	0.02936
+2023-12-18 12:44:00.685784: I Training ended for ProxyRecommender
+2023-12-18 12:44:00.685784: I Loss:	-0.019205682340071882
+2023-12-18 12:44:00.685784: I Best Model params:	{'folder': 'C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\facebook', 'meta': namespace(), 'path': 'C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\facebook\\tsne_@16.tsv', 'name': 'tsne_@16'}
+2023-12-18 12:44:00.685784: I Best Model results:	{10: {'nDCGRendle2020': 0.0168726390294402, 'HR': 0.0679327976625274, 'Precision': 0.007231555880204528, 'Recall': 0.029364499634769906}}
+2023-12-18 12:44:00.685784: I Training begun for ProxyRecommender
+
+2023-12-18 12:44:00.685784: I Hyperparameters:
+2023-12-18 12:44:00.696411: I folder set to C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data_dz\facebook
+2023-12-18 12:44:00.696411: I meta set to namespace()
+2023-12-18 12:44:00.697417: I path set to C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data_dz\facebook\tsne_@2.tsv
+2023-12-18 12:44:00.697417: I Exploration: Test Fold exploration number 1
+2023-12-18 12:44:00.697417: I Exploration: Train-Validation Fold exploration number 1
+2023-12-18 12:44:59.224232: I 
+2023-12-18 12:44:59.251794: I Validation Evaluation results
+2023-12-18 12:44:59.278465: I Cut-off: 10
+2023-12-18 12:44:59.305153: I Eval Time: 0.17875409126281738
+2023-12-18 12:44:59.331817: I Results
+2023-12-18 12:44:59.358474: I nDCGRendle2020	0.02326
+2023-12-18 12:44:59.374408: I HR	0.05551
+2023-12-18 12:44:59.400712: I Precision	0.00562
+2023-12-18 12:44:59.438520: I Recall	0.05259
+2023-12-18 12:44:59.601303: I 
+2023-12-18 12:44:59.625274: I Test Evaluation results
+2023-12-18 12:44:59.656688: I Cut-off: 10
+2023-12-18 12:44:59.683721: I Eval Time: 0.24493932723999023
+2023-12-18 12:44:59.705450: I Results
+2023-12-18 12:44:59.736760: I nDCGRendle2020	0.02308
+2023-12-18 12:44:59.771985: I HR	0.08473
+2023-12-18 12:44:59.798655: I Precision	0.0092
+2023-12-18 12:44:59.825319: I Recall	0.03809
+2023-12-18 12:44:59.825319: I Training ended for ProxyRecommender
+2023-12-18 12:44:59.825319: I Loss:	-0.02325797480098236
+2023-12-18 12:44:59.825319: I Best Model params:	{'folder': 'C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\facebook', 'meta': namespace(), 'path': 'C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\facebook\\tsne_@2.tsv', 'name': 'tsne_@2'}
+2023-12-18 12:44:59.825319: I Best Model results:	{10: {'nDCGRendle2020': 0.023084022793286665, 'HR': 0.08473338203067933, 'Precision': 0.009203798392987583, 'Recall': 0.03809349890430971}}
+2023-12-18 12:44:59.825319: I Training begun for ProxyRecommender
+
+2023-12-18 12:44:59.832323: I Hyperparameters:
+2023-12-18 12:44:59.832323: I folder set to C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data_dz\facebook
+2023-12-18 12:44:59.832323: I meta set to namespace()
+2023-12-18 12:44:59.832323: I path set to C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data_dz\facebook\tsne_@32.tsv
+2023-12-18 12:44:59.832323: I Exploration: Test Fold exploration number 1
+2023-12-18 12:44:59.832323: I Exploration: Train-Validation Fold exploration number 1
+2023-12-18 12:45:12.485030: I 
+2023-12-18 12:45:12.499097: I Validation Evaluation results
+2023-12-18 12:45:12.525936: I Cut-off: 10
+2023-12-18 12:45:12.552498: I Eval Time: 0.1777656078338623
+2023-12-18 12:45:12.579195: I Results
+2023-12-18 12:45:12.605899: I nDCGRendle2020	0.01564
+2023-12-18 12:45:12.643783: I HR	0.03652
+2023-12-18 12:45:12.683792: I Precision	0.00365
+2023-12-18 12:45:12.712690: I Recall	0.03251
+2023-12-18 12:45:12.850142: I 
+2023-12-18 12:45:12.872117: I Test Evaluation results
+2023-12-18 12:45:12.899149: I Cut-off: 10
+2023-12-18 12:45:12.925784: I Eval Time: 0.24289751052856445
+2023-12-18 12:45:12.956980: I Results
+2023-12-18 12:45:12.979086: I nDCGRendle2020	0.01631
+2023-12-18 12:45:13.005881: I HR	0.06136
+2023-12-18 12:45:13.032461: I Precision	0.00665
+2023-12-18 12:45:13.059112: I Recall	0.02762
+2023-12-18 12:45:13.072171: I Training ended for ProxyRecommender
+2023-12-18 12:45:13.072171: I Loss:	-0.015638172575305604
+2023-12-18 12:45:13.072171: I Best Model params:	{'folder': 'C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\facebook', 'meta': namespace(), 'path': 'C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\facebook\\tsne_@32.tsv', 'name': 'tsne_@32'}
+2023-12-18 12:45:13.072171: I Best Model results:	{10: {'nDCGRendle2020': 0.016305219284519668, 'HR': 0.061358655953250546, 'Precision': 0.00664718772826881, 'Recall': 0.027623569515461403}}
+2023-12-18 12:45:13.072171: I Training begun for ProxyRecommender
+
+2023-12-18 12:45:13.072171: I Hyperparameters:
+2023-12-18 12:45:13.077190: I folder set to C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data_dz\facebook
+2023-12-18 12:45:13.077190: I meta set to namespace()
+2023-12-18 12:45:13.077190: I path set to C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data_dz\facebook\tsne_@4.tsv
+2023-12-18 12:45:13.077190: I Exploration: Test Fold exploration number 1
+2023-12-18 12:45:13.077190: I Exploration: Train-Validation Fold exploration number 1
+2023-12-18 12:45:22.872151: I 
+2023-12-18 12:45:22.902905: I Validation Evaluation results
+2023-12-18 12:45:22.929659: I Cut-off: 10
+2023-12-18 12:45:22.956321: I Eval Time: 0.17838716506958008
+2023-12-18 12:45:22.982940: I Results
+2023-12-18 12:45:23.009645: I nDCGRendle2020	0.0204
+2023-12-18 12:45:23.036277: I HR	0.0431
+2023-12-18 12:45:23.074232: I Precision	0.00431
+2023-12-18 12:45:23.100856: I Recall	0.03908
+2023-12-18 12:45:23.254389: I 
+2023-12-18 12:45:23.275883: I Test Evaluation results
+2023-12-18 12:45:23.303055: I Cut-off: 10
+2023-12-18 12:45:23.329511: I Eval Time: 0.24539685249328613
+2023-12-18 12:45:23.341002: I Results
+2023-12-18 12:45:23.369860: I nDCGRendle2020	0.02336
+2023-12-18 12:45:23.396175: I HR	0.09131
+2023-12-18 12:45:23.422867: I Precision	0.00979
+2023-12-18 12:45:23.461019: I Recall	0.04053
+2023-12-18 12:45:23.474342: I Training ended for ProxyRecommender
+2023-12-18 12:45:23.474342: I Loss:	-0.02039977555611273
+2023-12-18 12:45:23.474342: I Best Model params:	{'folder': 'C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\facebook', 'meta': namespace(), 'path': 'C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\facebook\\tsne_@4.tsv', 'name': 'tsne_@4'}
+2023-12-18 12:45:23.474342: I Best Model results:	{10: {'nDCGRendle2020': 0.023361277537071286, 'HR': 0.09130752373995617, 'Precision': 0.009788166544923304, 'Recall': 0.040528366204041884}}
+2023-12-18 12:45:23.474342: I Training begun for ProxyRecommender
+
+2023-12-18 12:45:23.474342: I Hyperparameters:
+2023-12-18 12:45:23.474342: I folder set to C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data_dz\facebook
+2023-12-18 12:45:23.474342: I meta set to namespace()
+2023-12-18 12:45:23.474342: I path set to C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data_dz\facebook\tsne_@64.tsv
+2023-12-18 12:45:23.474342: I Exploration: Test Fold exploration number 1
+2023-12-18 12:45:23.474342: I Exploration: Train-Validation Fold exploration number 1
+2023-12-18 12:45:34.911767: I 
+2023-12-18 12:45:34.944712: I Validation Evaluation results
+2023-12-18 12:45:34.971383: I Cut-off: 10
+2023-12-18 12:45:34.998653: I Eval Time: 0.17691469192504883
+2023-12-18 12:45:35.025437: I Results
+2023-12-18 12:45:35.054959: I nDCGRendle2020	0.01668
+2023-12-18 12:45:35.065308: I HR	0.04091
+2023-12-18 12:45:35.079406: I Precision	0.00409
+2023-12-18 12:45:35.107091: I Recall	0.03689
+2023-12-18 12:45:35.294111: I 
+2023-12-18 12:45:35.319433: I Test Evaluation results
+2023-12-18 12:45:35.345998: I Cut-off: 10
+2023-12-18 12:45:35.381918: I Eval Time: 0.25311803817749023
+2023-12-18 12:45:35.399527: I Results
+2023-12-18 12:45:35.426152: I nDCGRendle2020	0.01574
+2023-12-18 12:45:35.465805: I HR	0.06501
+2023-12-18 12:45:35.478958: I Precision	0.00665
+2023-12-18 12:45:35.518774: I Recall	0.02701
+2023-12-18 12:45:35.522280: I Training ended for ProxyRecommender
+2023-12-18 12:45:35.522280: I Loss:	-0.016684398299348493
+2023-12-18 12:45:35.522280: I Best Model params:	{'folder': 'C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\facebook', 'meta': namespace(), 'path': 'C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\facebook\\tsne_@64.tsv', 'name': 'tsne_@64'}
+2023-12-18 12:45:35.522280: I Best Model results:	{10: {'nDCGRendle2020': 0.015738789194484456, 'HR': 0.06501095690284879, 'Precision': 0.00664718772826881, 'Recall': 0.027014852690528366}}
+2023-12-18 12:45:35.527297: I Training begun for ProxyRecommender
+
+2023-12-18 12:45:35.527297: I Hyperparameters:
+2023-12-18 12:45:35.527297: I folder set to C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data_dz\facebook
+2023-12-18 12:45:35.527297: I meta set to namespace()
+2023-12-18 12:45:35.527297: I path set to C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data_dz\facebook\tsne_@8.tsv
+2023-12-18 12:45:35.527297: I Exploration: Test Fold exploration number 1
+2023-12-18 12:45:35.527297: I Exploration: Train-Validation Fold exploration number 1
+2023-12-18 12:45:39.984355: I 
+2023-12-18 12:45:40.013708: I Validation Evaluation results
+2023-12-18 12:45:40.040423: I Cut-off: 10
+2023-12-18 12:45:40.067059: I Eval Time: 0.16506576538085938
+2023-12-18 12:45:40.093727: I Results
+2023-12-18 12:45:40.120405: I nDCGRendle2020	0.01731
+2023-12-18 12:45:40.133426: I HR	0.04602
+2023-12-18 12:45:40.160405: I Precision	0.0046
+2023-12-18 12:45:40.187082: I Recall	0.0431
+2023-12-18 12:45:40.432097: I 
+2023-12-18 12:45:40.453787: I Test Evaluation results
+2023-12-18 12:45:40.480598: I Cut-off: 10
+2023-12-18 12:45:40.520008: I Eval Time: 0.24533581733703613
+2023-12-18 12:45:40.560019: I Results
+2023-12-18 12:45:40.587233: I nDCGRendle2020	0.01907
+2023-12-18 12:45:40.613901: I HR	0.07451
+2023-12-18 12:45:40.615905: I Precision	0.00804
+2023-12-18 12:45:40.615905: I Recall	0.03264
+2023-12-18 12:45:40.621922: I Training ended for ProxyRecommender
+2023-12-18 12:45:40.625912: I Loss:	-0.01730945028469537
+2023-12-18 12:45:40.627721: I Best Model params:	{'folder': 'C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\facebook', 'meta': namespace(), 'path': 'C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\facebook\\tsne_@8.tsv', 'name': 'tsne_@8'}
+2023-12-18 12:45:40.627721: I Best Model results:	{10: {'nDCGRendle2020': 0.01906839127384003, 'HR': 0.07450693937180423, 'Precision': 0.008035062089116142, 'Recall': 0.03263939615290967}}
+2023-12-18 12:45:40.627721: I Training begun for ProxyRecommender
+
+2023-12-18 12:45:40.627721: I Hyperparameters:
+2023-12-18 12:45:40.627721: I folder set to C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data_dz\facebook
+2023-12-18 12:45:40.627721: I meta set to namespace()
+2023-12-18 12:45:40.627721: I path set to C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data_dz\facebook\val.tsv
+2023-12-18 12:45:40.627721: I Exploration: Test Fold exploration number 1
+2023-12-18 12:45:40.627721: I Exploration: Train-Validation Fold exploration number 1
+2023-12-18 12:45:44.339010: I 
+2023-12-18 12:45:44.361973: I Validation Evaluation results
+2023-12-18 12:45:44.389740: I Cut-off: 10
+2023-12-18 12:45:44.415316: I Eval Time: 0.04529547691345215
+2023-12-18 12:45:44.441972: I Results
+2023-12-18 12:45:44.452003: I nDCGRendle2020	0.99708
+2023-12-18 12:45:44.452003: I HR	0.99708
+2023-12-18 12:45:44.453867: I Precision	0.11088
+2023-12-18 12:45:44.453867: I Recall	0.99708
+2023-12-18 12:45:44.453867: I 
+2023-12-18 12:45:44.453867: I Test Evaluation results
+2023-12-18 12:45:44.455021: I Cut-off: 10
+2023-12-18 12:45:44.455021: I Eval Time: 0.046457529067993164
+2023-12-18 12:45:44.455021: I Results
+2023-12-18 12:45:44.455021: I nDCGRendle2020	0.0
+2023-12-18 12:45:44.455021: I HR	0.0
+2023-12-18 12:45:44.455021: I Precision	0.0
+2023-12-18 12:45:44.455021: I Recall	0.0
+2023-12-18 12:45:44.455021: I Training ended for ProxyRecommender
+2023-12-18 12:45:44.455021: I Loss:	-0.9970781592403214
+2023-12-18 12:45:44.462026: I Best Model params:	{'folder': 'C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\facebook', 'meta': namespace(), 'path': 'C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\facebook\\val.tsv', 'name': 'val'}
+2023-12-18 12:45:44.462026: I Best Model results:	{10: {'nDCGRendle2020': 0.0, 'HR': 0.0, 'Precision': 0.0, 'Recall': 0.0}}
+2023-12-18 12:45:44.602186: I End experiment
+2023-12-18 12:53:07.214746: I Start experiment
+2023-12-18 12:53:07.234595: I C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data\facebook_book\train.tsv - Loaded
+2023-12-18 12:53:07.243800: I Test Fold 0 - Validation Fold 0
+2023-12-18 12:53:07.439350: I Statistics	Users:	1369	Items:	786	Transactions:	9187	Sparsity:	0.9914621656936491
+2023-12-18 12:53:07.774034: I Training begun for ProxyRecommender
+
+2023-12-18 12:53:07.774034: I Hyperparameters:
+2023-12-18 12:53:07.774034: I folder set to C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data_dz\facebook
+2023-12-18 12:53:07.779539: I meta set to namespace()
+2023-12-18 12:53:07.779539: I path set to C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data_dz\facebook\base_@64.tsv
+2023-12-18 12:53:07.779539: I Exploration: Test Fold exploration number 1
+2023-12-18 12:53:07.779539: I Exploration: Train-Validation Fold exploration number 1
+2023-12-18 12:53:09.838564: I 
+2023-12-18 12:53:09.874655: I Validation Evaluation results
+2023-12-18 12:53:09.884960: I Cut-off: 10
+2023-12-18 12:53:09.898318: I Eval Time: 0.08187484741210938
+2023-12-18 12:53:09.925028: I Results
+2023-12-18 12:53:09.951447: I nDCGRendle2020	1.0
+2023-12-18 12:53:09.978309: I HR	1.0
+2023-12-18 12:53:10.004729: I Precision	1.0
+2023-12-18 12:53:10.031623: I Recall	1.0
+2023-12-18 12:53:10.043031: I 
+2023-12-18 12:53:10.043031: I Test Evaluation results
+2023-12-18 12:53:10.043031: I Cut-off: 10
+2023-12-18 12:53:10.049538: I Eval Time: 0.08259034156799316
+2023-12-18 12:53:10.049538: I Results
+2023-12-18 12:53:10.049538: I nDCGRendle2020	1.0
+2023-12-18 12:53:10.049538: I HR	1.0
+2023-12-18 12:53:10.049538: I Precision	1.0
+2023-12-18 12:53:10.049538: I Recall	1.0
+2023-12-18 12:53:10.049538: I Training ended for ProxyRecommender
+2023-12-18 12:53:10.049538: I Loss:	-1.0
+2023-12-18 12:53:10.049538: I Best Model params:	{'folder': 'C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\facebook', 'meta': namespace(), 'path': 'C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\facebook\\base_@64.tsv', 'name': 'base_@64'}
+2023-12-18 12:53:10.049538: I Best Model results:	{10: {'nDCGRendle2020': 1.0, 'HR': 1.0, 'Precision': 1.0, 'Recall': 1.0}}
+2023-12-18 12:53:10.049538: I Training begun for ProxyRecommender
+
+2023-12-18 12:53:10.049538: I Hyperparameters:
+2023-12-18 12:53:10.049538: I folder set to C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data_dz\facebook
+2023-12-18 12:53:10.049538: I meta set to namespace()
+2023-12-18 12:53:10.049538: I path set to C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data_dz\facebook\tsne_@16.tsv
+2023-12-18 12:53:10.049538: I Exploration: Test Fold exploration number 1
+2023-12-18 12:53:10.049538: I Exploration: Train-Validation Fold exploration number 1
+2023-12-18 12:53:12.025169: I 
+2023-12-18 12:53:12.057205: I Validation Evaluation results
+2023-12-18 12:53:12.074588: I Cut-off: 10
+2023-12-18 12:53:12.114803: I Eval Time: 0.05988025665283203
+2023-12-18 12:53:12.136938: I Results
+2023-12-18 12:53:12.165625: I nDCGRendle2020	0.05846
+2023-12-18 12:53:12.179598: I HR	0.33601
+2023-12-18 12:53:12.179598: I Precision	0.05194
+2023-12-18 12:53:12.179598: I Recall	0.05194
+2023-12-18 12:53:12.179598: I 
+2023-12-18 12:53:12.179598: I Test Evaluation results
+2023-12-18 12:53:12.179598: I Cut-off: 10
+2023-12-18 12:53:12.179598: I Eval Time: 0.05930471420288086
+2023-12-18 12:53:12.179598: I Results
+2023-12-18 12:53:12.179598: I nDCGRendle2020	0.05846
+2023-12-18 12:53:12.179598: I HR	0.33601
+2023-12-18 12:53:12.179598: I Precision	0.05194
+2023-12-18 12:53:12.184615: I Recall	0.05194
+2023-12-18 12:53:12.184615: I Training ended for ProxyRecommender
+2023-12-18 12:53:12.184615: I Loss:	-0.058457245422925026
+2023-12-18 12:53:12.184615: I Best Model params:	{'folder': 'C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\facebook', 'meta': namespace(), 'path': 'C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\facebook\\tsne_@16.tsv', 'name': 'tsne_@16'}
+2023-12-18 12:53:12.184615: I Best Model results:	{10: {'nDCGRendle2020': 0.058457245422925026, 'HR': 0.3360116873630387, 'Precision': 0.05193571950328707, 'Recall': 0.05193571950328707}}
+2023-12-18 12:53:12.184615: I Training begun for ProxyRecommender
+
+2023-12-18 12:53:12.184615: I Hyperparameters:
+2023-12-18 12:53:12.184615: I folder set to C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data_dz\facebook
+2023-12-18 12:53:12.184615: I meta set to namespace()
+2023-12-18 12:53:12.184615: I path set to C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data_dz\facebook\tsne_@2.tsv
+2023-12-18 12:53:12.184615: I Exploration: Test Fold exploration number 1
+2023-12-18 12:53:12.184615: I Exploration: Train-Validation Fold exploration number 1
+2023-12-18 12:53:14.134344: I 
+2023-12-18 12:53:14.165933: I Validation Evaluation results
+2023-12-18 12:53:14.192971: I Cut-off: 10
+2023-12-18 12:53:14.231013: I Eval Time: 0.061890602111816406
+2023-12-18 12:53:14.257628: I Results
+2023-12-18 12:53:14.285976: I nDCGRendle2020	0.09209
+2023-12-18 12:53:14.286415: I HR	0.30168
+2023-12-18 12:53:14.289420: I Precision	0.09007
+2023-12-18 12:53:14.289420: I Recall	0.09007
+2023-12-18 12:53:14.289420: I 
+2023-12-18 12:53:14.289420: I Test Evaluation results
+2023-12-18 12:53:14.289420: I Cut-off: 10
+2023-12-18 12:53:14.289420: I Eval Time: 0.05980491638183594
+2023-12-18 12:53:14.289420: I Results
+2023-12-18 12:53:14.289420: I nDCGRendle2020	0.09209
+2023-12-18 12:53:14.289420: I HR	0.30168
+2023-12-18 12:53:14.289420: I Precision	0.09007
+2023-12-18 12:53:14.289420: I Recall	0.09007
+2023-12-18 12:53:14.289420: I Training ended for ProxyRecommender
+2023-12-18 12:53:14.294438: I Loss:	-0.09208826626651236
+2023-12-18 12:53:14.294438: I Best Model params:	{'folder': 'C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\facebook', 'meta': namespace(), 'path': 'C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\facebook\\tsne_@2.tsv', 'name': 'tsne_@2'}
+2023-12-18 12:53:14.294438: I Best Model results:	{10: {'nDCGRendle2020': 0.09208826626651236, 'HR': 0.30168005843681517, 'Precision': 0.09006574141709277, 'Recall': 0.09006574141709277}}
+2023-12-18 12:53:14.294438: I Training begun for ProxyRecommender
+
+2023-12-18 12:53:14.294438: I Hyperparameters:
+2023-12-18 12:53:14.294438: I folder set to C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data_dz\facebook
+2023-12-18 12:53:14.296342: I meta set to namespace()
+2023-12-18 12:53:14.296342: I path set to C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data_dz\facebook\tsne_@32.tsv
+2023-12-18 12:53:14.296342: I Exploration: Test Fold exploration number 1
+2023-12-18 12:53:14.296342: I Exploration: Train-Validation Fold exploration number 1
+2023-12-18 12:53:16.257063: I 
+2023-12-18 12:53:16.284596: I Validation Evaluation results
+2023-12-18 12:53:16.313869: I Cut-off: 10
+2023-12-18 12:53:16.325101: I Eval Time: 0.061009883880615234
+2023-12-18 12:53:16.365152: I Results
+2023-12-18 12:53:16.392206: I nDCGRendle2020	0.03258
+2023-12-18 12:53:16.409501: I HR	0.20526
+2023-12-18 12:53:16.409501: I Precision	0.03397
+2023-12-18 12:53:16.409501: I Recall	0.03397
+2023-12-18 12:53:16.409501: I 
+2023-12-18 12:53:16.409501: I Test Evaluation results
+2023-12-18 12:53:16.409501: I Cut-off: 10
+2023-12-18 12:53:16.409501: I Eval Time: 0.06678318977355957
+2023-12-18 12:53:16.409501: I Results
+2023-12-18 12:53:16.409501: I nDCGRendle2020	0.03258
+2023-12-18 12:53:16.414517: I HR	0.20526
+2023-12-18 12:53:16.414517: I Precision	0.03397
+2023-12-18 12:53:16.414517: I Recall	0.03397
+2023-12-18 12:53:16.414517: I Training ended for ProxyRecommender
+2023-12-18 12:53:16.417102: I Loss:	-0.03258374074517693
+2023-12-18 12:53:16.417102: I Best Model params:	{'folder': 'C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\facebook', 'meta': namespace(), 'path': 'C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\facebook\\tsne_@32.tsv', 'name': 'tsne_@32'}
+2023-12-18 12:53:16.417102: I Best Model results:	{10: {'nDCGRendle2020': 0.03258374074517693, 'HR': 0.20525931336742148, 'Precision': 0.0339663988312637, 'Recall': 0.0339663988312637}}
+2023-12-18 12:53:16.418108: I Training begun for ProxyRecommender
+
+2023-12-18 12:53:16.418108: I Hyperparameters:
+2023-12-18 12:53:16.418108: I folder set to C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data_dz\facebook
+2023-12-18 12:53:16.418108: I meta set to namespace()
+2023-12-18 12:53:16.418108: I path set to C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data_dz\facebook\tsne_@4.tsv
+2023-12-18 12:53:16.418108: I Exploration: Test Fold exploration number 1
+2023-12-18 12:53:16.418108: I Exploration: Train-Validation Fold exploration number 1
+2023-12-18 12:53:18.356799: I 
+2023-12-18 12:53:18.380295: I Validation Evaluation results
+2023-12-18 12:53:18.407493: I Cut-off: 10
+2023-12-18 12:53:18.434410: I Eval Time: 0.06332015991210938
+2023-12-18 12:53:18.485619: I Results
+2023-12-18 12:53:18.514187: I nDCGRendle2020	0.07206
+2023-12-18 12:53:18.514593: I HR	0.28999
+2023-12-18 12:53:18.514593: I Precision	0.071
+2023-12-18 12:53:18.514593: I Recall	0.071
+2023-12-18 12:53:18.519598: I 
+2023-12-18 12:53:18.519598: I Test Evaluation results
+2023-12-18 12:53:18.519598: I Cut-off: 10
+2023-12-18 12:53:18.527582: I Eval Time: 0.06525707244873047
+2023-12-18 12:53:18.528952: I Results
+2023-12-18 12:53:18.529457: I nDCGRendle2020	0.07206
+2023-12-18 12:53:18.534491: I HR	0.28999
+2023-12-18 12:53:18.534491: I Precision	0.071
+2023-12-18 12:53:18.534491: I Recall	0.071
+2023-12-18 12:53:18.534491: I Training ended for ProxyRecommender
+2023-12-18 12:53:18.534491: I Loss:	-0.07205759450914519
+2023-12-18 12:53:18.534491: I Best Model params:	{'folder': 'C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\facebook', 'meta': namespace(), 'path': 'C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\facebook\\tsne_@4.tsv', 'name': 'tsne_@4'}
+2023-12-18 12:53:18.534491: I Best Model results:	{10: {'nDCGRendle2020': 0.07205759450914519, 'HR': 0.2899926953981008, 'Precision': 0.07100073046018993, 'Recall': 0.07100073046018993}}
+2023-12-18 12:53:18.544705: I Training begun for ProxyRecommender
+
+2023-12-18 12:53:18.544705: I Hyperparameters:
+2023-12-18 12:53:18.544705: I folder set to C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data_dz\facebook
+2023-12-18 12:53:18.544705: I meta set to namespace()
+2023-12-18 12:53:18.544705: I path set to C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data_dz\facebook\tsne_@64.tsv
+2023-12-18 12:53:18.544705: I Exploration: Test Fold exploration number 1
+2023-12-18 12:53:18.544705: I Exploration: Train-Validation Fold exploration number 1
+2023-12-18 12:53:20.519761: I 
+2023-12-18 12:53:20.526043: I Validation Evaluation results
+2023-12-18 12:53:20.553315: I Cut-off: 10
+2023-12-18 12:53:20.582012: I Eval Time: 0.0646054744720459
+2023-12-18 12:53:20.633150: I Results
+2023-12-18 12:53:20.646270: I nDCGRendle2020	0.04999
+2023-12-18 12:53:20.662042: I HR	0.28634
+2023-12-18 12:53:20.662042: I Precision	0.05113
+2023-12-18 12:53:20.662042: I Recall	0.05113
+2023-12-18 12:53:20.662042: I 
+2023-12-18 12:53:20.662042: I Test Evaluation results
+2023-12-18 12:53:20.662042: I Cut-off: 10
+2023-12-18 12:53:20.662042: I Eval Time: 0.06430649757385254
+2023-12-18 12:53:20.662042: I Results
+2023-12-18 12:53:20.662042: I nDCGRendle2020	0.04999
+2023-12-18 12:53:20.669549: I HR	0.28634
+2023-12-18 12:53:20.669549: I Precision	0.05113
+2023-12-18 12:53:20.669549: I Recall	0.05113
+2023-12-18 12:53:20.671973: I Training ended for ProxyRecommender
+2023-12-18 12:53:20.672979: I Loss:	-0.04998724606891475
+2023-12-18 12:53:20.673986: I Best Model params:	{'folder': 'C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\facebook', 'meta': namespace(), 'path': 'C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\facebook\\tsne_@64.tsv', 'name': 'tsne_@64'}
+2023-12-18 12:53:20.673986: I Best Model results:	{10: {'nDCGRendle2020': 0.04998724606891475, 'HR': 0.28634039444850257, 'Precision': 0.05113221329437546, 'Recall': 0.05113221329437546}}
+2023-12-18 12:53:20.673986: I Training begun for ProxyRecommender
+
+2023-12-18 12:53:20.673986: I Hyperparameters:
+2023-12-18 12:53:20.674984: I folder set to C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data_dz\facebook
+2023-12-18 12:53:20.674984: I meta set to namespace()
+2023-12-18 12:53:20.675740: I path set to C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data_dz\facebook\tsne_@8.tsv
+2023-12-18 12:53:20.675740: I Exploration: Test Fold exploration number 1
+2023-12-18 12:53:20.675740: I Exploration: Train-Validation Fold exploration number 1
+2023-12-18 12:53:22.625336: I 
+2023-12-18 12:53:22.647279: I Validation Evaluation results
+2023-12-18 12:53:22.673962: I Cut-off: 10
+2023-12-18 12:53:22.700693: I Eval Time: 0.06353259086608887
+2023-12-18 12:53:22.713778: I Results
+2023-12-18 12:53:22.740660: I nDCGRendle2020	0.0627
+2023-12-18 12:53:22.767363: I HR	0.27757
+2023-12-18 12:53:22.775387: I Precision	0.06355
+2023-12-18 12:53:22.775387: I Recall	0.06355
+2023-12-18 12:53:22.775387: I 
+2023-12-18 12:53:22.775387: I Test Evaluation results
+2023-12-18 12:53:22.775387: I Cut-off: 10
+2023-12-18 12:53:22.775387: I Eval Time: 0.06449365615844727
+2023-12-18 12:53:22.775387: I Results
+2023-12-18 12:53:22.775387: I nDCGRendle2020	0.0627
+2023-12-18 12:53:22.775387: I HR	0.27757
+2023-12-18 12:53:22.775387: I Precision	0.06355
+2023-12-18 12:53:22.775387: I Recall	0.06355
+2023-12-18 12:53:22.780777: I Training ended for ProxyRecommender
+2023-12-18 12:53:22.780777: I Loss:	-0.06270131951171949
+2023-12-18 12:53:22.780777: I Best Model params:	{'folder': 'C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\facebook', 'meta': namespace(), 'path': 'C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\facebook\\tsne_@8.tsv', 'name': 'tsne_@8'}
+2023-12-18 12:53:22.780777: I Best Model results:	{10: {'nDCGRendle2020': 0.06270131951171949, 'HR': 0.27757487216946675, 'Precision': 0.0635500365230095, 'Recall': 0.0635500365230095}}
+2023-12-18 12:53:22.856590: I End experiment
+2023-12-18 13:06:34.530039: I Start experiment
+2023-12-18 13:09:21.201758: I Start experiment
+2023-12-18 13:12:42.092317: I Start experiment
+2023-12-18 13:14:39.385074: I Start experiment
+2023-12-18 13:14:39.450069: I C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data\facebook_book\train.tsv - Loaded
+2023-12-18 13:14:39.468870: I Test Fold 0 - Validation Fold 0
+2023-12-18 13:14:39.655250: I Statistics	Users:	1369	Items:	786	Transactions:	9187	Sparsity:	0.9914621656936491
+2023-12-18 13:14:42.349251: I Training begun for ProxyRecommender
+
+2023-12-18 13:14:42.349251: I Hyperparameters:
+2023-12-18 13:14:42.349251: I folder set to C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data_dz\facebook\tsne\validation
+2023-12-18 13:14:42.349251: I meta set to namespace()
+2023-12-18 13:14:42.349251: I path set to C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data_dz\facebook\tsne\validation\validation_tsne_@16.tsv
+2023-12-18 13:14:42.349251: I Exploration: Test Fold exploration number 1
+2023-12-18 13:14:42.349251: I Exploration: Train-Validation Fold exploration number 1
+2023-12-18 13:14:44.362801: I 
+2023-12-18 13:14:44.390523: I Validation Evaluation results
+2023-12-18 13:14:44.417184: I Cut-off: 10
+2023-12-18 13:14:44.457039: I Eval Time: 0.06302785873413086
+2023-12-18 13:14:44.489900: I Results
+2023-12-18 13:14:44.510259: I nDCGRendle2020	0.05846
+2023-12-18 13:14:44.510259: I HR	0.33601
+2023-12-18 13:14:44.510259: I Precision	0.05194
+2023-12-18 13:14:44.510259: I Recall	0.05194
+2023-12-18 13:14:44.510259: I 
+2023-12-18 13:14:44.510259: I Test Evaluation results
+2023-12-18 13:14:44.515265: I Cut-off: 10
+2023-12-18 13:14:44.515265: I Eval Time: 0.05496692657470703
+2023-12-18 13:14:44.515265: I Results
+2023-12-18 13:14:44.515265: I nDCGRendle2020	0.05846
+2023-12-18 13:14:44.515265: I HR	0.33601
+2023-12-18 13:14:44.515265: I Precision	0.05194
+2023-12-18 13:14:44.515265: I Recall	0.05194
+2023-12-18 13:14:44.515265: I Training ended for ProxyRecommender
+2023-12-18 13:14:44.515265: I Loss:	-0.058457245422925026
+2023-12-18 13:14:44.515265: I Best Model params:	{'folder': 'C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\facebook\\tsne\\validation', 'meta': namespace(), 'path': 'C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\facebook\\tsne\\validation\\validation_tsne_@16.tsv', 'name': 'validation_tsne_@16'}
+2023-12-18 13:14:44.515265: I Best Model results:	{10: {'nDCGRendle2020': 0.058457245422925026, 'HR': 0.3360116873630387, 'Precision': 0.05193571950328707, 'Recall': 0.05193571950328707}}
+2023-12-18 13:14:44.515265: I Training begun for ProxyRecommender
+
+2023-12-18 13:14:44.515265: I Hyperparameters:
+2023-12-18 13:14:44.515265: I folder set to C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data_dz\facebook\tsne\validation
+2023-12-18 13:14:44.515265: I meta set to namespace()
+2023-12-18 13:14:44.515265: I path set to C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data_dz\facebook\tsne\validation\validation_tsne_@2.tsv
+2023-12-18 13:14:44.515265: I Exploration: Test Fold exploration number 1
+2023-12-18 13:14:44.515265: I Exploration: Train-Validation Fold exploration number 1
+2023-12-18 13:14:46.520090: I 
+2023-12-18 13:14:46.550789: I Validation Evaluation results
+2023-12-18 13:14:46.578145: I Cut-off: 10
+2023-12-18 13:14:46.617738: I Eval Time: 0.0626373291015625
+2023-12-18 13:14:46.646597: I Results
+2023-12-18 13:14:46.669770: I nDCGRendle2020	0.09209
+2023-12-18 13:14:46.670777: I HR	0.30168
+2023-12-18 13:14:46.670777: I Precision	0.09007
+2023-12-18 13:14:46.670777: I Recall	0.09007
+2023-12-18 13:14:46.671777: I 
+2023-12-18 13:14:46.671777: I Test Evaluation results
+2023-12-18 13:14:46.673776: I Cut-off: 10
+2023-12-18 13:14:46.673776: I Eval Time: 0.06030631065368652
+2023-12-18 13:14:46.674820: I Results
+2023-12-18 13:14:46.674820: I nDCGRendle2020	0.09209
+2023-12-18 13:14:46.674820: I HR	0.30168
+2023-12-18 13:14:46.674820: I Precision	0.09007
+2023-12-18 13:14:46.674820: I Recall	0.09007
+2023-12-18 13:14:46.674820: I Training ended for ProxyRecommender
+2023-12-18 13:14:46.674820: I Loss:	-0.09208826626651236
+2023-12-18 13:14:46.674820: I Best Model params:	{'folder': 'C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\facebook\\tsne\\validation', 'meta': namespace(), 'path': 'C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\facebook\\tsne\\validation\\validation_tsne_@2.tsv', 'name': 'validation_tsne_@2'}
+2023-12-18 13:14:46.674820: I Best Model results:	{10: {'nDCGRendle2020': 0.09208826626651236, 'HR': 0.30168005843681517, 'Precision': 0.09006574141709277, 'Recall': 0.09006574141709277}}
+2023-12-18 13:14:46.674820: I Training begun for ProxyRecommender
+
+2023-12-18 13:14:46.674820: I Hyperparameters:
+2023-12-18 13:14:46.674820: I folder set to C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data_dz\facebook\tsne\validation
+2023-12-18 13:14:46.674820: I meta set to namespace()
+2023-12-18 13:14:46.674820: I path set to C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data_dz\facebook\tsne\validation\validation_tsne_@32.tsv
+2023-12-18 13:14:46.674820: I Exploration: Test Fold exploration number 1
+2023-12-18 13:14:46.674820: I Exploration: Train-Validation Fold exploration number 1
+2023-12-18 13:14:48.700210: I 
+2023-12-18 13:14:48.738151: I Validation Evaluation results
+2023-12-18 13:14:48.753508: I Cut-off: 10
+2023-12-18 13:14:48.806855: I Eval Time: 0.05893349647521973
+2023-12-18 13:14:48.831501: I Results
+2023-12-18 13:14:48.841523: I nDCGRendle2020	0.03258
+2023-12-18 13:14:48.841523: I HR	0.20526
+2023-12-18 13:14:48.843884: I Precision	0.03397
+2023-12-18 13:14:48.843884: I Recall	0.03397
+2023-12-18 13:14:48.843884: I 
+2023-12-18 13:14:48.845114: I Test Evaluation results
+2023-12-18 13:14:48.845114: I Cut-off: 10
+2023-12-18 13:14:48.845114: I Eval Time: 0.05988287925720215
+2023-12-18 13:14:48.845114: I Results
+2023-12-18 13:14:48.845114: I nDCGRendle2020	0.03258
+2023-12-18 13:14:48.845114: I HR	0.20526
+2023-12-18 13:14:48.845114: I Precision	0.03397
+2023-12-18 13:14:48.845114: I Recall	0.03397
+2023-12-18 13:14:48.845114: I Training ended for ProxyRecommender
+2023-12-18 13:14:48.845114: I Loss:	-0.03258374074517693
+2023-12-18 13:14:48.845114: I Best Model params:	{'folder': 'C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\facebook\\tsne\\validation', 'meta': namespace(), 'path': 'C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\facebook\\tsne\\validation\\validation_tsne_@32.tsv', 'name': 'validation_tsne_@32'}
+2023-12-18 13:14:48.845114: I Best Model results:	{10: {'nDCGRendle2020': 0.03258374074517693, 'HR': 0.20525931336742148, 'Precision': 0.0339663988312637, 'Recall': 0.0339663988312637}}
+2023-12-18 13:14:48.850120: I Training begun for ProxyRecommender
+
+2023-12-18 13:14:48.850120: I Hyperparameters:
+2023-12-18 13:14:48.850120: I folder set to C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data_dz\facebook\tsne\validation
+2023-12-18 13:14:48.850120: I meta set to namespace()
+2023-12-18 13:14:48.850120: I path set to C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data_dz\facebook\tsne\validation\validation_tsne_@4.tsv
+2023-12-18 13:14:48.850120: I Exploration: Test Fold exploration number 1
+2023-12-18 13:14:48.850120: I Exploration: Train-Validation Fold exploration number 1
+2023-12-18 13:14:50.790295: I 
+2023-12-18 13:14:50.819151: I Validation Evaluation results
+2023-12-18 13:14:50.850328: I Cut-off: 10
+2023-12-18 13:14:50.890135: I Eval Time: 0.060599565505981445
+2023-12-18 13:14:50.912527: I Results
+2023-12-18 13:14:50.935265: I nDCGRendle2020	0.07206
+2023-12-18 13:14:50.935265: I HR	0.28999
+2023-12-18 13:14:50.935265: I Precision	0.071
+2023-12-18 13:14:50.935265: I Recall	0.071
+2023-12-18 13:14:50.935265: I 
+2023-12-18 13:14:50.935265: I Test Evaluation results
+2023-12-18 13:14:50.937996: I Cut-off: 10
+2023-12-18 13:14:50.937996: I Eval Time: 0.05720233917236328
+2023-12-18 13:14:50.939285: I Results
+2023-12-18 13:14:50.939285: I nDCGRendle2020	0.07206
+2023-12-18 13:14:50.939285: I HR	0.28999
+2023-12-18 13:14:50.939285: I Precision	0.071
+2023-12-18 13:14:50.939285: I Recall	0.071
+2023-12-18 13:14:50.939285: I Training ended for ProxyRecommender
+2023-12-18 13:14:50.939285: I Loss:	-0.07205759450914519
+2023-12-18 13:14:50.939285: I Best Model params:	{'folder': 'C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\facebook\\tsne\\validation', 'meta': namespace(), 'path': 'C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\facebook\\tsne\\validation\\validation_tsne_@4.tsv', 'name': 'validation_tsne_@4'}
+2023-12-18 13:14:50.939285: I Best Model results:	{10: {'nDCGRendle2020': 0.07205759450914519, 'HR': 0.2899926953981008, 'Precision': 0.07100073046018993, 'Recall': 0.07100073046018993}}
+2023-12-18 13:14:50.939285: I Training begun for ProxyRecommender
+
+2023-12-18 13:14:50.939285: I Hyperparameters:
+2023-12-18 13:14:50.939285: I folder set to C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data_dz\facebook\tsne\validation
+2023-12-18 13:14:50.939285: I meta set to namespace()
+2023-12-18 13:14:50.939285: I path set to C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data_dz\facebook\tsne\validation\validation_tsne_@64.tsv
+2023-12-18 13:14:50.939285: I Exploration: Test Fold exploration number 1
+2023-12-18 13:14:50.939285: I Exploration: Train-Validation Fold exploration number 1
+2023-12-18 13:14:52.935260: I 
+2023-12-18 13:14:52.965141: I Validation Evaluation results
+2023-12-18 13:14:52.993452: I Cut-off: 10
+2023-12-18 13:14:53.020041: I Eval Time: 0.06263566017150879
+2023-12-18 13:14:53.055263: I Results
+2023-12-18 13:14:53.075078: I nDCGRendle2020	0.04999
+2023-12-18 13:14:53.075078: I HR	0.28634
+2023-12-18 13:14:53.075078: I Precision	0.05113
+2023-12-18 13:14:53.075078: I Recall	0.05113
+2023-12-18 13:14:53.075078: I 
+2023-12-18 13:14:53.080093: I Test Evaluation results
+2023-12-18 13:14:53.080093: I Cut-off: 10
+2023-12-18 13:14:53.080093: I Eval Time: 0.06340408325195312
+2023-12-18 13:14:53.080093: I Results
+2023-12-18 13:14:53.080093: I nDCGRendle2020	0.04999
+2023-12-18 13:14:53.080093: I HR	0.28634
+2023-12-18 13:14:53.080093: I Precision	0.05113
+2023-12-18 13:14:53.080093: I Recall	0.05113
+2023-12-18 13:14:53.080093: I Training ended for ProxyRecommender
+2023-12-18 13:14:53.080093: I Loss:	-0.04998724606891475
+2023-12-18 13:14:53.080093: I Best Model params:	{'folder': 'C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\facebook\\tsne\\validation', 'meta': namespace(), 'path': 'C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\facebook\\tsne\\validation\\validation_tsne_@64.tsv', 'name': 'validation_tsne_@64'}
+2023-12-18 13:14:53.080093: I Best Model results:	{10: {'nDCGRendle2020': 0.04998724606891475, 'HR': 0.28634039444850257, 'Precision': 0.05113221329437546, 'Recall': 0.05113221329437546}}
+2023-12-18 13:14:53.080093: I Training begun for ProxyRecommender
+
+2023-12-18 13:14:53.085098: I Hyperparameters:
+2023-12-18 13:14:53.085431: I folder set to C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data_dz\facebook\tsne\validation
+2023-12-18 13:14:53.085431: I meta set to namespace()
+2023-12-18 13:14:53.085431: I path set to C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data_dz\facebook\tsne\validation\validation_tsne_@8.tsv
+2023-12-18 13:14:53.085431: I Exploration: Test Fold exploration number 1
+2023-12-18 13:14:53.086436: I Exploration: Train-Validation Fold exploration number 1
+2023-12-18 13:14:55.045182: I 
+2023-12-18 13:14:55.073322: I Validation Evaluation results
+2023-12-18 13:14:55.100048: I Cut-off: 10
+2023-12-18 13:14:55.140048: I Eval Time: 0.06148958206176758
+2023-12-18 13:14:55.166715: I Results
+2023-12-18 13:14:55.192838: I nDCGRendle2020	0.0627
+2023-12-18 13:14:55.192838: I HR	0.27757
+2023-12-18 13:14:55.192838: I Precision	0.06355
+2023-12-18 13:14:55.193845: I Recall	0.06355
+2023-12-18 13:14:55.194152: I 
+2023-12-18 13:14:55.194152: I Test Evaluation results
+2023-12-18 13:14:55.194845: I Cut-off: 10
+2023-12-18 13:14:55.194845: I Eval Time: 0.05194735527038574
+2023-12-18 13:14:55.195349: I Results
+2023-12-18 13:14:55.195349: I nDCGRendle2020	0.0627
+2023-12-18 13:14:55.195349: I HR	0.27757
+2023-12-18 13:14:55.195349: I Precision	0.06355
+2023-12-18 13:14:55.195349: I Recall	0.06355
+2023-12-18 13:14:55.195349: I Training ended for ProxyRecommender
+2023-12-18 13:14:55.195349: I Loss:	-0.06270131951171949
+2023-12-18 13:14:55.195349: I Best Model params:	{'folder': 'C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\facebook\\tsne\\validation', 'meta': namespace(), 'path': 'C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\facebook\\tsne\\validation\\validation_tsne_@8.tsv', 'name': 'validation_tsne_@8'}
+2023-12-18 13:14:55.195349: I Best Model results:	{10: {'nDCGRendle2020': 0.06270131951171949, 'HR': 0.27757487216946675, 'Precision': 0.0635500365230095, 'Recall': 0.0635500365230095}}
+2023-12-18 13:14:55.247951: I End experiment

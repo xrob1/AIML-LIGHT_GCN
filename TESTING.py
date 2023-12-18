@@ -5,11 +5,8 @@ import plotly.graph_objects as go
 import numpy as np
 import torch
 from elliot.recommender.generic.Proxy import ProxyRecommender
-
-
-
 from elliot.run import run_experiment
-run_experiment(f"config_files/runtime_metrics_conf.yml")
+
 
 
 #Avvia training e salva componenti per l'analisi
@@ -19,20 +16,20 @@ run_experiment(f"config_files/runtime_metrics_conf.yml")
 recs = cp.get_recs_dict()
 
 #Salvataggio Raccomandazioni per validation_set per ogni modalità di predizione
-"""
+
 DATASET = "facebook/"
 MODE = "validation"
-for method in recs:
-	for size in recs[method][MODE]:
-		file = open('data_dz/'+str(MODE)+'/facebook_'+str(method)+'_@'+str(size)+'.tsv', 'w')   
+
+for method in recs:	
+	for size in recs[method][MODE]:		
+		file = open('data_dz/facebook/'+str(method)+'_@'+str(size)+'.tsv', 'w')		
 		for user in recs[method][MODE][size]:
 			for rec in recs[method][MODE][size][user]:
-				file.write(str(str(user)+"	"+str(rec[0])+"	1"+'\n'))
+				file.write(str(str(user)+"	"+str(rec[0])+"	"+str(rec[1])+'\n'))
 		file.close()   
 
-
-
-
+run_experiment(f"config_files/runtime_metrics_conf.yml")
+"""
 print("OK?!?")
 
 
