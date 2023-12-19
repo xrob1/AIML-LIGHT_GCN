@@ -1,0 +1,61 @@
+[
+    {
+        "default_validation_metric": "nDCGRendle2020",
+        "default_validation_cutoff": 10,
+        "rel_threshold": 0
+    },
+    {
+        "meta": {},
+        "recommender": "kpca@16",
+        "configuration": {
+            "folder": "C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\facebook\\kpca",
+            "path": "C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\facebook\\kpca\\kpca@16.tsv",
+            "name": "kpca@16"
+        }
+    },
+    {
+        "meta": {},
+        "recommender": "kpca@2",
+        "configuration": {
+            "folder": "C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\facebook\\kpca",
+            "path": "C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\facebook\\kpca\\kpca@2.tsv",
+            "name": "kpca@2"
+        }
+    },
+    {
+        "meta": {},
+        "recommender": "kpca@32",
+        "configuration": {
+            "folder": "C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\facebook\\kpca",
+            "path": "C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\facebook\\kpca\\kpca@32.tsv",
+            "name": "kpca@32"
+        }
+    },
+    {
+        "meta": {},
+        "recommender": "kpca@4",
+        "configuration": {
+            "folder": "C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\facebook\\kpca",
+            "path": "C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\facebook\\kpca\\kpca@4.tsv",
+            "name": "kpca@4"
+        }
+    },
+    {
+        "meta": {},
+        "recommender": "kpca@64",
+        "configuration": {
+            "folder": "C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\facebook\\kpca",
+            "path": "C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\facebook\\kpca\\kpca@64.tsv",
+            "name": "kpca@64"
+        }
+    },
+    {
+        "meta": {},
+        "recommender": "kpca@8",
+        "configuration": {
+            "folder": "C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\facebook\\kpca",
+            "path": "C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\facebook\\kpca\\kpca@8.tsv",
+            "name": "kpca@8"
+        }
+    }
+]

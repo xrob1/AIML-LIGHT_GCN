@@ -19,6 +19,8 @@ experiment:
         save_recs: True
         validation_rate: 2    
         tsne_sizes : [2,4,8,16,32,64]  
+        pca_sizes :  [2,4,8,16,32,64]  
+        kpca_sizes : [2,4,8,16,32,64]  
       lr: 0.0028462729478462134
       epochs: 2
       factors: 64

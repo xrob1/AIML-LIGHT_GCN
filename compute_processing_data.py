@@ -13,10 +13,33 @@ def get_data():
     file.close()
     return data
 
-
-def get_recs_dict():
-    file = open(str('models_raw_data/LightGCN_recs') , 'rb')
+def get_base_recs():
+    file = open(str('models_raw_data/LightGCN_base_recs') , 'rb')
+    recs = pickle.load(file)
+    file.close()
+    return recs
+def get_pca_recs():
+    file = open(str('models_raw_data/LightGCN_PCA_recs') , 'rb')
+    recs = pickle.load(file)
+    file.close()
+    return recs
+def get_kpca_recs():
+    file = open(str('models_raw_data/LightGCN_KPCA_recs') , 'rb')
+    recs = pickle.load(file)
+    file.close()
+    return recs
+    
+def get_tsne_recs():
+    file = open(str('models_raw_data/LightGCN_tsne_recs') , 'rb')
     recs = pickle.load(file)
     file.close()
     return recs
 
+def save_recs(name,recs):
+    for SIZE in recs:		
+        path = 'data_dz/facebook/'+name+'/'+name+'@'+str(SIZE)+'.tsv'        
+        file = open(path, 'w')		
+        for USER in recs[SIZE]:
+            for rec in recs[SIZE][USER]:
+                file.write(str(str(USER)+"	"+str(rec[0])+"	"+str(rec[1])+'\n'))
+        file.close()   

@@ -15,10 +15,8 @@ from .LightGCNModel import LightGCNModel
 from torch_sparse import SparseTensor
 
 from sklearn.manifold import TSNE
-#from MulticoreTSNE import MulticoreTSNE as TSNE
-
-
-
+from sklearn.decomposition import PCA
+from sklearn.decomposition import KernelPCA
 
 
 class LightGCN(RecMixin, BaseRecommenderModel):
@@ -89,9 +87,14 @@ class LightGCN(RecMixin, BaseRecommenderModel):
         )
         
         self.tsne_sizes = params.meta.tsne_sizes
+        self.pca_sizes = params.meta.pca_sizes
+        self.kpca_sizes = params.meta.kpca_sizes
+        
         self.recs={}
         self.recs['tsne']={'validation':{},'test':{}}
         self.recs['base']={'validation':{},'test':{}}
+        self.recs['pca']={'validation':{},'test':{}}
+        self.recs['kpca']={'validation':{},'test':{}}
 
     @property
     def name(self):
@@ -119,20 +122,35 @@ class LightGCN(RecMixin, BaseRecommenderModel):
 
             self.evaluate(it, loss / (it + 1))
         
-        """
-        #IMPROVE ON THE DESIGN, Salva solo roba che devi usare       
+
+
         #Save data 
         file = open('models_raw_data/'+str(self.__class__.__name__)+'_data', 'wb')
         pickle.dump([self._data], file)
         file.close()
         
-        #Save recs 
-        self.get_recommendations_TSNE(self.evaluator.get_needed_recommendations())
-        file = open('models_raw_data/'+str(self.__class__.__name__)+'_recs', 'wb')
-        pickle.dump(self.recs, file)
+        #Save recs Base
+        file = open('models_raw_data/'+str(self.__class__.__name__)+'_base_recs', 'wb')
+        pickle.dump(self.recs['base'], file)
         file.close()   
-        """ 
+        
+        #Save recs PCA
+        self.get_recommendations_PCA(self.evaluator.get_needed_recommendations())
+        file = open('models_raw_data/'+str(self.__class__.__name__)+'_PCA_recs', 'wb')
+        pickle.dump(self.recs['pca'], file)
+        file.close()   
 
+        #Save recs Kernel PCA
+        self.get_recommendations_KPCA(self.evaluator.get_needed_recommendations())
+        file = open('models_raw_data/'+str(self.__class__.__name__)+'_KPCA_recs', 'wb')
+        pickle.dump(self.recs['kpca'], file)
+        file.close()  
+        
+        #Save recs TSNE
+        self.get_recommendations_TSNE(self.evaluator.get_needed_recommendations())
+        file = open('models_raw_data/'+str(self.__class__.__name__)+'_tsne_recs', 'wb')
+        pickle.dump(self.recs['tsne'], file)
+        file.close()   
 
     def get_recommendations(self, k: int = 100):
           
@@ -186,7 +204,66 @@ class LightGCN(RecMixin, BaseRecommenderModel):
             #Update Recommandations Dictionary
             self.recs['tsne']['validation'][n_comp] =   tnse_predictions_val
             self.recs['tsne']['test'][n_comp]       =   tnse_predictions_test
+    
+    def get_recommendations_PCA(self, k: int = 100):        
+
+        #Item User concatenztion Tsne Trasformation
+        gu, gi = self._model.propagate_embeddings(evaluate=True)
+        gu, gi = gu.cpu().detach().numpy(),gi.cpu().detach().numpy()
+       
+        for n_comp in tqdm(self.pca_sizes,desc='PCA iterations'):  #tsne_sizes defined in configs.yml            
+
+            pca = PCA(n_components=n_comp)  
+                                                
+            pca_predictions_val  = {}
+            pca_predictions_test = {}
+        
+            #Trasform Concatenated Data
+            i_u_concat = pca.fit_transform(np.concatenate((gu, gi)))
+            u_tsne =   torch.Tensor(i_u_concat[:self._num_users,:])
+            i_tsne =   torch.Tensor( i_u_concat[self._num_users:,:])
+        
+            for index, offset in enumerate(range(0, self._num_users, self._batch_size)):
+                offset_stop = min(offset + self._batch_size, self._num_users)
+                predictions = self._model.predict(u_tsne[offset: offset_stop], i_tsne)
+                recs_val, recs_test = self.process_protocol(k, predictions, offset, offset_stop)
+                pca_predictions_val.update(recs_val)
+                pca_predictions_test.update(recs_test)
+
+            #Update Recommandations Dictionary
+            self.recs['pca']['validation'][n_comp] =   pca_predictions_val
+            self.recs['pca']['test'][n_comp]       =   pca_predictions_test
    
+    def get_recommendations_KPCA(self, k: int = 100):        
+
+        #Item User concatenztion Tsne Trasformation
+        gu, gi = self._model.propagate_embeddings(evaluate=True)
+        gu, gi = gu.cpu().detach().numpy(),gi.cpu().detach().numpy()
+       
+        for n_comp in tqdm(self.kpca_sizes,desc='KPCA iterations'):  #tsne_sizes defined in configs.yml            
+
+            kpca = KernelPCA(n_components=n_comp)  
+                                                
+            kpca_predictions_val  = {}
+            kpca_predictions_test = {}
+        
+            #Trasform Concatenated Data
+            i_u_concat = kpca.fit_transform(np.concatenate((gu, gi)))
+            u_tsne =   torch.Tensor(i_u_concat[:self._num_users,:])
+            i_tsne =   torch.Tensor( i_u_concat[self._num_users:,:])
+        
+            for index, offset in enumerate(range(0, self._num_users, self._batch_size)):
+                offset_stop = min(offset + self._batch_size, self._num_users)
+                predictions = self._model.predict(u_tsne[offset: offset_stop], i_tsne)
+                recs_val, recs_test = self.process_protocol(k, predictions, offset, offset_stop)
+                kpca_predictions_val.update(recs_val)
+                kpca_predictions_test.update(recs_test)
+
+            #Update Recommandations Dictionary
+            self.recs['kpca']['validation'][n_comp] =   kpca_predictions_val
+            self.recs['kpca']['test'][n_comp]       =   kpca_predictions_test
+       
+       
     def get_single_recommendation(self, mask, k, predictions, offset, offset_stop):
         v, i = self._model.get_top_k(predictions, mask[offset: offset_stop], k=k)
         items_ratings_pair = [list(zip(map(self._data.private_items.get, u_list[0]), u_list[1]))
