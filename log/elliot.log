@@ -4545,3 +4545,32 @@
 2023-12-19 11:04:04.064359: I Best Model params:	{'folder': 'C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\facebook\\kpca', 'meta': namespace(), 'path': 'C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\facebook\\kpca\\kpca@8.tsv', 'name': 'kpca@8'}
 2023-12-19 11:04:04.068360: I Best Model results:	{10: {'nDCGRendle2020': 0.48740415217024297, 'HR': 0.8509861212563915, 'Precision': 0.4326515704894083, 'Recall': 0.4326515704894083}}
 2023-12-19 11:04:04.090876: I End experiment
+2023-12-19 12:06:38.084204: I Start experiment
+2023-12-19 12:06:38.164244: I C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data\facebook_book\train.tsv - Loaded
+2023-12-19 12:06:38.178752: I Test Fold 0 - Validation Fold 0
+2023-12-19 12:06:38.959625: I Statistics	Users:	1369	Items:	786	Transactions:	9187	Sparsity:	0.9914621656936491
+2023-12-19 12:06:52.114297: I Training begun for LightGCN
+
+2023-12-19 12:06:52.114297: I Hyperparameters:
+2023-12-19 12:06:52.114297: I meta set to namespace(kpca_sizes=[2, 4, 8, 16, 32, 64], pca_sizes=[2, 4, 8, 16, 32, 64], save_recs=True, tsne_sizes=[2, 4, 8, 16, 32, 64], validation_rate=2, verbose=True)
+2023-12-19 12:06:52.114297: I lr set to 0.0028462729478462134
+2023-12-19 12:06:52.114297: I epochs set to 2
+2023-12-19 12:06:52.114297: I factors set to 64
+2023-12-19 12:06:52.114297: I batch_size set to 64
+2023-12-19 12:06:52.114297: I l_w set to 0.06184015598288455
+2023-12-19 12:06:52.114297: I n_layers set to 3
+2023-12-19 12:06:52.114297: I seed set to 123
+2023-12-19 12:06:52.114297: I Exploration: Test Fold exploration number 1
+2023-12-19 12:06:52.114297: I Exploration: Train-Validation Fold exploration number 1
+2023-12-19 12:06:56.529279: I 
+2023-12-19 12:06:56.554161: I Validation Evaluation results
+2023-12-19 12:06:56.555162: I Cut-off: 10
+2023-12-19 12:06:56.555162: I Eval Time: 0.03991508483886719
+2023-12-19 12:06:56.559164: I Results
+2023-12-19 12:06:56.563162: I nDCGRendle2020	0.08051
+2023-12-19 12:06:56.566163: I 
+2023-12-19 12:06:56.570163: I Test Evaluation results
+2023-12-19 12:06:56.572612: I Cut-off: 10
+2023-12-19 12:06:56.572612: I Eval Time: 0.0515594482421875
+2023-12-19 12:06:56.572612: I Results
+2023-12-19 12:06:56.583597: I nDCGRendle2020	0.09689

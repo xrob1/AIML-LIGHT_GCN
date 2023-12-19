@@ -3,8 +3,8 @@ import pickle
 
 #MOLTO LENTO CON TSNE CON method=exact !!!!!!!!
 #Crea i file da leggere con pickle
-def load_data():
-    run_experiment('config_files/facebook_best_cf_lgcn.yml') #LGCN 
+def load_data(config_file = 'custom_configs/facebook_best_cf_lgcn.yml'):
+    run_experiment(config_file) #LGCN 
     
 #prende 
 def get_data():
