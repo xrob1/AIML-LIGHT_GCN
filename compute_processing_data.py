@@ -35,6 +35,24 @@ def get_tsne_recs():
     file.close()
     return recs
 
+def get_lle_recs():
+    file = open(str('models_raw_data/LightGCN_lle_recs') , 'rb')
+    recs = pickle.load(file)
+    file.close()
+    return recs
+
+def get_isomap_recs():
+    file = open(str('models_raw_data/LightGCN_isomap_recs') , 'rb')
+    recs = pickle.load(file)
+    file.close()
+    return recs
+
+def get_umap_recs():
+    file = open(str('models_raw_data/LightGCN_umap_recs') , 'rb')
+    recs = pickle.load(file)
+    file.close()
+    return recs
+
 def save_recs(name,recs):
     for SIZE in recs:		
         path = 'data_dz/facebook/'+name+'/'+name+'@'+str(SIZE)+'.tsv'        
@@ -43,3 +61,11 @@ def save_recs(name,recs):
             for rec in recs[SIZE][USER]:
                 file.write(str(str(USER)+"	"+str(rec[0])+"	"+str(rec[1])+'\n'))
         file.close()   
+
+def save_recs_at(name,recs,SIZE):	
+    path = 'data_dz/facebook/'+name+'/'+name+'@'+str(SIZE)+'.tsv'        
+    file = open(path, 'w')		
+    for USER in recs[SIZE]:
+        for rec in recs[SIZE][USER]:
+            file.write(str(str(USER)+"	"+str(rec[0])+"	"+str(rec[1])+'\n'))
+    file.close()   

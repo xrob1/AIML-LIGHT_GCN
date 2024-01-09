@@ -1,0 +1,16 @@
+[
+    {
+        "default_validation_metric": "nDCGRendle2020",
+        "default_validation_cutoff": 10,
+        "rel_threshold": 0
+    },
+    {
+        "meta": {},
+        "recommender": "tsne@2",
+        "configuration": {
+            "folder": "C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\facebook\\tsne",
+            "path": "C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\facebook\\tsne\\tsne@2.tsv",
+            "name": "tsne@2"
+        }
+    }
+]

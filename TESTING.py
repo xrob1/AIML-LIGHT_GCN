@@ -10,7 +10,7 @@ from elliot.run import run_experiment
 
 
 #Avvia training e salva componenti per l'analisi
-#cp.load_data()
+cp.load_data()
 
 #Prende dizionario con tutte le raccomandazioni fra i vari metodi
 recs = cp.get_recs_dict()

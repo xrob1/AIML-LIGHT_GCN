@@ -9,7 +9,7 @@ experiment:
   top_k: 10
   evaluation:
     cutoffs: [10]
-    paired_ttest: True
+    paired_ttest: False
     simple_metrics: [nDCGRendle2020, HR, Precision, Recall]
   gpu: 0
   models:

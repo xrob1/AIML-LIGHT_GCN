@@ -18,6 +18,10 @@ from sklearn.manifold import TSNE
 from sklearn.decomposition import PCA
 from sklearn.decomposition import KernelPCA
 
+#EXPERIMENTAL
+from sklearn.manifold import LocallyLinearEmbedding
+from sklearn.manifold import Isomap
+import umap
 
 class LightGCN(RecMixin, BaseRecommenderModel):
     r"""
@@ -95,6 +99,9 @@ class LightGCN(RecMixin, BaseRecommenderModel):
         self.recs['base']={'validation':{},'test':{}}
         self.recs['pca']={'validation':{},'test':{}}
         self.recs['kpca']={'validation':{},'test':{}}
+        self.recs['lle']={'validation':{},'test':{}}
+        self.recs['isomap']={'validation':{},'test':{}}
+        self.recs['umap']={'validation':{},'test':{}}
 
     @property
     def name(self):
@@ -123,7 +130,7 @@ class LightGCN(RecMixin, BaseRecommenderModel):
             self.evaluate(it, loss / (it + 1))
         
 
-
+        """
         #Save data 
         file = open('models_raw_data/'+str(self.__class__.__name__)+'_data', 'wb')
         pickle.dump([self._data], file)
@@ -151,6 +158,24 @@ class LightGCN(RecMixin, BaseRecommenderModel):
         file = open('models_raw_data/'+str(self.__class__.__name__)+'_tsne_recs', 'wb')
         pickle.dump(self.recs['tsne'], file)
         file.close()   
+        
+        #Save recs LLE
+        self.get_recommendations_LLE(self.evaluator.get_needed_recommendations())
+        file = open('models_raw_data/'+str(self.__class__.__name__)+'_lle_recs', 'wb')
+        pickle.dump(self.recs['lle'], file)
+        file.close()  
+       
+        #Save recs ISOMAP
+        self.get_recommendations_ISOMAP(self.evaluator.get_needed_recommendations())
+        file = open('models_raw_data/'+str(self.__class__.__name__)+'_isomap_recs', 'wb')
+        pickle.dump(self.recs['isomap'], file)
+        file.close()  
+        """
+        #Save recs UMAP
+        self.get_recommendations_UMAP(self.evaluator.get_needed_recommendations())
+        file = open('models_raw_data/'+str(self.__class__.__name__)+'_umap_recs', 'wb')
+        pickle.dump(self.recs['umap'], file)
+        file.close()  
 
     def get_recommendations(self, k: int = 100):
           
@@ -234,6 +259,38 @@ class LightGCN(RecMixin, BaseRecommenderModel):
             self.recs['pca']['validation'][n_comp] =   pca_predictions_val
             self.recs['pca']['test'][n_comp]       =   pca_predictions_test
    
+    def get_recommendations_LLE(self, k: int = 100):        
+       
+        #Item User concatenztion Tsne Trasformation
+        gu, gi = self._model.propagate_embeddings(evaluate=True)
+        gu, gi = gu.cpu().detach().numpy(),gi.cpu().detach().numpy()
+        concatenation = np.concatenate((gu, gi))
+        
+        self.lln_neighbors=[15,k,len(gi),len(concatenation)-1]
+        
+        for n_neighbors in tqdm(self.lln_neighbors,desc='LLE iterations'):  #tsne_sizes defined in configs.yml            
+
+            embedding = LocallyLinearEmbedding(n_neighbors=n_neighbors, n_components=2) #N COMPONENTS 2          
+                                                
+            predictions_val  = {}
+            predictions_test = {}
+        
+            #Trasform Concatenated Data
+            i_u_concat = embedding.fit_transform(concatenation)
+            u_tsne =   torch.Tensor(i_u_concat[:self._num_users,:])
+            i_tsne =   torch.Tensor( i_u_concat[self._num_users:,:])
+        
+            for index, offset in enumerate(range(0, self._num_users, self._batch_size)):
+                offset_stop = min(offset + self._batch_size, self._num_users)
+                predictions = self._model.predict(u_tsne[offset: offset_stop], i_tsne)
+                recs_val, recs_test = self.process_protocol(k, predictions, offset, offset_stop)
+                predictions_val.update(recs_val)
+                predictions_test.update(recs_test)
+
+            #Update Recommandations Dictionary
+            self.recs['lle']['validation'][n_neighbors] =   predictions_val
+            self.recs['lle']['test'][n_neighbors]       =   predictions_test
+       
     def get_recommendations_KPCA(self, k: int = 100):        
 
         #Item User concatenztion Tsne Trasformation
@@ -262,7 +319,69 @@ class LightGCN(RecMixin, BaseRecommenderModel):
             #Update Recommandations Dictionary
             self.recs['kpca']['validation'][n_comp] =   kpca_predictions_val
             self.recs['kpca']['test'][n_comp]       =   kpca_predictions_test
+   
+    def get_recommendations_ISOMAP(self, k: int = 100):        
        
+        #Item User concatenztion Tsne Trasformation
+        gu, gi = self._model.propagate_embeddings(evaluate=True)
+        gu, gi = gu.cpu().detach().numpy(),gi.cpu().detach().numpy()
+        concatenation = np.concatenate((gu, gi))
+        
+        self.isomap_neighbors=[15,k,len(gi),len(concatenation)-1]
+        
+        for n_neighbors in tqdm(self.isomap_neighbors,desc='ISOMAP iterations'):  #tsne_sizes defined in configs.yml            
+
+            embedding = Isomap(n_neighbors=n_neighbors, n_components=2) #N COMPONENTS 2          
+                                                
+            predictions_val  = {}
+            predictions_test = {}
+        
+            #Trasform Concatenated Data
+            i_u_concat = embedding.fit_transform(concatenation)
+            u_tsne =   torch.Tensor(i_u_concat[:self._num_users,:])
+            i_tsne =   torch.Tensor( i_u_concat[self._num_users:,:])
+        
+            for index, offset in enumerate(range(0, self._num_users, self._batch_size)):
+                offset_stop = min(offset + self._batch_size, self._num_users)
+                predictions = self._model.predict(u_tsne[offset: offset_stop], i_tsne)
+                recs_val, recs_test = self.process_protocol(k, predictions, offset, offset_stop)
+                predictions_val.update(recs_val)
+                predictions_test.update(recs_test)
+
+            #Update Recommandations Dictionary
+            self.recs['isomap']['validation'][n_neighbors] =   predictions_val
+            self.recs['isomap']['test'][n_neighbors]       =   predictions_test
+    
+    def get_recommendations_UMAP(self, k: int = 100):        
+        #UMAP INLY AT 2
+        #Item User concatenztion Tsne Trasformation
+        gu, gi = self._model.propagate_embeddings(evaluate=True)
+        gu, gi = gu.cpu().detach().numpy(),gi.cpu().detach().numpy()
+        concatenation = np.concatenate((gu, gi))
+        
+        self.isomap_neighbors=[15,k,len(gi),len(concatenation)-1]
+        
+        reducer = umap.UMAP()         
+                                                
+        predictions_val  = {}
+        predictions_test = {}
+    
+        #Trasform Concatenated Data
+        i_u_concat = reducer.fit_transform(concatenation)
+        u_tsne =   torch.Tensor(i_u_concat[:self._num_users,:])
+        i_tsne =   torch.Tensor( i_u_concat[self._num_users:,:])
+    
+        for index, offset in enumerate(range(0, self._num_users, self._batch_size)):
+            offset_stop = min(offset + self._batch_size, self._num_users)
+            predictions = self._model.predict(u_tsne[offset: offset_stop], i_tsne)
+            recs_val, recs_test = self.process_protocol(k, predictions, offset, offset_stop)
+            predictions_val.update(recs_val)
+            predictions_test.update(recs_test)
+
+        #Update Recommandations Dictionary
+        self.recs['umap']['validation'][2] =   predictions_val
+        self.recs['umap']['test'][2]       =   predictions_test
+
        
     def get_single_recommendation(self, mask, k, predictions, offset, offset_stop):
         v, i = self._model.get_top_k(predictions, mask[offset: offset_stop], k=k)

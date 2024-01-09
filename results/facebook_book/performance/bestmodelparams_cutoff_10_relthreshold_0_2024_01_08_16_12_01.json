@@ -1,0 +1,52 @@
+[
+    {
+        "default_validation_metric": "nDCGRendle2020",
+        "default_validation_cutoff": 10,
+        "rel_threshold": 0
+    },
+    {
+        "meta": {},
+        "recommender": "isomap@10",
+        "configuration": {
+            "folder": "C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\facebook\\isomap",
+            "path": "C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\facebook\\isomap\\isomap@10.tsv",
+            "name": "isomap@10"
+        }
+    },
+    {
+        "meta": {},
+        "recommender": "isomap@15",
+        "configuration": {
+            "folder": "C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\facebook\\isomap",
+            "path": "C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\facebook\\isomap\\isomap@15.tsv",
+            "name": "isomap@15"
+        }
+    },
+    {
+        "meta": {},
+        "recommender": "isomap@2",
+        "configuration": {
+            "folder": "C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\facebook\\isomap",
+            "path": "C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\facebook\\isomap\\isomap@2.tsv",
+            "name": "isomap@2"
+        }
+    },
+    {
+        "meta": {},
+        "recommender": "isomap@2154",
+        "configuration": {
+            "folder": "C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\facebook\\isomap",
+            "path": "C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\facebook\\isomap\\isomap@2154.tsv",
+            "name": "isomap@2154"
+        }
+    },
+    {
+        "meta": {},
+        "recommender": "isomap@786",
+        "configuration": {
+            "folder": "C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\facebook\\isomap",
+            "path": "C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\facebook\\isomap\\isomap@786.tsv",
+            "name": "isomap@786"
+        }
+    }
+]
