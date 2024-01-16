@@ -131,15 +131,6 @@ class LightGCN(RecMixin, BaseRecommenderModel):
         
 
         """
-        #Save data 
-        file = open('models_raw_data/'+str(self.__class__.__name__)+'_data', 'wb')
-        pickle.dump([self._data], file)
-        file.close()
-        
-        #Save recs Base
-        file = open('models_raw_data/'+str(self.__class__.__name__)+'_base_recs', 'wb')
-        pickle.dump(self.recs['base'], file)
-        file.close()   
         
         #Save recs PCA
         self.get_recommendations_PCA(self.evaluator.get_needed_recommendations())
@@ -171,11 +162,27 @@ class LightGCN(RecMixin, BaseRecommenderModel):
         pickle.dump(self.recs['isomap'], file)
         file.close()  
         """
-        #Save recs UMAP
+        
+        #Save recs Base
+        file = open('models_raw_data/'+str(self.__class__.__name__)+'_base_recs', 'wb')
+        pickle.dump(self.recs['base'], file)
+        file.close() 
+        
+        #Save recs/data UMAP
         self.get_recommendations_UMAP(self.evaluator.get_needed_recommendations())
         file = open('models_raw_data/'+str(self.__class__.__name__)+'_umap_recs', 'wb')
         pickle.dump(self.recs['umap'], file)
         file.close()  
+        file = open('models_raw_data/'+str(self.__class__.__name__)+'_umap_data', 'wb')
+        pickle.dump(self.umap_data, file)
+        file.close() 
+        
+        #Save data 
+        file = open('models_raw_data/'+str(self.__class__.__name__)+'_data', 'wb')
+        pickle.dump([self._data], file)
+        file.close()
+        
+
 
     def get_recommendations(self, k: int = 100):
           
@@ -353,13 +360,10 @@ class LightGCN(RecMixin, BaseRecommenderModel):
             self.recs['isomap']['test'][n_neighbors]       =   predictions_test
     
     def get_recommendations_UMAP(self, k: int = 100):        
-        #UMAP INLY AT 2
+        #UMAP ONLY AT 2 DIM
         #Item User concatenztion Tsne Trasformation
         gu, gi = self._model.propagate_embeddings(evaluate=True)
         gu, gi = gu.cpu().detach().numpy(),gi.cpu().detach().numpy()
-        concatenation = np.concatenate((gu, gi))
-        
-        self.isomap_neighbors=[15,k,len(gi),len(concatenation)-1]
         
         reducer = umap.UMAP()         
                                                 
@@ -367,9 +371,9 @@ class LightGCN(RecMixin, BaseRecommenderModel):
         predictions_test = {}
     
         #Trasform Concatenated Data
-        i_u_concat = reducer.fit_transform(concatenation)
-        u_tsne =   torch.Tensor(i_u_concat[:self._num_users,:])
-        i_tsne =   torch.Tensor( i_u_concat[self._num_users:,:])
+        i_u_concat =torch.Tensor( reducer.fit_transform(np.concatenate((gu, gi))))
+        u_tsne =    i_u_concat[:self._num_users,:] 
+        i_tsne =    i_u_concat[self._num_users:,:] 
     
         for index, offset in enumerate(range(0, self._num_users, self._batch_size)):
             offset_stop = min(offset + self._batch_size, self._num_users)
@@ -381,6 +385,8 @@ class LightGCN(RecMixin, BaseRecommenderModel):
         #Update Recommandations Dictionary
         self.recs['umap']['validation'][2] =   predictions_val
         self.recs['umap']['test'][2]       =   predictions_test
+        
+        self.umap_data  =   [ i_u_concat[:self._num_users,:], i_u_concat[self._num_users:,:] ]
 
        
     def get_single_recommendation(self, mask, k, predictions, offset, offset_stop):

@@ -80,4 +80,24 @@ fig_test  = px.scatter(x=test_batch[:, 0], y=test_batch[:, 1],  color_discrete_s
 fig_usr  = px.scatter(x=u_tsne[:, 0], y=u_tsne[:, 1],  color_discrete_sequence=['red'])#1 user
 fig_test_usr = go.Figure(data= fig_usr.data +fig_test.data )
 fig_test_usr.show()
+
+
+if(VISUALIZATION):
+    users,items =cp.get_umap_data()
+    usr1_recs = []
+    p_it=cp.get_data().public_items
+    
+    itms=[p_it[e] for e in [50,19,3,173,305,53,163,77,250,288]]
+    for e in itms:
+        usr1_recs.append(items[e])
+    usr1_recs=np.array(usr1_recs)
+
+    fig_itm  = px.scatter(x=items[:, 0], y=items[:, 1],  color_discrete_sequence=['green'])    
+    fig_rec  = px.scatter(x=usr1_recs[:, 0], y=usr1_recs[:, 1],  color_discrete_sequence=['blue'])
+    fig_usr  = px.scatter(x=users[:, 0], y=users[:, 1],  color_discrete_sequence=['red'])#1 user
+    fig3 = go.Figure(data=fig_itm.data + fig_rec.data)
+    fig3 = go.Figure(data=fig3.data + fig_usr.data)
+    fig3.show()
+
+
 """
