@@ -5,13 +5,13 @@ import plotly.graph_objects as go
 import numpy as np
 from elliot import user_stats as us
 
-STARTUP=False
+STARTUP=True
 EXPERIMENT=False
-VISUALIZATION=True
+VISUALIZATION=False
 
 if(STARTUP):
     #Avvia training e salva componenti per l'analisi
-    cp.load_data('custom_configs/facebook_best_cf_lgcn.yml')
+    cp.load_data('custom_configs/custom.yml')
     
     #Salvataggio Raccomandazioni validation_set per ogni modalità
     cp.save_recs('base',cp.get_base_recs()['validation'])
@@ -19,15 +19,19 @@ if(STARTUP):
 
 if(EXPERIMENT):
     #Avvio calcolo metriche, 
-    run_experiment(f"custom_configs/umap_metrics.yml")
+    run_experiment(f"custom_configs/umap_on_validation.yml")
+    run_experiment(f"custom_configs/base_on_validation.yml")
 
 if(VISUALIZATION):    
     import matplotlib.pyplot as plt
     
-    HOT_USERS   =   cp.get_hot_users(15)
+    #OVERFIT = 
+    
+    HOT_USERS   =   cp.get_hot_users(10)
     COLD_USERS  =   cp.get_cold_users(3)
     BEST_PERFORMANCE_USERS  = cp.best_users('data_dz/facebook/base/base@64.tsv')
     WORST_PERFORMANCE_USERS = cp.worst_users('data_dz/facebook/base/base@64.tsv')
+    HR = cp.hr_on_users('data_dz/facebook/base/base@64.tsv')
     
     #get coordinate oggetti da visualizzare umap
     users,items =cp.get_umap_data()
@@ -44,12 +48,13 @@ if(VISUALIZATION):
     
     
     #ID UTENTE DA VISUALIZZARE
-    ID_USER  =   [e for e in recs_lgcn.keys()][0] #LGCN
+    ID_USER  =   [e for e in recs_lgcn.keys()][4] #LGCN
     ID_USER  =   [e for e in BEST_PERFORMANCE_USERS.keys()][0] #BEST USER
-    #ID_USER  =   [e for e in WORST_PERFORMANCE_USERS.keys()][0] #WORST USER
+    ID_USER  =   [e for e in WORST_PERFORMANCE_USERS.keys()][0] #WORST USER
     #ID_USER  =   [e for e in HOT_USERS.keys()][0] #HOTTEST USER
     #ID_USER  =   [e for e in COLD_USERS.keys()][0] #COLDEST USER
-     
+    
+
     #COORDINATE OGGETTI DA VISUALIZZARE
     ITEMS_lgcn  =   np.array([items[e] for e in recs_lgcn[ID_USER]])
     ITEMS_lgcn_ridotto  =   np.array([items[e] for e in recs_lgcn_ridotto[ID_USER]])
@@ -60,12 +65,12 @@ if(VISUALIZATION):
     
     #PLOT
     ax1 = fig.add_subplot(221)  #BASE
-    ax1.set_title("BASE RECOMMENDATIONS")
+    ax1.set_title("BASE ")
     ax1.scatter(ITEMS_lgcn[:,0], ITEMS_lgcn[:,1] ,  s=10, c='y', marker="h", label='ITEMS RACCOMANDATI')
     ax1.scatter(USER_lgcn[0], USER_lgcn[1] ,    s=10, c='r', marker="s", label='UTENTE')
     
     ax2 = fig.add_subplot(222)  #LGCN RIDOTTO
-    ax2.set_title("UMAP RECOMMENDATIONS")
+    ax2.set_title("UMAP ")
     ax2.scatter(ITEMS_lgcn_ridotto[:,0], ITEMS_lgcn_ridotto[:,1] ,  s=10, c='y', marker="h")#, label='ITEMS RACCOMANDATI')
     ax2.scatter(USER_lgcn_ridotto[0], USER_lgcn_ridotto[1] ,    s=10, c='r', marker="s")#, label='UTENTE')
     
@@ -88,7 +93,7 @@ if(VISUALIZATION):
     TRAIN_ITEMS=np.array([items[e] for e in TRAIN_recs[ID_USER]])
     
     ax4 = fig.add_subplot(224)  #TEST RECS
-    ax4.set_title("TRAIN SET")
+    ax4.set_title("TRAIN SET ")
     ax4.scatter(TRAIN_ITEMS[:,0], TRAIN_ITEMS[:,1]            ,  s=10, c='g', marker="o", label='ITEM TRAIN')
     ax4.scatter(USER_lgcn_ridotto[0], USER_lgcn_ridotto[1]  ,  s=10, c='r', marker="s")
    
@@ -99,13 +104,16 @@ if(VISUALIZATION):
     
     #PLOT INSIEME
     ax5 = fig2.add_subplot()
+    ax5.set_title("HR: "+str(HR[ID_USER]))
     ax5.scatter(ITEMS_lgcn[:,0], ITEMS_lgcn[:,1] ,                  s=10, c='y', marker="h", label='ITEMS RACCOMANDATI BASE')
-    ax5.scatter(ITEMS_lgcn_ridotto[:,0], ITEMS_lgcn_ridotto[:,1] ,  s=10, c='m', marker="v",label='ITEMS RACCOMANDATI LGCN')
+    #ax5.scatter(ITEMS_lgcn_ridotto[:,0], ITEMS_lgcn_ridotto[:,1] ,  s=10, c='m', marker="v",label='ITEMS RACCOMANDATI (R)')
     ax5.scatter(USER_lgcn[0], USER_lgcn[1] ,                        s=10, c='r', marker="s", label='UTENTE')
     ax5.scatter(TEST_ITEMS[:,0], TEST_ITEMS[:,1]            ,       s=10, c='b', marker="p", label='DA RACCOMANDARE')
     ax5.scatter(TRAIN_ITEMS[:,0], TRAIN_ITEMS[:,1]            ,     s=10, c='g', marker="o", label='ITEM TRAIN')
     fig2.legend()
     fig2.show()
+    
+    plt.show(block=True)
     
 
     

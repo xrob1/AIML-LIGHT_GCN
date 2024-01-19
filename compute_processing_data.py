@@ -130,15 +130,16 @@ def get_hot_users(min_ratings=5):
                 
                 
                 if len(ratings)>=min_ratings:
-                    recs[previous]=ratings
-                    
+                    recs[previous]=ratings                 
                     
                 previous=id
                 ratings=[]                
             
             ratings.append(item)
+   
     recs = {k: v for k, v in sorted(recs.items(), key=lambda item: len(item[1]))}
     recs = OrderedDict(reversed(list(recs.items())))
+ 
     return recs
 
 def get_cold_users(min_ratings=4):
@@ -225,4 +226,4 @@ def norm_coords(USERS,ITEMS):
         conc[i][1]-=avg_y
     
     return conc[:len(USERS),:] ,conc[len(USERS):,:]    
-        
+

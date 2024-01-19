@@ -1,0 +1,48 @@
+experiment:
+    backend: pytorch
+    data_config:
+        strategy: fixed
+        train_path: ../data/yahoo_movies/train.tsv
+        validation_path: ../data/yahoo_movies/val.tsv
+        test_path: ../data/yahoo_movies/test.tsv
+    dataset: yahoo_movies
+    top_k: 10
+    evaluation:
+        cutoffs: [10]
+        simple_metrics: [nDCGRendle2020]
+    gpu: 0
+    external_models_path: ../external/models/__init__.py
+    models:
+        external.LightGCN_Custom:
+            meta:
+                verbose: true
+                save_recs: true
+                validation_rate: 2
+                reducers_types:
+                 -    UMAP
+                 -    PCA
+                 -    KPCA
+                 -    TSNE
+                reducers_factors:
+                 -    32
+                 -    16
+                 -    8
+                 -    4
+                 -    2
+                tsne_reducers_factors:
+                 -    2
+                KPCA_Kernels:
+                 -    linear
+                 -    poly
+                 -    rbf
+                 -    sigmoid
+                 -    cosine
+                dataset_name: yahoo_movies
+            lr: 0.0028462729478462134
+            epochs: 2
+            factors: 64
+            batch_size: 64
+            l_w: 0.06184015598288455
+            n_layers: 3
+            seed: 123
+

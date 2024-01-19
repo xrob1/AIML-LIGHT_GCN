@@ -21,6 +21,7 @@ for _backend in sys.modules["external"].backend:
     if _backend == "tensorflow":
         from .kgflex import KGFlex
     elif _backend == "pytorch":
+        from .lightgcn_custom.LightGCN_Custom import LightGCN_Custom 
         from .lightgcn.LightGCN_Data_Extraction import LightGCN
         from .dgcf.DGCF import DGCF
         from .bprmf.BPRMF import BPRMF
