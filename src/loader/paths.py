@@ -22,6 +22,8 @@ DATASET_NAME_BY_TYPE = {
     'test': f'{TEST_NAME}.tsv',
 }
 
+BASE_CONFIGURATION_FILE_NAME = 'custom.yml'
+
 def create_directory(dir_path: str):
     """
     Check that the directory exists, otherwise create it
@@ -59,3 +61,14 @@ def dataset_filepath(dataset_name: str, type='raw'):
         raise FileNotFoundError(f'File at {filepath} not found. Please, check your files')
     return os.path.abspath(filepath)
 
+
+def basic_conf_file():
+    """
+    Returns the path of the file containing the basic configuration for Elliot
+    @return: the absolute path of the basic configuration file
+    """
+    config_path = os.path.join(CONFIG_DIR, BASE_CONFIGURATION_FILE_NAME)
+    if not os.path.exists(config_path):
+        raise FileNotFoundError(f'Basic configuration file at {config_path} not found. '
+                                f'Please, check that the file exists')
+    return os.path.abspath(config_path)

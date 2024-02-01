@@ -11,7 +11,7 @@ VISUALIZATION=False
 
 if(STARTUP):
     #Avvia training e salva componenti per l'analisi
-    cp.load_data('custom_configs/custom.yml')
+    cp.load_data('config_files/custom.yml')
     
     #Salvataggio Raccomandazioni validation_set per ogni modalità
     cp.save_recs('base',cp.get_base_recs()['validation'])
