@@ -1,6 +1,6 @@
 from os import path
 from elliot.run import run_experiment
-from data_preprocessing import movielens_preprocessing, facebook_book_preprocessing, yahoo_movies_preprocessing
+from src.data_preprocessing import facebook_book_preprocessing
 
 movielens_data_folder = './data/movielens'
 facebook_book_folder = './data/facebook_book'

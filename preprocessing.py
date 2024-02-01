@@ -1,10 +1,9 @@
-from data_preprocessing import movielens_preprocessing, facebook_book_preprocessing, yahoo_movies_preprocessing
+from src.preprocessing.preprocessing import run
+from src import *
 
-movielens_data_folder = './data/movielens'
-facebook_book_folder = './data/facebook_book'
-yahoo_movies_folder = './data/yahoo_movies'
 
 if __name__ == '__main__':
-    facebook_book_preprocessing.run(data_folder=facebook_book_folder)
-    yahoo_movies_preprocessing.run(data_folder=yahoo_movies_folder)
-    movielens_preprocessing.run(data_folder=movielens_data_folder)
+
+    run(dataset_name=FACEBOOK, core=5, binarize=False)
+    run(dataset_name=YAHOO, core=5, threshold=3)
+    # run(dataset_name=MOVIELENS, core=5, threshold=3)

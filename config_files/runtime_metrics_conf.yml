@@ -2,9 +2,9 @@ experiment:
   backend: pytorch
   data_config:
     strategy: fixed
-    train_path:       ../data/{0}/train.tsv
-    validation_path:  ../data_dz\facebook\base\validation\validation_base_@64.tsv
-    test_path:        ../data_dz\facebook\base\test\test_base_@64.tsv
+    train_path: ../data_dz/validation/facebook_base_@64.tsv
+    validation_path: ../data_dz/validation/facebook_tsne_@4.tsv
+    test_path: ../data_dz/test/facebook_tsne_@4.tsv
   dataset: facebook_book
   top_k: 10
   evaluation:
@@ -14,4 +14,4 @@ experiment:
   gpu: 0
   models:
     RecommendationFolder:  
-        folder: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data_dz\facebook\tsne\validation
+        folder: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\recs\facebook_book
