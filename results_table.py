@@ -39,14 +39,12 @@ def save_recs_kpca(f, DATASET):
                     for rec in recs['validation'][KERNEL][SIZE][USER]:
                         file.write(str(str(USER) + "	" + str(rec[0]) + "	" + str(rec[1]) + '\n'))
 
+FACTORS=[256,128,64,32,16,8,4,2]
 
 DATASET =  YAHOO # ['yahoo_movies','facebook_book']
-
 BASE = False
 REDUCERS = False
-
 DATA_EXTRACTION = False
-
 METRICS = True
 CLEAR_RESULTS = True
 CSV = True
@@ -59,30 +57,22 @@ configuration = set_dataset_configuration(configuration, DATASET)
 
 # RESULTS FOR BASE AT DIFFERENT FACTORS
 if (BASE):
-    for factors in [64, 32, 16, 8, 4, 2]:
-        # REDUCERS OPTIONS
-        configuration['experiment']['models']['external.LightGCN_Custom']['meta']['reducers_types'] = []
-        configuration['experiment']['models']['external.LightGCN_Custom']['meta']['reducers_factors'] = []
-        configuration['experiment']['models']['external.LightGCN_Custom']['meta']['KPCA_Kernels'] = ['linear', 'poly',
-                                                                                                     'rbf', 'sigmoid',
-                                                                                                     'cosine']
-        configuration['experiment']['models']['external.LightGCN_Custom']['factors'] = factors
+    configuration=set_reducers_configuration(configuration,[],[],[])
+    for f in FACTORS:
+        configuration = set_model_factors(configuration,f)          
+        
         with open('config_files/custom.yml', 'w') as file:
             yaml.dump(configuration, file)
 
         cp.load_data('config_files/custom.yml')
 
 if (REDUCERS):
-    configuration['experiment']['models']['external.LightGCN_Custom']['factors'] = 64
-    configuration['experiment']['models']['external.LightGCN_Custom']['meta']['reducers_types'] = ['UMAP', 'PCA',
-                                                                                                   'KPCA', 'TSNE']
-    configuration['experiment']['models']['external.LightGCN_Custom']['meta']['reducers_factors'] = [32, 16, 8, 4, 2]
-    configuration['experiment']['models']['external.LightGCN_Custom']['meta']['tsne_reducers_factors'] = [2]
-    configuration['experiment']['models']['external.LightGCN_Custom']['meta']['KPCA_Kernels'] = ['linear', 'poly',
-                                                                                                 'rbf', 'sigmoid',
-                                                                                                 'cosine']
+    configuration = set_model_factors(configuration,FACTORS[0]) 
+    configuration=set_reducers_configuration(configuration,['UMAP','KPCA','AUTOE','TSNE'],FACTORS[1:], ['linear', 'poly','rbf', 'sigmoid','cosine']) 
+    
     with open('config_files/custom.yml', 'w') as file:
         yaml.dump(configuration, file)
+    
     cp.load_data('config_files/custom.yml')
 
 if (DATA_EXTRACTION):
