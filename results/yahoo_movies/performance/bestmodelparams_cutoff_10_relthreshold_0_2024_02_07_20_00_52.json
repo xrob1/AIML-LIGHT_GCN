@@ -1,0 +1,322 @@
+[
+    {
+        "default_validation_metric": "nDCGRendle2020",
+        "default_validation_cutoff": 10,
+        "rel_threshold": 0
+    },
+    {
+        "meta": {},
+        "recommender": "KPCA_cosine@128",
+        "configuration": {
+            "folder": "C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\yahoo_movies\\KPCA",
+            "path": "C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\yahoo_movies\\KPCA\\KPCA_cosine@128.tsv",
+            "name": "KPCA_cosine@128"
+        }
+    },
+    {
+        "meta": {},
+        "recommender": "KPCA_cosine@16",
+        "configuration": {
+            "folder": "C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\yahoo_movies\\KPCA",
+            "path": "C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\yahoo_movies\\KPCA\\KPCA_cosine@16.tsv",
+            "name": "KPCA_cosine@16"
+        }
+    },
+    {
+        "meta": {},
+        "recommender": "KPCA_cosine@2",
+        "configuration": {
+            "folder": "C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\yahoo_movies\\KPCA",
+            "path": "C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\yahoo_movies\\KPCA\\KPCA_cosine@2.tsv",
+            "name": "KPCA_cosine@2"
+        }
+    },
+    {
+        "meta": {},
+        "recommender": "KPCA_cosine@32",
+        "configuration": {
+            "folder": "C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\yahoo_movies\\KPCA",
+            "path": "C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\yahoo_movies\\KPCA\\KPCA_cosine@32.tsv",
+            "name": "KPCA_cosine@32"
+        }
+    },
+    {
+        "meta": {},
+        "recommender": "KPCA_cosine@4",
+        "configuration": {
+            "folder": "C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\yahoo_movies\\KPCA",
+            "path": "C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\yahoo_movies\\KPCA\\KPCA_cosine@4.tsv",
+            "name": "KPCA_cosine@4"
+        }
+    },
+    {
+        "meta": {},
+        "recommender": "KPCA_cosine@64",
+        "configuration": {
+            "folder": "C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\yahoo_movies\\KPCA",
+            "path": "C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\yahoo_movies\\KPCA\\KPCA_cosine@64.tsv",
+            "name": "KPCA_cosine@64"
+        }
+    },
+    {
+        "meta": {},
+        "recommender": "KPCA_cosine@8",
+        "configuration": {
+            "folder": "C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\yahoo_movies\\KPCA",
+            "path": "C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\yahoo_movies\\KPCA\\KPCA_cosine@8.tsv",
+            "name": "KPCA_cosine@8"
+        }
+    },
+    {
+        "meta": {},
+        "recommender": "KPCA_linear@128",
+        "configuration": {
+            "folder": "C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\yahoo_movies\\KPCA",
+            "path": "C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\yahoo_movies\\KPCA\\KPCA_linear@128.tsv",
+            "name": "KPCA_linear@128"
+        }
+    },
+    {
+        "meta": {},
+        "recommender": "KPCA_linear@16",
+        "configuration": {
+            "folder": "C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\yahoo_movies\\KPCA",
+            "path": "C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\yahoo_movies\\KPCA\\KPCA_linear@16.tsv",
+            "name": "KPCA_linear@16"
+        }
+    },
+    {
+        "meta": {},
+        "recommender": "KPCA_linear@2",
+        "configuration": {
+            "folder": "C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\yahoo_movies\\KPCA",
+            "path": "C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\yahoo_movies\\KPCA\\KPCA_linear@2.tsv",
+            "name": "KPCA_linear@2"
+        }
+    },
+    {
+        "meta": {},
+        "recommender": "KPCA_linear@32",
+        "configuration": {
+            "folder": "C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\yahoo_movies\\KPCA",
+            "path": "C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\yahoo_movies\\KPCA\\KPCA_linear@32.tsv",
+            "name": "KPCA_linear@32"
+        }
+    },
+    {
+        "meta": {},
+        "recommender": "KPCA_linear@4",
+        "configuration": {
+            "folder": "C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\yahoo_movies\\KPCA",
+            "path": "C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\yahoo_movies\\KPCA\\KPCA_linear@4.tsv",
+            "name": "KPCA_linear@4"
+        }
+    },
+    {
+        "meta": {},
+        "recommender": "KPCA_linear@64",
+        "configuration": {
+            "folder": "C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\yahoo_movies\\KPCA",
+            "path": "C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\yahoo_movies\\KPCA\\KPCA_linear@64.tsv",
+            "name": "KPCA_linear@64"
+        }
+    },
+    {
+        "meta": {},
+        "recommender": "KPCA_linear@8",
+        "configuration": {
+            "folder": "C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\yahoo_movies\\KPCA",
+            "path": "C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\yahoo_movies\\KPCA\\KPCA_linear@8.tsv",
+            "name": "KPCA_linear@8"
+        }
+    },
+    {
+        "meta": {},
+        "recommender": "KPCA_poly@128",
+        "configuration": {
+            "folder": "C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\yahoo_movies\\KPCA",
+            "path": "C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\yahoo_movies\\KPCA\\KPCA_poly@128.tsv",
+            "name": "KPCA_poly@128"
+        }
+    },
+    {
+        "meta": {},
+        "recommender": "KPCA_poly@16",
+        "configuration": {
+            "folder": "C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\yahoo_movies\\KPCA",
+            "path": "C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\yahoo_movies\\KPCA\\KPCA_poly@16.tsv",
+            "name": "KPCA_poly@16"
+        }
+    },
+    {
+        "meta": {},
+        "recommender": "KPCA_poly@2",
+        "configuration": {
+            "folder": "C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\yahoo_movies\\KPCA",
+            "path": "C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\yahoo_movies\\KPCA\\KPCA_poly@2.tsv",
+            "name": "KPCA_poly@2"
+        }
+    },
+    {
+        "meta": {},
+        "recommender": "KPCA_poly@32",
+        "configuration": {
+            "folder": "C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\yahoo_movies\\KPCA",
+            "path": "C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\yahoo_movies\\KPCA\\KPCA_poly@32.tsv",
+            "name": "KPCA_poly@32"
+        }
+    },
+    {
+        "meta": {},
+        "recommender": "KPCA_poly@4",
+        "configuration": {
+            "folder": "C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\yahoo_movies\\KPCA",
+            "path": "C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\yahoo_movies\\KPCA\\KPCA_poly@4.tsv",
+            "name": "KPCA_poly@4"
+        }
+    },
+    {
+        "meta": {},
+        "recommender": "KPCA_poly@64",
+        "configuration": {
+            "folder": "C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\yahoo_movies\\KPCA",
+            "path": "C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\yahoo_movies\\KPCA\\KPCA_poly@64.tsv",
+            "name": "KPCA_poly@64"
+        }
+    },
+    {
+        "meta": {},
+        "recommender": "KPCA_poly@8",
+        "configuration": {
+            "folder": "C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\yahoo_movies\\KPCA",
+            "path": "C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\yahoo_movies\\KPCA\\KPCA_poly@8.tsv",
+            "name": "KPCA_poly@8"
+        }
+    },
+    {
+        "meta": {},
+        "recommender": "KPCA_rbf@128",
+        "configuration": {
+            "folder": "C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\yahoo_movies\\KPCA",
+            "path": "C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\yahoo_movies\\KPCA\\KPCA_rbf@128.tsv",
+            "name": "KPCA_rbf@128"
+        }
+    },
+    {
+        "meta": {},
+        "recommender": "KPCA_rbf@16",
+        "configuration": {
+            "folder": "C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\yahoo_movies\\KPCA",
+            "path": "C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\yahoo_movies\\KPCA\\KPCA_rbf@16.tsv",
+            "name": "KPCA_rbf@16"
+        }
+    },
+    {
+        "meta": {},
+        "recommender": "KPCA_rbf@2",
+        "configuration": {
+            "folder": "C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\yahoo_movies\\KPCA",
+            "path": "C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\yahoo_movies\\KPCA\\KPCA_rbf@2.tsv",
+            "name": "KPCA_rbf@2"
+        }
+    },
+    {
+        "meta": {},
+        "recommender": "KPCA_rbf@32",
+        "configuration": {
+            "folder": "C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\yahoo_movies\\KPCA",
+            "path": "C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\yahoo_movies\\KPCA\\KPCA_rbf@32.tsv",
+            "name": "KPCA_rbf@32"
+        }
+    },
+    {
+        "meta": {},
+        "recommender": "KPCA_rbf@4",
+        "configuration": {
+            "folder": "C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\yahoo_movies\\KPCA",
+            "path": "C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\yahoo_movies\\KPCA\\KPCA_rbf@4.tsv",
+            "name": "KPCA_rbf@4"
+        }
+    },
+    {
+        "meta": {},
+        "recommender": "KPCA_rbf@64",
+        "configuration": {
+            "folder": "C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\yahoo_movies\\KPCA",
+            "path": "C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\yahoo_movies\\KPCA\\KPCA_rbf@64.tsv",
+            "name": "KPCA_rbf@64"
+        }
+    },
+    {
+        "meta": {},
+        "recommender": "KPCA_rbf@8",
+        "configuration": {
+            "folder": "C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\yahoo_movies\\KPCA",
+            "path": "C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\yahoo_movies\\KPCA\\KPCA_rbf@8.tsv",
+            "name": "KPCA_rbf@8"
+        }
+    },
+    {
+        "meta": {},
+        "recommender": "KPCA_sigmoid@128",
+        "configuration": {
+            "folder": "C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\yahoo_movies\\KPCA",
+            "path": "C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\yahoo_movies\\KPCA\\KPCA_sigmoid@128.tsv",
+            "name": "KPCA_sigmoid@128"
+        }
+    },
+    {
+        "meta": {},
+        "recommender": "KPCA_sigmoid@16",
+        "configuration": {
+            "folder": "C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\yahoo_movies\\KPCA",
+            "path": "C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\yahoo_movies\\KPCA\\KPCA_sigmoid@16.tsv",
+            "name": "KPCA_sigmoid@16"
+        }
+    },
+    {
+        "meta": {},
+        "recommender": "KPCA_sigmoid@2",
+        "configuration": {
+            "folder": "C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\yahoo_movies\\KPCA",
+            "path": "C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\yahoo_movies\\KPCA\\KPCA_sigmoid@2.tsv",
+            "name": "KPCA_sigmoid@2"
+        }
+    },
+    {
+        "meta": {},
+        "recommender": "KPCA_sigmoid@32",
+        "configuration": {
+            "folder": "C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\yahoo_movies\\KPCA",
+            "path": "C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\yahoo_movies\\KPCA\\KPCA_sigmoid@32.tsv",
+            "name": "KPCA_sigmoid@32"
+        }
+    },
+    {
+        "meta": {},
+        "recommender": "KPCA_sigmoid@4",
+        "configuration": {
+            "folder": "C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\yahoo_movies\\KPCA",
+            "path": "C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\yahoo_movies\\KPCA\\KPCA_sigmoid@4.tsv",
+            "name": "KPCA_sigmoid@4"
+        }
+    },
+    {
+        "meta": {},
+        "recommender": "KPCA_sigmoid@64",
+        "configuration": {
+            "folder": "C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\yahoo_movies\\KPCA",
+            "path": "C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\yahoo_movies\\KPCA\\KPCA_sigmoid@64.tsv",
+            "name": "KPCA_sigmoid@64"
+        }
+    },
+    {
+        "meta": {},
+        "recommender": "KPCA_sigmoid@8",
+        "configuration": {
+            "folder": "C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\yahoo_movies\\KPCA",
+            "path": "C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\yahoo_movies\\KPCA\\KPCA_sigmoid@8.tsv",
+            "name": "KPCA_sigmoid@8"
+        }
+    }
+]

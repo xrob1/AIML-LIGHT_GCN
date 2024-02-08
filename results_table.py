@@ -12,7 +12,7 @@ import ruamel.yaml.util
 from src.utils.resutls_tab import *
 
 yaml = ruamel.yaml.YAML()
-yaml.indent(mapping=4, sequence=6, offset=1)
+#yaml.indent(mapping=4, sequence=6, offset=1)
 
 
 def save_recs(f, DATASET):
@@ -42,100 +42,161 @@ def save_recs_kpca(f, DATASET):
 FACTORS=[256,128,64,32,16,8,4,2]
 
 DATASET =  YAHOO # ['yahoo_movies','facebook_book']
-BASE = False
-REDUCERS = False
-DATA_EXTRACTION = False
-METRICS = True
-CLEAR_RESULTS = True
-CSV = True
+#MANCA 1 INSIDE METRICS
 
-with open(basic_conf_file(), 'r') as file:
-    configuration = yaml.load(file)
+for DATASET in [YAHOO,FACEBOOK] : 
+    
+    BASE = False
+    REDUCERS = False
+    REDS=['UMAP','KPCA','AUTOE','TSNE','BASE']
+    DATA_EXTRACTION = False
+    METRICS = False
+    CLEAR_RESULTS = True
+    CSV = True
+    INSIDE_METRICS=True
 
-# DATASET CONFIGURATION
-configuration = set_dataset_configuration(configuration, DATASET)
+    with open(yahoo_exp_conf_file(), 'r') as file:
+        configuration = yaml.load(file)
 
-# RESULTS FOR BASE AT DIFFERENT FACTORS
-if (BASE):
-    configuration=set_reducers_configuration(configuration,[],[],[])
-    for f in FACTORS:
-        configuration = set_model_factors(configuration,f)          
+    # DATASET CONFIGURATION
+    configuration = set_dataset_configuration(configuration, DATASET)
+
+    # RESULTS FOR BASE AT DIFFERENT FACTORS
+    if (BASE):
+        configuration=set_reducers_configuration(configuration,[],[],[])
+        for f in FACTORS:
+            configuration = set_model_factors(configuration,f)
+            
+            with open('config_files/custom.yml', 'w') as file:
+                yaml.dump(configuration, file)
+
+            cp.load_data('config_files/custom.yml')
+
+    if (REDUCERS):
+        configuration = set_model_factors(configuration,FACTORS[0]) 
+        configuration=set_reducers_configuration(configuration,REDS,FACTORS[1:], ['linear', 'poly','rbf', 'sigmoid','cosine']) 
         
         with open('config_files/custom.yml', 'w') as file:
             yaml.dump(configuration, file)
-
+        
         cp.load_data('config_files/custom.yml')
 
-if (REDUCERS):
-    configuration = set_model_factors(configuration,FACTORS[0]) 
-    configuration=set_reducers_configuration(configuration,['UMAP','KPCA','AUTOE','TSNE'],FACTORS[1:], ['linear', 'poly','rbf', 'sigmoid','cosine']) 
-    
-    with open('config_files/custom.yml', 'w') as file:
-        yaml.dump(configuration, file)
-    
-    cp.load_data('config_files/custom.yml')
+    if (DATA_EXTRACTION):
 
-if (DATA_EXTRACTION):
-
-    files = [f for f in os.listdir('models_raw_data/LightGCN_Custom/' + DATASET + '/')]
-    for f in files:
-        if (f.split("_")[2] in ['base', 'PCA', 'tsne']) or (f.split("_")[2] == 'umap' and f.split("_")[3] == 'recs'):
-            save_recs(f, DATASET)
-        if f.split("_")[2] == 'KPCA':
-            save_recs_kpca(f, DATASET)
-
-if (METRICS):
-
-    if (CLEAR_RESULTS):
-        files = glob.glob(
-            'results/' + DATASET + '/performance/*')  # [f for f in os.listdir('results/facebook_book/performance/')]
+        files = [f for f in os.listdir('models_raw_data/LightGCN_Custom/' + DATASET + '/')]
         for f in files:
-            os.remove(f)
+            if (f.split("_")[2] in ['BASE','AUTOE','TSNE']) or (f.split("_")[2] == 'UMAP' and f.split("_")[3] == 'recs'):
+                save_recs(f, DATASET)
+            if f.split("_")[2] == 'KPCA':
+                save_recs_kpca(f, DATASET)
 
-    for type in ['base', 'kpca', 'pca', 'tsne', 'umap']:
-        with open('custom_configs\custom_metrics_runtime.yml', 'r') as file:
-            configs = yaml.load(file)
-        configs['experiment']['data_config']['train_path'] = '../data/' + DATASET + '/train.tsv'
-        configs['experiment']['data_config']['validation_path'] = '../data/' + DATASET + '/val.tsv'
-        configs['experiment']['data_config']['test_path'] = '../data/' + DATASET + '/test.tsv'
-        configs['experiment']['models']['RecommendationFolder']['folder'] = os.path.abspath(
-            'data_dz/' + DATASET + '/' + type)
-        configs['experiment']['dataset'] = DATASET
+    if (METRICS):
 
-        with open('custom_configs\custom_metrics_runtime.yml', 'w') as file:
-            yaml.dump(configs, file)
+        if (CLEAR_RESULTS):
+            files = glob.glob(
+                'results/' + DATASET + '/performance/*')  # [f for f in os.listdir('results/facebook_book/performance/')]
+            for f in files:
+                os.remove(f)
 
-        run_experiment('custom_configs\custom_metrics_runtime.yml')
+        for type in REDS:#['AUTOE','BASE', 'KPCA',  'TSNE', 'UMAP']:
+            with open('custom_configs\custom_metrics_runtime.yml', 'r') as file:
+                configs = yaml.load(file)
+            configs['experiment']['data_config']['train_path'] = '../data/' + DATASET + '/train.tsv'
+            configs['experiment']['data_config']['validation_path'] = '../data/' + DATASET + '/val.tsv'
+            configs['experiment']['data_config']['test_path'] = '../data/' + DATASET + '/test.tsv'
+            configs['experiment']['models']['RecommendationFolder']['folder'] = os.path.abspath(
+                'data_dz/' + DATASET + '/' + type)
+            configs['experiment']['dataset'] = DATASET
 
-        print("STOP")
+            with open('custom_configs\custom_metrics_runtime.yml', 'w') as file:
+                yaml.dump(configs, file)
 
-if (CSV):
+            run_experiment('custom_configs\custom_metrics_runtime.yml')
 
-    results = []
+            print("STOP")
 
-    for f in [f for f in os.listdir('results/' + DATASET + '/performance')]:
-        if f.split('_')[0] != 'rec': continue
-        with open('results/' + DATASET + '/performance/' + f, 'r') as file:
+    if (CSV):
 
-            fields = file.readline()  # SALTA INTESTAZIONE:
-            for line in file:
-                line = line.split('\t')
+        results = []
 
-                method = line[0].split('@')[0]
-                n = line[0].split('@')[1]
+        for f in [f for f in os.listdir('results/' + DATASET + '/performance')]:
+            if f.split('_')[0] != 'rec': continue
+            with open('results/' + DATASET + '/performance/' + f, 'r') as file:
 
-                results.append([int(n), method, line[1][:6], line[2][:6], line[3][:6], line[4][:6]])
+                fields = file.readline()  # SALTA INTESTAZIONE:
+                for line in file:
+                    line = line.replace('.',',')
+                    line=line.split('\t')
 
-    results = sorted(results, reverse=True)
+                    method = line[0].split('@')[0]
+                    n = line[0].split('@')[1]
 
-    with open('risultati_' + DATASET + '.csv', 'w') as csvfile:
+                    results.append([int(n), method, line[1][:6], line[2][:6], line[3][:6], line[4][:6]])
 
-        csvwriter = csv.writer(csvfile, delimiter=';', lineterminator='\n')
+        results = sorted(results, reverse=True)
 
-        csvwriter.writerow(['|e|', 'Metodo', 'nDCGRendle2020', 'HR', 'Precision', 'Recall'])
+        with open('risultati_' + DATASET + '.csv', 'w') as csvfile:
 
-        csvwriter.writerows(results)
+            csvwriter = csv.writer(csvfile, delimiter=';', lineterminator='\n')
 
-    print("stop")
+            csvwriter.writerow(['|e|', 'Metodo', 'nDCGRendle2020', 'HR', 'Precision', 'Recall'])
 
-print("STOP")
+            csvwriter.writerows(results)
+
+        print("stop")
+
+    if(INSIDE_METRICS):
+
+        if (CLEAR_RESULTS):
+            files = glob.glob(
+                'results/' + DATASET + '/performance/*')  # [f for f in os.listdir('results/facebook_book/performance/')]
+            for f in files:
+                os.remove(f)
+
+        for type in REDS:#['AUTOE','BASE', 'KPCA',  'TSNE', 'UMAP']:
+            with open('custom_configs\custom_metrics_runtime.yml', 'r') as file:
+                configs = yaml.load(file)
+            configs['experiment']['data_config']['train_path'] = '../data/' + DATASET + '/train.tsv'
+            configs['experiment']['data_config']['validation_path'] = '../data_dz/' + DATASET + '/base/BASE@256.tsv'
+            configs['experiment']['data_config']['test_path'] = '../data_dz/' + DATASET + '/base/BASE@256.tsv'
+            configs['experiment']['models']['RecommendationFolder']['folder'] = os.path.abspath(
+                'data_dz/' + DATASET + '/' + type)
+            configs['experiment']['dataset'] = DATASET
+
+            with open('custom_configs\custom_metrics_runtime.yml', 'w') as file:
+                yaml.dump(configs, file)
+
+            run_experiment('custom_configs\custom_metrics_runtime.yml')
+
+            print("STOP")
+
+        if (CSV):
+
+            results = []
+
+            for f in [f for f in os.listdir('results/' + DATASET + '/performance')]:
+                if f.split('_')[0] != 'rec': continue
+                with open('results/' + DATASET + '/performance/' + f, 'r') as file:
+
+                    fields = file.readline()  # SALTA INTESTAZIONE:
+                    for line in file:
+                        line = line.replace('.',',')
+                        line=line.split('\t')
+
+                        method = line[0].split('@')[0]
+                        n = line[0].split('@')[1]
+
+                        results.append([int(n), method, line[1][:6], line[2][:6], line[3][:6], line[4][:6]])
+
+            results = sorted(results, reverse=True)
+
+            with open('risultati_' + DATASET + '_INSIDE.csv', 'w') as csvfile:
+
+                csvwriter = csv.writer(csvfile, delimiter=';', lineterminator='\n')
+
+                csvwriter.writerow(['|e|', 'Metodo', 'nDCGRendle2020', 'HR', 'Precision', 'Recall'])
+
+                csvwriter.writerows(results)
+
+            print("stop")
+        

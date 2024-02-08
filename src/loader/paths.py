@@ -23,6 +23,8 @@ DATASET_NAME_BY_TYPE = {
 }
 
 BASE_CONFIGURATION_FILE_NAME = 'custom.yml'
+FACEBOOK_EXPLORATION_FILE_NAME ='facebook_exploration.yml'
+YHOO_EXPLORATION_FILE_NAME ='yahoo_exploration.yml'
 
 def create_directory(dir_path: str):
     """
@@ -68,6 +70,28 @@ def basic_conf_file():
     @return: the absolute path of the basic configuration file
     """
     config_path = os.path.join(CONFIG_DIR, BASE_CONFIGURATION_FILE_NAME)
+    if not os.path.exists(config_path):
+        raise FileNotFoundError(f'Basic configuration file at {config_path} not found. '
+                                f'Please, check that the file exists')
+    return os.path.abspath(config_path)
+
+def yahoo_exp_conf_file():
+    """
+    Returns the path of the file containing the yahoo exploration configuration for Elliot
+    @return: the absolute path of the basic configuration file
+    """
+    config_path = os.path.join(CONFIG_DIR, YHOO_EXPLORATION_FILE_NAME)
+    if not os.path.exists(config_path):
+        raise FileNotFoundError(f'Basic configuration file at {config_path} not found. '
+                                f'Please, check that the file exists')
+    return os.path.abspath(config_path)
+
+def facebook_exp_conf_file():
+    """
+    Returns the path of the file containing the facebook book exploration configuration for Elliot
+    @return: the absolute path of the basic configuration file
+    """
+    config_path = os.path.join(CONFIG_DIR, FACEBOOK_EXPLORATION_FILE_NAME)
     if not os.path.exists(config_path):
         raise FileNotFoundError(f'Basic configuration file at {config_path} not found. '
                                 f'Please, check that the file exists')

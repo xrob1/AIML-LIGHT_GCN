@@ -1,4 +1,5 @@
 from src.loader.paths import *
+from src import *
 
 def set_dataset_configuration(configuration: dict, dataset_name: str):
     """
@@ -13,6 +14,28 @@ def set_dataset_configuration(configuration: dict, dataset_name: str):
     configuration['experiment']['data_config']['test_path'] = dataset_filepath(dataset_name, 'test')
     configuration['experiment']['dataset'] = dataset_name
     configuration['experiment']['models']['external.LightGCN_Custom']['meta']['dataset_name'] = dataset_name
+    
+    if dataset_name == YAHOO:
+        configuration['experiment']['models']['external.LightGCN_Custom']['meta']['verbose']= True
+        configuration['experiment']['models']['external.LightGCN_Custom']['meta']['save_recs']= True
+        configuration['experiment']['models']['external.LightGCN_Custom']['meta']['validation_rate']= 27
+        configuration['experiment']['models']['external.LightGCN_Custom']['lr']= 0.0014217965357751648
+        configuration['experiment']['models']['external.LightGCN_Custom']['epochs']= 27
+        configuration['experiment']['models']['external.LightGCN_Custom']['batch_size']= 256
+        configuration['experiment']['models']['external.LightGCN_Custom']['l_w']= 0.05948528558207626
+        configuration['experiment']['models']['external.LightGCN_Custom']['n_layers']= 3
+        configuration['experiment']['models']['external.LightGCN_Custom']['seed']= 123
+    if dataset_name == FACEBOOK:
+        configuration['experiment']['models']['external.LightGCN_Custom']['meta']['verbose']= True
+        configuration['experiment']['models']['external.LightGCN_Custom']['meta']['save_recs']= True
+        configuration['experiment']['models']['external.LightGCN_Custom']['meta']['validation_rate']= 2
+        configuration['experiment']['models']['external.LightGCN_Custom']['lr']= 0.0028462729478462134
+        configuration['experiment']['models']['external.LightGCN_Custom']['epochs']= 2
+        configuration['experiment']['models']['external.LightGCN_Custom']['batch_size']= 64
+        configuration['experiment']['models']['external.LightGCN_Custom']['l_w']= 0.06184015598288455
+        configuration['experiment']['models']['external.LightGCN_Custom']['n_layers']= 3
+        configuration['experiment']['models']['external.LightGCN_Custom']['seed']= 123
+        
     return configuration
 
 def set_model_factors(configuration: dict,n_factors: int ):

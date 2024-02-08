@@ -22,6 +22,7 @@ from sklearn.decomposition import KernelPCA
 from sklearn.manifold import LocallyLinearEmbedding
 from sklearn.manifold import Isomap
 import umap
+from autoencoder import Autoenc
 
 class LightGCN_Custom(RecMixin, BaseRecommenderModel):
     r"""
@@ -129,44 +130,45 @@ class LightGCN_Custom(RecMixin, BaseRecommenderModel):
         
         
         #Save recs Base
-        file = open('models_raw_data/LightGCN_Custom/'+self.dataset_name+'/'+str(self.__class__.__name__)+'_base_recs@'+str(self._factors), 'wb')
+        file = open('models_raw_data/LightGCN_Custom/'+self.dataset_name+'/'+str(self.__class__.__name__)+'_BASE_recs@'+str(self._factors), 'wb')
         pickle.dump(self.recs['base'], file)
         file.close()  
-               
+        """
         #Save data 
         file = open('models_raw_data/LightGCN_Custom/'+self.dataset_name+'/'+str(self.__class__.__name__)+'_data@'+str(self._factors), 'wb')
         pickle.dump([self._data], file)
         file.close()
+        """
         
 
-        if 'PCA' in self.reducers :        
+        if 'AUTOE' in self.reducers :        
             #Save recs PCA
-            self.get_recommendations_PCA(self.evaluator.get_needed_recommendations())
-            file = open('models_raw_data/LightGCN_Custom/'+self.dataset_name+'/'+str(self.__class__.__name__)+'_PCA_recs', 'wb')
-            pickle.dump(self.recs['pca'], file)
+            self.get_recommendations_AUTOE(self.evaluator.get_needed_recommendations())
+            file = open('models_raw_data/LightGCN_Custom/'+self.dataset_name+'/'+str(self.__class__.__name__)+'_AUTOE_recs', 'wb')
+            pickle.dump(self.recs['AUTOE'], file)
             file.close()   
         
         if 'KPCA' in self.reducers :  
             #Save recs Kernel PCA
             self.get_recommendations_KPCA(self.evaluator.get_needed_recommendations())
             file = open('models_raw_data/LightGCN_Custom/'+self.dataset_name+'/'+str(self.__class__.__name__)+'_KPCA_recs', 'wb')
-            pickle.dump(self.recs['kpca'], file)
+            pickle.dump(self.recs['KPCA'], file)
             file.close()  
         
         if 'TSNE' in self.reducers :  
         #Save recs TSNE
             self.get_recommendations_TSNE(self.evaluator.get_needed_recommendations())
-            file = open('models_raw_data/LightGCN_Custom/'+self.dataset_name+'/'+str(self.__class__.__name__)+'_tsne_recs', 'wb')
-            pickle.dump(self.recs['tsne'], file)
+            file = open('models_raw_data/LightGCN_Custom/'+self.dataset_name+'/'+str(self.__class__.__name__)+'_TSNE_recs', 'wb')
+            pickle.dump(self.recs['TSNE'], file)
             file.close()   
         
         if 'UMAP' in self.reducers :  
             #Save recs/data UMAP
             self.get_recommendations_UMAP(self.evaluator.get_needed_recommendations())
-            file = open('models_raw_data/LightGCN_Custom/'+self.dataset_name+'/'+str(self.__class__.__name__)+'_umap_recs', 'wb')
-            pickle.dump(self.recs['umap'], file)
+            file = open('models_raw_data/LightGCN_Custom/'+self.dataset_name+'/'+str(self.__class__.__name__)+'_UMAP_recs', 'wb')
+            pickle.dump(self.recs['UMAP'], file)
             file.close()  
-            file = open('models_raw_data/LightGCN_Custom/'+self.dataset_name+'/'+str(self.__class__.__name__)+'_umap_data', 'wb')
+            file = open('models_raw_data/LightGCN_Custom/'+self.dataset_name+'/'+str(self.__class__.__name__)+'_UMAP_data', 'wb')
             pickle.dump(self.umap_data, file)
             file.close() 
         
@@ -177,6 +179,7 @@ class LightGCN_Custom(RecMixin, BaseRecommenderModel):
         predictions_top_k_test = {}
         predictions_top_k_val = {}
         gu, gi = self._model.propagate_embeddings(evaluate=True)
+        self.GU,self.GI=gu,gi
         for index, offset in enumerate(range(0, self._num_users, self._batch_size)):
             offset_stop = min(offset + self._batch_size, self._num_users)
             predictions = self._model.predict(gu[offset: offset_stop], gi)
@@ -192,9 +195,9 @@ class LightGCN_Custom(RecMixin, BaseRecommenderModel):
         return predictions_top_k_val, predictions_top_k_test
         
     def get_recommendations_TSNE(self, k: int = 100):
-        self.recs['tsne']={'validation':{},'test':{}}
+        self.recs['TSNE']={'validation':{},'test':{}}
         #Item User concatenztion Tsne Trasformation
-        gu, gi = self._model.propagate_embeddings(evaluate=True)
+        gu, gi =self.GU,self.GI# self._model.propagate_embeddings(evaluate=True)
         gu, gi = gu.cpu().detach().numpy(),gi.cpu().detach().numpy()
        
         for n_components in tqdm(self.tsne_reducers_factors ,desc='TSNE iterations'):  #tsne_sizes defined in configs.yml            
@@ -222,24 +225,24 @@ class LightGCN_Custom(RecMixin, BaseRecommenderModel):
                 tnse_predictions_test.update(recs_test)
 
             #Update Recommandations Dictionary
-            self.recs['tsne']['validation'][n_components] =   tnse_predictions_val
-            self.recs['tsne']['test'][n_components]       =   tnse_predictions_test
+            self.recs['TSNE']['validation'][n_components] =   tnse_predictions_val
+            self.recs['TSNE']['test'][n_components]       =   tnse_predictions_test
     
-    def get_recommendations_PCA(self, k: int = 100):        
-        self.recs['pca']={'validation':{},'test':{}}
+    def get_recommendations_AUTOE(self, k: int = 100):        
+        self.recs['AUTOE']={'validation':{},'test':{}}
         #Item User concatenztion Tsne Trasformation
-        gu, gi = self._model.propagate_embeddings(evaluate=True)
+        gu, gi =self.GU,self.GI# self._model.propagate_embeddings(evaluate=True)
         gu, gi = gu.cpu().detach().numpy(),gi.cpu().detach().numpy()
        
-        for n_components in tqdm(self.reducers_factors,desc='PCA iterations'):  #tsne_sizes defined in configs.yml            
+        for n_components in tqdm(self.reducers_factors,desc='AUTOE iterations'):  #tsne_sizes defined in configs.yml            
 
-            pca = PCA(n_components=n_components)  
+            autoenc = Autoenc(n_components=n_components)  
                                                 
             pca_predictions_val  = {}
             pca_predictions_test = {}
         
             #Trasform Concatenated Data
-            i_u_concat = pca.fit_transform(np.concatenate((gu, gi)))
+            i_u_concat = autoenc.fit_transform(np.concatenate((gu, gi)))
             u_tsne =   torch.Tensor(i_u_concat[:self._num_users,:])
             i_tsne =   torch.Tensor( i_u_concat[self._num_users:,:])
         
@@ -251,18 +254,18 @@ class LightGCN_Custom(RecMixin, BaseRecommenderModel):
                 pca_predictions_test.update(recs_test)
 
             #Update Recommandations Dictionary
-            self.recs['pca']['validation'][n_components] =   pca_predictions_val
-            self.recs['pca']['test'][n_components]       =   pca_predictions_test
+            self.recs['AUTOE']['validation'][n_components] =   pca_predictions_val
+            self.recs['AUTOE']['test'][n_components]       =   pca_predictions_test
    
     def get_recommendations_KPCA(self, k: int = 100):        
 
         #Item User concatenztion Tsne Trasformation
-        gu, gi = self._model.propagate_embeddings(evaluate=True)
+        gu, gi = self.GU,self.GI#self._model.propagate_embeddings(evaluate=True)
         gu, gi = gu.cpu().detach().numpy(),gi.cpu().detach().numpy()
-        self.recs['kpca']={'validation':{},'test':{}}
+        self.recs['KPCA']={'validation':{},'test':{}}
         for kernel in self.KPCA_Kernels:
-            self.recs['kpca']['validation'][kernel]={}
-            self.recs['kpca']['test'][kernel]={}
+            self.recs['KPCA']['validation'][kernel]={}
+            self.recs['KPCA']['test'][kernel]={}
             for n_components in tqdm(self.reducers_factors,desc='KPCA-'+str(kernel)+' iterations'):  #tsne_sizes defined in configs.yml            
 
                 kpca = KernelPCA(n_components=n_components,kernel=kernel)  
@@ -283,16 +286,16 @@ class LightGCN_Custom(RecMixin, BaseRecommenderModel):
                     kpca_predictions_test.update(recs_test)
 
                 #Update Recommandations Dictionary
-                self.recs['kpca']['validation'][kernel][n_components] =   kpca_predictions_val
-                self.recs['kpca']['test'][kernel][n_components]       =   kpca_predictions_test
+                self.recs['KPCA']['validation'][kernel][n_components] =   kpca_predictions_val
+                self.recs['KPCA']['test'][kernel][n_components]       =   kpca_predictions_test
    
     def get_recommendations_UMAP(self, k: int = 100):        
         #UMAP ONLY AT 2 DIM
         #Item User concatenztion Tsne Trasformation
-        gu, gi = self._model.propagate_embeddings(evaluate=True)
+        gu, gi = self.GU,self.GI#self._model.propagate_embeddings(evaluate=True)
         gu, gi = gu.cpu().detach().numpy(),gi.cpu().detach().numpy()
         
-        self.recs['umap']={'validation':{},'test':{}}
+        self.recs['UMAP']={'validation':{},'test':{}}
         self.umap_data = {}
         
         for n_components in tqdm(self.reducers_factors,desc='UMAP iteration'):    
@@ -315,8 +318,8 @@ class LightGCN_Custom(RecMixin, BaseRecommenderModel):
                 predictions_test.update(recs_test)
 
             #Update Recommandations Dictionary
-            self.recs['umap']['validation'][n_components] =   predictions_val
-            self.recs['umap']['test'][n_components]       =   predictions_test            
+            self.recs['UMAP']['validation'][n_components] =   predictions_val
+            self.recs['UMAP']['test'][n_components]       =   predictions_test            
             self.umap_data[n_components]  =   [ i_u_concat[:self._num_users,:], i_u_concat[self._num_users:,:] ]
        
     def get_single_recommendation(self, mask, k, predictions, offset, offset_stop):

@@ -1,0 +1,79 @@
+[
+    {
+        "default_validation_metric": "nDCGRendle2020",
+        "default_validation_cutoff": 10,
+        "rel_threshold": 0
+    },
+    {
+        "meta": {},
+        "recommender": "BASE@128",
+        "configuration": {
+            "folder": "C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\yahoo_movies\\BASE",
+            "path": "C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\yahoo_movies\\BASE\\BASE@128.tsv",
+            "name": "BASE@128"
+        }
+    },
+    {
+        "meta": {},
+        "recommender": "BASE@16",
+        "configuration": {
+            "folder": "C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\yahoo_movies\\BASE",
+            "path": "C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\yahoo_movies\\BASE\\BASE@16.tsv",
+            "name": "BASE@16"
+        }
+    },
+    {
+        "meta": {},
+        "recommender": "BASE@2",
+        "configuration": {
+            "folder": "C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\yahoo_movies\\BASE",
+            "path": "C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\yahoo_movies\\BASE\\BASE@2.tsv",
+            "name": "BASE@2"
+        }
+    },
+    {
+        "meta": {},
+        "recommender": "BASE@256",
+        "configuration": {
+            "folder": "C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\yahoo_movies\\BASE",
+            "path": "C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\yahoo_movies\\BASE\\BASE@256.tsv",
+            "name": "BASE@256"
+        }
+    },
+    {
+        "meta": {},
+        "recommender": "BASE@32",
+        "configuration": {
+            "folder": "C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\yahoo_movies\\BASE",
+            "path": "C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\yahoo_movies\\BASE\\BASE@32.tsv",
+            "name": "BASE@32"
+        }
+    },
+    {
+        "meta": {},
+        "recommender": "BASE@4",
+        "configuration": {
+            "folder": "C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\yahoo_movies\\BASE",
+            "path": "C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\yahoo_movies\\BASE\\BASE@4.tsv",
+            "name": "BASE@4"
+        }
+    },
+    {
+        "meta": {},
+        "recommender": "BASE@64",
+        "configuration": {
+            "folder": "C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\yahoo_movies\\BASE",
+            "path": "C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\yahoo_movies\\BASE\\BASE@64.tsv",
+            "name": "BASE@64"
+        }
+    },
+    {
+        "meta": {},
+        "recommender": "BASE@8",
+        "configuration": {
+            "folder": "C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\yahoo_movies\\BASE",
+            "path": "C:\\Users\\zanzo\\Documents\\GitHub\\AIML-LIGHT_GCN\\data_dz\\yahoo_movies\\BASE\\BASE@8.tsv",
+            "name": "BASE@8"
+        }
+    }
+]

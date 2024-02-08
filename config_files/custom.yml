@@ -1,48 +1,58 @@
 experiment:
-    backend: pytorch
-    data_config:
-        strategy: fixed
-        train_path: ../data/yahoo_movies/train.tsv
-        validation_path: ../data/yahoo_movies/val.tsv
-        test_path: ../data/yahoo_movies/test.tsv
-    dataset: yahoo_movies
-    top_k: 10
-    evaluation:
-        cutoffs: [10]
-        simple_metrics: [nDCGRendle2020]
-    gpu: 0
-    external_models_path: ../external/models/__init__.py
-    models:
-        external.LightGCN_Custom:
-            meta:
-                verbose: true
-                save_recs: true
-                validation_rate: 2
-                reducers_types:
-                 -    UMAP
-                 -    PCA
-                 -    KPCA
-                 -    TSNE
-                reducers_factors:
-                 -    32
-                 -    16
-                 -    8
-                 -    4
-                 -    2
-                tsne_reducers_factors:
-                 -    2
-                KPCA_Kernels:
-                 -    linear
-                 -    poly
-                 -    rbf
-                 -    sigmoid
-                 -    cosine
-                dataset_name: yahoo_movies
-            lr: 0.0028462729478462134
-            epochs: 2
-            factors: 64
-            batch_size: 64
-            l_w: 0.06184015598288455
-            n_layers: 3
-            seed: 123
-
+  backend: pytorch
+  data_config:
+    strategy: fixed
+    train_path: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data\yahoo_movies\train.tsv
+    validation_path: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data\yahoo_movies\val.tsv
+    test_path: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data\yahoo_movies\test.tsv
+  dataset: yahoo_movies
+  top_k: 10
+  evaluation:
+    cutoffs: [10]
+    simple_metrics: [nDCGRendle2020]
+  gpu: 1
+  external_models_path: ../external/models/__init__.py
+  models:
+    external.LightGCN_Custom:
+      meta:
+        hyper_max_evals: 20
+        hyper_opt_alg: tpe
+        verbose: true
+        save_recs: true
+        validation_rate: 27
+        validation_metric: nDCGRendle2020@10
+        dataset_name: yahoo_movies
+        reducers_types:
+        - UMAP
+        - KPCA
+        - AUTOE
+        - TSNE
+        - BASE
+        reducers_factors:
+        - 128
+        - 64
+        - 32
+        - 16
+        - 8
+        - 4
+        - 2
+        KPCA_Kernels:
+        - linear
+        - poly
+        - rbf
+        - sigmoid
+        - cosine
+        tsne_reducers_factors:
+        - 2
+      lr: 0.0014217965357751648
+      epochs: 27
+      factors: 256
+      batch_size: 256
+      l_w: 0.05948528558207626
+      n_layers: 3
+      seed: 123
+      early_stopping:
+        patience: 5
+        mode: auto
+        monitor: nDCGRendle2020@10
+        verbose: true
