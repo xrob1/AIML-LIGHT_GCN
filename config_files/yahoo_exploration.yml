@@ -12,13 +12,13 @@ experiment:
     simple_metrics: [nDCGRendle2020]
   gpu: 1
   external_models_path: ../external/models/__init__.py
-  models:    
+  models:
     external.LightGCN_Custom:
       meta:
         hyper_max_evals: 20
         hyper_opt_alg: tpe
-        verbose: True
-        save_recs: False
+        verbose: true
+        save_recs: false
         validation_rate: 1
         validation_metric: nDCGRendle2020@10
         dataset_name: yahoo_movies
@@ -27,15 +27,15 @@ experiment:
         KPCA_Kernels: []
         tsne_reducers_factors:
         - 2
-      lr: [ loguniform, -9.210340372, -5.298317367 ]
+      lr: [loguniform, -9.210340372, -5.298317367]
       epochs: 200
-      factors: 64
+      factors: 128
       batch_size: 256
-      l_w: [ loguniform, -11.512925465, -2.30258509299 ]
+      l_w: [loguniform, -11.512925465, -2.30258509299]
       n_layers: 3
       seed: 123
       early_stopping:
         patience: 5
         mode: auto
         monitor: nDCGRendle2020@10
-        verbose: True
+        verbose: true

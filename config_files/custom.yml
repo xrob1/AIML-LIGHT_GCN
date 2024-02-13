@@ -15,14 +15,12 @@ experiment:
   models:
     external.LightGCN_Custom:
       meta:
-        hyper_max_evals: 20
-        hyper_opt_alg: tpe
         verbose: true
         save_recs: true
         validation_rate: 27
-        validation_metric: nDCGRendle2020@10
         dataset_name: yahoo_movies
         reducers_types:
+        - NN
         - UMAP
         - KPCA
         - AUTOE
@@ -51,8 +49,3 @@ experiment:
       l_w: 0.05948528558207626
       n_layers: 3
       seed: 123
-      early_stopping:
-        patience: 5
-        mode: auto
-        monitor: nDCGRendle2020@10
-        verbose: true

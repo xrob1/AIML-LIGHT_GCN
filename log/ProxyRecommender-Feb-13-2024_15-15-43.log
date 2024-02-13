@@ -1,0 +1,50 @@
+2024-02-13 15:15:43.027580: I Loading parameters
+2024-02-13 15:15:43.033580: I Parameter name set to 
+2024-02-13 15:15:43.036579: I Parameter path set to data_dz\facebook_book\NN@64.tsv
+2024-02-13 15:15:47.250011: I Finished
+2024-02-13 15:15:47.255010: I ******************************************
+2024-02-13 15:15:47.263015: I Loading parameters
+2024-02-13 15:15:47.269014: I Parameter name set to 
+2024-02-13 15:15:47.273015: I Parameter path set to data_dz\facebook_book\NN@8.tsv
+2024-02-13 15:15:51.467467: I Finished
+2024-02-13 15:15:51.474469: I ******************************************
+2024-02-13 15:15:51.481977: I Loading parameters
+2024-02-13 15:15:51.487977: I Parameter name set to 
+2024-02-13 15:15:51.491977: I Parameter path set to data_dz\facebook_book\TSNE@2.tsv
+2024-02-13 15:15:55.758422: I Finished
+2024-02-13 15:15:55.764426: I ******************************************
+2024-02-13 15:15:55.772426: I Loading parameters
+2024-02-13 15:15:55.778426: I Parameter name set to 
+2024-02-13 15:15:55.782935: I Parameter path set to data_dz\facebook_book\UMAP@128.tsv
+2024-02-13 15:15:59.988365: I Finished
+2024-02-13 15:15:59.995366: I ******************************************
+2024-02-13 15:16:00.002366: I Loading parameters
+2024-02-13 15:16:00.008366: I Parameter name set to 
+2024-02-13 15:16:00.013365: I Parameter path set to data_dz\facebook_book\UMAP@16.tsv
+2024-02-13 15:16:04.258801: I Finished
+2024-02-13 15:16:04.264806: I ******************************************
+2024-02-13 15:16:04.273807: I Loading parameters
+2024-02-13 15:16:04.279310: I Parameter name set to 
+2024-02-13 15:16:04.284314: I Parameter path set to data_dz\facebook_book\UMAP@2.tsv
+2024-02-13 15:16:08.560744: I Finished
+2024-02-13 15:16:08.566750: I ******************************************
+2024-02-13 15:16:08.574751: I Loading parameters
+2024-02-13 15:16:08.581258: I Parameter name set to 
+2024-02-13 15:16:08.585259: I Parameter path set to data_dz\facebook_book\UMAP@32.tsv
+2024-02-13 15:16:12.778145: I Finished
+2024-02-13 15:16:12.784655: I ******************************************
+2024-02-13 15:16:12.794655: I Loading parameters
+2024-02-13 15:16:12.800655: I Parameter name set to 
+2024-02-13 15:16:12.805655: I Parameter path set to data_dz\facebook_book\UMAP@4.tsv
+2024-02-13 15:16:16.995054: I Finished
+2024-02-13 15:16:17.002055: I ******************************************
+2024-02-13 15:16:17.010056: I Loading parameters
+2024-02-13 15:16:17.017055: I Parameter name set to 
+2024-02-13 15:16:17.022056: I Parameter path set to data_dz\facebook_book\UMAP@64.tsv
+2024-02-13 15:16:21.243477: I Finished
+2024-02-13 15:16:21.250479: I ******************************************
+2024-02-13 15:16:21.259479: I Loading parameters
+2024-02-13 15:16:21.266483: I Parameter name set to 
+2024-02-13 15:16:21.271483: I Parameter path set to data_dz\facebook_book\UMAP@8.tsv
+2024-02-13 15:16:25.508406: I Finished
+2024-02-13 15:16:25.514407: I ******************************************

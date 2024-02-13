@@ -24,6 +24,7 @@ from sklearn.manifold import Isomap
 import umap
 from autoencoder import Autoenc
 
+import NN as MYAutoencoder
 class LightGCN_Custom(RecMixin, BaseRecommenderModel):
     r"""
     LightGCN: Simplifying and Powering Graph Convolution Network for Recommendation
@@ -136,11 +137,15 @@ class LightGCN_Custom(RecMixin, BaseRecommenderModel):
         """
         #Save data 
         file = open('models_raw_data/LightGCN_Custom/'+self.dataset_name+'/'+str(self.__class__.__name__)+'_data@'+str(self._factors), 'wb')
-        pickle.dump([self._data], file)
+        pickle.dump([self.GU,self.GI], file)
         file.close()
         """
+        if 'NN' in self.reducers :
+            self.get_recommendations_NN(self.evaluator.get_needed_recommendations())
+            file = open('models_raw_data/LightGCN_Custom/'+self.dataset_name+'/'+str(self.__class__.__name__)+'_NN_recs', 'wb')
+            pickle.dump(self.recs['NN'], file)
+            file.close()
         
-
         if 'AUTOE' in self.reducers :        
             #Save recs PCA
             self.get_recommendations_AUTOE(self.evaluator.get_needed_recommendations())
@@ -167,10 +172,13 @@ class LightGCN_Custom(RecMixin, BaseRecommenderModel):
             self.get_recommendations_UMAP(self.evaluator.get_needed_recommendations())
             file = open('models_raw_data/LightGCN_Custom/'+self.dataset_name+'/'+str(self.__class__.__name__)+'_UMAP_recs', 'wb')
             pickle.dump(self.recs['UMAP'], file)
-            file.close()  
+            file.close() 
+            
+            """
             file = open('models_raw_data/LightGCN_Custom/'+self.dataset_name+'/'+str(self.__class__.__name__)+'_UMAP_data', 'wb')
             pickle.dump(self.umap_data, file)
             file.close() 
+            """ 
         
 
     def get_recommendations(self, k: int = 100):
@@ -321,12 +329,38 @@ class LightGCN_Custom(RecMixin, BaseRecommenderModel):
             self.recs['UMAP']['validation'][n_components] =   predictions_val
             self.recs['UMAP']['test'][n_components]       =   predictions_test            
             self.umap_data[n_components]  =   [ i_u_concat[:self._num_users,:], i_u_concat[self._num_users:,:] ]
-       
+
+    def get_recommendations_NN(self, k: int = 100):
+        self.recs['NN']={'validation':{},'test':{}}
+
+        GU,GI=self.GU,self.GI
+        GU, GI = GU.cpu().detach().numpy(),GI.cpu().detach().numpy()
+        
+        for n_components in tqdm(self.reducers_factors ,desc='NN iterations'):  #tsne_sizes defined in configs.yml            
+            out_gu,out_gi = MYAutoencoder.train(GU,GI,depth=n_components)
+
+            preds_test={}
+            preds_val={}
+
+            for index, offset in enumerate(range(0, self._num_users, self._batch_size)):
+                offset_stop = min(offset + self._batch_size, self._num_users)
+                predictions = self._model.predict(out_gu[offset: offset_stop], out_gi)           
+                recs_val, recs_test = self.process_protocol(k, predictions, offset, offset_stop)
+                preds_test.update(recs_val)
+                preds_val.update(recs_test)
+            
+            #Update Recommandations Dictionary
+            self.recs['NN']['validation'][n_components]   =   preds_test
+            self.recs['NN']['test'][n_components]         =   preds_val
+
+        return preds_test, preds_val
+          
     def get_single_recommendation(self, mask, k, predictions, offset, offset_stop):
         v, i = self._model.get_top_k(predictions, mask[offset: offset_stop], k=k)
         items_ratings_pair = [list(zip(map(self._data.private_items.get, u_list[0]), u_list[1]))
                               for u_list in list(zip(i.detach().cpu().numpy(), v.detach().cpu().numpy()))]
         return dict(zip(map(self._data.private_users.get, range(offset, offset_stop)), items_ratings_pair))
+
 
     def evaluate(self, it=None, loss=0):
         if (it is None) or (not (it + 1) % self._validation_rate):

@@ -23,8 +23,14 @@ DATASET_NAME_BY_TYPE = {
 }
 
 BASE_CONFIGURATION_FILE_NAME = 'custom.yml'
+BASE_CONFIGURATION_FILE_NAME_TEMPLATE = 'custom_template.yml'
 FACEBOOK_EXPLORATION_FILE_NAME ='facebook_exploration.yml'
 YHOO_EXPLORATION_FILE_NAME ='yahoo_exploration.yml'
+RAW_DATA_DIRECTORY = 'models_raw_data/LightGCN_Custom/'
+RECS_DIRECTORY= 'data_dz'
+RESULTS_DIR='results'
+METRICS_CONFIGURATION='custom_metrics_runtime.yml'
+
 
 def create_directory(dir_path: str):
     """
@@ -63,6 +69,28 @@ def dataset_filepath(dataset_name: str, type='raw'):
         raise FileNotFoundError(f'File at {filepath} not found. Please, check your files')
     return os.path.abspath(filepath)
 
+def basic_conf_file_template():
+    """
+    Returns the path of the file containing the template for basic configuration for Elliot
+    @return: the absolute path of the basic configuration file template
+    """
+    config_path = os.path.join(CONFIG_DIR, BASE_CONFIGURATION_FILE_NAME_TEMPLATE)
+    if not os.path.exists(config_path):
+        raise FileNotFoundError(f'Basic configuration file at {config_path} not found. '
+                                f'Please, check that the file exists')
+    return os.path.abspath(config_path)
+
+def metrics_configuration_file():
+    """
+    Returns the path of the file containing the template for Metrics runtime configuration for Elliot
+    @return: the absolute path of the Metrics at runtime configuration file template
+    """
+    config_path = os.path.join(CONFIG_DIR, METRICS_CONFIGURATION)
+    if not os.path.exists(config_path):
+        raise FileNotFoundError(f'Metrics configuration file at {config_path} not found. '
+                                f'Please, check that the file exists')
+    return os.path.abspath(config_path)
+    
 
 def basic_conf_file():
     """
@@ -96,3 +124,44 @@ def facebook_exp_conf_file():
         raise FileNotFoundError(f'Basic configuration file at {config_path} not found. '
                                 f'Please, check that the file exists')
     return os.path.abspath(config_path)
+
+def raw_files_names_list(DATASET):
+    """
+    Returns list of paths for the raw files containing racommandations for a given dataset
+    @return: List of paths of raw files
+    """    
+    path = str(RAW_DATA_DIRECTORY + DATASET + '/')
+    if not os.path.exists(path):
+        raise FileNotFoundError(f'Raw data directory not found at {path} . '
+                                f'Please, check that directory exists')
+    
+    files = [f for f in os.listdir(path)]
+    return files
+
+def raw_file_path(DATASET,F_NAME):
+    """
+    Returns list of paths for the raw files containing racommandations for a given dataset
+    @return: List of paths of raw files
+    """    
+    file = str(RAW_DATA_DIRECTORY + DATASET + '/' + F_NAME)
+    if not os.path.exists(file):
+        raise FileNotFoundError(f'file at {file} not found. '
+                                f'Please, check that the file exists')   
+
+    return file
+
+def get_recs_path(DATASET):
+    path = os.path.join(RECS_DIRECTORY, DATASET)
+    if not os.path.exists(path):
+        raise FileNotFoundError(f'directory at {path} not found. '
+                                f'Please, check that the directory exists')
+    return path
+
+def dataset_results_path(DATASET,SUBDIR='performance'):
+    path = os.path.join(RESULTS_DIR, DATASET)
+    path = os.path.join(path, SUBDIR)
+    if not os.path.exists(path):
+        raise FileNotFoundError(f'directory at {path} not found. '
+                                f'Please, check that the directory exists')
+    return path
+    

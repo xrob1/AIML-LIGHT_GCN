@@ -3,6 +3,10 @@ import pickle
 import csv
 from collections import OrderedDict
 import numpy as np
+from src import *
+from src.loader.paths import *
+from src.utils.resutls_tab import *
+import glob
 
 #MOLTO LENTO CON TSNE CON method=exact !!!!!!!!
 #Crea i file da leggere con pickle
@@ -214,16 +218,70 @@ def hr_on_users(path , test='data/facebook_book/test.tsv' ):
         stats[user] = [HITS , HR]
 
     return(stats)
+ 
+def get_rdata(DATASET,F_NAME):
+    with open( raw_file_path(DATASET,F_NAME), 'rb') as file:
+        recs = pickle.load(file)
+    return recs
 
-#EXPERIMENTAL
-def norm_coords(USERS,ITEMS):
-    conc =np.concatenate((USERS, ITEMS))
-    
-    avg_x = sum(conc[:,0]) / len(conc[:,0]) 
-    avg_y = sum(conc[:,1]) / len(conc[:,1]) 
-    for i in range(len(conc)):
-        conc[i][0]-=avg_x
-        conc[i][1]-=avg_y
-    
-    return conc[:len(USERS),:] ,conc[len(USERS):,:]    
+def save_recs(F_NAME, DATASET,type='validation',KPCA=False):       
+    RECS = get_rdata(DATASET,F_NAME)[type]    
+    METHOD = F_NAME.split("_")[2]
+     
+    if(KPCA):
+        for KERNEL in RECS.keys():
+            save_tsv(DATASET,RECS[KERNEL],str(METHOD+'_'+KERNEL))
+    else:
+        save_tsv(DATASET,RECS,METHOD)
+  
+
+def save_tsv(DATASET,RECS,METHOD):
+    SIZES =  RECS.keys()
+    for SIZE in SIZES:
+        REC_NAME =str(METHOD+'@'+str(SIZE)+'.tsv')
+        SAVE_PATH = os.path.join(get_recs_path(DATASET),REC_NAME)  
+        with open(SAVE_PATH,'w') as file:
+            for USER in RECS[SIZE]:
+                for LINE in RECS[SIZE][USER]:
+                    file.write(str(str(USER) + "	" + str(LINE[0]) + "	" + str(LINE[1]) + '\n'))
+
+def clear_results_dir(DATASET):
+    files = glob.glob(dataset_results_path(DATASET)+'/*')  # [f for f in os.listdir('results/facebook_book/performance/')]
+    for f in files:
+        os.remove(f)
+
+import ruamel.yaml
+import ruamel.yaml.util
+yaml = ruamel.yaml.YAML()
+def save_config(CONFIG_FILE,configuration):
+    with open(CONFIG_FILE, 'w') as file:
+        yaml.dump(configuration, file)
+
+def open_config(CONFIG_FILE):
+    with open(CONFIG_FILE, 'r') as file:
+        configuration = yaml.load(file)
+    return configuration
+
+def write_results_csv(DATASET,out_f_name='results_'):
+
+
+    results = []
+
+    for f in [f for f in os.listdir(dataset_results_path(DATASET))]:
+        if f.split('_')[0] != 'rec': continue
+        with open(os.path.join(dataset_results_path(DATASET),f) , 'r') as file:
+            fields = file.readline()  # SALTA INTESTAZIONE:
+            for line in file:
+                line = line.replace('.',',')
+                line=line.split('\t')
+                method = line[0].split('@')[0]
+                n = line[0].split('@')[1]
+                results.append([int(n), method, line[1][:6], line[2][:6], line[3][:6], line[4][:6]])
+
+    results = sorted(results, reverse=True)
+
+    with open(out_f_name + DATASET + '.csv', 'w') as csvfile:
+        csvwriter = csv.writer(csvfile, delimiter=';', lineterminator='\n')
+        csvwriter.writerow(['|e|', 'Metodo', 'nDCGRendle2020', 'HR', 'Precision', 'Recall'])
+        csvwriter.writerows(results)
 

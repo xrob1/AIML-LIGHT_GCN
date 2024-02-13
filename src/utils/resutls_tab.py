@@ -38,6 +38,14 @@ def set_dataset_configuration(configuration: dict, dataset_name: str):
         
     return configuration
 
+def set_runtime_metrics_configuration(configuration,dataset_name):
+    configuration['experiment']['data_config']['train_path'] = dataset_filepath(dataset_name, 'train')
+    configuration['experiment']['data_config']['validation_path'] = dataset_filepath(dataset_name, 'val')
+    configuration['experiment']['data_config']['test_path'] = dataset_filepath(dataset_name, 'test')
+    configuration['experiment']['models']['RecommendationFolder']['folder'] = get_recs_path(dataset_name)#os.path.abspath('data_dz/' + DATASET + '/' + type)
+    configuration['experiment']['dataset'] = dataset_name
+    return configuration
+
 def set_model_factors(configuration: dict,n_factors: int ):
     """Changes the number of fatctors with wich the model will be built with
         :param configuration: dictionary containing the structure of the YAML config file

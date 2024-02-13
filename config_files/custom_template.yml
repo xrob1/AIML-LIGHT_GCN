@@ -1,0 +1,33 @@
+experiment:
+  backend: pytorch
+  data_config:
+    strategy: fixed
+    train_path:
+    validation_path: 
+    test_path: 
+  dataset: 
+  top_k: 10
+  evaluation:
+    cutoffs: [10]
+    simple_metrics: [nDCGRendle2020]
+  gpu: 1
+  external_models_path: ../external/models/__init__.py
+  models:
+    external.LightGCN_Custom:
+      meta:        
+        verbose: true
+        save_recs: true
+        validation_rate:
+        dataset_name:
+        reducers_types:
+        reducers_factors:
+        KPCA_Kernels:
+        tsne_reducers_factors:
+      lr: 
+      epochs:
+      factors:
+      batch_size:
+      l_w:
+      n_layers:
+      seed:
+
