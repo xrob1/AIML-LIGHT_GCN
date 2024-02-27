@@ -15,16 +15,11 @@ from .LightGCNModel import LightGCNModel
 from torch_sparse import SparseTensor
 
 from sklearn.manifold import TSNE
-from sklearn.decomposition import PCA
 from sklearn.decomposition import KernelPCA
-
-#EXPERIMENTAL
-from sklearn.manifold import LocallyLinearEmbedding
-from sklearn.manifold import Isomap
 import umap
 from autoencoder import Autoenc
-
 import NN as MYAutoencoder
+
 class LightGCN_Custom(RecMixin, BaseRecommenderModel):
     r"""
     LightGCN: Simplifying and Powering Graph Convolution Network for Recommendation
@@ -332,13 +327,15 @@ class LightGCN_Custom(RecMixin, BaseRecommenderModel):
 
     def get_recommendations_NN(self, k: int = 100):
         self.recs['NN']={'validation':{},'test':{}}
-
+        embs = []
         GU,GI=self.GU,self.GI
         GU, GI = GU.cpu().detach().numpy(),GI.cpu().detach().numpy()
         
-        for n_components in tqdm(self.reducers_factors ,desc='NN iterations'):  #tsne_sizes defined in configs.yml            
+        for n_components in tqdm(self.reducers_factors ,desc='NN iterations'):  #tsne_sizes defined in configs.yml   
+
             out_gu,out_gi = MYAutoencoder.train(GU,GI,depth=n_components)
 
+            
             preds_test={}
             preds_val={}
 
@@ -350,8 +347,8 @@ class LightGCN_Custom(RecMixin, BaseRecommenderModel):
                 preds_val.update(recs_test)
             
             #Update Recommandations Dictionary
-            self.recs['NN']['validation'][n_components]   =   preds_test
-            self.recs['NN']['test'][n_components]         =   preds_val
+            self.recs['NN']['validation'][n_components]   =   preds_val
+            self.recs['NN']['test'][n_components]         =   preds_test
 
         return preds_test, preds_val
           

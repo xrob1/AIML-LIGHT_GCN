@@ -25,6 +25,7 @@ for _backend in sys.modules["external"].backend:
         from .lightgcn.LightGCN_Data_Extraction import LightGCN
         from .dgcf.DGCF import DGCF
         from .bprmf.BPRMF import BPRMF
+        from .bprmf_custom.BPRMF_Custom import BPRMF_Custom
         from .lightgcn_edge import LightGCNEdge
         from .kgtore.KGTORE import KGTORE
         from .kgcn import KGCN

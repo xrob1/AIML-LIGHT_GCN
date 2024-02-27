@@ -66,24 +66,6 @@ def get_umap_data():
     file.close()
     return data[0].cpu().detach().numpy(),data[1].cpu().detach().numpy() #USERS ITEMS
 
-def save_recs(name,recs):
-    for SIZE in recs:		
-        path = 'data_dz/facebook/'+name+'/'+name+'@'+str(SIZE)+'.tsv'        
-        file = open(path, 'w')		
-        for USER in recs[SIZE]:
-            for rec in recs[SIZE][USER]:
-                file.write(str(str(USER)+"	"+str(rec[0])+"	"+str(rec[1])+'\n'))
-        file.close()   
-
-def save_recs_at(name,recs,SIZE):	
-    path = 'data_dz/facebook/'+name+'/'+name+'@'+str(SIZE)+'.tsv'        
-    file = open(path, 'w')		
-    for USER in recs[SIZE]:
-        for rec in recs[SIZE][USER]:
-            file.write(str(str(USER)+"	"+str(rec[0])+"	"+str(rec[1])+'\n'))
-    file.close()   
-
-
 def get_recs_from_file(path , conversion = True):
     public_items = get_data().public_items
     public_users = get_data().public_users

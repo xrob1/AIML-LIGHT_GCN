@@ -2,7 +2,7 @@ from keras.models import Model
 from keras.layers import Input, Dense, LeakyReLU
 
 class Autoenc:
-    def __init__(self,n_components,  epochs=100, batch_size=64, validation_split=0.25):
+    def __init__(self,n_components,  epochs=50, batch_size=64, validation_split=0.25):
         self.epochs=epochs 
         self.batch_size=batch_size  
         self.validation_split=validation_split  
@@ -89,15 +89,6 @@ class Autoenc:
     def predict (self,data):
         return self.encoder.predict(data)
     
-    def build_nn(self,U,I):
-        input_u = Input(shape=self.u_shape[1:])
-        enc_u = Dense(64)(input_u)
-        enc_u = Dense(8)(enc_u)
-        latent_space_u = Dense(2, activation="tanh")(enc_u)
-        
-        input_i = Input(shape=self.i_shape[1:])
-        enc_i = Dense(64)(enc_i)
-        enc_i = Dense(8)(enc_i)
-        latent_space_i = Dense(2, activation="tanh")(enc_i)
+
         
          

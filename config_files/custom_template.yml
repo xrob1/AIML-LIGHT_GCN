@@ -30,4 +30,9 @@ experiment:
       l_w:
       n_layers:
       seed:
+      early_stopping:
+        patience: 
+        mode: 
+        monitor: 
+        verbose: 
 

@@ -1,0 +1,45 @@
+2024-02-16 19:06:47.793025: I Loading parameters
+2024-02-16 19:06:47.803786: I Parameter name set to 
+2024-02-16 19:06:47.813300: I Parameter path set to data_dz\yahoo_movies\TSNE@2.tsv
+2024-02-16 19:07:01.644254: I Finished
+2024-02-16 19:07:01.656982: I ******************************************
+2024-02-16 19:07:01.673080: I Loading parameters
+2024-02-16 19:07:01.683592: I Parameter name set to 
+2024-02-16 19:07:01.694107: I Parameter path set to data_dz\yahoo_movies\UMAP@128.tsv
+2024-02-16 19:07:14.752902: I Finished
+2024-02-16 19:07:14.764491: I ******************************************
+2024-02-16 19:07:14.780618: I Loading parameters
+2024-02-16 19:07:14.793522: I Parameter name set to 
+2024-02-16 19:07:14.804040: I Parameter path set to data_dz\yahoo_movies\UMAP@16.tsv
+2024-02-16 19:07:27.857514: I Finished
+2024-02-16 19:07:27.869028: I ******************************************
+2024-02-16 19:07:27.886343: I Loading parameters
+2024-02-16 19:07:27.897855: I Parameter name set to 
+2024-02-16 19:07:27.909584: I Parameter path set to data_dz\yahoo_movies\UMAP@2.tsv
+2024-02-16 19:07:40.956502: I Finished
+2024-02-16 19:07:40.967099: I ******************************************
+2024-02-16 19:07:40.985670: I Loading parameters
+2024-02-16 19:07:40.999088: I Parameter name set to 
+2024-02-16 19:07:41.010377: I Parameter path set to data_dz\yahoo_movies\UMAP@256.tsv
+2024-02-16 19:07:54.149143: I Finished
+2024-02-16 19:07:54.161752: I ******************************************
+2024-02-16 19:07:54.178610: I Loading parameters
+2024-02-16 19:07:54.191686: I Parameter name set to 
+2024-02-16 19:07:54.202204: I Parameter path set to data_dz\yahoo_movies\UMAP@32.tsv
+2024-02-16 19:08:07.287595: I Finished
+2024-02-16 19:08:07.299217: I ******************************************
+2024-02-16 19:08:07.317517: I Loading parameters
+2024-02-16 19:08:07.329007: I Parameter name set to 
+2024-02-16 19:08:07.339079: I Parameter path set to data_dz\yahoo_movies\UMAP@4.tsv
+2024-02-16 19:08:20.323072: I Finished
+2024-02-16 19:08:20.335126: I ******************************************
+2024-02-16 19:08:20.353245: I Loading parameters
+2024-02-16 19:08:20.364778: I Parameter name set to 
+2024-02-16 19:08:20.376917: I Parameter path set to data_dz\yahoo_movies\UMAP@64.tsv
+2024-02-16 19:08:33.442536: I Finished
+2024-02-16 19:08:33.454161: I ******************************************
+2024-02-16 19:08:33.471439: I Loading parameters
+2024-02-16 19:08:33.483551: I Parameter name set to 
+2024-02-16 19:08:33.494204: I Parameter path set to data_dz\yahoo_movies\UMAP@8.tsv
+2024-02-16 19:08:46.798706: I Finished
+2024-02-16 19:08:46.811897: I ******************************************

@@ -1,0 +1,8 @@
+2024-02-16 13:43:29.226322: I Loading parameters
+2024-02-16 13:43:29.226322: I Parameter lr set to 0.00011454076953075361
+2024-02-16 13:43:29.226322: I Parameter factors set to 512
+2024-02-16 13:43:29.226322: I Parameter l_w set to 1.4623166653305814e-05
+2024-02-16 13:43:29.226322: I Parameter n_layers set to 3
+2024-02-16 13:48:20.141587: I Epoch 27/27 loss 6.65473
+2024-02-16 13:48:20.141587: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\yahoo_movies\recs
+2024-02-16 13:48:20.257610: I ******************************************

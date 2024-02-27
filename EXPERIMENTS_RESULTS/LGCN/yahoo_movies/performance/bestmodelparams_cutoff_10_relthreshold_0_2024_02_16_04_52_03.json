@@ -1,0 +1,42 @@
+[
+    {
+        "default_validation_metric": "nDCGRendle2020",
+        "default_validation_cutoff": 10,
+        "rel_threshold": 0
+    },
+    {
+        "meta": {
+            "hyper_max_evals": 20,
+            "hyper_opt_alg": "tpe",
+            "dataset_name": "yahoo_movies",
+            "verbose": true,
+            "save_recs": false,
+            "validation_rate": 1,
+            "validation_metric": "nDCGRendle2020@10",
+            "reducers_types": [],
+            "reducers_factors": [],
+            "KPCA_Kernels": [],
+            "tsne_reducers_factors": [
+                2
+            ]
+        },
+        "recommender": "LightGCN_seed=123_e=200_bs=256_lr=0$002049876206747379_factors=32_l_w=0$020075565123230846_n_layers=3",
+        "configuration": {
+            "lr": 0.002049876206747379,
+            "epochs": 200,
+            "factors": 32,
+            "batch_size": 256,
+            "l_w": 0.020075565123230846,
+            "n_layers": 3,
+            "seed": 123,
+            "early_stopping": {
+                "patience": 5,
+                "mode": "auto",
+                "monitor": "nDCGRendle2020@10",
+                "verbose": true
+            },
+            "name": "LightGCN_seed=123_e=200_bs=256_lr=0$002049876206747379_factors=32_l_w=0$020075565123230846_n_layers=3",
+            "best_iteration": 31
+        }
+    }
+]

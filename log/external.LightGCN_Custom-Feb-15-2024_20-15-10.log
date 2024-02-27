@@ -1,0 +1,5 @@
+2024-02-15 20:15:32.475260: I Loading parameters
+2024-02-15 20:15:32.476260: I Parameter lr set to 0.002411993489896946
+2024-02-15 20:15:32.476260: I Parameter factors set to 512
+2024-02-15 20:15:32.477259: I Parameter l_w set to 0.003023263429458794
+2024-02-15 20:15:32.477259: I Parameter n_layers set to 3

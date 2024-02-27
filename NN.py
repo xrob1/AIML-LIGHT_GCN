@@ -21,7 +21,10 @@ class MYAutoencoder(nn.Module):
         self.device=torch.device('cuda' if torch.cuda.is_available() else 'cpu')
         
         self.encoder_users=nn.Sequential()
-        self.encoder_items=nn.Sequential()            
+        self.encoder_items=nn.Sequential()  
+        if self.depth<=256:
+            self.encoder_users.append(nn.Linear(512,256))
+            self.encoder_items.append(nn.Linear(512,256))             
         if self.depth<=128:
             self.encoder_users.append(nn.Linear(256,128))
             self.encoder_items.append(nn.Linear(256,128))
@@ -88,10 +91,10 @@ def train(GU,GI,depth=2,num_epochs = 16000):
             t.update()
             
             #NAIVE EARLY STOP            
-            if (old_loss-loss)>0.0003:
+            if (old_loss-loss)>0.0001:
                 old_loss=loss
                 counter=0
-            elif counter>1000:
+            elif counter>1500:
                 break
             else:
                 counter+=1
@@ -101,7 +104,7 @@ def train(GU,GI,depth=2,num_epochs = 16000):
     
     return out_gu,out_gi
 
-def train_batches(GU,GI,depth=2,num_epochs = 40):
+def train_batches(GU,GI,depth=2,num_epochs = 400):
     model=MYAutoencoder(depth=depth)
 
     GU=torch.tensor(GU).to(model.device)
@@ -121,9 +124,8 @@ def train_batches(GU,GI,depth=2,num_epochs = 40):
                 
                 out_gu,out_gi= model(users,items)
                 
-                dot_product = torch.matmul( GU.to(model.device), torch.transpose(GI.to(model.device), 0, 1) )#torch.matmul( GU, torch.transpose(GI,-1,0) )
-                dot_p_e = torch.matmul( out_gu.to(model.device), torch.transpose(out_gi.to(model.device), 0, 1) )#torch.matmul( GU, torch.transpose(GI,-1,0) ) 
-                
+                dot_product = torch.matmul( users.to(model.device), torch.transpose(items.to(model.device), 0, 1) )
+                dot_p_e = torch.matmul( out_gu.to(model.device), torch.transpose(out_gi.to(model.device), 0, 1) )              
                 loss = model.criterion(dot_product,dot_p_e)
 
                 model.optimizer.zero_grad()
@@ -132,8 +134,51 @@ def train_batches(GU,GI,depth=2,num_epochs = 40):
             
         print(f'Epoch:{epoch+1}, Loss:{loss.item():.4f}')
         #outputs.append((epoch,USER,recon))
+    out_gu,out_gi= model(GU,GI)
+    return out_gu,out_gi
+
+
+def experimental_training(GU,GI,EMBEDDINGS,depth=2,num_epochs = 16000):
+    model=MYAutoencoder(depth=depth)
+    EMBs=EMBEDDINGS
+    GU=torch.tensor(GU).to(model.device)
+    GI=torch.tensor(GI).to(model.device)
+    dot_product = torch.matmul( GU.to(model.device), torch.transpose(GI.to(model.device), 0, 1) )
+    
+    EMBs=EMBs[::-1]
+    EMBs.append(dot_product)
+    for EMBS in EMBEDDINGS:
+        
+        old_loss=1000
+        with tqdm( total = num_epochs) as t:
+            for epoch in range(num_epochs): 
+                
+                out_gu,out_gi= model(GU,GI)     
+                dot_p_e = torch.matmul( out_gu.to(model.device), torch.transpose(out_gi.to(model.device), 0, 1) )
+                loss = model.criterion(EMBS.to(model.device),dot_p_e)
+
+                model.optimizer.zero_grad()
+                loss.backward()
+                model.optimizer.step()
+                
+                t.set_postfix_str(str(f'Epoch:{epoch}, Loss:{loss.item():.4f}'))
+                t.update()
+                
+                #NAIVE EARLY STOP            
+                if (old_loss-loss)>0.0003:
+                    old_loss=loss
+                    counter=0
+                elif counter>1000:
+                    break
+                else:
+                    counter+=1
+            
+            
+            
     
     return out_gu,out_gi
+    None
+
 
 """
 for epoch in range(num_epochs):  

@@ -2,10 +2,10 @@ experiment:
   backend: pytorch
   data_config:
     strategy: fixed
-    train_path: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data\yahoo_movies\train.tsv
-    validation_path: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data\yahoo_movies\val.tsv
-    test_path: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data\yahoo_movies\test.tsv
-  dataset: yahoo_movies
+    train_path: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data\facebook_book\train.tsv
+    validation_path: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data\facebook_book\val.tsv
+    test_path: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data\facebook_book\test.tsv
+  dataset: facebook_book
   top_k: 10
   evaluation:
     cutoffs: [10]
@@ -17,8 +17,8 @@ experiment:
       meta:
         verbose: true
         save_recs: true
-        validation_rate: 27
-        dataset_name: yahoo_movies
+        validation_rate: 1
+        dataset_name: facebook_book
         reducers_types:
         - NN
         - UMAP
@@ -27,6 +27,7 @@ experiment:
         - TSNE
         - BASE
         reducers_factors:
+        - 256
         - 128
         - 64
         - 32
@@ -42,10 +43,15 @@ experiment:
         - cosine
         tsne_reducers_factors:
         - 2
-      lr: 0.0014217965357751648
-      epochs: 27
-      factors: 256
-      batch_size: 256
-      l_w: 0.05948528558207626
+      lr: 0.00011454076953075361
+      epochs: 200
+      factors: 512
+      batch_size: 64
+      l_w: 1.4623166653305814e-05
       n_layers: 3
       seed: 123
+      early_stopping:
+        patience: 5
+        mode: auto
+        monitor: nDCGRendle2020@10
+        verbose: true

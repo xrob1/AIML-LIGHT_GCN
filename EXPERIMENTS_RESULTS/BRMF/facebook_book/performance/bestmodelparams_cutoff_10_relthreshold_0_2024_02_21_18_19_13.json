@@ -1,0 +1,41 @@
+[
+    {
+        "default_validation_metric": "nDCGRendle2020",
+        "default_validation_cutoff": 10,
+        "rel_threshold": 0
+    },
+    {
+        "meta": {
+            "reducers_types": [],
+            "reducers_factors": [],
+            "KPCA_Kernels": [],
+            "dataset_name": "facebook_book",
+            "tsne_reducers_factors": [
+                2
+            ],
+            "hyper_max_evals": 20,
+            "hyper_opt_alg": "tpe",
+            "verbose": true,
+            "save_recs": false,
+            "validation_rate": 1,
+            "validation_metric": "nDCGRendle2020@10"
+        },
+        "recommender": "BPRMF_seed=123_e=200_bs=64_factors=4_lr=0$0004169080952996497_l_w=0$08242471365171306",
+        "configuration": {
+            "lr": 0.0004169080952996497,
+            "batch_size": 64,
+            "epochs": 200,
+            "factors": 4,
+            "l_w": 0.08242471365171306,
+            "seed": 123,
+            "early_stopping": {
+                "patience": 5,
+                "mode": "auto",
+                "monitor": "nDCGRendle2020@10",
+                "verbose": true
+            },
+            "name": "BPRMF_seed=123_e=200_bs=64_factors=4_lr=0$0004169080952996497_l_w=0$08242471365171306",
+            "best_iteration": 45
+        }
+    }
+]

@@ -1,0 +1,59 @@
+experiment:
+  backend: pytorch
+  data_config:
+    strategy: fixed
+    train_path: ../data/{0}/train.tsv
+    validation_path: ../data/{0}/val.tsv
+    test_path: ../data/{0}/test.tsv
+  dataset: facebook_book
+  top_k: 10
+  evaluation:
+    cutoffs: [10]
+    simple_metrics: [nDCGRendle2020]
+  gpu: 0
+  external_models_path: ../external/models/__init__.py
+  models:
+    external.BPRMF_Custom:
+      meta:
+        reducers_types:
+        - NN
+        - UMAP
+        - KPCA
+        - AUTOE
+        - TSNE
+        - BASE
+        reducers_factors:
+        - 256
+        - 128
+        - 64
+        - 32
+        - 16
+        - 8
+        - 4
+        - 2
+        KPCA_Kernels:
+        - linear
+        - poly
+        - rbf
+        - sigmoid
+        - cosine
+        dataset_name: facebook_book
+        tsne_reducers_factors:
+        - 2
+        hyper_max_evals: 20
+        hyper_opt_alg: tpe
+        verbose: true
+        save_recs: false
+        validation_rate: 1
+        validation_metric: nDCGRendle2020@10
+      lr: 0.00024828109391337706
+      batch_size: 64
+      epochs: 200
+      factors: 512
+      l_w: 0.041968799109630556
+      seed: 123
+      early_stopping:
+        patience: 5
+        mode: auto
+        monitor: nDCGRendle2020@10
+        verbose: true

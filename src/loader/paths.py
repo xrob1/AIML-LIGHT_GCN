@@ -23,9 +23,15 @@ DATASET_NAME_BY_TYPE = {
 }
 
 BASE_CONFIGURATION_FILE_NAME = 'custom.yml'
+BASE_CONFIGURATION_FILE_NAME_BPRMF = 'custom_bprmf.yml'
 BASE_CONFIGURATION_FILE_NAME_TEMPLATE = 'custom_template.yml'
 FACEBOOK_EXPLORATION_FILE_NAME ='facebook_exploration.yml'
 YHOO_EXPLORATION_FILE_NAME ='yahoo_exploration.yml'
+YHOO_EXPLORATION_FILE_NAME_BPRMF ='yahoo_exploration_bprmf.yml'
+MOVIELENS_EXPLORATION_FILE_NAME = 'movielens_exploration.yml'
+MOVIELENS_EXPLORATION_FILE_NAME_BPRMF = 'movielens_exploration_bprmf.yml'
+
+FACEBOOK_EXPLORATION_FILE_NAME_BPRMF ='facebook_exploration_bprmf.yml'
 RAW_DATA_DIRECTORY = 'models_raw_data/LightGCN_Custom/'
 RECS_DIRECTORY= 'data_dz'
 RESULTS_DIR='results'
@@ -92,34 +98,58 @@ def metrics_configuration_file():
     return os.path.abspath(config_path)
     
 
-def basic_conf_file():
+def basic_conf_file(type='LGCN'):
     """
     Returns the path of the file containing the basic configuration for Elliot
     @return: the absolute path of the basic configuration file
     """
-    config_path = os.path.join(CONFIG_DIR, BASE_CONFIGURATION_FILE_NAME)
+    if(type=='LGCN'):
+        config_path = os.path.join(CONFIG_DIR, BASE_CONFIGURATION_FILE_NAME)
+    if(type=='BPRMF'):
+        config_path = os.path.join(CONFIG_DIR, BASE_CONFIGURATION_FILE_NAME_BPRMF)
+    
     if not os.path.exists(config_path):
         raise FileNotFoundError(f'Basic configuration file at {config_path} not found. '
                                 f'Please, check that the file exists')
     return os.path.abspath(config_path)
 
-def yahoo_exp_conf_file():
+def yahoo_exp_conf_file(type='LGCN'):
     """
     Returns the path of the file containing the yahoo exploration configuration for Elliot
     @return: the absolute path of the basic configuration file
     """
-    config_path = os.path.join(CONFIG_DIR, YHOO_EXPLORATION_FILE_NAME)
+    if(type=='LGCN'):
+        config_path = os.path.join(CONFIG_DIR, YHOO_EXPLORATION_FILE_NAME)
+    if(type=='BPRMF'):
+        config_path = os.path.join(CONFIG_DIR, YHOO_EXPLORATION_FILE_NAME_BPRMF)
     if not os.path.exists(config_path):
         raise FileNotFoundError(f'Basic configuration file at {config_path} not found. '
                                 f'Please, check that the file exists')
     return os.path.abspath(config_path)
 
-def facebook_exp_conf_file():
+def movielens_exp_conf_file(type='LGCN'):
+    """
+    Returns the path of the file containing the yahoo exploration configuration for Elliot
+    @return: the absolute path of the basic configuration file
+    """
+    if(type=='LGCN'):
+        config_path = os.path.join(CONFIG_DIR, MOVIELENS_EXPLORATION_FILE_NAME)
+    if(type=='BPRMF'):
+        config_path = os.path.join(CONFIG_DIR, MOVIELENS_EXPLORATION_FILE_NAME_BPRMF)
+    if not os.path.exists(config_path):
+        raise FileNotFoundError(f'Basic configuration file at {config_path} not found. '
+                                f'Please, check that the file exists')
+    return os.path.abspath(config_path)
+
+def facebook_exp_conf_file(type='LGCN'):
     """
     Returns the path of the file containing the facebook book exploration configuration for Elliot
     @return: the absolute path of the basic configuration file
     """
-    config_path = os.path.join(CONFIG_DIR, FACEBOOK_EXPLORATION_FILE_NAME)
+    if(type=='LGCN'):
+        config_path = os.path.join(CONFIG_DIR, FACEBOOK_EXPLORATION_FILE_NAME)
+    if(type=='BPRMF'):
+        config_path = os.path.join(CONFIG_DIR, FACEBOOK_EXPLORATION_FILE_NAME_BPRMF)
     if not os.path.exists(config_path):
         raise FileNotFoundError(f'Basic configuration file at {config_path} not found. '
                                 f'Please, check that the file exists')

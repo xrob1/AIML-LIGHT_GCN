@@ -1,0 +1,230 @@
+2024-02-16 18:58:39.278708: I Loading parameters
+2024-02-16 18:58:39.284811: I Parameter name set to 
+2024-02-16 18:58:39.290329: I Parameter path set to data_dz\yahoo_movies\KPCA_linear@256.tsv
+2024-02-16 18:58:52.793363: I Finished
+2024-02-16 18:58:52.799873: I ******************************************
+2024-02-16 18:58:52.811397: I Loading parameters
+2024-02-16 18:58:52.818397: I Parameter name set to 
+2024-02-16 18:58:52.822518: I Parameter path set to data_dz\yahoo_movies\KPCA_linear@32.tsv
+2024-02-16 18:59:06.116963: I Finished
+2024-02-16 18:59:06.125481: I ******************************************
+2024-02-16 18:59:06.137246: I Loading parameters
+2024-02-16 18:59:06.144762: I Parameter name set to 
+2024-02-16 18:59:06.151281: I Parameter path set to data_dz\yahoo_movies\KPCA_linear@4.tsv
+2024-02-16 18:59:19.290291: I Finished
+2024-02-16 18:59:19.296296: I ******************************************
+2024-02-16 18:59:19.309330: I Loading parameters
+2024-02-16 18:59:19.316336: I Parameter name set to 
+2024-02-16 18:59:19.321992: I Parameter path set to data_dz\yahoo_movies\KPCA_linear@64.tsv
+2024-02-16 18:59:32.540011: I Finished
+2024-02-16 18:59:32.546017: I ******************************************
+2024-02-16 18:59:32.557536: I Loading parameters
+2024-02-16 18:59:32.566068: I Parameter name set to 
+2024-02-16 18:59:32.571733: I Parameter path set to data_dz\yahoo_movies\KPCA_linear@8.tsv
+2024-02-16 18:59:45.788950: I Finished
+2024-02-16 18:59:45.797105: I ******************************************
+2024-02-16 18:59:45.811136: I Loading parameters
+2024-02-16 18:59:45.817136: I Parameter name set to 
+2024-02-16 18:59:45.824753: I Parameter path set to data_dz\yahoo_movies\KPCA_poly@128.tsv
+2024-02-16 18:59:58.920896: I Finished
+2024-02-16 18:59:58.926896: I ******************************************
+2024-02-16 18:59:58.940302: I Loading parameters
+2024-02-16 18:59:58.947311: I Parameter name set to 
+2024-02-16 18:59:58.952328: I Parameter path set to data_dz\yahoo_movies\KPCA_poly@16.tsv
+2024-02-16 19:00:12.162260: I Finished
+2024-02-16 19:00:12.168764: I ******************************************
+2024-02-16 19:00:12.181459: I Loading parameters
+2024-02-16 19:00:12.188401: I Parameter name set to 
+2024-02-16 19:00:12.195509: I Parameter path set to data_dz\yahoo_movies\KPCA_poly@2.tsv
+2024-02-16 19:00:25.789968: I Finished
+2024-02-16 19:00:25.801585: I ******************************************
+2024-02-16 19:00:25.821442: I Loading parameters
+2024-02-16 19:00:25.838194: I Parameter name set to 
+2024-02-16 19:00:25.853050: I Parameter path set to data_dz\yahoo_movies\KPCA_poly@256.tsv
+2024-02-16 19:00:39.685685: I Finished
+2024-02-16 19:00:39.698204: I ******************************************
+2024-02-16 19:00:39.714685: I Loading parameters
+2024-02-16 19:00:39.791800: I Parameter name set to 
+2024-02-16 19:00:39.798173: I Parameter path set to data_dz\yahoo_movies\KPCA_poly@32.tsv
+2024-02-16 19:00:53.348595: I Finished
+2024-02-16 19:00:53.356111: I ******************************************
+2024-02-16 19:00:53.367624: I Loading parameters
+2024-02-16 19:00:53.375140: I Parameter name set to 
+2024-02-16 19:00:53.381138: I Parameter path set to data_dz\yahoo_movies\KPCA_poly@4.tsv
+2024-02-16 19:01:06.540042: I Finished
+2024-02-16 19:01:06.546558: I ******************************************
+2024-02-16 19:01:06.558075: I Loading parameters
+2024-02-16 19:01:06.565588: I Parameter name set to 
+2024-02-16 19:01:06.571587: I Parameter path set to data_dz\yahoo_movies\KPCA_poly@64.tsv
+2024-02-16 19:01:19.693281: I Finished
+2024-02-16 19:01:19.700285: I ******************************************
+2024-02-16 19:01:19.713309: I Loading parameters
+2024-02-16 19:01:19.720426: I Parameter name set to 
+2024-02-16 19:01:19.726941: I Parameter path set to data_dz\yahoo_movies\KPCA_poly@8.tsv
+2024-02-16 19:01:32.776393: I Finished
+2024-02-16 19:01:32.784011: I ******************************************
+2024-02-16 19:01:32.796544: I Loading parameters
+2024-02-16 19:01:32.804647: I Parameter name set to 
+2024-02-16 19:01:32.810645: I Parameter path set to data_dz\yahoo_movies\KPCA_rbf@128.tsv
+2024-02-16 19:01:45.885032: I Finished
+2024-02-16 19:01:45.894554: I ******************************************
+2024-02-16 19:01:45.907174: I Loading parameters
+2024-02-16 19:01:45.914687: I Parameter name set to 
+2024-02-16 19:01:45.921815: I Parameter path set to data_dz\yahoo_movies\KPCA_rbf@16.tsv
+2024-02-16 19:01:58.930785: I Finished
+2024-02-16 19:01:58.938910: I ******************************************
+2024-02-16 19:01:58.953700: I Loading parameters
+2024-02-16 19:01:58.962201: I Parameter name set to 
+2024-02-16 19:01:58.968878: I Parameter path set to data_dz\yahoo_movies\KPCA_rbf@2.tsv
+2024-02-16 19:02:12.133815: I Finished
+2024-02-16 19:02:12.142321: I ******************************************
+2024-02-16 19:02:12.154843: I Loading parameters
+2024-02-16 19:02:12.163347: I Parameter name set to 
+2024-02-16 19:02:12.169352: I Parameter path set to data_dz\yahoo_movies\KPCA_rbf@256.tsv
+2024-02-16 19:02:25.393540: I Finished
+2024-02-16 19:02:25.401417: I ******************************************
+2024-02-16 19:02:25.414599: I Loading parameters
+2024-02-16 19:02:25.424802: I Parameter name set to 
+2024-02-16 19:02:25.430693: I Parameter path set to data_dz\yahoo_movies\KPCA_rbf@32.tsv
+2024-02-16 19:02:38.669758: I Finished
+2024-02-16 19:02:38.677343: I ******************************************
+2024-02-16 19:02:38.692368: I Loading parameters
+2024-02-16 19:02:38.699982: I Parameter name set to 
+2024-02-16 19:02:38.708596: I Parameter path set to data_dz\yahoo_movies\KPCA_rbf@4.tsv
+2024-02-16 19:02:52.381685: I Finished
+2024-02-16 19:02:52.390198: I ******************************************
+2024-02-16 19:02:52.402725: I Loading parameters
+2024-02-16 19:02:52.411728: I Parameter name set to 
+2024-02-16 19:02:52.418240: I Parameter path set to data_dz\yahoo_movies\KPCA_rbf@64.tsv
+2024-02-16 19:03:05.545584: I Finished
+2024-02-16 19:03:05.553123: I ******************************************
+2024-02-16 19:03:05.567641: I Loading parameters
+2024-02-16 19:03:05.576301: I Parameter name set to 
+2024-02-16 19:03:05.583732: I Parameter path set to data_dz\yahoo_movies\KPCA_rbf@8.tsv
+2024-02-16 19:03:18.646977: I Finished
+2024-02-16 19:03:18.656840: I ******************************************
+2024-02-16 19:03:18.669881: I Loading parameters
+2024-02-16 19:03:18.678464: I Parameter name set to 
+2024-02-16 19:03:18.686095: I Parameter path set to data_dz\yahoo_movies\KPCA_sigmoid@128.tsv
+2024-02-16 19:03:31.672423: I Finished
+2024-02-16 19:03:31.681502: I ******************************************
+2024-02-16 19:03:31.695652: I Loading parameters
+2024-02-16 19:03:31.704270: I Parameter name set to 
+2024-02-16 19:03:31.712425: I Parameter path set to data_dz\yahoo_movies\KPCA_sigmoid@16.tsv
+2024-02-16 19:03:44.664551: I Finished
+2024-02-16 19:03:44.673723: I ******************************************
+2024-02-16 19:03:44.687810: I Loading parameters
+2024-02-16 19:03:44.696323: I Parameter name set to 
+2024-02-16 19:03:44.703932: I Parameter path set to data_dz\yahoo_movies\KPCA_sigmoid@2.tsv
+2024-02-16 19:03:57.665198: I Finished
+2024-02-16 19:03:57.673850: I ******************************************
+2024-02-16 19:03:57.688293: I Loading parameters
+2024-02-16 19:03:57.696807: I Parameter name set to 
+2024-02-16 19:03:57.704454: I Parameter path set to data_dz\yahoo_movies\KPCA_sigmoid@256.tsv
+2024-02-16 19:04:10.771219: I Finished
+2024-02-16 19:04:10.779734: I ******************************************
+2024-02-16 19:04:10.794205: I Loading parameters
+2024-02-16 19:04:10.803821: I Parameter name set to 
+2024-02-16 19:04:10.811326: I Parameter path set to data_dz\yahoo_movies\KPCA_sigmoid@32.tsv
+2024-02-16 19:04:23.891306: I Finished
+2024-02-16 19:04:23.900968: I ******************************************
+2024-02-16 19:04:23.916094: I Loading parameters
+2024-02-16 19:04:23.926607: I Parameter name set to 
+2024-02-16 19:04:23.934475: I Parameter path set to data_dz\yahoo_movies\KPCA_sigmoid@4.tsv
+2024-02-16 19:04:36.941781: I Finished
+2024-02-16 19:04:36.951299: I ******************************************
+2024-02-16 19:04:36.965326: I Loading parameters
+2024-02-16 19:04:36.975939: I Parameter name set to 
+2024-02-16 19:04:36.984452: I Parameter path set to data_dz\yahoo_movies\KPCA_sigmoid@64.tsv
+2024-02-16 19:04:50.162748: I Finished
+2024-02-16 19:04:50.173365: I ******************************************
+2024-02-16 19:04:50.188287: I Loading parameters
+2024-02-16 19:04:50.197800: I Parameter name set to 
+2024-02-16 19:04:50.206310: I Parameter path set to data_dz\yahoo_movies\KPCA_sigmoid@8.tsv
+2024-02-16 19:05:03.265739: I Finished
+2024-02-16 19:05:03.275325: I ******************************************
+2024-02-16 19:05:03.290177: I Loading parameters
+2024-02-16 19:05:03.299793: I Parameter name set to 
+2024-02-16 19:05:03.308480: I Parameter path set to data_dz\yahoo_movies\NN@128.tsv
+2024-02-16 19:05:16.294459: I Finished
+2024-02-16 19:05:16.304072: I ******************************************
+2024-02-16 19:05:16.320877: I Loading parameters
+2024-02-16 19:05:16.331027: I Parameter name set to 
+2024-02-16 19:05:16.341034: I Parameter path set to data_dz\yahoo_movies\NN@16.tsv
+2024-02-16 19:05:29.332375: I Finished
+2024-02-16 19:05:29.343893: I ******************************************
+2024-02-16 19:05:29.358485: I Loading parameters
+2024-02-16 19:05:29.368998: I Parameter name set to 
+2024-02-16 19:05:29.379133: I Parameter path set to data_dz\yahoo_movies\NN@2.tsv
+2024-02-16 19:05:42.518174: I Finished
+2024-02-16 19:05:42.528759: I ******************************************
+2024-02-16 19:05:42.544411: I Loading parameters
+2024-02-16 19:05:42.554926: I Parameter name set to 
+2024-02-16 19:05:42.564509: I Parameter path set to data_dz\yahoo_movies\NN@256.tsv
+2024-02-16 19:05:55.533230: I Finished
+2024-02-16 19:05:55.544745: I ******************************************
+2024-02-16 19:05:55.559335: I Loading parameters
+2024-02-16 19:05:55.570853: I Parameter name set to 
+2024-02-16 19:05:55.580968: I Parameter path set to data_dz\yahoo_movies\NN@32.tsv
+2024-02-16 19:06:08.644566: I Finished
+2024-02-16 19:06:08.656079: I ******************************************
+2024-02-16 19:06:08.671117: I Loading parameters
+2024-02-16 19:06:08.681710: I Parameter name set to 
+2024-02-16 19:06:08.691217: I Parameter path set to data_dz\yahoo_movies\NN@4.tsv
+2024-02-16 19:06:21.649329: I Finished
+2024-02-16 19:06:21.660983: I ******************************************
+2024-02-16 19:06:21.677049: I Loading parameters
+2024-02-16 19:06:21.687652: I Parameter name set to 
+2024-02-16 19:06:21.697167: I Parameter path set to data_dz\yahoo_movies\NN@64.tsv
+2024-02-16 19:06:34.670786: I Finished
+2024-02-16 19:06:34.680516: I ******************************************
+2024-02-16 19:06:34.697201: I Loading parameters
+2024-02-16 19:06:34.708927: I Parameter name set to 
+2024-02-16 19:06:34.718058: I Parameter path set to data_dz\yahoo_movies\NN@8.tsv
+2024-02-16 19:06:47.764137: I Finished
+2024-02-16 19:06:47.775874: I ******************************************
+2024-02-16 19:06:47.793025: I Loading parameters
+2024-02-16 19:06:47.803786: I Parameter name set to 
+2024-02-16 19:06:47.813300: I Parameter path set to data_dz\yahoo_movies\TSNE@2.tsv
+2024-02-16 19:07:01.644254: I Finished
+2024-02-16 19:07:01.656982: I ******************************************
+2024-02-16 19:07:01.673080: I Loading parameters
+2024-02-16 19:07:01.683592: I Parameter name set to 
+2024-02-16 19:07:01.694107: I Parameter path set to data_dz\yahoo_movies\UMAP@128.tsv
+2024-02-16 19:07:14.752902: I Finished
+2024-02-16 19:07:14.764491: I ******************************************
+2024-02-16 19:07:14.780618: I Loading parameters
+2024-02-16 19:07:14.793522: I Parameter name set to 
+2024-02-16 19:07:14.804040: I Parameter path set to data_dz\yahoo_movies\UMAP@16.tsv
+2024-02-16 19:07:27.857514: I Finished
+2024-02-16 19:07:27.869028: I ******************************************
+2024-02-16 19:07:27.886343: I Loading parameters
+2024-02-16 19:07:27.897855: I Parameter name set to 
+2024-02-16 19:07:27.909584: I Parameter path set to data_dz\yahoo_movies\UMAP@2.tsv
+2024-02-16 19:07:40.956502: I Finished
+2024-02-16 19:07:40.967099: I ******************************************
+2024-02-16 19:07:40.985670: I Loading parameters
+2024-02-16 19:07:40.999088: I Parameter name set to 
+2024-02-16 19:07:41.010377: I Parameter path set to data_dz\yahoo_movies\UMAP@256.tsv
+2024-02-16 19:07:54.149143: I Finished
+2024-02-16 19:07:54.161752: I ******************************************
+2024-02-16 19:07:54.178610: I Loading parameters
+2024-02-16 19:07:54.191686: I Parameter name set to 
+2024-02-16 19:07:54.202204: I Parameter path set to data_dz\yahoo_movies\UMAP@32.tsv
+2024-02-16 19:08:07.287595: I Finished
+2024-02-16 19:08:07.299217: I ******************************************
+2024-02-16 19:08:07.317517: I Loading parameters
+2024-02-16 19:08:07.329007: I Parameter name set to 
+2024-02-16 19:08:07.339079: I Parameter path set to data_dz\yahoo_movies\UMAP@4.tsv
+2024-02-16 19:08:20.323072: I Finished
+2024-02-16 19:08:20.335126: I ******************************************
+2024-02-16 19:08:20.353245: I Loading parameters
+2024-02-16 19:08:20.364778: I Parameter name set to 
+2024-02-16 19:08:20.376917: I Parameter path set to data_dz\yahoo_movies\UMAP@64.tsv
+2024-02-16 19:08:33.442536: I Finished
+2024-02-16 19:08:33.454161: I ******************************************
+2024-02-16 19:08:33.471439: I Loading parameters
+2024-02-16 19:08:33.483551: I Parameter name set to 
+2024-02-16 19:08:33.494204: I Parameter path set to data_dz\yahoo_movies\UMAP@8.tsv
+2024-02-16 19:08:46.798706: I Finished
+2024-02-16 19:08:46.811897: I ******************************************
