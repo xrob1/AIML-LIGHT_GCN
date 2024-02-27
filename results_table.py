@@ -13,7 +13,6 @@ CONFIG_FILE= movielens_exp_conf_file(ALG)#basic_conf_file('BPRMF')#yahoo_exp_con
 configuration = cp.open_config(CONFIG_FILE)#basic_conf_file('BPRMF'))#GET CONFIGURATION TEMPLATE
 
 
-
 #EXTRACT RACOMMANDATIONS FROM MODEL WITH REDUCED FACTORS
 def get_reduced_factors_model_recs(tipo,FACTORS,configuration,DATASET):
     configuration=set_reducers_configuration(tipo,configuration,[],[],[])
@@ -56,7 +55,7 @@ def results_csv(name):
 
 #CHANGE CONFIGURATION PARAMETERS TO SUITE EXPERIMENT
 #configuration = set_dataset_configuration(configuration, DATASET,'BPRMF')
-get_reduced_factors_model_recs(ALG,FACTORS=FACTORS[1:],configuration=configuration,DATASET=DATASET)
+#get_reduced_factors_model_recs(ALG,FACTORS=FACTORS[1:],configuration=configuration,DATASET=DATASET)
 #get_dimensionatity_reduced_recommandations(ALG,FACTORS,configuration,DATASET)
 #extract_recs_from_raw_data(type='validation')
 #clear_results_dir()
@@ -64,6 +63,12 @@ get_reduced_factors_model_recs(ALG,FACTORS=FACTORS[1:],configuration=configurati
 #results_csv('BPRMF_RESULTS_Yah_')
 
 
+#SCRIPT ESPLORAZIONI
+#LGCN su MOVIELENS
+get_reduced_factors_model_recs(ALG,FACTORS=FACTORS[1:],configuration=configuration,DATASET=DATASET)
+#BPRMF su MOVIELENS
+ALG = 'BPRMF'
+get_reduced_factors_model_recs(ALG,FACTORS=FACTORS,configuration=configuration,DATASET=DATASET)
 
 """
 if(INSIDE_METRICS):
