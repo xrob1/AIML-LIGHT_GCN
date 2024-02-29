@@ -1,0 +1,49 @@
+2024-02-28 20:53:24.551338: I Loading parameters
+2024-02-28 20:53:24.552339: I Parameter factors set to 512
+2024-02-28 20:53:24.552339: I Parameter lr set to 0.0005754258527936548
+2024-02-28 20:53:24.552339: I Parameter l_w set to 0.007115052124575682
+2024-02-28 20:54:57.169221: I Epoch 10/200 loss 0.79908
+2024-02-28 20:54:57.169221: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\yahoo_movies\recs
+2024-02-28 20:54:57.299441: I ******************************************
+2024-02-28 20:56:29.100038: I Epoch 20/200 loss 0.16688
+2024-02-28 20:56:29.101038: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\yahoo_movies\recs
+2024-02-28 20:56:29.208167: I ******************************************
+2024-02-28 20:57:58.549815: I Epoch 30/200 loss 0.06987
+2024-02-28 20:57:58.550813: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\yahoo_movies\recs
+2024-02-28 20:59:27.844457: I Epoch 40/200 loss 0.03834
+2024-02-28 20:59:27.844457: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\yahoo_movies\recs
+2024-02-28 20:59:27.951594: I ******************************************
+2024-02-28 21:00:57.516584: I Epoch 50/200 loss 0.02445
+2024-02-28 21:00:57.516584: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\yahoo_movies\recs
+2024-02-28 21:00:57.624716: I ******************************************
+2024-02-28 21:02:26.975371: I Epoch 60/200 loss 0.01692
+2024-02-28 21:02:26.976370: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\yahoo_movies\recs
+2024-02-28 21:03:56.655967: I Epoch 70/200 loss 0.01240
+2024-02-28 21:03:56.655967: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\yahoo_movies\recs
+2024-02-28 21:05:25.950115: I Epoch 80/200 loss 0.00941
+2024-02-28 21:05:25.950115: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\yahoo_movies\recs
+2024-02-28 21:06:55.401815: I Epoch 90/200 loss 0.00741
+2024-02-28 21:06:55.402822: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\yahoo_movies\recs
+2024-02-28 21:08:24.588876: I Epoch 100/200 loss 0.00601
+2024-02-28 21:08:24.589879: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\yahoo_movies\recs
+2024-02-28 21:09:53.920750: I Epoch 110/200 loss 0.00497
+2024-02-28 21:09:53.920750: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\yahoo_movies\recs
+2024-02-28 21:09:54.028378: I ******************************************
+2024-02-28 21:11:23.115143: I Epoch 120/200 loss 0.00416
+2024-02-28 21:11:23.116142: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\yahoo_movies\recs
+2024-02-28 21:12:52.574015: I Epoch 130/200 loss 0.00355
+2024-02-28 21:12:52.574015: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\yahoo_movies\recs
+2024-02-28 21:14:22.265971: I Epoch 140/200 loss 0.00307
+2024-02-28 21:14:22.266970: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\yahoo_movies\recs
+2024-02-28 21:15:52.073423: I Epoch 150/200 loss 0.00265
+2024-02-28 21:15:52.073423: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\yahoo_movies\recs
+2024-02-28 21:17:21.691642: I Epoch 160/200 loss 0.00234
+2024-02-28 21:17:21.691642: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\yahoo_movies\recs
+2024-02-28 21:18:51.512419: I Epoch 170/200 loss 0.00207
+2024-02-28 21:18:51.513419: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\yahoo_movies\recs
+2024-02-28 21:20:21.325474: I Epoch 180/200 loss 0.00186
+2024-02-28 21:20:21.325474: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\yahoo_movies\recs
+2024-02-28 21:21:50.714710: I Epoch 190/200 loss 0.00166
+2024-02-28 21:21:50.715711: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\yahoo_movies\recs
+2024-02-28 21:23:20.185148: I Epoch 200/200 loss 0.00150
+2024-02-28 21:23:20.185148: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\yahoo_movies\recs

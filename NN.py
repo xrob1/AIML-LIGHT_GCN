@@ -1,18 +1,8 @@
 import torch
 import torch.nn as nn
-import torch.optim as optim
-from torchvision import datasets, transforms
 from torch.utils.data import DataLoader
-import matplotlib as plt
-import pickle
 from tqdm import tqdm
-"""
-with  open(str('models_raw_data\LightGCN_Custom\yahoo_movies\LightGCN_Custom_data@256') , 'rb') as f:
-    GU,GI = pickle.load(f)
 
-
-GU,GI=GU.cpu().detach().numpy(),GI.cpu().detach().numpy()
-"""
 class MYAutoencoder(nn.Module):    
     def __init__(self,depth=2):
         self.loss=1000
@@ -57,9 +47,7 @@ class MYAutoencoder(nn.Module):
     def forward(self,gu,gi):
         gu=self.encoder_users(gu)
         gi=self.encoder_items(gi)
-        
-        #dot_product = torch.matmul( gu.to(model.device), torch.transpose(gi.to(model.device), 0, 1) )#torch.matmul( gu, torch.transpose(gi,-1,0) )
-        #decoded=self.decoder(encoded)
+
         return gu,gi
     
 
@@ -94,107 +82,12 @@ def train(GU,GI,depth=2,num_epochs = 16000):
             if (old_loss-loss)>0.0001:
                 old_loss=loss
                 counter=0
-            elif counter>1500:
+            elif counter>2000:
                 break
             else:
                 counter+=1
-            
-            
-            
     
     return out_gu,out_gi
 
-def train_batches(GU,GI,depth=2,num_epochs = 400):
-    model=MYAutoencoder(depth=depth)
-
-    GU=torch.tensor(GU).to(model.device)
-    GI=torch.tensor(GI).to(model.device)
-
-    dot_product = torch.matmul( GU.to(model.device), torch.transpose(GI.to(model.device), 0, 1) )#torch.matmul( GU, torch.transpose(GI,-1,0) )
-    dataloader_user = DataLoader(GU,
-                        batch_size=256,
-                        shuffle=True)
-    dataloader_items = DataLoader(GU,
-                        batch_size=256,
-                        shuffle=True)
-    
-    for epoch in range(num_epochs): 
-        for users in dataloader_user:
-            for items in dataloader_items:
-                
-                out_gu,out_gi= model(users,items)
-                
-                dot_product = torch.matmul( users.to(model.device), torch.transpose(items.to(model.device), 0, 1) )
-                dot_p_e = torch.matmul( out_gu.to(model.device), torch.transpose(out_gi.to(model.device), 0, 1) )              
-                loss = model.criterion(dot_product,dot_p_e)
-
-                model.optimizer.zero_grad()
-                loss.backward()
-                model.optimizer.step()
-            
-        print(f'Epoch:{epoch+1}, Loss:{loss.item():.4f}')
-        #outputs.append((epoch,USER,recon))
-    out_gu,out_gi= model(GU,GI)
-    return out_gu,out_gi
 
 
-def experimental_training(GU,GI,EMBEDDINGS,depth=2,num_epochs = 16000):
-    model=MYAutoencoder(depth=depth)
-    EMBs=EMBEDDINGS
-    GU=torch.tensor(GU).to(model.device)
-    GI=torch.tensor(GI).to(model.device)
-    dot_product = torch.matmul( GU.to(model.device), torch.transpose(GI.to(model.device), 0, 1) )
-    
-    EMBs=EMBs[::-1]
-    EMBs.append(dot_product)
-    for EMBS in EMBEDDINGS:
-        
-        old_loss=1000
-        with tqdm( total = num_epochs) as t:
-            for epoch in range(num_epochs): 
-                
-                out_gu,out_gi= model(GU,GI)     
-                dot_p_e = torch.matmul( out_gu.to(model.device), torch.transpose(out_gi.to(model.device), 0, 1) )
-                loss = model.criterion(EMBS.to(model.device),dot_p_e)
-
-                model.optimizer.zero_grad()
-                loss.backward()
-                model.optimizer.step()
-                
-                t.set_postfix_str(str(f'Epoch:{epoch}, Loss:{loss.item():.4f}'))
-                t.update()
-                
-                #NAIVE EARLY STOP            
-                if (old_loss-loss)>0.0003:
-                    old_loss=loss
-                    counter=0
-                elif counter>1000:
-                    break
-                else:
-                    counter+=1
-            
-            
-            
-    
-    return out_gu,out_gi
-    None
-
-
-"""
-for epoch in range(num_epochs):  
-    
-    for USER in GU:
-        loss = 0
-        for ITEM in GI:
-            recon = model(USER,ITEM)        
-            dot_product = torch.matmul( USER, torch.transpose(ITEM,-1,0) )  
-            loss += model.criterion(recon,dot_product)
-        
-        loss=loss/len_gi
-        model.optimizer.zero_grad()
-        loss.backward()
-        model.optimizer.step()
-        
-    print(f'Epoch:{epoch+1}, Loss:{loss.item():.4f}')
-    outputs.append((epoch,USER,recon))
-"""

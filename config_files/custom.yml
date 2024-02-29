@@ -8,50 +8,15 @@ experiment:
   dataset: facebook_book
   top_k: 10
   evaluation:
-    cutoffs: [10]
-    simple_metrics: [nDCGRendle2020]
-  gpu: 1
-  external_models_path: ../external/models/__init__.py
+    cutoffs:
+    - 10
+    paired_ttest: 'false'
+    simple_metrics:
+    - nDCGRendle2020
+    - HR
+    - Precision
+    - Recall
+  gpu: 0
   models:
-    external.LightGCN_Custom:
-      meta:
-        verbose: true
-        save_recs: true
-        validation_rate: 1
-        dataset_name: facebook_book
-        reducers_types:
-        - NN
-        - UMAP
-        - KPCA
-        - AUTOE
-        - TSNE
-        - BASE
-        reducers_factors:
-        - 256
-        - 128
-        - 64
-        - 32
-        - 16
-        - 8
-        - 4
-        - 2
-        KPCA_Kernels:
-        - linear
-        - poly
-        - rbf
-        - sigmoid
-        - cosine
-        tsne_reducers_factors:
-        - 2
-      lr: 0.00011454076953075361
-      epochs: 200
-      factors: 512
-      batch_size: 64
-      l_w: 1.4623166653305814e-05
-      n_layers: 3
-      seed: 123
-      early_stopping:
-        patience: 5
-        mode: auto
-        monitor: nDCGRendle2020@10
-        verbose: true
+    RecommendationFolder:
+      folder: TMP_RECS/

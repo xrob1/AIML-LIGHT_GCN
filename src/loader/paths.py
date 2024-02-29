@@ -5,8 +5,8 @@ DATA_DIR = os.path.join(PROJECT_PATH, 'data')
 RESULT_DIR = os.path.join(PROJECT_PATH, 'results')
 CONFIG_DIR = os.path.join(PROJECT_PATH, 'config_files')
 
-RAW_DATA_FOLDER = 'data'
-MAIN_DIR = [RESULT_DIR]
+#RAW_DATA_FOLDER = 'data'
+#MAIN_DIR = [RESULT_DIR]
 
 DATASET_NAME = 'dataset'
 TRAIN_NAME = 'train'
@@ -23,19 +23,19 @@ DATASET_NAME_BY_TYPE = {
 }
 
 BASE_CONFIGURATION_FILE_NAME = 'custom.yml'
-BASE_CONFIGURATION_FILE_NAME_BPRMF = 'custom_bprmf.yml'
-BASE_CONFIGURATION_FILE_NAME_TEMPLATE = 'custom_template.yml'
-FACEBOOK_EXPLORATION_FILE_NAME ='facebook_exploration.yml'
-YHOO_EXPLORATION_FILE_NAME ='yahoo_exploration.yml'
-YHOO_EXPLORATION_FILE_NAME_BPRMF ='yahoo_exploration_bprmf.yml'
-MOVIELENS_EXPLORATION_FILE_NAME = 'movielens_exploration.yml'
-MOVIELENS_EXPLORATION_FILE_NAME_BPRMF = 'movielens_exploration_bprmf.yml'
+RAW_DATA_DIRECTORY = 'models_raw_data/'
+RAW_BPRMF   = 'BPRMF_Custom/'
+RAW_LGCN    = 'LightGCN_Custom/'
 
-FACEBOOK_EXPLORATION_FILE_NAME_BPRMF ='facebook_exploration_bprmf.yml'
-RAW_DATA_DIRECTORY = 'models_raw_data/LightGCN_Custom/'
-RECS_DIRECTORY= 'data_dz'
+RECS_DIRECTORY= 'TMP_RECS/'
 RESULTS_DIR='results'
-METRICS_CONFIGURATION='custom_metrics_runtime.yml'
+
+
+LGCN = 'LGCN'
+BPRMF = 'BPRMF'
+
+TEST = 'test'
+VALIDATION = 'validation'
 
 
 def create_directory(dir_path: str):
@@ -75,92 +75,31 @@ def dataset_filepath(dataset_name: str, type='raw'):
         raise FileNotFoundError(f'File at {filepath} not found. Please, check your files')
     return os.path.abspath(filepath)
 
-def basic_conf_file_template():
-    """
-    Returns the path of the file containing the template for basic configuration for Elliot
-    @return: the absolute path of the basic configuration file template
-    """
-    config_path = os.path.join(CONFIG_DIR, BASE_CONFIGURATION_FILE_NAME_TEMPLATE)
-    if not os.path.exists(config_path):
-        raise FileNotFoundError(f'Basic configuration file at {config_path} not found. '
-                                f'Please, check that the file exists')
-    return os.path.abspath(config_path)
 
-def metrics_configuration_file():
-    """
-    Returns the path of the file containing the template for Metrics runtime configuration for Elliot
-    @return: the absolute path of the Metrics at runtime configuration file template
-    """
-    config_path = os.path.join(CONFIG_DIR, METRICS_CONFIGURATION)
-    if not os.path.exists(config_path):
-        raise FileNotFoundError(f'Metrics configuration file at {config_path} not found. '
-                                f'Please, check that the file exists')
-    return os.path.abspath(config_path)
-    
 
-def basic_conf_file(type='LGCN'):
+def basic_conf_file():
     """
     Returns the path of the file containing the basic configuration for Elliot
     @return: the absolute path of the basic configuration file
     """
-    if(type=='LGCN'):
-        config_path = os.path.join(CONFIG_DIR, BASE_CONFIGURATION_FILE_NAME)
-    if(type=='BPRMF'):
-        config_path = os.path.join(CONFIG_DIR, BASE_CONFIGURATION_FILE_NAME_BPRMF)
+    config_path = os.path.join(CONFIG_DIR, BASE_CONFIGURATION_FILE_NAME)
     
     if not os.path.exists(config_path):
         raise FileNotFoundError(f'Basic configuration file at {config_path} not found. '
                                 f'Please, check that the file exists')
     return os.path.abspath(config_path)
 
-def yahoo_exp_conf_file(type='LGCN'):
-    """
-    Returns the path of the file containing the yahoo exploration configuration for Elliot
-    @return: the absolute path of the basic configuration file
-    """
-    if(type=='LGCN'):
-        config_path = os.path.join(CONFIG_DIR, YHOO_EXPLORATION_FILE_NAME)
-    if(type=='BPRMF'):
-        config_path = os.path.join(CONFIG_DIR, YHOO_EXPLORATION_FILE_NAME_BPRMF)
-    if not os.path.exists(config_path):
-        raise FileNotFoundError(f'Basic configuration file at {config_path} not found. '
-                                f'Please, check that the file exists')
-    return os.path.abspath(config_path)
 
-def movielens_exp_conf_file(type='LGCN'):
-    """
-    Returns the path of the file containing the yahoo exploration configuration for Elliot
-    @return: the absolute path of the basic configuration file
-    """
-    if(type=='LGCN'):
-        config_path = os.path.join(CONFIG_DIR, MOVIELENS_EXPLORATION_FILE_NAME)
-    if(type=='BPRMF'):
-        config_path = os.path.join(CONFIG_DIR, MOVIELENS_EXPLORATION_FILE_NAME_BPRMF)
-    if not os.path.exists(config_path):
-        raise FileNotFoundError(f'Basic configuration file at {config_path} not found. '
-                                f'Please, check that the file exists')
-    return os.path.abspath(config_path)
-
-def facebook_exp_conf_file(type='LGCN'):
-    """
-    Returns the path of the file containing the facebook book exploration configuration for Elliot
-    @return: the absolute path of the basic configuration file
-    """
-    if(type=='LGCN'):
-        config_path = os.path.join(CONFIG_DIR, FACEBOOK_EXPLORATION_FILE_NAME)
-    if(type=='BPRMF'):
-        config_path = os.path.join(CONFIG_DIR, FACEBOOK_EXPLORATION_FILE_NAME_BPRMF)
-    if not os.path.exists(config_path):
-        raise FileNotFoundError(f'Basic configuration file at {config_path} not found. '
-                                f'Please, check that the file exists')
-    return os.path.abspath(config_path)
-
-def raw_files_names_list(DATASET):
+def raw_files_names_list(DATASET,ALG):
     """
     Returns list of paths for the raw files containing racommandations for a given dataset
     @return: List of paths of raw files
     """    
-    path = str(RAW_DATA_DIRECTORY + DATASET + '/')
+    if ALG==BPRMF:
+        path = str(RAW_DATA_DIRECTORY + RAW_BPRMF + DATASET + '/')
+    if ALG==LGCN:
+        path = str(RAW_DATA_DIRECTORY + RAW_LGCN  + DATASET + '/')
+    
     if not os.path.exists(path):
         raise FileNotFoundError(f'Raw data directory not found at {path} . '
                                 f'Please, check that directory exists')
@@ -168,24 +107,21 @@ def raw_files_names_list(DATASET):
     files = [f for f in os.listdir(path)]
     return files
 
-def raw_file_path(DATASET,F_NAME):
+def raw_file_path(DATASET,F_NAME,ALG):
     """
     Returns list of paths for the raw files containing racommandations for a given dataset
     @return: List of paths of raw files
     """    
-    file = str(RAW_DATA_DIRECTORY + DATASET + '/' + F_NAME)
+    if ALG=='BPRMF':
+        file = str(RAW_DATA_DIRECTORY + RAW_BPRMF + DATASET + '/' + F_NAME)
+    if ALG=='LGCN':
+        file = str(RAW_DATA_DIRECTORY + RAW_LGCN  + DATASET + '/' + F_NAME)
+    
     if not os.path.exists(file):
         raise FileNotFoundError(f'file at {file} not found. '
                                 f'Please, check that the file exists')   
 
     return file
-
-def get_recs_path(DATASET):
-    path = os.path.join(RECS_DIRECTORY, DATASET)
-    if not os.path.exists(path):
-        raise FileNotFoundError(f'directory at {path} not found. '
-                                f'Please, check that the directory exists')
-    return path
 
 def dataset_results_path(DATASET,SUBDIR='performance'):
     path = os.path.join(RESULTS_DIR, DATASET)
@@ -194,4 +130,3 @@ def dataset_results_path(DATASET,SUBDIR='performance'):
         raise FileNotFoundError(f'directory at {path} not found. '
                                 f'Please, check that the directory exists')
     return path
-    

@@ -1,0 +1,215 @@
+2024-02-29 10:40:23.688938: I Loading parameters
+2024-02-29 10:40:23.694938: I Parameter name set to 
+2024-02-29 10:40:23.699937: I Parameter path set to TMP_RECS/KPCA_linear@64.tsv
+2024-02-29 10:40:37.039643: I Finished
+2024-02-29 10:40:37.044643: I ******************************************
+2024-02-29 10:40:37.055644: I Loading parameters
+2024-02-29 10:40:37.061645: I Parameter name set to 
+2024-02-29 10:40:37.065647: I Parameter path set to TMP_RECS/KPCA_linear@8.tsv
+2024-02-29 10:40:50.440842: I Finished
+2024-02-29 10:40:50.445842: I ******************************************
+2024-02-29 10:40:50.456843: I Loading parameters
+2024-02-29 10:40:50.462843: I Parameter name set to 
+2024-02-29 10:40:50.467844: I Parameter path set to TMP_RECS/KPCA_poly@128.tsv
+2024-02-29 10:41:03.764516: I Finished
+2024-02-29 10:41:03.769515: I ******************************************
+2024-02-29 10:41:03.781527: I Loading parameters
+2024-02-29 10:41:03.787527: I Parameter name set to 
+2024-02-29 10:41:03.793032: I Parameter path set to TMP_RECS/KPCA_poly@16.tsv
+2024-02-29 10:41:17.149712: I Finished
+2024-02-29 10:41:17.154712: I ******************************************
+2024-02-29 10:41:17.166712: I Loading parameters
+2024-02-29 10:41:17.187721: I Parameter name set to 
+2024-02-29 10:41:17.195232: I Parameter path set to TMP_RECS/KPCA_poly@2.tsv
+2024-02-29 10:41:30.615477: I Finished
+2024-02-29 10:41:30.620477: I ******************************************
+2024-02-29 10:41:30.631480: I Loading parameters
+2024-02-29 10:41:30.638479: I Parameter name set to 
+2024-02-29 10:41:30.643479: I Parameter path set to TMP_RECS/KPCA_poly@256.tsv
+2024-02-29 10:41:44.093703: I Finished
+2024-02-29 10:41:44.099209: I ******************************************
+2024-02-29 10:41:44.110212: I Loading parameters
+2024-02-29 10:41:44.118211: I Parameter name set to 
+2024-02-29 10:41:44.124212: I Parameter path set to TMP_RECS/KPCA_poly@32.tsv
+2024-02-29 10:41:57.455885: I Finished
+2024-02-29 10:41:57.460885: I ******************************************
+2024-02-29 10:41:57.472887: I Loading parameters
+2024-02-29 10:41:57.479886: I Parameter name set to 
+2024-02-29 10:41:57.485891: I Parameter path set to TMP_RECS/KPCA_poly@4.tsv
+2024-02-29 10:42:10.894094: I Finished
+2024-02-29 10:42:10.899602: I ******************************************
+2024-02-29 10:42:10.911602: I Loading parameters
+2024-02-29 10:42:10.918602: I Parameter name set to 
+2024-02-29 10:42:10.924602: I Parameter path set to TMP_RECS/KPCA_poly@64.tsv
+2024-02-29 10:42:24.274303: I Finished
+2024-02-29 10:42:24.280304: I ******************************************
+2024-02-29 10:42:24.292310: I Loading parameters
+2024-02-29 10:42:24.299824: I Parameter name set to 
+2024-02-29 10:42:24.305824: I Parameter path set to TMP_RECS/KPCA_poly@8.tsv
+2024-02-29 10:42:38.031711: I Finished
+2024-02-29 10:42:38.038714: I ******************************************
+2024-02-29 10:42:38.050711: I Loading parameters
+2024-02-29 10:42:38.057713: I Parameter name set to 
+2024-02-29 10:42:38.063712: I Parameter path set to TMP_RECS/KPCA_rbf@128.tsv
+2024-02-29 10:42:51.351385: I Finished
+2024-02-29 10:42:51.357386: I ******************************************
+2024-02-29 10:42:51.369387: I Loading parameters
+2024-02-29 10:42:51.377385: I Parameter name set to 
+2024-02-29 10:42:51.383386: I Parameter path set to TMP_RECS/KPCA_rbf@16.tsv
+2024-02-29 10:43:04.699082: I Finished
+2024-02-29 10:43:04.705594: I ******************************************
+2024-02-29 10:43:04.716594: I Loading parameters
+2024-02-29 10:43:04.724592: I Parameter name set to 
+2024-02-29 10:43:04.730593: I Parameter path set to TMP_RECS/KPCA_rbf@2.tsv
+2024-02-29 10:43:18.337034: I Finished
+2024-02-29 10:43:18.343036: I ******************************************
+2024-02-29 10:43:18.355036: I Loading parameters
+2024-02-29 10:43:18.363035: I Parameter name set to 
+2024-02-29 10:43:18.370037: I Parameter path set to TMP_RECS/KPCA_rbf@256.tsv
+2024-02-29 10:43:31.686745: I Finished
+2024-02-29 10:43:31.693751: I ******************************************
+2024-02-29 10:43:31.706262: I Loading parameters
+2024-02-29 10:43:31.714260: I Parameter name set to 
+2024-02-29 10:43:31.721262: I Parameter path set to TMP_RECS/KPCA_rbf@32.tsv
+2024-02-29 10:43:45.122467: I Finished
+2024-02-29 10:43:45.129469: I ******************************************
+2024-02-29 10:43:45.141469: I Loading parameters
+2024-02-29 10:43:45.149469: I Parameter name set to 
+2024-02-29 10:43:45.156470: I Parameter path set to TMP_RECS/KPCA_rbf@4.tsv
+2024-02-29 10:43:58.662234: I Finished
+2024-02-29 10:43:58.668235: I ******************************************
+2024-02-29 10:43:58.681233: I Loading parameters
+2024-02-29 10:43:58.689235: I Parameter name set to 
+2024-02-29 10:43:58.696239: I Parameter path set to TMP_RECS/KPCA_rbf@64.tsv
+2024-02-29 10:44:12.083485: I Finished
+2024-02-29 10:44:12.090486: I ******************************************
+2024-02-29 10:44:12.103491: I Loading parameters
+2024-02-29 10:44:12.112003: I Parameter name set to 
+2024-02-29 10:44:12.119002: I Parameter path set to TMP_RECS/KPCA_rbf@8.tsv
+2024-02-29 10:44:25.461697: I Finished
+2024-02-29 10:44:25.469698: I ******************************************
+2024-02-29 10:44:25.482697: I Loading parameters
+2024-02-29 10:44:25.490698: I Parameter name set to 
+2024-02-29 10:44:25.497700: I Parameter path set to TMP_RECS/KPCA_sigmoid@128.tsv
+2024-02-29 10:44:38.986419: I Finished
+2024-02-29 10:44:38.993422: I ******************************************
+2024-02-29 10:44:39.007426: I Loading parameters
+2024-02-29 10:44:39.015935: I Parameter name set to 
+2024-02-29 10:44:39.022934: I Parameter path set to TMP_RECS/KPCA_sigmoid@16.tsv
+2024-02-29 10:44:52.364621: I Finished
+2024-02-29 10:44:52.374626: I ******************************************
+2024-02-29 10:44:52.389623: I Loading parameters
+2024-02-29 10:44:52.399628: I Parameter name set to 
+2024-02-29 10:44:52.406627: I Parameter path set to TMP_RECS/KPCA_sigmoid@2.tsv
+2024-02-29 10:45:06.321202: I Finished
+2024-02-29 10:45:06.329204: I ******************************************
+2024-02-29 10:45:06.343202: I Loading parameters
+2024-02-29 10:45:06.353201: I Parameter name set to 
+2024-02-29 10:45:06.361205: I Parameter path set to TMP_RECS/KPCA_sigmoid@256.tsv
+2024-02-29 10:45:19.660902: I Finished
+2024-02-29 10:45:19.667903: I ******************************************
+2024-02-29 10:45:19.680903: I Loading parameters
+2024-02-29 10:45:19.690903: I Parameter name set to 
+2024-02-29 10:45:19.698902: I Parameter path set to TMP_RECS/KPCA_sigmoid@32.tsv
+2024-02-29 10:45:33.091111: I Finished
+2024-02-29 10:45:33.099114: I ******************************************
+2024-02-29 10:45:33.112119: I Loading parameters
+2024-02-29 10:45:33.121633: I Parameter name set to 
+2024-02-29 10:45:33.129630: I Parameter path set to TMP_RECS/KPCA_sigmoid@4.tsv
+2024-02-29 10:45:46.479317: I Finished
+2024-02-29 10:45:46.487320: I ******************************************
+2024-02-29 10:45:46.501318: I Loading parameters
+2024-02-29 10:45:46.510326: I Parameter name set to 
+2024-02-29 10:45:46.518833: I Parameter path set to TMP_RECS/KPCA_sigmoid@64.tsv
+2024-02-29 10:45:59.889519: I Finished
+2024-02-29 10:45:59.897522: I ******************************************
+2024-02-29 10:45:59.911527: I Loading parameters
+2024-02-29 10:45:59.921035: I Parameter name set to 
+2024-02-29 10:45:59.929033: I Parameter path set to TMP_RECS/KPCA_sigmoid@8.tsv
+2024-02-29 10:46:13.378263: I Finished
+2024-02-29 10:46:13.387265: I ******************************************
+2024-02-29 10:46:13.400265: I Loading parameters
+2024-02-29 10:46:13.410272: I Parameter name set to 
+2024-02-29 10:46:13.418283: I Parameter path set to TMP_RECS/NN@128.tsv
+2024-02-29 10:46:26.890024: I Finished
+2024-02-29 10:46:26.898025: I ******************************************
+2024-02-29 10:46:26.912030: I Loading parameters
+2024-02-29 10:46:26.922539: I Parameter name set to 
+2024-02-29 10:46:26.930540: I Parameter path set to TMP_RECS/NN@16.tsv
+2024-02-29 10:46:40.251234: I Finished
+2024-02-29 10:46:40.260236: I ******************************************
+2024-02-29 10:46:40.274236: I Loading parameters
+2024-02-29 10:46:40.284236: I Parameter name set to 
+2024-02-29 10:46:40.293235: I Parameter path set to TMP_RECS/NN@2.tsv
+2024-02-29 10:46:53.649503: I Finished
+2024-02-29 10:46:53.657504: I ******************************************
+2024-02-29 10:46:53.672505: I Loading parameters
+2024-02-29 10:46:53.682506: I Parameter name set to 
+2024-02-29 10:46:53.690504: I Parameter path set to TMP_RECS/NN@256.tsv
+2024-02-29 10:47:07.000192: I Finished
+2024-02-29 10:47:07.009193: I ******************************************
+2024-02-29 10:47:07.024199: I Loading parameters
+2024-02-29 10:47:07.033709: I Parameter name set to 
+2024-02-29 10:47:07.043710: I Parameter path set to TMP_RECS/NN@32.tsv
+2024-02-29 10:47:20.342481: I Finished
+2024-02-29 10:47:20.351483: I ******************************************
+2024-02-29 10:47:20.367482: I Loading parameters
+2024-02-29 10:47:20.376482: I Parameter name set to 
+2024-02-29 10:47:20.386483: I Parameter path set to TMP_RECS/NN@4.tsv
+2024-02-29 10:47:33.836202: I Finished
+2024-02-29 10:47:33.845203: I ******************************************
+2024-02-29 10:47:33.860203: I Loading parameters
+2024-02-29 10:47:33.871203: I Parameter name set to 
+2024-02-29 10:47:33.880202: I Parameter path set to TMP_RECS/NN@64.tsv
+2024-02-29 10:47:47.248418: I Finished
+2024-02-29 10:47:47.258418: I ******************************************
+2024-02-29 10:47:47.273419: I Loading parameters
+2024-02-29 10:47:47.284420: I Parameter name set to 
+2024-02-29 10:47:47.293418: I Parameter path set to TMP_RECS/NN@8.tsv
+2024-02-29 10:48:00.668641: I Finished
+2024-02-29 10:48:00.677642: I ******************************************
+2024-02-29 10:48:00.693642: I Loading parameters
+2024-02-29 10:48:00.704643: I Parameter name set to 
+2024-02-29 10:48:00.713643: I Parameter path set to TMP_RECS/TSNE@2.tsv
+2024-02-29 10:48:14.195409: I Finished
+2024-02-29 10:48:14.205411: I ******************************************
+2024-02-29 10:48:14.221415: I Loading parameters
+2024-02-29 10:48:14.232927: I Parameter name set to 
+2024-02-29 10:48:14.241925: I Parameter path set to TMP_RECS/UMAP@128.tsv
+2024-02-29 10:48:27.813615: I Finished
+2024-02-29 10:48:27.822618: I ******************************************
+2024-02-29 10:48:27.839126: I Loading parameters
+2024-02-29 10:48:27.849128: I Parameter name set to 
+2024-02-29 10:48:27.878128: I Parameter path set to TMP_RECS/UMAP@16.tsv
+2024-02-29 10:48:41.466437: I Finished
+2024-02-29 10:48:41.476439: I ******************************************
+2024-02-29 10:48:41.492438: I Loading parameters
+2024-02-29 10:48:41.503437: I Parameter name set to 
+2024-02-29 10:48:41.513438: I Parameter path set to TMP_RECS/UMAP@2.tsv
+2024-02-29 10:48:54.887654: I Finished
+2024-02-29 10:48:54.897656: I ******************************************
+2024-02-29 10:48:54.913657: I Loading parameters
+2024-02-29 10:48:54.924660: I Parameter name set to 
+2024-02-29 10:48:54.935166: I Parameter path set to TMP_RECS/UMAP@256.tsv
+2024-02-29 10:49:08.321875: I Finished
+2024-02-29 10:49:08.331876: I ******************************************
+2024-02-29 10:49:08.348386: I Loading parameters
+2024-02-29 10:49:08.359388: I Parameter name set to 
+2024-02-29 10:49:08.370385: I Parameter path set to TMP_RECS/UMAP@32.tsv
+2024-02-29 10:49:21.852116: I Finished
+2024-02-29 10:49:21.862120: I ******************************************
+2024-02-29 10:49:21.878118: I Loading parameters
+2024-02-29 10:49:21.890117: I Parameter name set to 
+2024-02-29 10:49:21.901119: I Parameter path set to TMP_RECS/UMAP@4.tsv
+2024-02-29 10:49:35.308330: I Finished
+2024-02-29 10:49:35.318332: I ******************************************
+2024-02-29 10:49:35.335334: I Loading parameters
+2024-02-29 10:49:35.346846: I Parameter name set to 
+2024-02-29 10:49:35.356843: I Parameter path set to TMP_RECS/UMAP@64.tsv
+2024-02-29 10:49:48.967164: I Finished
+2024-02-29 10:49:48.978165: I ******************************************
+2024-02-29 10:49:48.994166: I Loading parameters
+2024-02-29 10:49:49.006165: I Parameter name set to 
+2024-02-29 10:49:49.017166: I Parameter path set to TMP_RECS/UMAP@8.tsv
+2024-02-29 10:50:02.456902: I Finished
+2024-02-29 10:50:02.466902: I ******************************************

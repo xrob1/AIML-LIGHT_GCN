@@ -1,0 +1,403 @@
+2024-02-28 18:03:25.231863: I Loading parameters
+2024-02-28 18:03:25.231863: I Parameter factors set to 512
+2024-02-28 18:03:25.231863: I Parameter lr set to 0.00024828109391337706
+2024-02-28 18:03:25.231863: I Parameter l_w set to 0.041968799109630556
+2024-02-28 18:03:26.806280: I Epoch 1/200 loss 112.41590
+2024-02-28 18:03:26.806280: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\facebook_book\recs
+2024-02-28 18:03:26.857918: I ******************************************
+2024-02-28 18:03:28.206735: I Epoch 2/200 loss 27.60174
+2024-02-28 18:03:28.211892: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\facebook_book\recs
+2024-02-28 18:03:28.262042: I ******************************************
+2024-02-28 18:03:29.674261: I Epoch 3/200 loss 12.05746
+2024-02-28 18:03:29.674261: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\facebook_book\recs
+2024-02-28 18:03:29.724377: I ******************************************
+2024-02-28 18:03:31.064486: I Epoch 4/200 loss 6.67629
+2024-02-28 18:03:31.064486: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\facebook_book\recs
+2024-02-28 18:03:31.112645: I ******************************************
+2024-02-28 18:03:32.649195: I Epoch 5/200 loss 4.20475
+2024-02-28 18:03:32.650575: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\facebook_book\recs
+2024-02-28 18:03:32.699822: I ******************************************
+2024-02-28 18:03:34.045356: I Epoch 6/200 loss 2.87286
+2024-02-28 18:03:34.045356: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\facebook_book\recs
+2024-02-28 18:03:34.097744: I ******************************************
+2024-02-28 18:03:34.097744: I Analyzed pair: (0.00374, 0.00378): False
+2024-02-28 18:03:34.098745: I Analyzed pair: (0.00374, 0.00428): False
+2024-02-28 18:03:34.098745: I Analyzed pair: (0.00374, 0.00474): False
+2024-02-28 18:03:34.098745: I Analyzed pair: (0.00374, 0.00593): False
+2024-02-28 18:03:34.098745: I Analyzed pair: (0.00374, 0.00778): False
+2024-02-28 18:03:34.099744: I Check List: [False, False, False, False, False]
+2024-02-28 18:03:35.419278: I Epoch 7/200 loss 2.07957
+2024-02-28 18:03:35.419278: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\facebook_book\recs
+2024-02-28 18:03:35.471036: I ******************************************
+2024-02-28 18:03:35.471036: I Analyzed pair: (0.00378, 0.00428): False
+2024-02-28 18:03:35.472037: I Analyzed pair: (0.00378, 0.00474): False
+2024-02-28 18:03:35.472037: I Analyzed pair: (0.00378, 0.00593): False
+2024-02-28 18:03:35.472037: I Analyzed pair: (0.00378, 0.00778): False
+2024-02-28 18:03:35.472037: I Analyzed pair: (0.00378, 0.01242): False
+2024-02-28 18:03:35.473037: I Check List: [False, False, False, False, False]
+2024-02-28 18:03:36.834130: I Epoch 8/200 loss 1.56319
+2024-02-28 18:03:36.834130: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\facebook_book\recs
+2024-02-28 18:03:36.888024: I ******************************************
+2024-02-28 18:03:36.888024: I Analyzed pair: (0.00428, 0.00474): False
+2024-02-28 18:03:36.889229: I Analyzed pair: (0.00428, 0.00593): False
+2024-02-28 18:03:36.889229: I Analyzed pair: (0.00428, 0.00778): False
+2024-02-28 18:03:36.889229: I Analyzed pair: (0.00428, 0.01242): False
+2024-02-28 18:03:36.889229: I Analyzed pair: (0.00428, 0.01879): False
+2024-02-28 18:03:36.890347: I Check List: [False, False, False, False, False]
+2024-02-28 18:03:38.454129: I Epoch 9/200 loss 1.21233
+2024-02-28 18:03:38.456994: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\facebook_book\recs
+2024-02-28 18:03:38.508223: I ******************************************
+2024-02-28 18:03:38.508825: I Analyzed pair: (0.00474, 0.00593): False
+2024-02-28 18:03:38.509258: I Analyzed pair: (0.00474, 0.00778): False
+2024-02-28 18:03:38.509447: I Analyzed pair: (0.00474, 0.01242): False
+2024-02-28 18:03:38.509447: I Analyzed pair: (0.00474, 0.01879): False
+2024-02-28 18:03:38.509447: I Analyzed pair: (0.00474, 0.02739): False
+2024-02-28 18:03:38.509447: I Check List: [False, False, False, False, False]
+2024-02-28 18:03:40.019113: I Epoch 10/200 loss 0.96282
+2024-02-28 18:03:40.019113: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\facebook_book\recs
+2024-02-28 18:03:40.070889: I ******************************************
+2024-02-28 18:03:40.071889: I Analyzed pair: (0.00593, 0.00778): False
+2024-02-28 18:03:40.071889: I Analyzed pair: (0.00593, 0.01242): False
+2024-02-28 18:03:40.071889: I Analyzed pair: (0.00593, 0.01879): False
+2024-02-28 18:03:40.071889: I Analyzed pair: (0.00593, 0.02739): False
+2024-02-28 18:03:40.072888: I Analyzed pair: (0.00593, 0.03774): False
+2024-02-28 18:03:40.072888: I Check List: [False, False, False, False, False]
+2024-02-28 18:03:41.419262: I Epoch 11/200 loss 0.77925
+2024-02-28 18:03:41.419262: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\facebook_book\recs
+2024-02-28 18:03:41.469421: I ******************************************
+2024-02-28 18:03:41.469999: I Analyzed pair: (0.00778, 0.01242): False
+2024-02-28 18:03:41.469999: I Analyzed pair: (0.00778, 0.01879): False
+2024-02-28 18:03:41.469999: I Analyzed pair: (0.00778, 0.02739): False
+2024-02-28 18:03:41.471053: I Analyzed pair: (0.00778, 0.03774): False
+2024-02-28 18:03:41.471053: I Analyzed pair: (0.00778, 0.04957): False
+2024-02-28 18:03:41.471053: I Check List: [False, False, False, False, False]
+2024-02-28 18:03:43.144222: I Epoch 12/200 loss 0.63841
+2024-02-28 18:03:43.144222: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\facebook_book\recs
+2024-02-28 18:03:43.195427: I ******************************************
+2024-02-28 18:03:43.195427: I Analyzed pair: (0.01242, 0.01879): False
+2024-02-28 18:03:43.196431: I Analyzed pair: (0.01242, 0.02739): False
+2024-02-28 18:03:43.196431: I Analyzed pair: (0.01242, 0.03774): False
+2024-02-28 18:03:43.196431: I Analyzed pair: (0.01242, 0.04957): False
+2024-02-28 18:03:43.196431: I Analyzed pair: (0.01242, 0.05623): False
+2024-02-28 18:03:43.196431: I Check List: [False, False, False, False, False]
+2024-02-28 18:03:44.587061: I Epoch 13/200 loss 0.52926
+2024-02-28 18:03:44.587061: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\facebook_book\recs
+2024-02-28 18:03:44.639754: I ******************************************
+2024-02-28 18:03:44.639754: I Analyzed pair: (0.01879, 0.02739): False
+2024-02-28 18:03:44.640754: I Analyzed pair: (0.01879, 0.03774): False
+2024-02-28 18:03:44.640754: I Analyzed pair: (0.01879, 0.04957): False
+2024-02-28 18:03:44.640754: I Analyzed pair: (0.01879, 0.05623): False
+2024-02-28 18:03:44.640754: I Analyzed pair: (0.01879, 0.06272): False
+2024-02-28 18:03:44.641753: I Check List: [False, False, False, False, False]
+2024-02-28 18:03:46.037944: I Epoch 14/200 loss 0.44190
+2024-02-28 18:03:46.037944: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\facebook_book\recs
+2024-02-28 18:03:46.091209: I ******************************************
+2024-02-28 18:03:46.092208: I Analyzed pair: (0.02739, 0.03774): False
+2024-02-28 18:03:46.092208: I Analyzed pair: (0.02739, 0.04957): False
+2024-02-28 18:03:46.092208: I Analyzed pair: (0.02739, 0.05623): False
+2024-02-28 18:03:46.093208: I Analyzed pair: (0.02739, 0.06272): False
+2024-02-28 18:03:46.093208: I Analyzed pair: (0.02739, 0.06663): False
+2024-02-28 18:03:46.093208: I Check List: [False, False, False, False, False]
+2024-02-28 18:03:47.599875: I Epoch 15/200 loss 0.37526
+2024-02-28 18:03:47.599875: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\facebook_book\recs
+2024-02-28 18:03:47.657846: I ******************************************
+2024-02-28 18:03:47.657846: I Analyzed pair: (0.03774, 0.04957): False
+2024-02-28 18:03:47.657846: I Analyzed pair: (0.03774, 0.05623): False
+2024-02-28 18:03:47.657846: I Analyzed pair: (0.03774, 0.06272): False
+2024-02-28 18:03:47.657846: I Analyzed pair: (0.03774, 0.06663): False
+2024-02-28 18:03:47.657846: I Analyzed pair: (0.03774, 0.0692): False
+2024-02-28 18:03:47.657846: I Check List: [False, False, False, False, False]
+2024-02-28 18:03:49.402102: I Epoch 16/200 loss 0.31969
+2024-02-28 18:03:49.402102: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\facebook_book\recs
+2024-02-28 18:03:49.454293: I ******************************************
+2024-02-28 18:03:49.454293: I Analyzed pair: (0.04957, 0.05623): False
+2024-02-28 18:03:49.454293: I Analyzed pair: (0.04957, 0.06272): False
+2024-02-28 18:03:49.454293: I Analyzed pair: (0.04957, 0.06663): False
+2024-02-28 18:03:49.454293: I Analyzed pair: (0.04957, 0.0692): False
+2024-02-28 18:03:49.454293: I Analyzed pair: (0.04957, 0.07233): False
+2024-02-28 18:03:49.454293: I Check List: [False, False, False, False, False]
+2024-02-28 18:03:50.902732: I Epoch 17/200 loss 0.27497
+2024-02-28 18:03:50.903592: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\facebook_book\recs
+2024-02-28 18:03:50.955504: I ******************************************
+2024-02-28 18:03:50.956509: I Analyzed pair: (0.05623, 0.06272): False
+2024-02-28 18:03:50.956509: I Analyzed pair: (0.05623, 0.06663): False
+2024-02-28 18:03:50.956509: I Analyzed pair: (0.05623, 0.0692): False
+2024-02-28 18:03:50.956509: I Analyzed pair: (0.05623, 0.07233): False
+2024-02-28 18:03:50.957508: I Analyzed pair: (0.05623, 0.07555): False
+2024-02-28 18:03:50.957508: I Check List: [False, False, False, False, False]
+2024-02-28 18:03:52.465410: I Epoch 18/200 loss 0.23763
+2024-02-28 18:03:52.469796: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\facebook_book\recs
+2024-02-28 18:03:52.519984: I ******************************************
+2024-02-28 18:03:52.519984: I Analyzed pair: (0.06272, 0.06663): False
+2024-02-28 18:03:52.520985: I Analyzed pair: (0.06272, 0.0692): False
+2024-02-28 18:03:52.520985: I Analyzed pair: (0.06272, 0.07233): False
+2024-02-28 18:03:52.520985: I Analyzed pair: (0.06272, 0.07555): False
+2024-02-28 18:03:52.520985: I Analyzed pair: (0.06272, 0.07754): False
+2024-02-28 18:03:52.521985: I Check List: [False, False, False, False, False]
+2024-02-28 18:03:54.329953: I Epoch 19/200 loss 0.20745
+2024-02-28 18:03:54.329953: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\facebook_book\recs
+2024-02-28 18:03:54.380658: I ******************************************
+2024-02-28 18:03:54.380658: I Analyzed pair: (0.06663, 0.0692): False
+2024-02-28 18:03:54.384162: I Analyzed pair: (0.06663, 0.07233): False
+2024-02-28 18:03:54.384162: I Analyzed pair: (0.06663, 0.07555): False
+2024-02-28 18:03:54.384162: I Analyzed pair: (0.06663, 0.07754): False
+2024-02-28 18:03:54.384162: I Analyzed pair: (0.06663, 0.07923): False
+2024-02-28 18:03:54.384162: I Check List: [False, False, False, False, False]
+2024-02-28 18:03:55.841527: I Epoch 20/200 loss 0.18319
+2024-02-28 18:03:55.841527: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\facebook_book\recs
+2024-02-28 18:03:55.889706: I Analyzed pair: (0.0692, 0.07233): False
+2024-02-28 18:03:55.889706: I Analyzed pair: (0.0692, 0.07555): False
+2024-02-28 18:03:55.889706: I Analyzed pair: (0.0692, 0.07754): False
+2024-02-28 18:03:55.889706: I Analyzed pair: (0.0692, 0.07923): False
+2024-02-28 18:03:55.889706: I Analyzed pair: (0.0692, 0.07876): False
+2024-02-28 18:03:55.889706: I Check List: [False, False, False, False, False]
+2024-02-28 18:03:57.296471: I Epoch 21/200 loss 0.16051
+2024-02-28 18:03:57.296471: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\facebook_book\recs
+2024-02-28 18:03:57.348320: I ******************************************
+2024-02-28 18:03:57.349320: I Analyzed pair: (0.07233, 0.07555): False
+2024-02-28 18:03:57.349320: I Analyzed pair: (0.07233, 0.07754): False
+2024-02-28 18:03:57.349320: I Analyzed pair: (0.07233, 0.07923): False
+2024-02-28 18:03:57.350320: I Analyzed pair: (0.07233, 0.07876): False
+2024-02-28 18:03:57.350320: I Analyzed pair: (0.07233, 0.07972): False
+2024-02-28 18:03:57.350320: I Check List: [False, False, False, False, False]
+2024-02-28 18:03:58.850884: I Epoch 22/200 loss 0.14289
+2024-02-28 18:03:58.854390: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\facebook_book\recs
+2024-02-28 18:03:58.908950: I ******************************************
+2024-02-28 18:03:58.908950: I Analyzed pair: (0.07555, 0.07754): False
+2024-02-28 18:03:58.908950: I Analyzed pair: (0.07555, 0.07923): False
+2024-02-28 18:03:58.908950: I Analyzed pair: (0.07555, 0.07876): False
+2024-02-28 18:03:58.908950: I Analyzed pair: (0.07555, 0.07972): False
+2024-02-28 18:03:58.908950: I Analyzed pair: (0.07555, 0.0803): False
+2024-02-28 18:03:58.908950: I Check List: [False, False, False, False, False]
+2024-02-28 18:04:00.484054: I Epoch 23/200 loss 0.12800
+2024-02-28 18:04:00.489160: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\facebook_book\recs
+2024-02-28 18:04:00.539157: I ******************************************
+2024-02-28 18:04:00.539157: I Analyzed pair: (0.07754, 0.07923): False
+2024-02-28 18:04:00.540749: I Analyzed pair: (0.07754, 0.07876): False
+2024-02-28 18:04:00.540749: I Analyzed pair: (0.07754, 0.07972): False
+2024-02-28 18:04:00.540749: I Analyzed pair: (0.07754, 0.0803): False
+2024-02-28 18:04:00.540749: I Analyzed pair: (0.07754, 0.08065): False
+2024-02-28 18:04:00.541757: I Check List: [False, False, False, False, False]
+2024-02-28 18:04:01.929876: I Epoch 24/200 loss 0.11474
+2024-02-28 18:04:01.929876: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\facebook_book\recs
+2024-02-28 18:04:01.980722: I Analyzed pair: (0.07923, 0.07876): True
+2024-02-28 18:04:01.984226: I Analyzed pair: (0.07923, 0.07972): False
+2024-02-28 18:04:01.984226: I Analyzed pair: (0.07923, 0.0803): False
+2024-02-28 18:04:01.984226: I Analyzed pair: (0.07923, 0.08065): False
+2024-02-28 18:04:01.984226: I Analyzed pair: (0.07923, 0.07945): False
+2024-02-28 18:04:01.984226: I Check List: [True, False, False, False, False]
+2024-02-28 18:04:03.324129: I Epoch 25/200 loss 0.10414
+2024-02-28 18:04:03.324129: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\facebook_book\recs
+2024-02-28 18:04:03.375983: I ******************************************
+2024-02-28 18:04:03.376984: I Analyzed pair: (0.07876, 0.07972): False
+2024-02-28 18:04:03.376984: I Analyzed pair: (0.07876, 0.0803): False
+2024-02-28 18:04:03.376984: I Analyzed pair: (0.07876, 0.08065): False
+2024-02-28 18:04:03.376984: I Analyzed pair: (0.07876, 0.07945): False
+2024-02-28 18:04:03.377989: I Analyzed pair: (0.07876, 0.08184): False
+2024-02-28 18:04:03.378413: I Check List: [False, False, False, False, False]
+2024-02-28 18:04:04.902833: I Epoch 26/200 loss 0.09395
+2024-02-28 18:04:04.902833: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\facebook_book\recs
+2024-02-28 18:04:04.950158: I ******************************************
+2024-02-28 18:04:04.950158: I Analyzed pair: (0.07972, 0.0803): False
+2024-02-28 18:04:04.951159: I Analyzed pair: (0.07972, 0.08065): False
+2024-02-28 18:04:04.951159: I Analyzed pair: (0.07972, 0.07945): True
+2024-02-28 18:04:04.951159: I Analyzed pair: (0.07972, 0.08184): False
+2024-02-28 18:04:04.951159: I Analyzed pair: (0.07972, 0.08209): False
+2024-02-28 18:04:04.952159: I Check List: [False, False, True, False, False]
+2024-02-28 18:04:06.328768: I Epoch 27/200 loss 0.08544
+2024-02-28 18:04:06.328768: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\facebook_book\recs
+2024-02-28 18:04:06.374315: I Analyzed pair: (0.0803, 0.08065): False
+2024-02-28 18:04:06.374315: I Analyzed pair: (0.0803, 0.07945): True
+2024-02-28 18:04:06.379419: I Analyzed pair: (0.0803, 0.08184): False
+2024-02-28 18:04:06.379419: I Analyzed pair: (0.0803, 0.08209): False
+2024-02-28 18:04:06.379419: I Analyzed pair: (0.0803, 0.08174): False
+2024-02-28 18:04:06.380344: I Check List: [False, True, False, False, False]
+2024-02-28 18:04:07.715757: I Epoch 28/200 loss 0.07870
+2024-02-28 18:04:07.715757: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\facebook_book\recs
+2024-02-28 18:04:07.768510: I Analyzed pair: (0.08065, 0.07945): True
+2024-02-28 18:04:07.768510: I Analyzed pair: (0.08065, 0.08184): False
+2024-02-28 18:04:07.768510: I Analyzed pair: (0.08065, 0.08209): False
+2024-02-28 18:04:07.769510: I Analyzed pair: (0.08065, 0.08174): False
+2024-02-28 18:04:07.769510: I Analyzed pair: (0.08065, 0.08204): False
+2024-02-28 18:04:07.769510: I Check List: [True, False, False, False, False]
+2024-02-28 18:04:09.151690: I Epoch 29/200 loss 0.07211
+2024-02-28 18:04:09.151690: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\facebook_book\recs
+2024-02-28 18:04:09.199749: I Analyzed pair: (0.07945, 0.08184): False
+2024-02-28 18:04:09.200750: I Analyzed pair: (0.07945, 0.08209): False
+2024-02-28 18:04:09.200750: I Analyzed pair: (0.07945, 0.08174): False
+2024-02-28 18:04:09.200750: I Analyzed pair: (0.07945, 0.08204): False
+2024-02-28 18:04:09.201750: I Analyzed pair: (0.07945, 0.08059): False
+2024-02-28 18:04:09.201750: I Check List: [False, False, False, False, False]
+2024-02-28 18:04:10.825737: I Epoch 30/200 loss 0.06650
+2024-02-28 18:04:10.830981: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\facebook_book\recs
+2024-02-28 18:04:10.876494: I Analyzed pair: (0.08184, 0.08209): False
+2024-02-28 18:04:10.876494: I Analyzed pair: (0.08184, 0.08174): True
+2024-02-28 18:04:10.876494: I Analyzed pair: (0.08184, 0.08204): False
+2024-02-28 18:04:10.876494: I Analyzed pair: (0.08184, 0.08059): True
+2024-02-28 18:04:10.876494: I Analyzed pair: (0.08184, 0.08074): True
+2024-02-28 18:04:10.876494: I Check List: [False, True, False, True, True]
+2024-02-28 18:04:12.330514: I Epoch 31/200 loss 0.06184
+2024-02-28 18:04:12.330514: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\facebook_book\recs
+2024-02-28 18:04:12.380223: I Analyzed pair: (0.08209, 0.08174): True
+2024-02-28 18:04:12.380223: I Analyzed pair: (0.08209, 0.08204): True
+2024-02-28 18:04:12.380223: I Analyzed pair: (0.08209, 0.08059): True
+2024-02-28 18:04:12.380223: I Analyzed pair: (0.08209, 0.08074): True
+2024-02-28 18:04:12.380223: I Analyzed pair: (0.08209, 0.07965): True
+2024-02-28 18:04:12.380223: I Check List: [True, True, True, True, True]
+2024-02-28 18:04:12.380223: I Met Early Stopping conditions: logger: <Logger EarlyStopping (DEBUG)>, validation_metric: nDCGRendle2020, validation_k: 10, cutoffs: [10], simple_metrics: ['nDCGRendle2020'], monitor: nDCGRendle2020, patience: 5, mode: max, metric_k: 10, metric: nDCGRendle2020, verbose: true, active: True
+2024-02-28 18:04:22.948160: I Analyzed pair: (0.00374, 0.00378): False
+2024-02-28 18:04:22.948160: I Analyzed pair: (0.00374, 0.00428): False
+2024-02-28 18:04:22.948160: I Analyzed pair: (0.00374, 0.00474): False
+2024-02-28 18:04:22.948160: I Analyzed pair: (0.00374, 0.00593): False
+2024-02-28 18:04:22.948160: I Analyzed pair: (0.00374, 0.00778): False
+2024-02-28 18:04:22.948160: I Check List: [False, False, False, False, False]
+2024-02-28 18:04:24.414124: I Analyzed pair: (0.00378, 0.00428): False
+2024-02-28 18:04:24.414628: I Analyzed pair: (0.00378, 0.00474): False
+2024-02-28 18:04:24.414628: I Analyzed pair: (0.00378, 0.00593): False
+2024-02-28 18:04:24.414628: I Analyzed pair: (0.00378, 0.00778): False
+2024-02-28 18:04:24.414628: I Analyzed pair: (0.00378, 0.01242): False
+2024-02-28 18:04:24.414628: I Check List: [False, False, False, False, False]
+2024-02-28 18:04:26.026123: I Analyzed pair: (0.00428, 0.00474): False
+2024-02-28 18:04:26.026123: I Analyzed pair: (0.00428, 0.00593): False
+2024-02-28 18:04:26.026123: I Analyzed pair: (0.00428, 0.00778): False
+2024-02-28 18:04:26.026123: I Analyzed pair: (0.00428, 0.01242): False
+2024-02-28 18:04:26.026123: I Analyzed pair: (0.00428, 0.01879): False
+2024-02-28 18:04:26.026123: I Check List: [False, False, False, False, False]
+2024-02-28 18:04:27.509489: I Analyzed pair: (0.00474, 0.00593): False
+2024-02-28 18:04:27.509489: I Analyzed pair: (0.00474, 0.00778): False
+2024-02-28 18:04:27.509489: I Analyzed pair: (0.00474, 0.01242): False
+2024-02-28 18:04:27.509489: I Analyzed pair: (0.00474, 0.01879): False
+2024-02-28 18:04:27.509489: I Analyzed pair: (0.00474, 0.02739): False
+2024-02-28 18:04:27.509489: I Check List: [False, False, False, False, False]
+2024-02-28 18:04:28.993958: I Analyzed pair: (0.00593, 0.00778): False
+2024-02-28 18:04:28.993958: I Analyzed pair: (0.00593, 0.01242): False
+2024-02-28 18:04:28.993958: I Analyzed pair: (0.00593, 0.01879): False
+2024-02-28 18:04:28.993958: I Analyzed pair: (0.00593, 0.02739): False
+2024-02-28 18:04:28.993958: I Analyzed pair: (0.00593, 0.03774): False
+2024-02-28 18:04:28.993958: I Check List: [False, False, False, False, False]
+2024-02-28 18:04:30.464599: I Analyzed pair: (0.00778, 0.01242): False
+2024-02-28 18:04:30.464599: I Analyzed pair: (0.00778, 0.01879): False
+2024-02-28 18:04:30.464599: I Analyzed pair: (0.00778, 0.02739): False
+2024-02-28 18:04:30.464599: I Analyzed pair: (0.00778, 0.03774): False
+2024-02-28 18:04:30.464599: I Analyzed pair: (0.00778, 0.04957): False
+2024-02-28 18:04:30.464599: I Check List: [False, False, False, False, False]
+2024-02-28 18:04:32.068971: I Analyzed pair: (0.01242, 0.01879): False
+2024-02-28 18:04:32.068971: I Analyzed pair: (0.01242, 0.02739): False
+2024-02-28 18:04:32.070301: I Analyzed pair: (0.01242, 0.03774): False
+2024-02-28 18:04:32.070861: I Analyzed pair: (0.01242, 0.04957): False
+2024-02-28 18:04:32.070861: I Analyzed pair: (0.01242, 0.05623): False
+2024-02-28 18:04:32.070861: I Check List: [False, False, False, False, False]
+2024-02-28 18:04:33.522562: I Analyzed pair: (0.01879, 0.02739): False
+2024-02-28 18:04:33.524068: I Analyzed pair: (0.01879, 0.03774): False
+2024-02-28 18:04:33.524068: I Analyzed pair: (0.01879, 0.04957): False
+2024-02-28 18:04:33.524068: I Analyzed pair: (0.01879, 0.05623): False
+2024-02-28 18:04:33.524068: I Analyzed pair: (0.01879, 0.06272): False
+2024-02-28 18:04:33.524068: I Check List: [False, False, False, False, False]
+2024-02-28 18:04:34.974152: I Analyzed pair: (0.02739, 0.03774): False
+2024-02-28 18:04:34.974152: I Analyzed pair: (0.02739, 0.04957): False
+2024-02-28 18:04:34.974152: I Analyzed pair: (0.02739, 0.05623): False
+2024-02-28 18:04:34.974152: I Analyzed pair: (0.02739, 0.06272): False
+2024-02-28 18:04:34.974152: I Analyzed pair: (0.02739, 0.06663): False
+2024-02-28 18:04:34.974152: I Check List: [False, False, False, False, False]
+2024-02-28 18:04:36.529027: I Analyzed pair: (0.03774, 0.04957): False
+2024-02-28 18:04:36.529027: I Analyzed pair: (0.03774, 0.05623): False
+2024-02-28 18:04:36.529027: I Analyzed pair: (0.03774, 0.06272): False
+2024-02-28 18:04:36.529027: I Analyzed pair: (0.03774, 0.06663): False
+2024-02-28 18:04:36.529027: I Analyzed pair: (0.03774, 0.0692): False
+2024-02-28 18:04:36.529027: I Check List: [False, False, False, False, False]
+2024-02-28 18:04:38.025824: I Analyzed pair: (0.04957, 0.05623): False
+2024-02-28 18:04:38.025824: I Analyzed pair: (0.04957, 0.06272): False
+2024-02-28 18:04:38.030813: I Analyzed pair: (0.04957, 0.06663): False
+2024-02-28 18:04:38.030813: I Analyzed pair: (0.04957, 0.0692): False
+2024-02-28 18:04:38.030813: I Analyzed pair: (0.04957, 0.07233): False
+2024-02-28 18:04:38.030813: I Check List: [False, False, False, False, False]
+2024-02-28 18:04:39.542089: I Analyzed pair: (0.05623, 0.06272): False
+2024-02-28 18:04:39.542285: I Analyzed pair: (0.05623, 0.06663): False
+2024-02-28 18:04:39.542285: I Analyzed pair: (0.05623, 0.0692): False
+2024-02-28 18:04:39.542285: I Analyzed pair: (0.05623, 0.07233): False
+2024-02-28 18:04:39.542285: I Analyzed pair: (0.05623, 0.07555): False
+2024-02-28 18:04:39.542285: I Check List: [False, False, False, False, False]
+2024-02-28 18:04:41.014543: I Analyzed pair: (0.06272, 0.06663): False
+2024-02-28 18:04:41.014543: I Analyzed pair: (0.06272, 0.0692): False
+2024-02-28 18:04:41.017900: I Analyzed pair: (0.06272, 0.07233): False
+2024-02-28 18:04:41.017900: I Analyzed pair: (0.06272, 0.07555): False
+2024-02-28 18:04:41.017900: I Analyzed pair: (0.06272, 0.07754): False
+2024-02-28 18:04:41.017900: I Check List: [False, False, False, False, False]
+2024-02-28 18:04:42.548271: I Analyzed pair: (0.06663, 0.0692): False
+2024-02-28 18:04:42.548271: I Analyzed pair: (0.06663, 0.07233): False
+2024-02-28 18:04:42.548271: I Analyzed pair: (0.06663, 0.07555): False
+2024-02-28 18:04:42.548271: I Analyzed pair: (0.06663, 0.07754): False
+2024-02-28 18:04:42.548271: I Analyzed pair: (0.06663, 0.07923): False
+2024-02-28 18:04:42.548271: I Check List: [False, False, False, False, False]
+2024-02-28 18:04:44.077283: I Analyzed pair: (0.0692, 0.07233): False
+2024-02-28 18:04:44.077283: I Analyzed pair: (0.0692, 0.07555): False
+2024-02-28 18:04:44.077283: I Analyzed pair: (0.0692, 0.07754): False
+2024-02-28 18:04:44.077283: I Analyzed pair: (0.0692, 0.07923): False
+2024-02-28 18:04:44.077283: I Analyzed pair: (0.0692, 0.07876): False
+2024-02-28 18:04:44.077283: I Check List: [False, False, False, False, False]
+2024-02-28 18:04:45.541329: I Analyzed pair: (0.07233, 0.07555): False
+2024-02-28 18:04:45.541329: I Analyzed pair: (0.07233, 0.07754): False
+2024-02-28 18:04:45.541329: I Analyzed pair: (0.07233, 0.07923): False
+2024-02-28 18:04:45.541329: I Analyzed pair: (0.07233, 0.07876): False
+2024-02-28 18:04:45.541329: I Analyzed pair: (0.07233, 0.07972): False
+2024-02-28 18:04:45.541329: I Check List: [False, False, False, False, False]
+2024-02-28 18:04:47.045857: I Analyzed pair: (0.07555, 0.07754): False
+2024-02-28 18:04:47.045857: I Analyzed pair: (0.07555, 0.07923): False
+2024-02-28 18:04:47.050131: I Analyzed pair: (0.07555, 0.07876): False
+2024-02-28 18:04:47.050131: I Analyzed pair: (0.07555, 0.07972): False
+2024-02-28 18:04:47.050131: I Analyzed pair: (0.07555, 0.0803): False
+2024-02-28 18:04:47.051169: I Check List: [False, False, False, False, False]
+2024-02-28 18:04:48.655636: I Analyzed pair: (0.07754, 0.07923): False
+2024-02-28 18:04:48.655636: I Analyzed pair: (0.07754, 0.07876): False
+2024-02-28 18:04:48.656640: I Analyzed pair: (0.07754, 0.07972): False
+2024-02-28 18:04:48.656640: I Analyzed pair: (0.07754, 0.0803): False
+2024-02-28 18:04:48.656640: I Analyzed pair: (0.07754, 0.08065): False
+2024-02-28 18:04:48.657640: I Check List: [False, False, False, False, False]
+2024-02-28 18:04:50.572683: I Analyzed pair: (0.07923, 0.07876): True
+2024-02-28 18:04:50.572683: I Analyzed pair: (0.07923, 0.07972): False
+2024-02-28 18:04:50.574190: I Analyzed pair: (0.07923, 0.0803): False
+2024-02-28 18:04:50.574190: I Analyzed pair: (0.07923, 0.08065): False
+2024-02-28 18:04:50.574190: I Analyzed pair: (0.07923, 0.07945): False
+2024-02-28 18:04:50.574190: I Check List: [True, False, False, False, False]
+2024-02-28 18:04:52.200626: I Analyzed pair: (0.07876, 0.07972): False
+2024-02-28 18:04:52.200626: I Analyzed pair: (0.07876, 0.0803): False
+2024-02-28 18:04:52.200626: I Analyzed pair: (0.07876, 0.08065): False
+2024-02-28 18:04:52.200626: I Analyzed pair: (0.07876, 0.07945): False
+2024-02-28 18:04:52.200626: I Analyzed pair: (0.07876, 0.08184): False
+2024-02-28 18:04:52.200626: I Check List: [False, False, False, False, False]
+2024-02-28 18:04:53.715579: I Analyzed pair: (0.07972, 0.0803): False
+2024-02-28 18:04:53.715579: I Analyzed pair: (0.07972, 0.08065): False
+2024-02-28 18:04:53.715579: I Analyzed pair: (0.07972, 0.07945): True
+2024-02-28 18:04:53.715579: I Analyzed pair: (0.07972, 0.08184): False
+2024-02-28 18:04:53.715579: I Analyzed pair: (0.07972, 0.08209): False
+2024-02-28 18:04:53.715579: I Check List: [False, False, True, False, False]
+2024-02-28 18:04:55.184188: I Analyzed pair: (0.0803, 0.08065): False
+2024-02-28 18:04:55.185592: I Analyzed pair: (0.0803, 0.07945): True
+2024-02-28 18:04:55.185592: I Analyzed pair: (0.0803, 0.08184): False
+2024-02-28 18:04:55.185592: I Analyzed pair: (0.0803, 0.08209): False
+2024-02-28 18:04:55.186486: I Analyzed pair: (0.0803, 0.08174): False
+2024-02-28 18:04:55.186486: I Check List: [False, True, False, False, False]
+2024-02-28 18:04:56.697304: I Analyzed pair: (0.08065, 0.07945): True
+2024-02-28 18:04:56.697304: I Analyzed pair: (0.08065, 0.08184): False
+2024-02-28 18:04:56.697304: I Analyzed pair: (0.08065, 0.08209): False
+2024-02-28 18:04:56.697304: I Analyzed pair: (0.08065, 0.08174): False
+2024-02-28 18:04:56.697304: I Analyzed pair: (0.08065, 0.08204): False
+2024-02-28 18:04:56.697304: I Check List: [True, False, False, False, False]
+2024-02-28 18:04:58.334348: I Analyzed pair: (0.07945, 0.08184): False
+2024-02-28 18:04:58.338856: I Analyzed pair: (0.07945, 0.08209): False
+2024-02-28 18:04:58.338856: I Analyzed pair: (0.07945, 0.08174): False
+2024-02-28 18:04:58.338856: I Analyzed pair: (0.07945, 0.08204): False
+2024-02-28 18:04:58.338856: I Analyzed pair: (0.07945, 0.08059): False
+2024-02-28 18:04:58.338856: I Check List: [False, False, False, False, False]
+2024-02-28 18:04:59.793965: I Analyzed pair: (0.08184, 0.08209): False
+2024-02-28 18:04:59.793965: I Analyzed pair: (0.08184, 0.08174): True
+2024-02-28 18:04:59.798459: I Analyzed pair: (0.08184, 0.08204): False
+2024-02-28 18:04:59.798459: I Analyzed pair: (0.08184, 0.08059): True
+2024-02-28 18:04:59.799372: I Analyzed pair: (0.08184, 0.08074): True
+2024-02-28 18:04:59.799372: I Check List: [False, True, False, True, True]
+2024-02-28 18:05:01.327501: I Analyzed pair: (0.08209, 0.08174): True
+2024-02-28 18:05:01.327501: I Analyzed pair: (0.08209, 0.08204): True
+2024-02-28 18:05:01.327501: I Analyzed pair: (0.08209, 0.08059): True
+2024-02-28 18:05:01.328506: I Analyzed pair: (0.08209, 0.08074): True
+2024-02-28 18:05:01.328506: I Analyzed pair: (0.08209, 0.07965): True
+2024-02-28 18:05:01.328506: I Check List: [True, True, True, True, True]

@@ -1,0 +1,8 @@
+2024-02-28 11:54:41.275985: I Loading parameters
+2024-02-28 11:54:41.275985: I Parameter lr set to 0.0001095050831578516
+2024-02-28 11:54:41.275985: I Parameter factors set to 256
+2024-02-28 11:54:41.275985: I Parameter l_w set to 0.009707538210675435
+2024-02-28 11:54:41.275985: I Parameter n_layers set to 3
+2024-02-28 11:54:44.969253: I Epoch 1/200 loss 6625.88391
+2024-02-28 11:54:44.969253: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\facebook_book\recs
+2024-02-28 11:54:45.027741: I ******************************************

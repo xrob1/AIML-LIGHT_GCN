@@ -1,0 +1,21 @@
+2024-02-29 10:50:39.536733: I Loading parameters
+2024-02-29 10:50:39.537734: I Parameter lr set to 0.00011454076953075361
+2024-02-29 10:50:39.537734: I Parameter factors set to 512
+2024-02-29 10:50:39.537734: I Parameter l_w set to 1.4623166653305814e-05
+2024-02-29 10:50:39.538736: I Parameter n_layers set to 3
+2024-02-29 10:51:24.028024: I Epoch 10/200 loss 45.69173
+2024-02-29 10:51:24.029024: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\facebook_book\recs
+2024-02-29 10:51:24.079534: I ******************************************
+2024-02-29 10:52:08.382857: I Epoch 20/200 loss 5.48181
+2024-02-29 10:52:08.383858: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\facebook_book\recs
+2024-02-29 10:52:08.436856: I ******************************************
+2024-02-29 10:52:53.107396: I Epoch 30/200 loss 1.22317
+2024-02-29 10:52:53.108395: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\facebook_book\recs
+2024-02-29 10:52:53.158394: I ******************************************
+2024-02-29 10:53:37.437804: I Epoch 40/200 loss 0.38454
+2024-02-29 10:53:37.437804: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\facebook_book\recs
+2024-02-29 10:53:37.489316: I ******************************************
+2024-02-29 10:54:25.842773: I Epoch 50/200 loss 0.14562
+2024-02-29 10:54:25.842773: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\facebook_book\recs
+2024-02-29 10:55:11.428477: I Epoch 60/200 loss 0.06049
+2024-02-29 10:55:11.428477: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\facebook_book\recs

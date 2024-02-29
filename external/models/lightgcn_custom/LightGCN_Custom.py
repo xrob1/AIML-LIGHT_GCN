@@ -88,7 +88,7 @@ class LightGCN_Custom(RecMixin, BaseRecommenderModel):
         )
         
         self.reducers_factors =  params.meta.reducers_factors
-        self.tsne_reducers_factors =  params.meta.tsne_reducers_factors
+
         self.reducers =  params.meta.reducers_types
         self.KPCA_Kernels =  params.meta.KPCA_Kernels
         self.dataset_name =  params.meta.dataset_name
@@ -203,33 +203,28 @@ class LightGCN_Custom(RecMixin, BaseRecommenderModel):
         gu, gi =self.GU,self.GI# self._model.propagate_embeddings(evaluate=True)
         gu, gi = gu.cpu().detach().numpy(),gi.cpu().detach().numpy()
        
-        for n_components in tqdm(self.tsne_reducers_factors ,desc='TSNE iterations'):  #tsne_sizes defined in configs.yml            
-            
-            if(n_components>3):
-                tsne = TSNE(n_components=n_components, random_state=42,method='exact')    
-            else:
-                tsne = TSNE(n_components=n_components, random_state=42)    
+        tsne = TSNE(n_components=2, random_state=42)   
             
 
                                     
-            tnse_predictions_val  = {}
-            tnse_predictions_test = {}
-        
-            #Trasform Concatenated Data
-            i_u_concat = tsne.fit_transform(np.concatenate((gu, gi)))
-            u_tsne =   torch.Tensor(i_u_concat[:self._num_users,:])
-            i_tsne =   torch.Tensor( i_u_concat[self._num_users:,:])
-        
-            for index, offset in enumerate(range(0, self._num_users, self._batch_size)):
-                offset_stop = min(offset + self._batch_size, self._num_users)
-                predictions = self._model.predict(u_tsne[offset: offset_stop], i_tsne)
-                recs_val, recs_test = self.process_protocol(k, predictions, offset, offset_stop)
-                tnse_predictions_val.update(recs_val)
-                tnse_predictions_test.update(recs_test)
+        tnse_predictions_val  = {}
+        tnse_predictions_test = {}
+    
+        #Trasform Concatenated Data
+        i_u_concat = tsne.fit_transform(np.concatenate((gu, gi)))
+        u_tsne =   torch.Tensor(i_u_concat[:self._num_users,:])
+        i_tsne =   torch.Tensor( i_u_concat[self._num_users:,:])
+    
+        for index, offset in enumerate(range(0, self._num_users, self._batch_size)):
+            offset_stop = min(offset + self._batch_size, self._num_users)
+            predictions = self._model.predict(u_tsne[offset: offset_stop], i_tsne)
+            recs_val, recs_test = self.process_protocol(k, predictions, offset, offset_stop)
+            tnse_predictions_val.update(recs_val)
+            tnse_predictions_test.update(recs_test)
 
-            #Update Recommandations Dictionary
-            self.recs['TSNE']['validation'][n_components] =   tnse_predictions_val
-            self.recs['TSNE']['test'][n_components]       =   tnse_predictions_test
+        #Update Recommandations Dictionary
+        self.recs['TSNE']['validation'][2] =   tnse_predictions_val
+        self.recs['TSNE']['test'][2]       =   tnse_predictions_test
     
     def get_recommendations_AUTOE(self, k: int = 100):        
         self.recs['AUTOE']={'validation':{},'test':{}}
