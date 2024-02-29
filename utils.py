@@ -8,6 +8,7 @@ import glob
 import shutil
 import csv
 
+
 #PICKLE METHOD TO OPEN RAW DATA
 def get_rdata(DATASET,F_NAME,ALG):
     with open( raw_file_path(DATASET,F_NAME,ALG), 'rb') as file:
@@ -76,8 +77,8 @@ def save_tsv(RECS,METHOD):
                     file.write(str(str(USER) + "	" + str(LINE[0]) + "	" + str(LINE[1]) + '\n'))
 
 #ESTRAE e avvia il processing dei risultati dato un dataset e un metodo di raccomandazione
-def extract_and_process_results(DATASET,ALGORITMO):
-    extract_recs(DATASET,ALGORITMO,TEST)
+def extract_and_process_results(DATASET,ALGORITMO,TIPO=TEST):
+    extract_recs(DATASET,ALGORITMO,TIPO)
     clear_results_dir(DATASET)
     run_on_config(build_runtime_config_file(DATASET))
 

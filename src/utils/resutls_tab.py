@@ -2,7 +2,7 @@ from src.loader.paths import *
 from src import *
 
 
-def build_config_file( DATASET,ALGORITHM,FACTORS=512,REDUCERS=[],EXPLORATION=False, RED_FACTORS = [256,128,64,32,16,8,4,2] ):
+def build_config_file( DATASET,ALGORITHM,FACTORS=512,REDUCERS=[],EXPLORATION=False, RED_FACTORS = [256,128,64,32,16,8,4,2] ,EARLY_STOPPING=True):
     if ALGORITHM == 'BPRMF':
         ALG = 'external.BPRMF_Custom'
     if ALGORITHM == 'LGCN':
@@ -36,7 +36,7 @@ def build_config_file( DATASET,ALGORITHM,FACTORS=512,REDUCERS=[],EXPLORATION=Fal
     configuration['experiment']['models'][ALG]['meta']={}
     configuration['experiment']['models'][ALG]['meta']['verbose']= 'true'
     configuration['experiment']['models'][ALG]['meta']['save_recs']= 'true'
-    configuration['experiment']['models'][ALG]['meta']['validation_rate']=  5
+    configuration['experiment']['models'][ALG]['meta']['validation_rate']=  1
     configuration['experiment']['models'][ALG]['meta']['dataset_name']= DATASET
     configuration['experiment']['models'][ALG]['meta']['reducers_types']=REDUCERS
     configuration['experiment']['models'][ALG]['meta']['reducers_factors']=RED_FACTORS
@@ -64,9 +64,9 @@ def build_config_file( DATASET,ALGORITHM,FACTORS=512,REDUCERS=[],EXPLORATION=Fal
     if ALGORITHM=='LGCN' : configuration['experiment']['models'][ALG]['n_layers'] = 3
     
     configuration['experiment']['models'][ALG]['seed'] = 123
-    if EXPLORATION:
+    if EXPLORATION or EARLY_STOPPING:
         configuration['experiment']['models'][ALG]['early_stopping'] = {}
-        configuration['experiment']['models'][ALG]['early_stopping']['patience'] =5
+        configuration['experiment']['models'][ALG]['early_stopping']['patience'] = 5
         configuration['experiment']['models'][ALG]['early_stopping']['mode'] ='auto'
         configuration['experiment']['models'][ALG]['early_stopping']['monitor'] ='nDCGRendle2020'
         configuration['experiment']['models'][ALG]['early_stopping']['verbose'] ='true'
@@ -95,19 +95,28 @@ def get_lrlw(ALG,DATASET,FACTORS):
             if FACTORS == 16:lr =0.0018994668577047584;lw= 0.08561866884260011
             if FACTORS == 8:lr =0.0018362366655931806;lw= 9.788902029962336e-05
             if FACTORS == 4:lr =0.0026931211276183566;lw= 0.0011566152289430296
-            if FACTORS == 2:lr =0.004070364572294006;lw= 0.011314592969603035
-        """
+            if FACTORS == 2:lr =0.004070364572294006;lw= 0.011314592969603035        
         if DATASET == MOVIELENS:
-            if FACTORS == 512:
-            if FACTORS == 256:
-            if FACTORS == 128:
-            if FACTORS == 64:
-            if FACTORS == 32:
-            if FACTORS == 16:
-            if FACTORS == 8:
-            if FACTORS == 4:
-            if FACTORS == 2:
-        """
+            if FACTORS == 512: lr=0.0001285942211476696;lw=0.02091021650260823  
+            if FACTORS == 256: lr=0.00024828109391337706;lw=0.041968799109630556 
+            if FACTORS == 128:lr=0.000581295268049958;lw=0.07812719644660297    
+            if FACTORS == 64:lr=0.0004287818058040883;lw=0.00027290515941470067
+            if FACTORS == 32:lr=0.0002208073380331132;lw=0.013657214222656406  
+            if FACTORS == 16:lr=0.001178615586228201;lw=1.2395267399630988e-05 
+            if FACTORS == 8:lr=0.0018994668577047584;lw=0.08561866884260011  
+            if FACTORS == 4:lr=0.0029454015458486786;lw=0.0002770091026971065 
+            if FACTORS == 2:lr=0.004269839934809691;lw=2.2950997815169715e-05 
+
+
+      
+
+   
+ 
+  
+
+ 
+
+        
     if ALG=='BPRMF':
         if DATASET == FACEBOOK:
             if FACTORS == 512: lr =0.00024828109391337706;lw =0.041968799109630556
@@ -129,6 +138,7 @@ def get_lrlw(ALG,DATASET,FACTORS):
             if FACTORS == 8: lr=0.004250078801463418;lw=0.05993472872034193
             if FACTORS == 4:lr=0.0010026397804933208;lw=0.051207327267699713	
             if FACTORS == 2:lr=0.00037151956891814914;lw=0.05675791581213648
+        
         
     return lr,lw
 def get_exp_lrlw(ALG,DATASET):
@@ -166,3 +176,5 @@ def build_runtime_config_file(DATASET):
     
     return configuration
 
+
+    
