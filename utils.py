@@ -77,10 +77,10 @@ def save_tsv(RECS,METHOD):
                     file.write(str(str(USER) + "	" + str(LINE[0]) + "	" + str(LINE[1]) + '\n'))
 
 #ESTRAE e avvia il processing dei risultati dato un dataset e un metodo di raccomandazione
-def extract_and_process_results(DATASET,ALGORITMO,TIPO=TEST):
+def extract_and_process_results(DATASET,ALGORITMO,AGAINST_BEST=False,TIPO=TEST,AT=512):
     extract_recs(DATASET,ALGORITMO,TIPO)
     clear_results_dir(DATASET)
-    run_on_config(build_runtime_config_file(DATASET))
+    run_on_config(build_runtime_config_file(DATASET,AGAINST_BEST,AT))
 
 #CREATE CSV FILE FROM RESULTS
 def write_csv(DATASET,OUT_NAME='results_'):

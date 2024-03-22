@@ -2,7 +2,7 @@ from keras.models import Model
 from keras.layers import Input, Dense, LeakyReLU
 
 class Autoenc:
-    def __init__(self,n_components,  epochs=75, batch_size=64, validation_split=0.20):
+    def __init__(self,n_components,  epochs=1000, batch_size=2048, validation_split=0.20):
         self.epochs=epochs 
         self.batch_size=batch_size  
         self.validation_split=validation_split  

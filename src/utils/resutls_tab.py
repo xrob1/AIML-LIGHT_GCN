@@ -75,7 +75,7 @@ def build_config_file( DATASET,ALGORITHM,FACTORS=512,REDUCERS=[],EXPLORATION=Fal
 
 def get_lrlw(ALG,DATASET,FACTORS):
 
-    if ALG=='LGCN':
+    if ALG==LGCN:
         if DATASET == FACEBOOK:
             if FACTORS == 512: lr =0.00011454076953075361; lw= 1.4623166653305814e-05
             if FACTORS == 256: lr =0.0001095050831578516; lw= 0.009707538210675435
@@ -106,18 +106,8 @@ def get_lrlw(ALG,DATASET,FACTORS):
             if FACTORS == 8:lr=0.0018994668577047584;lw=0.08561866884260011  
             if FACTORS == 4:lr=0.0029454015458486786;lw=0.0002770091026971065 
             if FACTORS == 2:lr=0.004269839934809691;lw=2.2950997815169715e-05 
-
-
-      
-
-   
- 
-  
-
- 
-
-        
-    if ALG=='BPRMF':
+            
+    if ALG==BPRMF:
         if DATASET == FACEBOOK:
             if FACTORS == 512: lr =0.00024828109391337706;lw =0.041968799109630556
             if FACTORS == 256: lr =0.000581295268049958;lw =0.07812719644660297
@@ -138,7 +128,17 @@ def get_lrlw(ALG,DATASET,FACTORS):
             if FACTORS == 8: lr=0.004250078801463418;lw=0.05993472872034193
             if FACTORS == 4:lr=0.0010026397804933208;lw=0.051207327267699713	
             if FACTORS == 2:lr=0.00037151956891814914;lw=0.05675791581213648
-        
+        if DATASET == MOVIELENS:
+            if FACTORS == 512: lr=0.0005754258527936548        ;lw=0.007115052124575682
+            if FACTORS == 256: lr=0.00046083949100544284       ;lw=0.0022183898072497647
+            if FACTORS == 128: lr=0.0005639700746691885        ;lw=0.005145515535821031
+            if FACTORS == 64:  lr=0.00017074473675942562       ;lw=0.002049610643584897
+            if FACTORS == 32:  lr=0.002049876206747379         ;lw=0.020075565123230846
+            if FACTORS == 16:  lr=0.0023461483005113516        ;lw=0.0069699507909572415
+            if FACTORS == 8:   lr=0.003739557460498168         ;lw=0.025803016713538157
+            if FACTORS == 4:   lr=0.0026134380702554495        ;lw=0.0015318703869567954
+            if FACTORS == 2:   lr=0.001241395481148597         ;lw=0.006039979457719552
+            
         
     return lr,lw
 def get_exp_lrlw(ALG,DATASET):
@@ -153,7 +153,7 @@ def get_exp_lrlw(ALG,DATASET):
         if ALG=='BPRMF':return  [ 'loguniform', -9.210340372, -5.298317367 ],[ 'loguniform', -11.512925465, -2.30258509299 ]
         
 
-def build_runtime_config_file(DATASET):
+def build_runtime_config_file(DATASET,AGAINST_BEST=False,AT=512):
     configuration = {}
     
     configuration['experiment']={}
@@ -161,8 +161,13 @@ def build_runtime_config_file(DATASET):
     configuration['experiment']['data_config']={}
     configuration['experiment']['data_config']['strategy']= 'fixed'
     configuration['experiment']['data_config']['train_path']= dataset_filepath(DATASET, 'train')
-    configuration['experiment']['data_config']['validation_path']=dataset_filepath(DATASET, 'val')
-    configuration['experiment']['data_config']['test_path']= dataset_filepath(DATASET, 'test')
+    if AGAINST_BEST:#DA CAMBIARE
+        configuration['experiment']['data_config']['validation_path']=  '..\TMP_RECS\BASE@'+str(AT)+'.tsv'
+        configuration['experiment']['data_config']['test_path']=       '..\TMP_RECS\BASE@'+str(AT)+'.tsv'
+    else:
+        configuration['experiment']['data_config']['validation_path']=dataset_filepath(DATASET, 'val')
+        configuration['experiment']['data_config']['test_path']= dataset_filepath(DATASET, 'test')
+    
     configuration['experiment']['dataset']= DATASET
     configuration['experiment']['top_k']= 10
     configuration['experiment']['evaluation']={}
@@ -177,4 +182,27 @@ def build_runtime_config_file(DATASET):
     return configuration
 
 
-    
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+	
+	
+	

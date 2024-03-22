@@ -1,0 +1,77 @@
+2024-03-01 11:28:45.496091: I Loading parameters
+2024-03-01 11:28:45.497093: I Parameter lr set to 0.004070364572294006
+2024-03-01 11:28:45.497093: I Parameter factors set to 2
+2024-03-01 11:28:45.497093: I Parameter l_w set to 0.011314592969603035
+2024-03-01 11:28:45.497093: I Parameter n_layers set to 3
+2024-03-01 11:28:55.728551: I Epoch 1/200 loss 19573.92271
+2024-03-01 11:28:55.729055: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\yahoo_movies\recs
+2024-03-01 11:28:55.837695: I ******************************************
+2024-03-01 11:29:05.796996: I Epoch 2/200 loss 3840.64597
+2024-03-01 11:29:05.798500: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\yahoo_movies\recs
+2024-03-01 11:29:16.445016: I Epoch 3/200 loss 1635.90538
+2024-03-01 11:29:16.468558: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\yahoo_movies\recs
+2024-03-01 11:29:28.086418: I Epoch 4/200 loss 899.94778
+2024-03-01 11:29:28.087420: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\yahoo_movies\recs
+2024-03-01 11:29:28.202105: I ******************************************
+2024-03-01 11:29:37.809891: I Epoch 5/200 loss 545.27087
+2024-03-01 11:29:37.810896: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\yahoo_movies\recs
+2024-03-01 11:29:37.961642: I ******************************************
+2024-03-01 11:29:47.685790: I Epoch 6/200 loss 361.88838
+2024-03-01 11:29:47.686790: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\yahoo_movies\recs
+2024-03-01 11:29:47.800458: I ******************************************
+2024-03-01 11:29:47.801462: I Analyzed pair: (0.08427, 0.08396): True
+2024-03-01 11:29:47.801462: I Analyzed pair: (0.08427, 0.08397): True
+2024-03-01 11:29:47.802464: I Analyzed pair: (0.08427, 0.08646): False
+2024-03-01 11:29:47.802464: I Analyzed pair: (0.08427, 0.08825): False
+2024-03-01 11:29:47.802464: I Analyzed pair: (0.08427, 0.09191): False
+2024-03-01 11:29:47.802464: I Check List: [True, True, False, False, False]
+2024-03-01 11:29:58.639531: I Epoch 7/200 loss 257.37100
+2024-03-01 11:29:58.640531: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\yahoo_movies\recs
+2024-03-01 11:29:58.779807: I ******************************************
+2024-03-01 11:29:58.779807: I Analyzed pair: (0.08396, 0.08397): False
+2024-03-01 11:29:58.780813: I Analyzed pair: (0.08396, 0.08646): False
+2024-03-01 11:29:58.780813: I Analyzed pair: (0.08396, 0.08825): False
+2024-03-01 11:29:58.780813: I Analyzed pair: (0.08396, 0.09191): False
+2024-03-01 11:29:58.781812: I Analyzed pair: (0.08396, 0.09207): False
+2024-03-01 11:29:58.781812: I Check List: [False, False, False, False, False]
+2024-03-01 11:30:09.554477: I Epoch 8/200 loss 189.56034
+2024-03-01 11:30:09.555477: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\yahoo_movies\recs
+2024-03-01 11:30:09.679202: I Analyzed pair: (0.08397, 0.08646): False
+2024-03-01 11:30:09.680202: I Analyzed pair: (0.08397, 0.08825): False
+2024-03-01 11:30:09.680202: I Analyzed pair: (0.08397, 0.09191): False
+2024-03-01 11:30:09.680202: I Analyzed pair: (0.08397, 0.09207): False
+2024-03-01 11:30:09.681208: I Analyzed pair: (0.08397, 0.0898): False
+2024-03-01 11:30:09.681208: I Check List: [False, False, False, False, False]
+2024-03-01 11:30:19.538334: I Epoch 9/200 loss 147.61319
+2024-03-01 11:30:19.538334: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\yahoo_movies\recs
+2024-03-01 11:30:19.650500: I Analyzed pair: (0.08646, 0.08825): False
+2024-03-01 11:30:19.651505: I Analyzed pair: (0.08646, 0.09191): False
+2024-03-01 11:30:19.651505: I Analyzed pair: (0.08646, 0.09207): False
+2024-03-01 11:30:19.651505: I Analyzed pair: (0.08646, 0.0898): False
+2024-03-01 11:30:19.652505: I Analyzed pair: (0.08646, 0.08925): False
+2024-03-01 11:30:19.652505: I Check List: [False, False, False, False, False]
+2024-03-01 11:30:30.604730: I Epoch 10/200 loss 116.40492
+2024-03-01 11:30:30.605727: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\yahoo_movies\recs
+2024-03-01 11:30:30.727468: I Analyzed pair: (0.08825, 0.09191): False
+2024-03-01 11:30:30.728469: I Analyzed pair: (0.08825, 0.09207): False
+2024-03-01 11:30:30.728975: I Analyzed pair: (0.08825, 0.0898): False
+2024-03-01 11:30:30.728975: I Analyzed pair: (0.08825, 0.08925): False
+2024-03-01 11:30:30.728975: I Analyzed pair: (0.08825, 0.09093): False
+2024-03-01 11:30:30.728975: I Check List: [False, False, False, False, False]
+2024-03-01 11:30:41.159830: I Epoch 11/200 loss 96.80615
+2024-03-01 11:30:41.159830: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\yahoo_movies\recs
+2024-03-01 11:30:41.280546: I Analyzed pair: (0.09191, 0.09207): False
+2024-03-01 11:30:41.281547: I Analyzed pair: (0.09191, 0.0898): True
+2024-03-01 11:30:41.281547: I Analyzed pair: (0.09191, 0.08925): True
+2024-03-01 11:30:41.281547: I Analyzed pair: (0.09191, 0.09093): True
+2024-03-01 11:30:41.282548: I Analyzed pair: (0.09191, 0.08851): True
+2024-03-01 11:30:41.282548: I Check List: [False, True, True, True, True]
+2024-03-01 11:30:51.875485: I Epoch 12/200 loss 78.72868
+2024-03-01 11:30:51.876485: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\yahoo_movies\recs
+2024-03-01 11:30:51.985636: I Analyzed pair: (0.09207, 0.0898): True
+2024-03-01 11:30:51.985636: I Analyzed pair: (0.09207, 0.08925): True
+2024-03-01 11:30:51.985636: I Analyzed pair: (0.09207, 0.09093): True
+2024-03-01 11:30:51.986637: I Analyzed pair: (0.09207, 0.08851): True
+2024-03-01 11:30:51.986637: I Analyzed pair: (0.09207, 0.09186): True
+2024-03-01 11:30:51.986637: I Check List: [True, True, True, True, True]
+2024-03-01 11:30:51.986637: I Met Early Stopping conditions: logger: <Logger EarlyStopping (DEBUG)>, validation_metric: nDCGRendle2020, validation_k: 10, cutoffs: [10], simple_metrics: ['nDCGRendle2020'], monitor: nDCGRendle2020, patience: 5, mode: max, metric_k: 10, metric: nDCGRendle2020, verbose: true, active: True

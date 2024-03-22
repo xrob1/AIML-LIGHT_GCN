@@ -1,0 +1,599 @@
+2024-03-01 12:06:32.747847: I Loading parameters
+2024-03-01 12:06:32.747847: I Parameter lr set to 0.0001285942211476696
+2024-03-01 12:06:32.747847: I Parameter factors set to 512
+2024-03-01 12:06:32.748850: I Parameter l_w set to 0.02091021650260823
+2024-03-01 12:06:32.748850: I Parameter n_layers set to 3
+2024-03-01 12:08:22.280128: I Epoch 1/200 loss 363067.81238
+2024-03-01 12:08:22.281128: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\movielens\recs
+2024-03-01 12:08:22.489882: I ******************************************
+2024-03-01 12:10:10.252174: I Epoch 2/200 loss 74781.76038
+2024-03-01 12:10:10.252174: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\movielens\recs
+2024-03-01 12:10:10.453418: I ******************************************
+2024-03-01 12:11:54.091956: I Epoch 3/200 loss 22233.19367
+2024-03-01 12:11:54.092460: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\movielens\recs
+2024-03-01 12:13:38.316132: I Epoch 4/200 loss 11230.62284
+2024-03-01 12:13:38.317133: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\movielens\recs
+2024-03-01 12:13:38.521863: I ******************************************
+2024-03-01 12:15:27.463323: I Epoch 5/200 loss 6955.55115
+2024-03-01 12:15:27.464328: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\movielens\recs
+2024-03-01 12:17:43.383955: I Epoch 6/200 loss 4689.76787
+2024-03-01 12:17:43.383955: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\movielens\recs
+2024-03-01 12:17:43.587196: I ******************************************
+2024-03-01 12:17:43.587196: I Analyzed pair: (0.07872, 0.08304): False
+2024-03-01 12:17:43.588196: I Analyzed pair: (0.07872, 0.08271): False
+2024-03-01 12:17:43.588196: I Analyzed pair: (0.07872, 0.08392): False
+2024-03-01 12:17:43.588196: I Analyzed pair: (0.07872, 0.08324): False
+2024-03-01 12:17:43.589197: I Analyzed pair: (0.07872, 0.08516): False
+2024-03-01 12:17:43.589197: I Check List: [False, False, False, False, False]
+2024-03-01 12:19:40.384094: I Epoch 7/200 loss 3307.41291
+2024-03-01 12:19:40.384094: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\movielens\recs
+2024-03-01 12:19:40.588332: I ******************************************
+2024-03-01 12:19:40.589333: I Analyzed pair: (0.08304, 0.08271): True
+2024-03-01 12:19:40.589333: I Analyzed pair: (0.08304, 0.08392): False
+2024-03-01 12:19:40.589333: I Analyzed pair: (0.08304, 0.08324): False
+2024-03-01 12:19:40.590334: I Analyzed pair: (0.08304, 0.08516): False
+2024-03-01 12:19:40.590334: I Analyzed pair: (0.08304, 0.08828): False
+2024-03-01 12:19:40.590838: I Check List: [True, False, False, False, False]
+2024-03-01 12:21:35.152163: I Epoch 8/200 loss 2412.06784
+2024-03-01 12:21:35.152163: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\movielens\recs
+2024-03-01 12:21:35.363930: I ******************************************
+2024-03-01 12:21:35.364930: I Analyzed pair: (0.08271, 0.08392): False
+2024-03-01 12:21:35.364930: I Analyzed pair: (0.08271, 0.08324): False
+2024-03-01 12:21:35.364930: I Analyzed pair: (0.08271, 0.08516): False
+2024-03-01 12:21:35.365930: I Analyzed pair: (0.08271, 0.08828): False
+2024-03-01 12:21:35.365930: I Analyzed pair: (0.08271, 0.0924): False
+2024-03-01 12:21:35.365930: I Check List: [False, False, False, False, False]
+2024-03-01 12:23:24.538317: I Epoch 9/200 loss 1815.95909
+2024-03-01 12:23:24.538317: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\movielens\recs
+2024-03-01 12:23:24.744052: I ******************************************
+2024-03-01 12:23:24.744052: I Analyzed pair: (0.08392, 0.08324): True
+2024-03-01 12:23:24.745052: I Analyzed pair: (0.08392, 0.08516): False
+2024-03-01 12:23:24.745052: I Analyzed pair: (0.08392, 0.08828): False
+2024-03-01 12:23:24.745052: I Analyzed pair: (0.08392, 0.0924): False
+2024-03-01 12:23:24.745052: I Analyzed pair: (0.08392, 0.10044): False
+2024-03-01 12:23:24.746052: I Check List: [True, False, False, False, False]
+2024-03-01 12:25:29.906325: I Epoch 10/200 loss 1397.04653
+2024-03-01 12:25:29.906325: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\movielens\recs
+2024-03-01 12:25:30.110035: I ******************************************
+2024-03-01 12:25:30.111041: I Analyzed pair: (0.08324, 0.08516): False
+2024-03-01 12:25:30.111041: I Analyzed pair: (0.08324, 0.08828): False
+2024-03-01 12:25:30.111041: I Analyzed pair: (0.08324, 0.0924): False
+2024-03-01 12:25:30.112041: I Analyzed pair: (0.08324, 0.10044): False
+2024-03-01 12:25:30.112041: I Analyzed pair: (0.08324, 0.1076): False
+2024-03-01 12:25:30.112041: I Check List: [False, False, False, False, False]
+2024-03-01 12:27:19.904062: I Epoch 11/200 loss 1098.71529
+2024-03-01 12:27:19.904062: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\movielens\recs
+2024-03-01 12:27:20.108282: I ******************************************
+2024-03-01 12:27:20.109282: I Analyzed pair: (0.08516, 0.08828): False
+2024-03-01 12:27:20.109787: I Analyzed pair: (0.08516, 0.0924): False
+2024-03-01 12:27:20.109787: I Analyzed pair: (0.08516, 0.10044): False
+2024-03-01 12:27:20.109787: I Analyzed pair: (0.08516, 0.1076): False
+2024-03-01 12:27:20.110792: I Analyzed pair: (0.08516, 0.11407): False
+2024-03-01 12:27:20.110792: I Check List: [False, False, False, False, False]
+2024-03-01 12:29:03.510049: I Epoch 12/200 loss 873.21787
+2024-03-01 12:29:03.511050: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\movielens\recs
+2024-03-01 12:29:03.712254: I ******************************************
+2024-03-01 12:29:03.712254: I Analyzed pair: (0.08828, 0.0924): False
+2024-03-01 12:29:03.713255: I Analyzed pair: (0.08828, 0.10044): False
+2024-03-01 12:29:03.713255: I Analyzed pair: (0.08828, 0.1076): False
+2024-03-01 12:29:03.713255: I Analyzed pair: (0.08828, 0.11407): False
+2024-03-01 12:29:03.713255: I Analyzed pair: (0.08828, 0.11738): False
+2024-03-01 12:29:03.714256: I Check List: [False, False, False, False, False]
+2024-03-01 12:30:48.896532: I Epoch 13/200 loss 715.16271
+2024-03-01 12:30:48.897533: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\movielens\recs
+2024-03-01 12:30:49.103277: I ******************************************
+2024-03-01 12:30:49.104276: I Analyzed pair: (0.0924, 0.10044): False
+2024-03-01 12:30:49.104276: I Analyzed pair: (0.0924, 0.1076): False
+2024-03-01 12:30:49.104276: I Analyzed pair: (0.0924, 0.11407): False
+2024-03-01 12:30:49.105276: I Analyzed pair: (0.0924, 0.11738): False
+2024-03-01 12:30:49.105276: I Analyzed pair: (0.0924, 0.12129): False
+2024-03-01 12:30:49.105276: I Check List: [False, False, False, False, False]
+2024-03-01 12:32:34.487646: I Epoch 14/200 loss 592.35239
+2024-03-01 12:32:34.488647: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\movielens\recs
+2024-03-01 12:32:34.691377: I ******************************************
+2024-03-01 12:32:34.691377: I Analyzed pair: (0.10044, 0.1076): False
+2024-03-01 12:32:34.692378: I Analyzed pair: (0.10044, 0.11407): False
+2024-03-01 12:32:34.692378: I Analyzed pair: (0.10044, 0.11738): False
+2024-03-01 12:32:34.692378: I Analyzed pair: (0.10044, 0.12129): False
+2024-03-01 12:32:34.693378: I Analyzed pair: (0.10044, 0.12491): False
+2024-03-01 12:32:34.693378: I Check List: [False, False, False, False, False]
+2024-03-01 12:34:14.590815: I Epoch 15/200 loss 498.48918
+2024-03-01 12:34:14.591816: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\movielens\recs
+2024-03-01 12:34:14.796540: I ******************************************
+2024-03-01 12:34:14.796540: I Analyzed pair: (0.1076, 0.11407): False
+2024-03-01 12:34:14.796540: I Analyzed pair: (0.1076, 0.11738): False
+2024-03-01 12:34:14.796540: I Analyzed pair: (0.1076, 0.12129): False
+2024-03-01 12:34:14.796540: I Analyzed pair: (0.1076, 0.12491): False
+2024-03-01 12:34:14.798045: I Analyzed pair: (0.1076, 0.12753): False
+2024-03-01 12:34:14.798045: I Check List: [False, False, False, False, False]
+2024-03-01 12:35:56.235396: I Epoch 16/200 loss 423.41502
+2024-03-01 12:35:56.235396: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\movielens\recs
+2024-03-01 12:35:56.455257: I ******************************************
+2024-03-01 12:35:56.456261: I Analyzed pair: (0.11407, 0.11738): False
+2024-03-01 12:35:56.456261: I Analyzed pair: (0.11407, 0.12129): False
+2024-03-01 12:35:56.456261: I Analyzed pair: (0.11407, 0.12491): False
+2024-03-01 12:35:56.456261: I Analyzed pair: (0.11407, 0.12753): False
+2024-03-01 12:35:56.457769: I Analyzed pair: (0.11407, 0.13053): False
+2024-03-01 12:35:56.457769: I Check List: [False, False, False, False, False]
+2024-03-01 12:38:18.519491: I Epoch 17/200 loss 361.80151
+2024-03-01 12:38:18.519491: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\movielens\recs
+2024-03-01 12:38:18.734262: I ******************************************
+2024-03-01 12:38:18.734262: I Analyzed pair: (0.11738, 0.12129): False
+2024-03-01 12:38:18.735263: I Analyzed pair: (0.11738, 0.12491): False
+2024-03-01 12:38:18.735263: I Analyzed pair: (0.11738, 0.12753): False
+2024-03-01 12:38:18.735263: I Analyzed pair: (0.11738, 0.13053): False
+2024-03-01 12:38:18.735263: I Analyzed pair: (0.11738, 0.13204): False
+2024-03-01 12:38:18.736263: I Check List: [False, False, False, False, False]
+2024-03-01 12:40:08.441175: I Epoch 18/200 loss 315.60772
+2024-03-01 12:40:08.441175: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\movielens\recs
+2024-03-01 12:40:08.648894: I ******************************************
+2024-03-01 12:40:08.648894: I Analyzed pair: (0.12129, 0.12491): False
+2024-03-01 12:40:08.648894: I Analyzed pair: (0.12129, 0.12753): False
+2024-03-01 12:40:08.649899: I Analyzed pair: (0.12129, 0.13053): False
+2024-03-01 12:40:08.649899: I Analyzed pair: (0.12129, 0.13204): False
+2024-03-01 12:40:08.649899: I Analyzed pair: (0.12129, 0.13417): False
+2024-03-01 12:40:08.649899: I Check List: [False, False, False, False, False]
+2024-03-01 12:41:48.599852: I Epoch 19/200 loss 274.90523
+2024-03-01 12:41:48.599852: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\movielens\recs
+2024-03-01 12:41:48.806079: I ******************************************
+2024-03-01 12:41:48.806079: I Analyzed pair: (0.12491, 0.12753): False
+2024-03-01 12:41:48.807081: I Analyzed pair: (0.12491, 0.13053): False
+2024-03-01 12:41:48.807585: I Analyzed pair: (0.12491, 0.13204): False
+2024-03-01 12:41:48.807585: I Analyzed pair: (0.12491, 0.13417): False
+2024-03-01 12:41:48.807585: I Analyzed pair: (0.12491, 0.13564): False
+2024-03-01 12:41:48.807585: I Check List: [False, False, False, False, False]
+2024-03-01 12:43:29.393508: I Epoch 20/200 loss 241.75323
+2024-03-01 12:43:29.394508: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\movielens\recs
+2024-03-01 12:43:29.598237: I ******************************************
+2024-03-01 12:43:29.599240: I Analyzed pair: (0.12753, 0.13053): False
+2024-03-01 12:43:29.599240: I Analyzed pair: (0.12753, 0.13204): False
+2024-03-01 12:43:29.599240: I Analyzed pair: (0.12753, 0.13417): False
+2024-03-01 12:43:29.600241: I Analyzed pair: (0.12753, 0.13564): False
+2024-03-01 12:43:29.600241: I Analyzed pair: (0.12753, 0.13834): False
+2024-03-01 12:43:29.600241: I Check List: [False, False, False, False, False]
+2024-03-01 12:45:24.003617: I Epoch 21/200 loss 213.72635
+2024-03-01 12:45:24.004615: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\movielens\recs
+2024-03-01 12:45:24.210355: I ******************************************
+2024-03-01 12:45:24.210355: I Analyzed pair: (0.13053, 0.13204): False
+2024-03-01 12:45:24.211355: I Analyzed pair: (0.13053, 0.13417): False
+2024-03-01 12:45:24.211355: I Analyzed pair: (0.13053, 0.13564): False
+2024-03-01 12:45:24.211355: I Analyzed pair: (0.13053, 0.13834): False
+2024-03-01 12:45:24.211355: I Analyzed pair: (0.13053, 0.13952): False
+2024-03-01 12:45:24.212356: I Check List: [False, False, False, False, False]
+2024-03-01 12:47:14.057713: I Epoch 22/200 loss 189.24065
+2024-03-01 12:47:14.058713: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\movielens\recs
+2024-03-01 12:47:14.263945: I ******************************************
+2024-03-01 12:47:14.263945: I Analyzed pair: (0.13204, 0.13417): False
+2024-03-01 12:47:14.264946: I Analyzed pair: (0.13204, 0.13564): False
+2024-03-01 12:47:14.264946: I Analyzed pair: (0.13204, 0.13834): False
+2024-03-01 12:47:14.264946: I Analyzed pair: (0.13204, 0.13952): False
+2024-03-01 12:47:14.264946: I Analyzed pair: (0.13204, 0.14203): False
+2024-03-01 12:47:14.265946: I Check List: [False, False, False, False, False]
+2024-03-01 12:49:04.905580: I Epoch 23/200 loss 170.89746
+2024-03-01 12:49:04.906083: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\movielens\recs
+2024-03-01 12:49:05.114312: I ******************************************
+2024-03-01 12:49:05.114312: I Analyzed pair: (0.13417, 0.13564): False
+2024-03-01 12:49:05.114312: I Analyzed pair: (0.13417, 0.13834): False
+2024-03-01 12:49:05.114312: I Analyzed pair: (0.13417, 0.13952): False
+2024-03-01 12:49:05.114312: I Analyzed pair: (0.13417, 0.14203): False
+2024-03-01 12:49:05.115816: I Analyzed pair: (0.13417, 0.14267): False
+2024-03-01 12:49:05.115816: I Check List: [False, False, False, False, False]
+2024-03-01 12:50:55.233534: I Epoch 24/200 loss 151.78224
+2024-03-01 12:50:55.233534: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\movielens\recs
+2024-03-01 12:50:55.444271: I ******************************************
+2024-03-01 12:50:55.444271: I Analyzed pair: (0.13564, 0.13834): False
+2024-03-01 12:50:55.444271: I Analyzed pair: (0.13564, 0.13952): False
+2024-03-01 12:50:55.445273: I Analyzed pair: (0.13564, 0.14203): False
+2024-03-01 12:50:55.445273: I Analyzed pair: (0.13564, 0.14267): False
+2024-03-01 12:50:55.445777: I Analyzed pair: (0.13564, 0.14422): False
+2024-03-01 12:50:55.445777: I Check List: [False, False, False, False, False]
+2024-03-01 12:52:53.365084: I Epoch 25/200 loss 137.45727
+2024-03-01 12:52:53.365588: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\movielens\recs
+2024-03-01 12:52:53.568819: I ******************************************
+2024-03-01 12:52:53.569820: I Analyzed pair: (0.13834, 0.13952): False
+2024-03-01 12:52:53.569820: I Analyzed pair: (0.13834, 0.14203): False
+2024-03-01 12:52:53.569820: I Analyzed pair: (0.13834, 0.14267): False
+2024-03-01 12:52:53.569820: I Analyzed pair: (0.13834, 0.14422): False
+2024-03-01 12:52:53.570820: I Analyzed pair: (0.13834, 0.14528): False
+2024-03-01 12:52:53.570820: I Check List: [False, False, False, False, False]
+2024-03-01 12:54:42.959459: I Epoch 26/200 loss 125.26608
+2024-03-01 12:54:42.959459: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\movielens\recs
+2024-03-01 12:54:43.162683: I ******************************************
+2024-03-01 12:54:43.163682: I Analyzed pair: (0.13952, 0.14203): False
+2024-03-01 12:54:43.163682: I Analyzed pair: (0.13952, 0.14267): False
+2024-03-01 12:54:43.163682: I Analyzed pair: (0.13952, 0.14422): False
+2024-03-01 12:54:43.164684: I Analyzed pair: (0.13952, 0.14528): False
+2024-03-01 12:54:43.165188: I Analyzed pair: (0.13952, 0.14623): False
+2024-03-01 12:54:43.165188: I Check List: [False, False, False, False, False]
+2024-03-01 12:56:32.779602: I Epoch 27/200 loss 113.44377
+2024-03-01 12:56:32.780602: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\movielens\recs
+2024-03-01 12:56:32.987348: I ******************************************
+2024-03-01 12:56:32.988348: I Analyzed pair: (0.14203, 0.14267): False
+2024-03-01 12:56:32.988348: I Analyzed pair: (0.14203, 0.14422): False
+2024-03-01 12:56:32.988348: I Analyzed pair: (0.14203, 0.14528): False
+2024-03-01 12:56:32.988348: I Analyzed pair: (0.14203, 0.14623): False
+2024-03-01 12:56:32.989348: I Analyzed pair: (0.14203, 0.14732): False
+2024-03-01 12:56:32.989348: I Check List: [False, False, False, False, False]
+2024-03-01 12:58:22.442049: I Epoch 28/200 loss 103.18703
+2024-03-01 12:58:22.443049: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\movielens\recs
+2024-03-01 12:58:22.650780: I ******************************************
+2024-03-01 12:58:22.651781: I Analyzed pair: (0.14267, 0.14422): False
+2024-03-01 12:58:22.651781: I Analyzed pair: (0.14267, 0.14528): False
+2024-03-01 12:58:22.651781: I Analyzed pair: (0.14267, 0.14623): False
+2024-03-01 12:58:22.652781: I Analyzed pair: (0.14267, 0.14732): False
+2024-03-01 12:58:22.652781: I Analyzed pair: (0.14267, 0.14875): False
+2024-03-01 12:58:22.652781: I Check List: [False, False, False, False, False]
+2024-03-01 13:00:14.332262: I Epoch 29/200 loss 94.06529
+2024-03-01 13:00:14.333262: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\movielens\recs
+2024-03-01 13:00:14.535011: I ******************************************
+2024-03-01 13:00:14.536012: I Analyzed pair: (0.14422, 0.14528): False
+2024-03-01 13:00:14.536012: I Analyzed pair: (0.14422, 0.14623): False
+2024-03-01 13:00:14.536012: I Analyzed pair: (0.14422, 0.14732): False
+2024-03-01 13:00:14.537017: I Analyzed pair: (0.14422, 0.14875): False
+2024-03-01 13:00:14.537017: I Analyzed pair: (0.14422, 0.15029): False
+2024-03-01 13:00:14.537017: I Check List: [False, False, False, False, False]
+2024-03-01 13:02:04.786359: I Epoch 30/200 loss 85.88374
+2024-03-01 13:02:04.787361: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\movielens\recs
+2024-03-01 13:02:04.993601: I ******************************************
+2024-03-01 13:02:04.994606: I Analyzed pair: (0.14528, 0.14623): False
+2024-03-01 13:02:04.994606: I Analyzed pair: (0.14528, 0.14732): False
+2024-03-01 13:02:04.994606: I Analyzed pair: (0.14528, 0.14875): False
+2024-03-01 13:02:04.995607: I Analyzed pair: (0.14528, 0.15029): False
+2024-03-01 13:02:04.995607: I Analyzed pair: (0.14528, 0.1509): False
+2024-03-01 13:02:04.995607: I Check List: [False, False, False, False, False]
+2024-03-01 13:03:53.816823: I Epoch 31/200 loss 79.63696
+2024-03-01 13:03:53.816823: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\movielens\recs
+2024-03-01 13:03:54.025553: I ******************************************
+2024-03-01 13:03:54.025553: I Analyzed pair: (0.14623, 0.14732): False
+2024-03-01 13:03:54.025553: I Analyzed pair: (0.14623, 0.14875): False
+2024-03-01 13:03:54.026559: I Analyzed pair: (0.14623, 0.15029): False
+2024-03-01 13:03:54.026559: I Analyzed pair: (0.14623, 0.1509): False
+2024-03-01 13:03:54.026559: I Analyzed pair: (0.14623, 0.15269): False
+2024-03-01 13:03:54.026559: I Check List: [False, False, False, False, False]
+2024-03-01 13:05:40.260225: I Epoch 32/200 loss 72.92778
+2024-03-01 13:05:40.261224: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\movielens\recs
+2024-03-01 13:05:40.474502: I ******************************************
+2024-03-01 13:05:40.474502: I Analyzed pair: (0.14732, 0.14875): False
+2024-03-01 13:05:40.475502: I Analyzed pair: (0.14732, 0.15029): False
+2024-03-01 13:05:40.475502: I Analyzed pair: (0.14732, 0.1509): False
+2024-03-01 13:05:40.475502: I Analyzed pair: (0.14732, 0.15269): False
+2024-03-01 13:05:40.475502: I Analyzed pair: (0.14732, 0.15414): False
+2024-03-01 13:05:40.476507: I Check List: [False, False, False, False, False]
+2024-03-01 13:07:26.693516: I Epoch 33/200 loss 67.83668
+2024-03-01 13:07:26.693516: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\movielens\recs
+2024-03-01 13:07:26.905284: I ******************************************
+2024-03-01 13:07:26.905284: I Analyzed pair: (0.14875, 0.15029): False
+2024-03-01 13:07:26.905284: I Analyzed pair: (0.14875, 0.1509): False
+2024-03-01 13:07:26.906284: I Analyzed pair: (0.14875, 0.15269): False
+2024-03-01 13:07:26.906284: I Analyzed pair: (0.14875, 0.15414): False
+2024-03-01 13:07:26.906284: I Analyzed pair: (0.14875, 0.15469): False
+2024-03-01 13:07:26.906284: I Check List: [False, False, False, False, False]
+2024-03-01 13:09:24.868643: I Epoch 34/200 loss 63.07731
+2024-03-01 13:09:24.869644: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\movielens\recs
+2024-03-01 13:09:25.073378: I ******************************************
+2024-03-01 13:09:25.074379: I Analyzed pair: (0.15029, 0.1509): False
+2024-03-01 13:09:25.074379: I Analyzed pair: (0.15029, 0.15269): False
+2024-03-01 13:09:25.074379: I Analyzed pair: (0.15029, 0.15414): False
+2024-03-01 13:09:25.075384: I Analyzed pair: (0.15029, 0.15469): False
+2024-03-01 13:09:25.075384: I Analyzed pair: (0.15029, 0.15529): False
+2024-03-01 13:09:25.075384: I Check List: [False, False, False, False, False]
+2024-03-01 13:11:14.504418: I Epoch 35/200 loss 58.65025
+2024-03-01 13:11:14.504418: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\movielens\recs
+2024-03-01 13:11:14.720204: I ******************************************
+2024-03-01 13:11:14.721207: I Analyzed pair: (0.1509, 0.15269): False
+2024-03-01 13:11:14.721207: I Analyzed pair: (0.1509, 0.15414): False
+2024-03-01 13:11:14.721207: I Analyzed pair: (0.1509, 0.15469): False
+2024-03-01 13:11:14.722205: I Analyzed pair: (0.1509, 0.15529): False
+2024-03-01 13:11:14.722205: I Analyzed pair: (0.1509, 0.15634): False
+2024-03-01 13:11:14.722710: I Check List: [False, False, False, False, False]
+2024-03-01 13:13:04.246685: I Epoch 36/200 loss 54.29241
+2024-03-01 13:13:04.246685: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\movielens\recs
+2024-03-01 13:13:04.453406: I ******************************************
+2024-03-01 13:13:04.453406: I Analyzed pair: (0.15269, 0.15414): False
+2024-03-01 13:13:04.454410: I Analyzed pair: (0.15269, 0.15469): False
+2024-03-01 13:13:04.454410: I Analyzed pair: (0.15269, 0.15529): False
+2024-03-01 13:13:04.454410: I Analyzed pair: (0.15269, 0.15634): False
+2024-03-01 13:13:04.454410: I Analyzed pair: (0.15269, 0.15644): False
+2024-03-01 13:13:04.455410: I Check List: [False, False, False, False, False]
+2024-03-01 13:14:55.446992: I Epoch 37/200 loss 50.84462
+2024-03-01 13:14:55.447994: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\movielens\recs
+2024-03-01 13:14:55.650215: I ******************************************
+2024-03-01 13:14:55.650215: I Analyzed pair: (0.15414, 0.15469): False
+2024-03-01 13:14:55.650215: I Analyzed pair: (0.15414, 0.15529): False
+2024-03-01 13:14:55.650215: I Analyzed pair: (0.15414, 0.15634): False
+2024-03-01 13:14:55.651720: I Analyzed pair: (0.15414, 0.15644): False
+2024-03-01 13:14:55.651720: I Analyzed pair: (0.15414, 0.15795): False
+2024-03-01 13:14:55.651720: I Check List: [False, False, False, False, False]
+2024-03-01 13:16:49.925270: I Epoch 38/200 loss 46.98632
+2024-03-01 13:16:49.926268: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\movielens\recs
+2024-03-01 13:16:50.134043: I ******************************************
+2024-03-01 13:16:50.135045: I Analyzed pair: (0.15469, 0.15529): False
+2024-03-01 13:16:50.135045: I Analyzed pair: (0.15469, 0.15634): False
+2024-03-01 13:16:50.135045: I Analyzed pair: (0.15469, 0.15644): False
+2024-03-01 13:16:50.136045: I Analyzed pair: (0.15469, 0.15795): False
+2024-03-01 13:16:50.136045: I Analyzed pair: (0.15469, 0.15858): False
+2024-03-01 13:16:50.136045: I Check List: [False, False, False, False, False]
+2024-03-01 13:18:43.676358: I Epoch 39/200 loss 43.81897
+2024-03-01 13:18:43.676358: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\movielens\recs
+2024-03-01 13:18:43.889151: I Analyzed pair: (0.15529, 0.15634): False
+2024-03-01 13:18:43.890150: I Analyzed pair: (0.15529, 0.15644): False
+2024-03-01 13:18:43.890150: I Analyzed pair: (0.15529, 0.15795): False
+2024-03-01 13:18:43.890150: I Analyzed pair: (0.15529, 0.15858): False
+2024-03-01 13:18:43.891152: I Analyzed pair: (0.15529, 0.15825): False
+2024-03-01 13:18:43.891152: I Check List: [False, False, False, False, False]
+2024-03-01 13:20:36.811844: I Epoch 40/200 loss 41.15318
+2024-03-01 13:20:36.812844: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\movielens\recs
+2024-03-01 13:20:37.024625: I ******************************************
+2024-03-01 13:20:37.025624: I Analyzed pair: (0.15634, 0.15644): False
+2024-03-01 13:20:37.025624: I Analyzed pair: (0.15634, 0.15795): False
+2024-03-01 13:20:37.026624: I Analyzed pair: (0.15634, 0.15858): False
+2024-03-01 13:20:37.026624: I Analyzed pair: (0.15634, 0.15825): False
+2024-03-01 13:20:37.026624: I Analyzed pair: (0.15634, 0.15945): False
+2024-03-01 13:20:37.026624: I Check List: [False, False, False, False, False]
+2024-03-01 13:22:36.741434: I Epoch 41/200 loss 38.81750
+2024-03-01 13:22:36.742435: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\movielens\recs
+2024-03-01 13:22:36.959200: I ******************************************
+2024-03-01 13:22:36.959200: I Analyzed pair: (0.15644, 0.15795): False
+2024-03-01 13:22:36.960201: I Analyzed pair: (0.15644, 0.15858): False
+2024-03-01 13:22:36.960201: I Analyzed pair: (0.15644, 0.15825): False
+2024-03-01 13:22:36.960706: I Analyzed pair: (0.15644, 0.15945): False
+2024-03-01 13:22:36.960706: I Analyzed pair: (0.15644, 0.16052): False
+2024-03-01 13:22:36.960706: I Check List: [False, False, False, False, False]
+2024-03-01 13:24:38.532281: I Epoch 42/200 loss 36.44906
+2024-03-01 13:24:38.532281: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\movielens\recs
+2024-03-01 13:24:38.747081: I Analyzed pair: (0.15795, 0.15858): False
+2024-03-01 13:24:38.747081: I Analyzed pair: (0.15795, 0.15825): False
+2024-03-01 13:24:38.747081: I Analyzed pair: (0.15795, 0.15945): False
+2024-03-01 13:24:38.748080: I Analyzed pair: (0.15795, 0.16052): False
+2024-03-01 13:24:38.748080: I Analyzed pair: (0.15795, 0.16029): False
+2024-03-01 13:24:38.748080: I Check List: [False, False, False, False, False]
+2024-03-01 13:26:40.448121: I Epoch 43/200 loss 34.16018
+2024-03-01 13:26:40.448121: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\movielens\recs
+2024-03-01 13:26:40.667389: I ******************************************
+2024-03-01 13:26:40.668389: I Analyzed pair: (0.15858, 0.15825): True
+2024-03-01 13:26:40.668389: I Analyzed pair: (0.15858, 0.15945): False
+2024-03-01 13:26:40.668389: I Analyzed pair: (0.15858, 0.16052): False
+2024-03-01 13:26:40.668389: I Analyzed pair: (0.15858, 0.16029): False
+2024-03-01 13:26:40.668389: I Analyzed pair: (0.15858, 0.16209): False
+2024-03-01 13:26:40.668389: I Check List: [True, False, False, False, False]
+2024-03-01 13:28:38.577355: I Epoch 44/200 loss 32.32748
+2024-03-01 13:28:38.577355: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\movielens\recs
+2024-03-01 13:28:38.786105: I ******************************************
+2024-03-01 13:28:38.787104: I Analyzed pair: (0.15825, 0.15945): False
+2024-03-01 13:28:38.787104: I Analyzed pair: (0.15825, 0.16052): False
+2024-03-01 13:28:38.788105: I Analyzed pair: (0.15825, 0.16029): False
+2024-03-01 13:28:38.788105: I Analyzed pair: (0.15825, 0.16209): False
+2024-03-01 13:28:38.788105: I Analyzed pair: (0.15825, 0.16256): False
+2024-03-01 13:28:38.788105: I Check List: [False, False, False, False, False]
+2024-03-01 13:30:29.593704: I Epoch 45/200 loss 30.45021
+2024-03-01 13:30:29.593704: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\movielens\recs
+2024-03-01 13:30:29.802467: I ******************************************
+2024-03-01 13:30:29.802467: I Analyzed pair: (0.15945, 0.16052): False
+2024-03-01 13:30:29.803469: I Analyzed pair: (0.15945, 0.16029): False
+2024-03-01 13:30:29.803469: I Analyzed pair: (0.15945, 0.16209): False
+2024-03-01 13:30:29.803469: I Analyzed pair: (0.15945, 0.16256): False
+2024-03-01 13:30:29.803469: I Analyzed pair: (0.15945, 0.16273): False
+2024-03-01 13:30:29.804469: I Check List: [False, False, False, False, False]
+2024-03-01 13:32:19.081034: I Epoch 46/200 loss 28.65760
+2024-03-01 13:32:19.082034: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\movielens\recs
+2024-03-01 13:32:19.285258: I Analyzed pair: (0.16052, 0.16029): True
+2024-03-01 13:32:19.285258: I Analyzed pair: (0.16052, 0.16209): False
+2024-03-01 13:32:19.286259: I Analyzed pair: (0.16052, 0.16256): False
+2024-03-01 13:32:19.286259: I Analyzed pair: (0.16052, 0.16273): False
+2024-03-01 13:32:19.286259: I Analyzed pair: (0.16052, 0.16216): False
+2024-03-01 13:32:19.286259: I Check List: [True, False, False, False, False]
+2024-03-01 13:33:59.945037: I Epoch 47/200 loss 27.34254
+2024-03-01 13:33:59.946037: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\movielens\recs
+2024-03-01 13:34:00.149762: I ******************************************
+2024-03-01 13:34:00.149762: I Analyzed pair: (0.16029, 0.16209): False
+2024-03-01 13:34:00.150767: I Analyzed pair: (0.16029, 0.16256): False
+2024-03-01 13:34:00.150767: I Analyzed pair: (0.16029, 0.16273): False
+2024-03-01 13:34:00.150767: I Analyzed pair: (0.16029, 0.16216): False
+2024-03-01 13:34:00.150767: I Analyzed pair: (0.16029, 0.16288): False
+2024-03-01 13:34:00.151766: I Check List: [False, False, False, False, False]
+2024-03-01 13:35:40.514616: I Epoch 48/200 loss 25.63182
+2024-03-01 13:35:40.515616: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\movielens\recs
+2024-03-01 13:35:40.721339: I ******************************************
+2024-03-01 13:35:40.722338: I Analyzed pair: (0.16209, 0.16256): False
+2024-03-01 13:35:40.722338: I Analyzed pair: (0.16209, 0.16273): False
+2024-03-01 13:35:40.723340: I Analyzed pair: (0.16209, 0.16216): False
+2024-03-01 13:35:40.723340: I Analyzed pair: (0.16209, 0.16288): False
+2024-03-01 13:35:40.723340: I Analyzed pair: (0.16209, 0.16343): False
+2024-03-01 13:35:40.723340: I Check List: [False, False, False, False, False]
+2024-03-01 13:37:21.522338: I Epoch 49/200 loss 24.21491
+2024-03-01 13:37:21.523339: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\movielens\recs
+2024-03-01 13:37:21.730077: I ******************************************
+2024-03-01 13:37:21.730077: I Analyzed pair: (0.16256, 0.16273): False
+2024-03-01 13:37:21.730077: I Analyzed pair: (0.16256, 0.16216): True
+2024-03-01 13:37:21.731081: I Analyzed pair: (0.16256, 0.16288): False
+2024-03-01 13:37:21.731081: I Analyzed pair: (0.16256, 0.16343): False
+2024-03-01 13:37:21.731081: I Analyzed pair: (0.16256, 0.16387): False
+2024-03-01 13:37:21.731081: I Check List: [False, True, False, False, False]
+2024-03-01 13:39:02.018926: I Epoch 50/200 loss 23.00152
+2024-03-01 13:39:02.018926: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\movielens\recs
+2024-03-01 13:39:02.221147: I ******************************************
+2024-03-01 13:39:02.221147: I Analyzed pair: (0.16273, 0.16216): True
+2024-03-01 13:39:02.221147: I Analyzed pair: (0.16273, 0.16288): False
+2024-03-01 13:39:02.222148: I Analyzed pair: (0.16273, 0.16343): False
+2024-03-01 13:39:02.222148: I Analyzed pair: (0.16273, 0.16387): False
+2024-03-01 13:39:02.222148: I Analyzed pair: (0.16273, 0.16425): False
+2024-03-01 13:39:02.222148: I Check List: [True, False, False, False, False]
+2024-03-01 13:40:42.504525: I Epoch 51/200 loss 21.82994
+2024-03-01 13:40:42.505524: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\movielens\recs
+2024-03-01 13:40:42.708253: I ******************************************
+2024-03-01 13:40:42.709256: I Analyzed pair: (0.16216, 0.16288): False
+2024-03-01 13:40:42.709256: I Analyzed pair: (0.16216, 0.16343): False
+2024-03-01 13:40:42.709256: I Analyzed pair: (0.16216, 0.16387): False
+2024-03-01 13:40:42.710260: I Analyzed pair: (0.16216, 0.16425): False
+2024-03-01 13:40:42.710260: I Analyzed pair: (0.16216, 0.1645): False
+2024-03-01 13:40:42.710260: I Check List: [False, False, False, False, False]
+2024-03-01 13:42:22.797962: I Epoch 52/200 loss 20.77195
+2024-03-01 13:42:22.797962: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\movielens\recs
+2024-03-01 13:42:23.001190: I Analyzed pair: (0.16288, 0.16343): False
+2024-03-01 13:42:23.002191: I Analyzed pair: (0.16288, 0.16387): False
+2024-03-01 13:42:23.002191: I Analyzed pair: (0.16288, 0.16425): False
+2024-03-01 13:42:23.002191: I Analyzed pair: (0.16288, 0.1645): False
+2024-03-01 13:42:23.002191: I Analyzed pair: (0.16288, 0.16421): False
+2024-03-01 13:42:23.003192: I Check List: [False, False, False, False, False]
+2024-03-01 13:44:03.367712: I Epoch 53/200 loss 19.78556
+2024-03-01 13:44:03.367712: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\movielens\recs
+2024-03-01 13:44:03.573443: I ******************************************
+2024-03-01 13:44:03.574444: I Analyzed pair: (0.16343, 0.16387): False
+2024-03-01 13:44:03.574444: I Analyzed pair: (0.16343, 0.16425): False
+2024-03-01 13:44:03.574444: I Analyzed pair: (0.16343, 0.1645): False
+2024-03-01 13:44:03.574444: I Analyzed pair: (0.16343, 0.16421): False
+2024-03-01 13:44:03.575444: I Analyzed pair: (0.16343, 0.16462): False
+2024-03-01 13:44:03.575444: I Check List: [False, False, False, False, False]
+2024-03-01 13:45:44.010184: I Epoch 54/200 loss 18.84994
+2024-03-01 13:45:44.011184: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\movielens\recs
+2024-03-01 13:45:44.218902: I ******************************************
+2024-03-01 13:45:44.218902: I Analyzed pair: (0.16387, 0.16425): False
+2024-03-01 13:45:44.218902: I Analyzed pair: (0.16387, 0.1645): False
+2024-03-01 13:45:44.218902: I Analyzed pair: (0.16387, 0.16421): False
+2024-03-01 13:45:44.219902: I Analyzed pair: (0.16387, 0.16462): False
+2024-03-01 13:45:44.219902: I Analyzed pair: (0.16387, 0.16497): False
+2024-03-01 13:45:44.219902: I Check List: [False, False, False, False, False]
+2024-03-01 13:47:24.926619: I Epoch 55/200 loss 17.92396
+2024-03-01 13:47:24.927623: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\movielens\recs
+2024-03-01 13:47:25.128847: I ******************************************
+2024-03-01 13:47:25.128847: I Analyzed pair: (0.16425, 0.1645): False
+2024-03-01 13:47:25.129846: I Analyzed pair: (0.16425, 0.16421): True
+2024-03-01 13:47:25.129846: I Analyzed pair: (0.16425, 0.16462): False
+2024-03-01 13:47:25.129846: I Analyzed pair: (0.16425, 0.16497): False
+2024-03-01 13:47:25.130848: I Analyzed pair: (0.16425, 0.165): False
+2024-03-01 13:47:25.130848: I Check List: [False, True, False, False, False]
+2024-03-01 13:49:05.724519: I Epoch 56/200 loss 17.12046
+2024-03-01 13:49:05.724519: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\movielens\recs
+2024-03-01 13:49:05.929259: I ******************************************
+2024-03-01 13:49:05.929259: I Analyzed pair: (0.1645, 0.16421): True
+2024-03-01 13:49:05.930262: I Analyzed pair: (0.1645, 0.16462): False
+2024-03-01 13:49:05.930262: I Analyzed pair: (0.1645, 0.16497): False
+2024-03-01 13:49:05.930262: I Analyzed pair: (0.1645, 0.165): False
+2024-03-01 13:49:05.930262: I Analyzed pair: (0.1645, 0.16625): False
+2024-03-01 13:49:05.931261: I Check List: [True, False, False, False, False]
+2024-03-01 13:50:46.371630: I Epoch 57/200 loss 16.27050
+2024-03-01 13:50:46.371630: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\movielens\recs
+2024-03-01 13:50:46.577349: I Analyzed pair: (0.16421, 0.16462): False
+2024-03-01 13:50:46.577349: I Analyzed pair: (0.16421, 0.16497): False
+2024-03-01 13:50:46.577349: I Analyzed pair: (0.16421, 0.165): False
+2024-03-01 13:50:46.578354: I Analyzed pair: (0.16421, 0.16625): False
+2024-03-01 13:50:46.578354: I Analyzed pair: (0.16421, 0.16605): False
+2024-03-01 13:50:46.578354: I Check List: [False, False, False, False, False]
+2024-03-01 13:52:27.269620: I Epoch 58/200 loss 15.67114
+2024-03-01 13:52:27.269620: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\movielens\recs
+2024-03-01 13:52:27.474834: I ******************************************
+2024-03-01 13:52:27.474834: I Analyzed pair: (0.16462, 0.16497): False
+2024-03-01 13:52:27.475835: I Analyzed pair: (0.16462, 0.165): False
+2024-03-01 13:52:27.475835: I Analyzed pair: (0.16462, 0.16625): False
+2024-03-01 13:52:27.476339: I Analyzed pair: (0.16462, 0.16605): False
+2024-03-01 13:52:27.476339: I Analyzed pair: (0.16462, 0.16688): False
+2024-03-01 13:52:27.476339: I Check List: [False, False, False, False, False]
+2024-03-01 13:54:08.086150: I Epoch 59/200 loss 14.93330
+2024-03-01 13:54:08.086150: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\movielens\recs
+2024-03-01 13:54:08.291378: I Analyzed pair: (0.16497, 0.165): False
+2024-03-01 13:54:08.291378: I Analyzed pair: (0.16497, 0.16625): False
+2024-03-01 13:54:08.291378: I Analyzed pair: (0.16497, 0.16605): False
+2024-03-01 13:54:08.291378: I Analyzed pair: (0.16497, 0.16688): False
+2024-03-01 13:54:08.292379: I Analyzed pair: (0.16497, 0.16662): False
+2024-03-01 13:54:08.292379: I Check List: [False, False, False, False, False]
+2024-03-01 13:55:48.828897: I Epoch 60/200 loss 14.33273
+2024-03-01 13:55:48.828897: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\movielens\recs
+2024-03-01 13:55:49.034116: I Analyzed pair: (0.165, 0.16625): False
+2024-03-01 13:55:49.034116: I Analyzed pair: (0.165, 0.16605): False
+2024-03-01 13:55:49.034116: I Analyzed pair: (0.165, 0.16688): False
+2024-03-01 13:55:49.034116: I Analyzed pair: (0.165, 0.16662): False
+2024-03-01 13:55:49.035116: I Analyzed pair: (0.165, 0.16674): False
+2024-03-01 13:55:49.035116: I Check List: [False, False, False, False, False]
+2024-03-01 13:57:29.565043: I Epoch 61/200 loss 13.77818
+2024-03-01 13:57:29.566047: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\movielens\recs
+2024-03-01 13:57:29.771780: I ******************************************
+2024-03-01 13:57:29.772780: I Analyzed pair: (0.16625, 0.16605): True
+2024-03-01 13:57:29.772780: I Analyzed pair: (0.16625, 0.16688): False
+2024-03-01 13:57:29.772780: I Analyzed pair: (0.16625, 0.16662): False
+2024-03-01 13:57:29.773781: I Analyzed pair: (0.16625, 0.16674): False
+2024-03-01 13:57:29.773781: I Analyzed pair: (0.16625, 0.16724): False
+2024-03-01 13:57:29.773781: I Check List: [True, False, False, False, False]
+2024-03-01 13:59:10.334950: I Epoch 62/200 loss 12.99491
+2024-03-01 13:59:10.334950: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\movielens\recs
+2024-03-01 13:59:10.539192: I ******************************************
+2024-03-01 13:59:10.539192: I Analyzed pair: (0.16605, 0.16688): False
+2024-03-01 13:59:10.540192: I Analyzed pair: (0.16605, 0.16662): False
+2024-03-01 13:59:10.540192: I Analyzed pair: (0.16605, 0.16674): False
+2024-03-01 13:59:10.540192: I Analyzed pair: (0.16605, 0.16724): False
+2024-03-01 13:59:10.540192: I Analyzed pair: (0.16605, 0.16732): False
+2024-03-01 13:59:10.541193: I Check List: [False, False, False, False, False]
+2024-03-01 14:00:51.259708: I Epoch 63/200 loss 12.59745
+2024-03-01 14:00:51.260710: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\movielens\recs
+2024-03-01 14:00:51.461926: I ******************************************
+2024-03-01 14:00:51.462927: I Analyzed pair: (0.16688, 0.16662): True
+2024-03-01 14:00:51.462927: I Analyzed pair: (0.16688, 0.16674): True
+2024-03-01 14:00:51.462927: I Analyzed pair: (0.16688, 0.16724): False
+2024-03-01 14:00:51.462927: I Analyzed pair: (0.16688, 0.16732): False
+2024-03-01 14:00:51.462927: I Analyzed pair: (0.16688, 0.16784): False
+2024-03-01 14:00:51.462927: I Check List: [True, True, False, False, False]
+2024-03-01 14:02:31.762518: I Epoch 64/200 loss 11.98699
+2024-03-01 14:02:31.762518: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\movielens\recs
+2024-03-01 14:02:31.971244: I Analyzed pair: (0.16662, 0.16674): False
+2024-03-01 14:02:31.972244: I Analyzed pair: (0.16662, 0.16724): False
+2024-03-01 14:02:31.972244: I Analyzed pair: (0.16662, 0.16732): False
+2024-03-01 14:02:31.972244: I Analyzed pair: (0.16662, 0.16784): False
+2024-03-01 14:02:31.972244: I Analyzed pair: (0.16662, 0.16782): False
+2024-03-01 14:02:31.973246: I Check List: [False, False, False, False, False]
+2024-03-01 14:04:12.430330: I Epoch 65/200 loss 11.50045
+2024-03-01 14:04:12.431330: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\movielens\recs
+2024-03-01 14:04:12.633555: I Analyzed pair: (0.16674, 0.16724): False
+2024-03-01 14:04:12.634058: I Analyzed pair: (0.16674, 0.16732): False
+2024-03-01 14:04:12.634058: I Analyzed pair: (0.16674, 0.16784): False
+2024-03-01 14:04:12.634058: I Analyzed pair: (0.16674, 0.16782): False
+2024-03-01 14:04:12.634058: I Analyzed pair: (0.16674, 0.16778): False
+2024-03-01 14:04:12.635063: I Check List: [False, False, False, False, False]
+2024-03-01 14:05:52.993921: I Epoch 66/200 loss 11.02619
+2024-03-01 14:05:52.994925: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\movielens\recs
+2024-03-01 14:05:53.199145: I ******************************************
+2024-03-01 14:05:53.200146: I Analyzed pair: (0.16724, 0.16732): False
+2024-03-01 14:05:53.200146: I Analyzed pair: (0.16724, 0.16784): False
+2024-03-01 14:05:53.200146: I Analyzed pair: (0.16724, 0.16782): False
+2024-03-01 14:05:53.200146: I Analyzed pair: (0.16724, 0.16778): False
+2024-03-01 14:05:53.200146: I Analyzed pair: (0.16724, 0.16844): False
+2024-03-01 14:05:53.201650: I Check List: [False, False, False, False, False]
+2024-03-01 14:07:33.920534: I Epoch 67/200 loss 10.63561
+2024-03-01 14:07:33.921534: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\movielens\recs
+2024-03-01 14:07:34.127251: I Analyzed pair: (0.16732, 0.16784): False
+2024-03-01 14:07:34.127251: I Analyzed pair: (0.16732, 0.16782): False
+2024-03-01 14:07:34.127251: I Analyzed pair: (0.16732, 0.16778): False
+2024-03-01 14:07:34.128251: I Analyzed pair: (0.16732, 0.16844): False
+2024-03-01 14:07:34.128251: I Analyzed pair: (0.16732, 0.16769): False
+2024-03-01 14:07:34.128251: I Check List: [False, False, False, False, False]
+2024-03-01 14:09:14.571783: I Epoch 68/200 loss 10.21767
+2024-03-01 14:09:14.572783: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\movielens\recs
+2024-03-01 14:09:14.778524: I Analyzed pair: (0.16784, 0.16782): True
+2024-03-01 14:09:14.779525: I Analyzed pair: (0.16784, 0.16778): True
+2024-03-01 14:09:14.779525: I Analyzed pair: (0.16784, 0.16844): False
+2024-03-01 14:09:14.779525: I Analyzed pair: (0.16784, 0.16769): True
+2024-03-01 14:09:14.779525: I Analyzed pair: (0.16784, 0.16792): False
+2024-03-01 14:09:14.780524: I Check List: [True, True, False, True, False]
+2024-03-01 14:10:55.891215: I Epoch 69/200 loss 9.83234
+2024-03-01 14:10:55.891215: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\movielens\recs
+2024-03-01 14:10:56.095951: I Analyzed pair: (0.16782, 0.16778): True
+2024-03-01 14:10:56.095951: I Analyzed pair: (0.16782, 0.16844): False
+2024-03-01 14:10:56.096952: I Analyzed pair: (0.16782, 0.16769): True
+2024-03-01 14:10:56.096952: I Analyzed pair: (0.16782, 0.16792): False
+2024-03-01 14:10:56.096952: I Analyzed pair: (0.16782, 0.16747): True
+2024-03-01 14:10:56.096952: I Check List: [True, False, True, False, True]
+2024-03-01 14:12:36.344614: I Epoch 70/200 loss 9.48831
+2024-03-01 14:12:36.345615: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\movielens\recs
+2024-03-01 14:12:36.548350: I Analyzed pair: (0.16778, 0.16844): False
+2024-03-01 14:12:36.548350: I Analyzed pair: (0.16778, 0.16769): True
+2024-03-01 14:12:36.549350: I Analyzed pair: (0.16778, 0.16792): False
+2024-03-01 14:12:36.549350: I Analyzed pair: (0.16778, 0.16747): True
+2024-03-01 14:12:36.549350: I Analyzed pair: (0.16778, 0.16688): True
+2024-03-01 14:12:36.550351: I Check List: [False, True, False, True, True]
+2024-03-01 14:14:16.707588: I Epoch 71/200 loss 9.12171
+2024-03-01 14:14:16.707588: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\movielens\recs
+2024-03-01 14:14:16.913313: I Analyzed pair: (0.16844, 0.16769): True
+2024-03-01 14:14:16.913313: I Analyzed pair: (0.16844, 0.16792): True
+2024-03-01 14:14:16.913313: I Analyzed pair: (0.16844, 0.16747): True
+2024-03-01 14:14:16.914317: I Analyzed pair: (0.16844, 0.16688): True
+2024-03-01 14:14:16.914317: I Analyzed pair: (0.16844, 0.16735): True
+2024-03-01 14:14:16.914317: I Check List: [True, True, True, True, True]
+2024-03-01 14:14:16.915317: I Met Early Stopping conditions: logger: <Logger EarlyStopping (DEBUG)>, validation_metric: nDCGRendle2020, validation_k: 10, cutoffs: [10], simple_metrics: ['nDCGRendle2020'], monitor: nDCGRendle2020, patience: 5, mode: max, metric_k: 10, metric: nDCGRendle2020, verbose: true, active: True

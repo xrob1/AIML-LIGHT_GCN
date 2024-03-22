@@ -1,0 +1,164 @@
+2024-03-07 13:23:12.649376: I Loading parameters
+2024-03-07 13:23:12.649376: I Parameter factors set to 256
+2024-03-07 13:23:12.649376: I Parameter lr set to 0.000581295268049958
+2024-03-07 13:23:12.649376: I Parameter l_w set to 0.07812719644660297
+2024-03-07 13:23:13.607364: I Epoch 1/200 loss 112.61938
+2024-03-07 13:23:13.608370: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\facebook_book\recs
+2024-03-07 13:23:13.658161: I ******************************************
+2024-03-07 13:23:14.620043: I Epoch 2/200 loss 27.45718
+2024-03-07 13:23:14.621081: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\facebook_book\recs
+2024-03-07 13:23:15.619616: I Epoch 3/200 loss 11.98090
+2024-03-07 13:23:15.619616: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\facebook_book\recs
+2024-03-07 13:23:15.671981: I ******************************************
+2024-03-07 13:23:16.604759: I Epoch 4/200 loss 6.63786
+2024-03-07 13:23:16.604759: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\facebook_book\recs
+2024-03-07 13:23:16.651417: I ******************************************
+2024-03-07 13:23:17.649861: I Epoch 5/200 loss 4.18743
+2024-03-07 13:23:17.649861: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\facebook_book\recs
+2024-03-07 13:23:17.712754: I ******************************************
+2024-03-07 13:23:18.679969: I Epoch 6/200 loss 2.85655
+2024-03-07 13:23:18.679969: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\facebook_book\recs
+2024-03-07 13:23:18.716732: I ******************************************
+2024-03-07 13:23:18.716732: I Analyzed pair: (0.00373, 0.00365): True
+2024-03-07 13:23:18.716732: I Analyzed pair: (0.00373, 0.0045): False
+2024-03-07 13:23:18.716732: I Analyzed pair: (0.00373, 0.01046): False
+2024-03-07 13:23:18.716732: I Analyzed pair: (0.00373, 0.02572): False
+2024-03-07 13:23:18.716732: I Analyzed pair: (0.00373, 0.04696): False
+2024-03-07 13:23:18.716732: I Check List: [True, False, False, False, False]
+2024-03-07 13:23:19.688949: I Epoch 7/200 loss 2.05699
+2024-03-07 13:23:19.688949: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\facebook_book\recs
+2024-03-07 13:23:19.735830: I ******************************************
+2024-03-07 13:23:19.735830: I Analyzed pair: (0.00365, 0.0045): False
+2024-03-07 13:23:19.735830: I Analyzed pair: (0.00365, 0.01046): False
+2024-03-07 13:23:19.735830: I Analyzed pair: (0.00365, 0.02572): False
+2024-03-07 13:23:19.735830: I Analyzed pair: (0.00365, 0.04696): False
+2024-03-07 13:23:19.735830: I Analyzed pair: (0.00365, 0.05992): False
+2024-03-07 13:23:19.735830: I Check List: [False, False, False, False, False]
+2024-03-07 13:23:20.645657: I Epoch 8/200 loss 1.53249
+2024-03-07 13:23:20.645657: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\facebook_book\recs
+2024-03-07 13:23:20.739799: I ******************************************
+2024-03-07 13:23:20.739799: I Analyzed pair: (0.0045, 0.01046): False
+2024-03-07 13:23:20.739799: I Analyzed pair: (0.0045, 0.02572): False
+2024-03-07 13:23:20.755425: I Analyzed pair: (0.0045, 0.04696): False
+2024-03-07 13:23:20.755425: I Analyzed pair: (0.0045, 0.05992): False
+2024-03-07 13:23:20.755425: I Analyzed pair: (0.0045, 0.06519): False
+2024-03-07 13:23:20.755425: I Check List: [False, False, False, False, False]
+2024-03-07 13:23:21.790527: I Epoch 9/200 loss 1.17452
+2024-03-07 13:23:21.790527: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\facebook_book\recs
+2024-03-07 13:23:21.837406: I ******************************************
+2024-03-07 13:23:21.837406: I Analyzed pair: (0.01046, 0.02572): False
+2024-03-07 13:23:21.837406: I Analyzed pair: (0.01046, 0.04696): False
+2024-03-07 13:23:21.837406: I Analyzed pair: (0.01046, 0.05992): False
+2024-03-07 13:23:21.837406: I Analyzed pair: (0.01046, 0.06519): False
+2024-03-07 13:23:21.837406: I Analyzed pair: (0.01046, 0.06854): False
+2024-03-07 13:23:21.837406: I Check List: [False, False, False, False, False]
+2024-03-07 13:23:22.762854: I Epoch 10/200 loss 0.91944
+2024-03-07 13:23:22.762854: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\facebook_book\recs
+2024-03-07 13:23:22.810120: I ******************************************
+2024-03-07 13:23:22.810120: I Analyzed pair: (0.02572, 0.04696): False
+2024-03-07 13:23:22.810120: I Analyzed pair: (0.02572, 0.05992): False
+2024-03-07 13:23:22.810120: I Analyzed pair: (0.02572, 0.06519): False
+2024-03-07 13:23:22.810120: I Analyzed pair: (0.02572, 0.06854): False
+2024-03-07 13:23:22.810120: I Analyzed pair: (0.02572, 0.07316): False
+2024-03-07 13:23:22.810120: I Check List: [False, False, False, False, False]
+2024-03-07 13:23:23.689807: I Epoch 11/200 loss 0.73645
+2024-03-07 13:23:23.689807: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\facebook_book\recs
+2024-03-07 13:23:23.750693: I Analyzed pair: (0.04696, 0.05992): False
+2024-03-07 13:23:23.750693: I Analyzed pair: (0.04696, 0.06519): False
+2024-03-07 13:23:23.750693: I Analyzed pair: (0.04696, 0.06854): False
+2024-03-07 13:23:23.750693: I Analyzed pair: (0.04696, 0.07316): False
+2024-03-07 13:23:23.750693: I Analyzed pair: (0.04696, 0.07216): False
+2024-03-07 13:23:23.750693: I Check List: [False, False, False, False, False]
+2024-03-07 13:23:24.660528: I Epoch 12/200 loss 0.59749
+2024-03-07 13:23:24.660528: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\facebook_book\recs
+2024-03-07 13:23:24.707292: I ******************************************
+2024-03-07 13:23:24.707292: I Analyzed pair: (0.05992, 0.06519): False
+2024-03-07 13:23:24.707292: I Analyzed pair: (0.05992, 0.06854): False
+2024-03-07 13:23:24.707292: I Analyzed pair: (0.05992, 0.07316): False
+2024-03-07 13:23:24.707292: I Analyzed pair: (0.05992, 0.07216): False
+2024-03-07 13:23:24.707292: I Analyzed pair: (0.05992, 0.07418): False
+2024-03-07 13:23:24.707292: I Check List: [False, False, False, False, False]
+2024-03-07 13:23:25.601467: I Epoch 13/200 loss 0.49839
+2024-03-07 13:23:25.601467: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\facebook_book\recs
+2024-03-07 13:23:25.648346: I ******************************************
+2024-03-07 13:23:25.648346: I Analyzed pair: (0.06519, 0.06854): False
+2024-03-07 13:23:25.648346: I Analyzed pair: (0.06519, 0.07316): False
+2024-03-07 13:23:25.648346: I Analyzed pair: (0.06519, 0.07216): False
+2024-03-07 13:23:25.648346: I Analyzed pair: (0.06519, 0.07418): False
+2024-03-07 13:23:25.648346: I Analyzed pair: (0.06519, 0.07578): False
+2024-03-07 13:23:25.648346: I Check List: [False, False, False, False, False]
+2024-03-07 13:23:26.557640: I Epoch 14/200 loss 0.41657
+2024-03-07 13:23:26.557640: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\facebook_book\recs
+2024-03-07 13:23:26.604902: I Analyzed pair: (0.06854, 0.07316): False
+2024-03-07 13:23:26.604902: I Analyzed pair: (0.06854, 0.07216): False
+2024-03-07 13:23:26.604902: I Analyzed pair: (0.06854, 0.07418): False
+2024-03-07 13:23:26.604902: I Analyzed pair: (0.06854, 0.07578): False
+2024-03-07 13:23:26.604902: I Analyzed pair: (0.06854, 0.07449): False
+2024-03-07 13:23:26.604902: I Check List: [False, False, False, False, False]
+2024-03-07 13:23:27.530374: I Epoch 15/200 loss 0.35853
+2024-03-07 13:23:27.530374: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\facebook_book\recs
+2024-03-07 13:23:27.592876: I ******************************************
+2024-03-07 13:23:27.592876: I Analyzed pair: (0.07316, 0.07216): True
+2024-03-07 13:23:27.592876: I Analyzed pair: (0.07316, 0.07418): False
+2024-03-07 13:23:27.592876: I Analyzed pair: (0.07316, 0.07578): False
+2024-03-07 13:23:27.592876: I Analyzed pair: (0.07316, 0.07449): False
+2024-03-07 13:23:27.592876: I Analyzed pair: (0.07316, 0.07606): False
+2024-03-07 13:23:27.592876: I Check List: [True, False, False, False, False]
+2024-03-07 13:23:28.470958: I Epoch 16/200 loss 0.31039
+2024-03-07 13:23:28.470958: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\facebook_book\recs
+2024-03-07 13:23:28.518228: I Analyzed pair: (0.07216, 0.07418): False
+2024-03-07 13:23:28.518228: I Analyzed pair: (0.07216, 0.07578): False
+2024-03-07 13:23:28.518228: I Analyzed pair: (0.07216, 0.07449): False
+2024-03-07 13:23:28.518228: I Analyzed pair: (0.07216, 0.07606): False
+2024-03-07 13:23:28.518228: I Analyzed pair: (0.07216, 0.07557): False
+2024-03-07 13:23:28.518228: I Check List: [False, False, False, False, False]
+2024-03-07 13:23:29.412448: I Epoch 17/200 loss 0.27152
+2024-03-07 13:23:29.412448: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\facebook_book\recs
+2024-03-07 13:23:29.459328: I ******************************************
+2024-03-07 13:23:29.459328: I Analyzed pair: (0.07418, 0.07578): False
+2024-03-07 13:23:29.459328: I Analyzed pair: (0.07418, 0.07449): False
+2024-03-07 13:23:29.459328: I Analyzed pair: (0.07418, 0.07606): False
+2024-03-07 13:23:29.459328: I Analyzed pair: (0.07418, 0.07557): False
+2024-03-07 13:23:29.459328: I Analyzed pair: (0.07418, 0.07953): False
+2024-03-07 13:23:29.459328: I Check List: [False, False, False, False, False]
+2024-03-07 13:23:30.384254: I Epoch 18/200 loss 0.23963
+2024-03-07 13:23:30.384254: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\facebook_book\recs
+2024-03-07 13:23:30.431520: I Analyzed pair: (0.07578, 0.07449): True
+2024-03-07 13:23:30.431520: I Analyzed pair: (0.07578, 0.07606): False
+2024-03-07 13:23:30.431520: I Analyzed pair: (0.07578, 0.07557): True
+2024-03-07 13:23:30.431520: I Analyzed pair: (0.07578, 0.07953): False
+2024-03-07 13:23:30.431520: I Analyzed pair: (0.07578, 0.07842): False
+2024-03-07 13:23:30.431520: I Check List: [True, False, True, False, False]
+2024-03-07 13:23:31.310069: I Epoch 19/200 loss 0.21347
+2024-03-07 13:23:31.310069: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\facebook_book\recs
+2024-03-07 13:23:31.356950: I Analyzed pair: (0.07449, 0.07606): False
+2024-03-07 13:23:31.356950: I Analyzed pair: (0.07449, 0.07557): False
+2024-03-07 13:23:31.356950: I Analyzed pair: (0.07449, 0.07953): False
+2024-03-07 13:23:31.356950: I Analyzed pair: (0.07449, 0.07842): False
+2024-03-07 13:23:31.356950: I Analyzed pair: (0.07449, 0.07678): False
+2024-03-07 13:23:31.356950: I Check List: [False, False, False, False, False]
+2024-03-07 13:23:32.250653: I Epoch 20/200 loss 0.19231
+2024-03-07 13:23:32.250653: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\facebook_book\recs
+2024-03-07 13:23:32.297527: I Analyzed pair: (0.07606, 0.07557): True
+2024-03-07 13:23:32.297527: I Analyzed pair: (0.07606, 0.07953): False
+2024-03-07 13:23:32.297527: I Analyzed pair: (0.07606, 0.07842): False
+2024-03-07 13:23:32.297527: I Analyzed pair: (0.07606, 0.07678): False
+2024-03-07 13:23:32.297527: I Analyzed pair: (0.07606, 0.07647): False
+2024-03-07 13:23:32.297527: I Check List: [True, False, False, False, False]
+2024-03-07 13:23:33.208392: I Epoch 21/200 loss 0.17179
+2024-03-07 13:23:33.208392: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\facebook_book\recs
+2024-03-07 13:23:33.254653: I Analyzed pair: (0.07557, 0.07953): False
+2024-03-07 13:23:33.254653: I Analyzed pair: (0.07557, 0.07842): False
+2024-03-07 13:23:33.254653: I Analyzed pair: (0.07557, 0.07678): False
+2024-03-07 13:23:33.270278: I Analyzed pair: (0.07557, 0.07647): False
+2024-03-07 13:23:33.270278: I Analyzed pair: (0.07557, 0.07749): False
+2024-03-07 13:23:33.270278: I Check List: [False, False, False, False, False]
+2024-03-07 13:23:34.273714: I Epoch 22/200 loss 0.15601
+2024-03-07 13:23:34.273714: I Writing recommendations at: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\results\facebook_book\recs
+2024-03-07 13:23:34.336603: I Analyzed pair: (0.07953, 0.07842): True
+2024-03-07 13:23:34.336603: I Analyzed pair: (0.07953, 0.07678): True
+2024-03-07 13:23:34.336603: I Analyzed pair: (0.07953, 0.07647): True
+2024-03-07 13:23:34.336603: I Analyzed pair: (0.07953, 0.07749): True
+2024-03-07 13:23:34.336603: I Analyzed pair: (0.07953, 0.07703): True
+2024-03-07 13:23:34.336603: I Check List: [True, True, True, True, True]
+2024-03-07 13:23:34.336603: I Met Early Stopping conditions: logger: <Logger EarlyStopping (DEBUG)>, validation_metric: nDCGRendle2020, validation_k: 10, cutoffs: [10], simple_metrics: ['nDCGRendle2020'], monitor: nDCGRendle2020, patience: 5, mode: max, metric_k: 10, metric: nDCGRendle2020, verbose: true, active: True

@@ -2,10 +2,10 @@ experiment:
   backend: pytorch
   data_config:
     strategy: fixed
-    train_path: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data\facebook_book\train.tsv
-    validation_path: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data\facebook_book\val.tsv
-    test_path: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data\facebook_book\test.tsv
-  dataset: facebook_book
+    train_path: C:\Users\zanzo\Documents\GitHub\AIML-LIGHT_GCN\data\yahoo_movies\train.tsv
+    validation_path: ..\TMP_RECS\BASE@256.tsv
+    test_path: ..\TMP_RECS\BASE@256.tsv
+  dataset: yahoo_movies
   top_k: 10
   evaluation:
     cutoffs:
